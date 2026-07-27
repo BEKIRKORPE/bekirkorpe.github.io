@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fal Dünyası - Gizlilik Politikası</title>
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    line-height: 1.65;
+    color: #2b2b2b;
+    background: #fdfaf6;
+  }
+  h1 {
+    color: #4a2f6b;
+    border-bottom: 3px solid #f0d38a;
+    padding-bottom: 12px;
+  }
+  h2 {
+    color: #6b4a8f;
+    margin-top: 36px;
+  }
+  .updated {
+    color: #777;
+    font-size: 0.92em;
+    margin-bottom: 28px;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .contact-box {
+    background: #f3ecf9;
+    border-left: 4px solid #6b4a8f;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+  a { color: #6b4a8f; }
+</style>
+</head>
+<body>
+
+<h1>🔮 Fal Dünyası – Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 27 Temmuz 2026</p>
+
+<p>Bu gizlilik politikası, KorpeSoft tarafından geliştirilen <strong>Fal Dünyası</strong> ("Uygulama") mobil uygulamasının kullanıcı verilerini nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
+
+<h2>1. Uygulamanın Amacı</h2>
+<p>Fal Dünyası; günlük burç, kahve falı, tarot, el falı, rüya yorumu ve benzeri <strong>sembolik ve eğlence amaçlı</strong> içerikler sunan bir uygulamadır. Uygulama içeriği bilimsel bir öngörü, tıbbi tavsiye veya profesyonel danışmanlık niteliği taşımaz; kişisel farkındalık ve eğlence deneyimi sunmayı amaçlar.</p>
+
+<h2>2. Toplanan Veriler</h2>
+<h3>2.1 Cihaz Üzerinde Saklanan Veriler</h3>
+<p>Aşağıdaki bilgiler yalnızca cihazınızın yerel hafızasında (localStorage) saklanır ve KorpeSoft sunucularına <strong>gönderilmez</strong>:</p>
+<ul>
+  <li>Günlük kullanım hakları ve fal geçmişi</li>
+  <li>Favori burç/fal türü tercihleri</li>
+  <li>Kaydedilen fallar ve dilek defteri girdileri</li>
+  <li>Premium (Fal Dünyası Premium) satın alma durumu</li>
+  <li>Tema, ses ve bildirim tercihleri</li>
+</ul>
+
+<h3>2.2 Kamera ve Galeri Erişimi</h3>
+<p>Kahve falı ve el falı özellikleri için kameranıza veya galerinize erişim izni istenir. Çekilen veya seçilen fotoğraflar <strong>yalnızca cihazınızda işlenir</strong>; herhangi bir sunucuya yüklenmez, KorpeSoft veya üçüncü taraflarca görüntülenmez ya da saklanmaz.</p>
+
+<h3>2.3 Reklam Kimliği (Advertising ID)</h3>
+<p>Uygulama, Google AdMob aracılığıyla banner ve geçiş (interstitial) reklamları gösterir. Bu kapsamda cihazınızın reklam kimliği (Advertising ID) Google ile paylaşılır. Bu bilgi, size daha ilgili reklamlar gösterilmesi amacıyla kullanılır.</p>
+
+<h3>2.4 Satın Alma Bilgileri</h3>
+<p>Fal Dünyası Premium satın alma işlemleri tamamen <strong>Google Play üzerinden</strong> gerçekleştirilir. Ödeme bilgileriniz (kart numarası vb.) KorpeSoft tarafından hiçbir şekilde görülmez veya saklanmaz; bu bilgiler doğrudan Google Play Faturalandırma sistemi tarafından yönetilir.</p>
+
+<h2>3. Üçüncü Taraf Hizmetler</h2>
+<ul>
+  <li><strong>Google AdMob</strong> – reklam gösterimi için (bkz. <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>)</li>
+  <li><strong>Google Play Faturalandırma (Billing)</strong> – uygulama içi satın alma işlemleri için</li>
+</ul>
+
+<h2>4. Veri Güvenliği</h2>
+<p>Cihazınızda saklanan veriler uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir. Herhangi bir kullanıcı hesabı veya kişisel kimlik bilgisi (ad, e-posta, telefon numarası vb.) toplanmaz.</p>
+
+<h2>5. Çocukların Gizliliği</h2>
+<p>Fal Dünyası, 13 yaş altı çocuklara yönelik olarak tasarlanmamıştır ve bu yaş grubundan bilerek veri toplamaz.</p>
+
+<h2>6. Politika Değişiklikleri</h2>
+<p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada yayınlanacaktır.</p>
+
+<h2>7. İletişim</h2>
+<div class="contact-box">
+  <p>Sorularınız için bize ulaşabilirsiniz:</p>
+  <p>📧 <a href="mailto:korpe.bekir71@gmail.com">korpe.bekir71@gmail.com</a></p>
+  <p>KorpeSoft Teknoloji</p>
+</div>
+
+</body>
+</html>
