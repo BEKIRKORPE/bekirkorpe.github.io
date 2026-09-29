@@ -19,7 +19,7 @@ a{color:#047857}ul{padding-left:1.2em}
 <h2>1. Konum</h2>
 <ul>
 <li>Uygulama, bulunduğunuz yere göre namaz vakitlerini hesaplamak, kıble yönünü göstermek ve hava durumunu getirmek için konum izni ister. İzin vermezseniz şehri elle seçebilirsiniz.</li>
-<li>Konumunuz yalnızca cihazınızda saklanır ve KorpeSoft'a gönderilmez.</li>
+<li>Konumunuz yalnızca cihazınızda saklanır; KorpeSoft'un herhangi bir sunucusunda kaydedilmez veya saklanmaz. Konum yalnızca aşağıda açıklanan hava durumu isteği için kullanılır.</li>
 <li>Hava durumu için koordinat, KorpeSoft'un Cloudflare üzerinde çalışan hava hizmetine veya bu hizmete ulaşılamazsa doğrudan MET Norway (Norveç Meteoroloji Enstitüsü) hava servisine HTTPS ile gönderilir. KorpeSoft'un hava hizmeti koordinatı yaklaşık 5 km'ye yuvarlar; konumunuzu, IP adresinizi veya cihaz bilgilerinizi kaydetmez ve saklamaz. Aynı bölgedeki sonuçlar en fazla 30 dakika ortak önbellekte tutulur. MET Norway verileri kendi <a href="https://www.met.no/en/About-us/privacy">gizlilik politikasına</a> göre işler.</li>
 </ul>
 
@@ -27,7 +27,7 @@ a{color:#047857}ul{padding-left:1.2em}
 <p>Ezan ve vakit hatırlatmaları için uygulama bildirim, alarm ve ön plan hizmeti (medya oynatma) izinlerini kullanır. Bu izinler yalnızca ezanı çalmak ve hatırlatma göstermek içindir; hiçbir veri toplanmaz veya gönderilmez.</p>
 
 <h2>3. Cihazda saklanan bilgiler</h2>
-<p>Alarm ve ezan ayarlarınız, seçtiğiniz şehir veya konum, hatim ve tesbih kayıtlarınız ile uygulama tercihleriniz yalnızca cihazınızda, uygulamanın özel depolama alanında saklanır ve KorpeSoft'a gönderilmez. Uygulama hesap açmanızı istemez; adınız, e-posta adresiniz, rehberiniz veya dosyalarınız gibi kişisel bilgilere erişmez.</p>
+<p>Alarm ve ezan ayarlarınız, seçtiğiniz şehir veya konum, hatim ve tesbih kayıtlarınız ile uygulama tercihleriniz yalnızca cihazınızda, uygulamanın özel depolama alanında saklanır. Hava durumu isteği dışında hiçbiri cihazınızdan gönderilmez. Uygulama hesap açmanızı istemez; adınız, e-posta adresiniz, rehberiniz veya dosyalarınız gibi kişisel bilgilere erişmez.</p>
 
 <h2>4. Reklamlar ve üçüncü taraf hizmetler</h2>
 <p>Uygulama Google AdMob reklamlarını ve Google User Messaging Platform (UMP) izin yönetimini kullanır. Google bu hizmetler aracılığıyla reklam sunumu, ölçüm, sahtekarlığı önleme ve analiz amacıyla IP adresi, cihaz ve reklam tanımlayıcıları (Reklam Kimliği), uygulama etkileşimleri ve teşhis bilgileri gibi verileri toplayabilir ve işleyebilir. Ayrıntılar: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş ortağı uygulamalarındaki veri kullanımı</a>. Reklam tercihlerinizi Android ayarlarından Reklam Kimliği'ni sıfırlayarak veya silerek yönetebilirsiniz.</p>
@@ -56,7 +56,7 @@ a{color:#047857}ul{padding-left:1.2em}
 <h2>1. Location</h2>
 <ul>
 <li>The app requests location permission to calculate prayer times for your location, show the qibla direction and fetch the weather. If you do not grant it, you can select your city manually.</li>
-<li>Your location is stored only on your device and is never sent to KorpeSoft.</li>
+<li>Your location is stored only on your device; it is never logged or stored on any KorpeSoft server. It is used only for the weather request described below.</li>
 <li>For weather, coordinates are sent over HTTPS to KorpeSoft's weather service running on Cloudflare or, if that service is unreachable, directly to the MET Norway (Norwegian Meteorological Institute) weather service. KorpeSoft's weather service rounds coordinates to about 5 km and does not log or store your location, IP address or device information. Results for the same area are kept in a shared cache for at most 30 minutes. MET Norway processes data under its own <a href="https://www.met.no/en/About-us/privacy">privacy policy</a>.</li>
 </ul>
 
@@ -64,7 +64,7 @@ a{color:#047857}ul{padding-left:1.2em}
 <p>For adhan and prayer reminders the app uses notification, alarm and foreground service (media playback) permissions. They are used only to play the adhan and show reminders; no data is collected or sent.</p>
 
 <h2>3. Information stored on the device</h2>
-<p>Your alarm and adhan settings, selected city or location, khatm and tasbih records and app preferences are stored only on your device, in the app's private storage, and are never sent to KorpeSoft. The app does not require an account and does not access personal information such as your name, email, contacts or files.</p>
+<p>Your alarm and adhan settings, selected city or location, khatm and tasbih records and app preferences are stored only on your device, in the app's private storage. Apart from the weather request, none of them leave your device. The app does not require an account and does not access personal information such as your name, email, contacts or files.</p>
 
 <h2>4. Ads and third-party services</h2>
 <p>The app uses Google AdMob ads and the Google User Messaging Platform (UMP) for consent management. Through these services Google may collect and process data such as IP address, device and advertising identifiers (Advertising ID), app interactions and diagnostics for ad delivery, measurement, fraud prevention and analytics. Details: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from partner apps</a>. You can manage ad choices by resetting or deleting your Advertising ID in Android settings.</p>
