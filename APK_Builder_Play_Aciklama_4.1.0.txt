@@ -1,0 +1,43 @@
+===== KISA AÇIKLAMA (80 karakter sınırı) =====
+Android projenizi telefonda APK/AAB yapın; hataları derlemeden önce bulun.
+
+===== TAM AÇIKLAMA (4000 karakter sınırı) =====
+APK Builder, yapay zekâ asistanlarıyla hazırladığınız ya da kendi yazdığınız Android projelerini bilgisayar olmadan, doğrudan telefonunuzda APK ve AAB dosyasına dönüştürür. Projenin ZIP dosyasını seçin, derleyin; APK'yı hemen kurun veya Google Play'e yüklemeye hazır AAB alın.
+
+APK Builder bir kod yazma ortamı (IDE) değildir. Hazır projenizi derleyen ve hataları sizin yerinize arayan bir paketleme aracıdır.
+
+🔍 DERLEMEDEN ÖNCE HATALARI BULUR
+Her derlemede projeniz otomatik taranır. Telefonda sessizce bozulan veya çöken durumlar dosya ve satır numarasıyla gösterilir:
+• HTML/JavaScript'ten çağrılan Android köprü metodu Java/Kotlin'de yok mu, @JavascriptInterface etiketi unutulmuş mu
+• WebView ayarları: JavaScript, localStorage, dosya seçme, uyarı pencereleri
+• Eksik izinler: internet, titreşim, alarm, Bluetooth, kamera, konum ve diğerleri
+• Manifest'te tanımlanmamış ekranlar, Android 12 "exported" ve Android 14 ön plan servisi kuralları
+• HTML'de bağlantı verilen ama projede olmayan dosyalar
+
+🐞 TEST MODU: HATA RAPORUNU KOPYALAYIN
+Test modu açıkken derlediğiniz APK, çökmeleri ve WebView JavaScript hatalarını kaydeder. Uygulama çökerse bir sonraki açılışta hata raporu ekrana gelir; tek dokunuşla kopyalayıp yapay zekâ asistanınıza veya ekibinize gönderebilirsiniz. Rapor cihazınızda kalır, hiçbir yere gönderilmez. Test modu, Google Play'e gidecek AAB derlemelerine eklenmez.
+
+🚀 GOOGLE PLAY'E HAZIRLIK
+• İmzalı AAB oluşturma
+• Uygulama içinde imzalama anahtarı (keystore) oluşturma, JKS içe aktarma
+• Yükleme sertifikasının SHA-1 / SHA-256 parmak izini görme, PEM olarak dışa aktarma
+• Yanlış anahtarla imzalamaya karşı uyarı
+• Play'in reddedeceği durumlar için önceden uyarı: düşük targetSdk, test reklam kimlikleri, tekrar kullanılan versionCode
+
+⚙️ DESTEKLENENLER
+• Java, Kotlin ve karma projeler
+• XML layout, kaynaklar, assets, ViewBinding, BuildConfig
+• build.gradle bağımlılıkları (Google Maven ve Maven Central), libs.versions.toml
+• JAR ve AAR kütüphaneleri, çok modüllü projeler, native (.so) kütüphaneler
+• APK v2/v3 imzası, çoklu DEX
+• Sürüm ve SDK değerlerini uygulama içinden düzenleme
+• Ayrıntılı derleme logu ve tek dokunuşla kopyalama
+• 10 dil desteği
+
+ℹ️ BİLMENİZ GEREKENLER
+• Android 8.0 ve üzeri gerekir.
+• Derleme cihazınızda yapılır. İnternet yalnızca projeniz dış kütüphane indiriyorsa kullanılır.
+• kapt, KSP, annotation processor (ör. Room, Hilt) ve DataBinding desteklenmez; bunun yerine ViewBinding kullanın.
+• Jetpack Compose desteği deneyseldir.
+
+Gizliliğiniz önemlidir: Proje dosyalarınız yalnızca derleme amacıyla cihazınızda işlenir. Ayrıntılar için gizlilik politikamızı inceleyebilirsiniz.
