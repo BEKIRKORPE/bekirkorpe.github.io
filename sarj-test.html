@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Şarj verisi testi</title>
+<style>
+:root{--bg:#f3f6f4;--yuzey:#ffffff;--metin:#14241c;--soluk:#5b6b62;--vurgu:#1f7a4d;--cizgi:#d6e0da;--uyari:#b5520e}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0f1713;--yuzey:#18231d;--metin:#e6efe9;--soluk:#9fb0a6;--vurgu:#4cc38a;--cizgi:#2a3a31;--uyari:#f0a060}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--metin);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:20px 16px 40px}
+main{max-width:560px;margin:0 auto}
+h1{font-size:1.5rem;margin:0 0 4px}
+p.alt{color:var(--soluk);margin:0 0 20px}
+button{font:inherit;font-weight:600;border:0;border-radius:12px;padding:14px 18px;background:var(--vurgu);color:#fff;width:100%;margin-bottom:10px}
+button:disabled{opacity:.5}
+button.ikincil{background:transparent;color:var(--vurgu);border:2px solid var(--vurgu)}
+#durum{color:var(--soluk);margin:8px 0 16px;min-height:1.5em}
+#durum.hata{color:var(--uyari)}
+section{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+h2{font-size:1rem;margin:0 0 8px}
+table{width:100%;border-collapse:collapse}
+td{padding:6px 0;border-bottom:1px solid var(--cizgi)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+tr:last-child td{border-bottom:0}
+small{color:var(--soluk)}
+</style></head><body><main>
+<h1>Open Charge Map Türkiye testi</h1>
+<p class="alt">Türkiye’deki tüm kayıtları çeker ve EPDK rakamlarıyla karşılaştırır.</p>
+<button id="baslat">Testi başlat</button>
+<button id="kopyala" class="ikincil" hidden>Sonuçları kopyala</button>
+<div id="durum"></div>
+<div id="sonuc"></div>
+</main>
+<script>
+function mesafeKm(a,b,c,d){const R=6371,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r;
+ const h=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+const SEHIRLER=[["Ankara",39.925,32.854],["İstanbul",41.015,28.979],["İzmir",38.423,27.143],["Bursa",40.188,29.061],["Antalya",36.897,30.713]];
+function analiz(veri){
+ const s={istasyon:veri.length,soket:0,dc:0,ac:0,yuksek150:0,dogrulanan12ay:0,calisiyor:0,sehir:{},operator:{},il:{}};
+ const simdi=Date.now(),yil=365*864e5;
+ SEHIRLER.forEach(x=>s.sehir[x[0]]=0);
+ for(const p of veri){
+  const a=p.AddressInfo||{};
+  for(const c of (p.Connections||[])){
+   const q=(c.Quantity&&c.Quantity>0)?c.Quantity:1; s.soket+=q;
+   if(c.CurrentTypeID===30) s.dc+=q; else if(c.CurrentTypeID===10||c.CurrentTypeID===20) s.ac+=q;
+   if((c.PowerKW||0)>=150) s.yuksek150+=q;
+  }
+  const t=p.DateLastVerified||p.DateLastStatusUpdate;
+  if(t && simdi-Date.parse(t)<yil) s.dogrulanan12ay++;
+  if(p.StatusType && p.StatusType.IsOperational) s.calisiyor++;
+  if(typeof a.Latitude==="number") for(const x of SEHIRLER) if(mesafeKm(a.Latitude,a.Longitude,x[1],x[2])<=40) s.sehir[x[0]]++;
+  const op=(p.OperatorInfo&&p.OperatorInfo.Title)||"Bilinmiyor"; s.operator[op]=(s.operator[op]||0)+1;
+  const il=(a.StateOrProvince||"").trim()||"(boş)"; s.il[il]=(s.il[il]||0)+1;
+ }
+ return s;
+}
+const KEY="1e290dfd-53fc-4050-afef-03cd64b51a34";
+const EPDK={soket:46665,istasyon2025:14323};
+const URL_="https://api.openchargemap.io/v3/poi/?output=json&countrycode=TR&maxresults=20000&compact=false&verbose=false&key="+KEY;
+const $=id=>document.getElementById(id);
+let rapor="";
+function f(n){return n.toLocaleString("tr-TR")}
+function yuzde(a,b){return b?"%"+(a/b*100).toFixed(1):"-"}
+function tablo(baslik,satirlar,not){
+ return `<section><h2>${baslik}</h2><table>${satirlar.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}</table>${not?`<small>${not}</small>`:""}</section>`;
+}
+function ilk(obj,n){return Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,n)}
+$("baslat").onclick=async()=>{
+ $("baslat").disabled=true;$("durum").className="";$("durum").textContent="Veri indiriliyor, 10–30 saniye sürebilir…";$("sonuc").innerHTML="";
+ const t0=Date.now();
+ try{
+  const r=await fetch(URL_);
+  if(!r.ok) throw new Error("Sunucu "+r.status+" döndürdü");
+  const veri=await r.json();
+  if(!Array.isArray(veri)) throw new Error("Beklenmeyen cevap biçimi");
+  const s=analiz(veri), sn=((Date.now()-t0)/1000).toFixed(1);
+  $("durum").textContent=`${f(veri.length)} kayıt ${sn} saniyede indirildi.`;
+  const ops=ilk(s.operator,10), iller=ilk(s.il,10);
+  $("sonuc").innerHTML=
+   tablo("Genel",[["İstasyon",f(s.istasyon)],["Soket",f(s.soket)],["EPDK soketine oranı",yuzde(s.soket,EPDK.soket)],["EPDK istasyonuna oranı (2025 sonu)",yuzde(s.istasyon,EPDK.istasyon2025)]],"EPDK: 46.665 soket (Temmuz 2026), 14.323 istasyon (2025 sonu)")+
+   tablo("Soket tipi",[["DC",f(s.dc)],["AC",f(s.ac)],["150 kW ve üzeri",f(s.yuksek150)]])+
+   tablo("Veri tazeliği",[["Son 12 ayda doğrulanan",f(s.dogrulanan12ay)+" ("+yuzde(s.dogrulanan12ay,s.istasyon)+")"],["Çalışıyor işaretli",f(s.calisiyor)]])+
+   tablo("Şehir merkezine 40 km",Object.entries(s.sehir).map(e=>[e[0],f(e[1])]))+
+   tablo("İlk 10 operatör",ops.map(e=>[e[0],f(e[1])]))+
+   tablo("İl alanı (ilk 10)",iller.map(e=>[e[0],f(e[1])]),"Bu alan kullanıcılar tarafından elle giriliyor, düzensiz olabilir.");
+  rapor=["OCM TR TEST "+new Date().toLocaleString("tr-TR"),
+   "İstasyon: "+s.istasyon,"Soket: "+s.soket,"DC: "+s.dc+" AC: "+s.ac+" 150kW+: "+s.yuksek150,
+   "12 ayda doğrulanan: "+s.dogrulanan12ay,"Çalışıyor: "+s.calisiyor,"Süre: "+sn+" sn",
+   "Şehir40km: "+Object.entries(s.sehir).map(e=>e[0]+"="+e[1]).join(", "),
+   "Operatör: "+ops.map(e=>e[0]+"="+e[1]).join(", "),
+   "İl: "+iller.map(e=>e[0]+"="+e[1]).join(", ")].join("\n");
+  $("kopyala").hidden=false;
+ }catch(e){
+  $("durum").className="hata";
+  $("durum").textContent="Veri alınamadı: "+e.message+". İnternet bağlantısını kontrol edip tekrar dene. Sorun sürerse bu mesajın ekran görüntüsünü gönder.";
+ }finally{$("baslat").disabled=false;$("baslat").textContent="Testi yeniden başlat";}
+};
+$("kopyala").onclick=async()=>{
+ try{await navigator.clipboard.writeText(rapor);$("kopyala").textContent="Kopyalandı";}
+ catch(e){prompt("Metni seçip kopyala:",rapor);}
+};
+</script></body></html>
