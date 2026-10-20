@@ -111,34 +111,158 @@ function epdkKimlik(kod) {
   let h = 0; for (const ch of s(kod)) h = (h * 31 + ch.codePointAt(0)) % 1e9;
   return -(EPDK_ID + 5e13 + h);
 }
-export function epdkDonustur(feed, bugun = new Date().toISOString().slice(0, 10)) {
+const trIcinde = (a, o) => isFinite(a) && isFinite(o) && a >= 35.5 && a <= 42.5 && o >= 25.5 && o <= 45;
+const sayi = v => Number(s(v).replace(",", "."));
+// Koordinatı çöz: doğruysa al, enlem/boylam yer değiştirmişse düzelt, değilse sebebini söyle
+export function konumCoz(r) {
+  const ham1 = s(r.enlem), ham2 = s(r.boylam);
+  if (!ham1 || !ham2) return { sebep: "koordinat boş" };
+  const lat = sayi(ham1), lon = sayi(ham2);
+  if (!isFinite(lat) || !isFinite(lon)) return { sebep: "koordinat okunamadı" };
+  if (lat === 0 && lon === 0) return { sebep: "koordinat sıfır" };
+  if (trIcinde(lat, lon)) return { a: lat, o: lon, duzeltme: (ham1.includes(",") || ham2.includes(",")) ? "virgul" : "" };
+  if (trIcinde(lon, lat)) return { a: lon, o: lat, duzeltme: "yer-degistirme" };
+  return { sebep: "Türkiye dışı" };
+}
+export function epdkDonustur(feed, bugun = new Date().toISOString().slice(0, 10), rapor = null) {
   const kayitlar = Array.isArray(feed) ? feed : (feed && Array.isArray(feed.data) ? feed.data : null);
   if (!kayitlar) throw new Error("EPDK beklenmeyen cevap biçimi");
   const out = [];
   for (const r of kayitlar) {
     if (!r) continue;
     const hizmet = s(r.hizmetSekli), halka = hizmet.toLocaleLowerCase("tr").startsWith("halka");
-    const kod = s(r.sarjIstasyonuNo), lat = Number(r.enlem), lon = Number(r.boylam);
-    if (!kod || !isFinite(lat) || !isFinite(lon) || lat < 35.5 || lat > 42.5 || lon < 25.5 || lon > 45) continue;
-    const gruplar = new Map();
-    for (const k of r.soketler || []) {
-      if (!k) continue;
-      const tur = s(k.soketTuru).toUpperCase(), tip = s(k.soketTipi).toUpperCase();
-      const ad = EPDK_SOKET[tur] || (tur.includes("CHADEMO") ? "CHAdeMO" : tur.includes("CCS") ? "CCS (Type 2)" : tur.includes("TYPE2") ? "Type 2" : (tur || tip || "Bilinmeyen"));
-      const dc = tip === "DC" || tur.startsWith("DC") ? 1 : (tip === "AC" || tur.startsWith("AC") ? 0 : -1);
-      const kw = Math.round((Number(k.soketGucu) || 0) * 10) / 10;
-      const anahtar = ad + "|" + kw + "|" + dc;
-      gruplar.set(anahtar, (gruplar.get(anahtar) || 0) + 1);
+    const kod = s(r.sarjIstasyonuNo);
+    if (!kod) { if (rapor) rapor.sebep["kodsuz"] = (rapor.sebep["kodsuz"] || 0) + 1; continue; }
+    const k = konumCoz(r);
+    if (rapor && k.duzeltme) rapor.duzeltilen[k.duzeltme] = (rapor.duzeltilen[k.duzeltme] || 0) + 1;
+    if (k.sebep) {
+      if (rapor) {
+        rapor.sebep[k.sebep] = (rapor.sebep[k.sebep] || 0) + 1;
+        rapor.konumsuz.push({ kod, ad: s(r.sarjIstasyonuAdi), adres: s(r.adres), marka: marka(r.marka), hizmet, sebep: k.sebep, ham: r });
+      }
+      continue;
     }
-    const c = [...gruplar].map(([k, q]) => { const [ad, kw, dc] = k.split("|"); return [ad, Number(kw), Number(dc), q]; })
-      .sort((x, y) => y[1] - x[1]);
-    // Not: kişi adı içerebilecek "sarjIstasyonuIsletmecisi" alanı bilerek alınmaz (KVKK)
-    const st = { i: epdkKimlik(kod), e: kod, a: r6(lat), o: r6(lon), t: s(r.sarjIstasyonuAdi) || (marka(r.marka) + " Şarj Noktası").trim(),
-      d: s(r.adres), p: marka(r.marka), s: -1, v: bugun, u: "", c };
-    if (!halka) { st.k = 1; st.h = hizmet || "Belirtilmemiş"; } // özel / erişimi kısıtlı: uygulamada uyarı notuyla gösterilir
-    out.push(st);
+    out.push(epdkIstasyon(r, k.a, k.o, bugun, halka, hizmet));
   }
   return out;
+}
+// Tek bir EPDK kaydını uygulama biçimine çevirir (konum dışarıdan verilir: kayıttan veya adresten)
+export function epdkIstasyon(r, lat, lon, bugun, halka, hizmet) {
+  const kod = s(r.sarjIstasyonuNo);
+  const gruplar = new Map();
+  for (const k of r.soketler || []) {
+    if (!k) continue;
+    const tur = s(k.soketTuru).toUpperCase(), tip = s(k.soketTipi).toUpperCase();
+    const ad = EPDK_SOKET[tur] || (tur.includes("CHADEMO") ? "CHAdeMO" : tur.includes("CCS") ? "CCS (Type 2)" : tur.includes("TYPE2") ? "Type 2" : (tur || tip || "Bilinmeyen"));
+    const dc = tip === "DC" || tur.startsWith("DC") ? 1 : (tip === "AC" || tur.startsWith("AC") ? 0 : -1);
+    const kw = Math.round((Number(k.soketGucu) || 0) * 10) / 10;
+    const anahtar = ad + "|" + kw + "|" + dc;
+    gruplar.set(anahtar, (gruplar.get(anahtar) || 0) + 1);
+  }
+  const c = [...gruplar].map(([k, q]) => { const [ad, kw, dc] = k.split("|"); return [ad, Number(kw), Number(dc), q]; })
+    .sort((x, y) => y[1] - x[1]);
+  // Not: kişi adı içerebilecek "sarjIstasyonuIsletmecisi" alanı bilerek alınmaz (KVKK)
+  const st = { i: epdkKimlik(kod), e: kod, a: r6(lat), o: r6(lon), t: s(r.sarjIstasyonuAdi) || (marka(r.marka) + " Şarj Noktası").trim(),
+    d: s(r.adres), p: marka(r.marka), s: -1, v: bugun, u: "", c };
+  if (!halka) { st.k = 1; st.h = hizmet || "Belirtilmemiş"; } // özel / erişimi kısıtlı: uygulamada uyarı notuyla gösterilir
+  return st;
+}
+
+// ---- Adresten konum bulma (Nominatim). Kural: en fazla 1 istek/sn, uygulama kimliği, sonuçlar saklanır.
+const NOMINATIM = process.env.NOMINATIM_URL || "https://nominatim.openstreetmap.org/search";
+const ONBELLEK = "sarjharitasi/konum-onbellek.json";
+const ARAMA_SINIRI = 300;         // bir çalışmada en fazla bu kadar yeni adres aranır (~6 dk)
+const BULUNAMADI_TEKRAR_GUN = 30; // bulunamayan adres 30 gün sonra tekrar denenir
+// "Görgü Mahallesi No:104 Tavşantepe Yeşilyurt / MALATYA" -> [tam adres, "Görgü Mahallesi, Yeşilyurt, Malatya"]
+export function adresSorgulari(adres) {
+  const a = s(adres).replace(/\s+/g, " ");
+  if (!a) return [];
+  const parca = a.split("/"), il = s(parca[parca.length - 1]), sol = s(parca.slice(0, -1).join("/"));
+  const ilce = s(sol.split(" ").pop());
+  const mah = (sol.match(/([\p{L}\d.\- ]+?)\s+(Mahallesi|Mah\.?)/iu) || [])[1];
+  const q = [ (sol + ", " + il).replace(/No\s*:\s*/gi, ""), ];
+  if (mah && ilce && il) q.push(s(mah) + " Mahallesi, " + ilce + ", " + il);
+  return q.filter((x, i, l) => x.length > 5 && l.indexOf(x) === i);
+}
+async function adresAra(q, bekle) {
+  await bekle();
+  const url = NOMINATIM + "?format=jsonv2&countrycodes=tr&limit=1&accept-language=tr&q=" + encodeURIComponent(q);
+  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "tr" }, signal: AbortSignal.timeout(30000) });
+  if (r.status === 429 || r.status >= 500) throw new Error("Nominatim " + r.status);
+  if (!r.ok) return null;
+  const j = await r.json();
+  if (!Array.isArray(j) || !j.length) return null;
+  const a = Number(j[0].lat), o = Number(j[0].lon);
+  return trIcinde(a, o) ? { a: r6(a), o: r6(o) } : null;
+}
+// ---- Koordinat kalite kontrolü (dış servis gerektirmez)
+function ilAdi(adres) { const p = s(adres).split("/"); return p.length > 1 ? s(p[p.length - 1]).toLocaleUpperCase("tr") : ""; }
+function ondalik(v) { const t = s(v); const i = t.indexOf("."); return i < 0 ? 0 : t.length - i - 1; }
+function medyan(l) { const x = [...l].sort((a, b) => a - b), m = x.length >> 1; return x.length % 2 ? x[m] : (x[m - 1] + x[m]) / 2; }
+export function konumKalite(liste, hamKoord) {
+  const iller = new Map();
+  for (const st of liste) { const il = ilAdi(st.d); if (!il) continue; if (!iller.has(il)) iller.set(il, []); iller.get(il).push(st); }
+  const merkez = new Map(), sayac = { il: 0, kaba: 0, ortak: 0 };
+  for (const [il, l] of iller) {
+    if (l.length < 5) continue;
+    const m = { a: medyan(l.map(x => x.a)), o: medyan(l.map(x => x.o)) };
+    const uz = l.map(x => km(x.a, x.o, m.a, m.o)).sort((a, b) => a - b);
+    m.esik = Math.max(200, 2.5 * uz[Math.floor(uz.length * 0.9)]); // uzun/büyük illerde (Mersin, Muğla, Konya) yanlış alarm vermesin
+    merkez.set(il, m);
+    for (const x of l) if (km(x.a, x.o, m.a, m.o) > m.esik) { x.q = "il"; sayac.il++; }
+  }
+  for (const x of liste) {
+    const h = hamKoord && hamKoord.get(x.e);
+    if (!x.q && h && Math.min(ondalik(h.enlem), ondalik(h.boylam)) <= 2) { x.q = "kaba"; sayac.kaba++; }
+  }
+  const nokta = new Map();
+  for (const x of liste) { const k = x.a + "," + x.o; if (!nokta.has(k)) nokta.set(k, []); nokta.get(k).push(x); }
+  for (const l of nokta.values()) {
+    if (l.length < 3 || new Set(l.map(x => s(x.d).toLocaleLowerCase("tr"))).size < 2) continue; // aynı adreste çok istasyon normaldir
+    for (const x of l) if (!x.q) { x.q = "ortak"; sayac.ortak++; }
+  }
+  return { merkez, sayac };
+}
+
+export async function konumsuzlariCoz(konumsuz, bugun, secenek = {}) {
+  const onbellekYol = secenek.onbellek || ONBELLEK, simdi = secenek.simdi || Date.now();
+  let onbellek = {};
+  try { if (existsSync(onbellekYol)) onbellek = JSON.parse(readFileSync(onbellekYol, "utf8")); } catch (e) { onbellek = {}; }
+  let son = 0, arama = 0, durdu = "";
+  const bekle = secenek.bekle || (async () => { const g = 1100 - (Date.now() - son); if (g > 0) await new Promise(z => setTimeout(z, g)); son = Date.now(); });
+  const cikti = [], sayac = { adres: 0, mahalle: 0, bulunamadi: 0, aranmadi: 0 };
+  for (const x of konumsuz) {
+    const anahtar = x.kod + "|" + x.adres;
+    let o = onbellek[anahtar];
+    const eski = o && o.q === "yok" && (simdi - Date.parse(o.t || 0)) > BULUNAMADI_TEKRAR_GUN * 864e5;
+    if ((!o || eski) && !durdu) {
+      if (arama >= ARAMA_SINIRI) { durdu = "sınır"; }
+      else {
+        const sorgular = adresSorgulari(x.adres);
+        o = { q: "yok", t: new Date(simdi).toISOString().slice(0, 10) };
+        try {
+          for (let n = 0; n < sorgular.length; n++) {
+            arama++;
+            const b = await adresAra(sorgular[n], bekle);
+            if (b) { o = { a: b.a, o: b.o, q: n === 0 ? "adres" : "mahalle", t: o.t }; break; }
+          }
+          onbellek[anahtar] = o;
+        } catch (e) { durdu = e.message; o = undefined; }
+      }
+    }
+    if (!o) { sayac.aranmadi++; continue; }
+    if (o.q === "yok") { sayac.bulunamadi++; continue; }
+    sayac[o.q]++;
+    const halka = s(x.hizmet).toLocaleLowerCase("tr").startsWith("halka");
+    const st = epdkIstasyon(x.ham, o.a, o.o, bugun, halka, x.hizmet);
+    st.z = o.q; // konum yaklaşık: "adres" (sokak düzeyi) veya "mahalle"
+    cikti.push(st);
+  }
+  // kaybolan istasyonların kayıtlarını temizle (dosya şişmesin)
+  const gecerli = new Set(konumsuz.map(x => x.kod + "|" + x.adres));
+  for (const k of Object.keys(onbellek)) if (!gecerli.has(k)) delete onbellek[k];
+  try { mkdirSync(onbellekYol.split("/").slice(0, -1).join("/") || ".", { recursive: true }); writeFileSync(onbellekYol, JSON.stringify(onbellek)); } catch (e) { }
+  return { list: cikti, sayac, durdu, arama };
 }
 export function epdkGetir() { // GET + boş JSON gövde; node fetch GET'te gövdeye izin vermediği için https modülü
   return new Promise((ok, hata) => {
@@ -186,6 +310,25 @@ export function kullaniciBirlestir(list, raporlar, simdi = Date.now()) {
       s: -1, v: new Date(sonTarih).toISOString().slice(0, 10), u: "", c: tanim ? [[tanim[0], Number(soketli.kw) || 0, tanim[1], 1]] : [], y: 1, k: cihazlar.size };
     list.push(st); mevcut.set(i, st); eklenen++;
   }
+  // konum düzeltmeleri: her cihazın son düzeltmesi; 2+ cihaz 50 m içinde anlaşırsa istasyon taşınır
+  const sonKonum = new Map();
+  for (const r of raporlar) {
+    if (r.tur !== "konum" || typeof r.lat !== "number" || typeof r.lon !== "number") continue;
+    const key = r.istasyon_id + "|" + r.c, onceki = sonKonum.get(key);
+    if (!onceki || r.id > onceki.id) sonKonum.set(key, r);
+  }
+  const istasyonaGore = new Map();
+  for (const r of sonKonum.values()) { if (!istasyonaGore.has(r.istasyon_id)) istasyonaGore.set(r.istasyon_id, []); istasyonaGore.get(r.istasyon_id).push(r); }
+  let tasinan = 0;
+  for (const [id, l] of istasyonaGore) {
+    const st = mevcut.get(id); if (!st) continue;
+    let enIyi = [];
+    for (const r of l) { const yakin = l.filter(x => km(x.lat, x.lon, r.lat, r.lon) * 1000 <= 50); if (yakin.length > enIyi.length) enIyi = yakin; }
+    if (enIyi.length >= 2) {
+      st.a = r6(enIyi.reduce((t, x) => t + x.lat, 0) / enIyi.length); st.o = r6(enIyi.reduce((t, x) => t + x.lon, 0) / enIyi.length);
+      st.kd = enIyi.length; delete st.q; delete st.z; tasinan++;
+    } else st.kb = l.length; // tek kişi bildirdi: uyarı göster, taşıma
+  }
   // çalışıyor / çalışmıyor: her cihazın son bildirimi sayılır
   const son = new Map();
   for (const r of raporlar) {
@@ -202,7 +345,7 @@ export function kullaniciBirlestir(list, raporlar, simdi = Date.now()) {
     sayac.set(r.istasyon_id, x);
   }
   for (const [id, x] of sayac) { const st = mevcut.get(id); if (st) { st.b = x.b; st.w = x.w; durumlu++; } }
-  return { eklenen, durumlu };
+  return { eklenen, durumlu, tasinan };
 }
 
 async function raporlariGetir() {
@@ -228,9 +371,15 @@ async function getir(url, opt, deneme = 3) {
 
 export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {}) {
   if (!OCM_KEY) throw new Error("OCM_KEY tanımlı değil (GitHub Secrets)");
-  let epdk = [], epdkDurum = "";
+  let epdk = [], epdkDurum = "", konumRapor = null, konumSonuc = null;
   try {
-    epdk = epdkDonustur(await (secenek.epdkGetir || epdkGetir)());
+    const rapor = { sebep: {}, duzeltilen: {}, konumsuz: [], hamKoord: new Map(), hamByKod: new Map() };
+    const hamFeed = await (secenek.epdkGetir || epdkGetir)();
+    for (const r of (Array.isArray(hamFeed) ? hamFeed : (hamFeed && hamFeed.data) || [])) {
+      if (r && s(r.sarjIstasyonuNo)) { rapor.hamKoord.set(s(r.sarjIstasyonuNo), { enlem: r.enlem, boylam: r.boylam }); rapor.hamByKod.set(s(r.sarjIstasyonuNo), r); }
+    }
+    epdk = epdkDonustur(hamFeed, undefined, rapor);
+    konumRapor = rapor;
     const say = {}; for (const x of epdk) { const k = x.k ? x.h : "Halka Açık"; say[k] = (say[k] || 0) + 1; }
     console.log("EPDK hizmet şekilleri: " + Object.entries(say).sort((a, b) => b[1] - a[1]).map(([k, n]) => k + "=" + n).join(", "));
     if (epdk.length < EPDK_EN_AZ) throw new Error("EPDK verisi şüpheli derecede az: " + epdk.length);
@@ -238,6 +387,39 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   } catch (e) {
     epdk = oncekiEpdk(cikti);
     epdkDurum = (epdk.length ? "dünkü veri (" : "yok (") + e.message + ")";
+  }
+  let kaliteSonuc = null;
+  if (epdk.length && konumRapor) {
+    const kal = konumKalite(epdk, konumRapor.hamKoord);
+    const supheli = epdk.filter(x => x.q);
+    const aranacak = supheli.map(x => ({ kod: x.e, adres: x.d, hizmet: x.k ? x.h : "Halka Açık", ham: konumRapor.hamByKod.get(x.e) })).filter(x => x.ham);
+    let duzelen = 0, dogrulanan = 0;
+    if (aranacak.length) {
+      const sonuc = await konumsuzlariCoz(aranacak, new Date().toISOString().slice(0, 10), Object.assign({ onbellek: "sarjharitasi/konum-kalite-onbellek.json" }, secenek.konum || {}));
+      const bulunan = new Map(sonuc.list.map(x => [x.e, x]));
+      for (const x of supheli) {
+        const b = bulunan.get(x.e); if (!b) continue;
+        const m = kal.merkez.get(ilAdi(x.d));
+        if (x.q === "il" && (!m || km(b.a, b.o, m.a, m.o) > m.esik)) continue; // adres sonucu da ilin dışında: ne doğrula ne taşı
+        if (b.z === "adres" && km(b.a, b.o, x.a, x.o) <= 5) { x.dq = x.q; delete x.q; dogrulanan++; continue; } // adres, koordinatı doğruladı
+        if (b.z === "mahalle" && x.q === "ortak") continue;                    // mahalle merkezi, ortak noktadan iyi değil
+        x.eskiKonum = [x.a, x.o]; x.a = b.a; x.o = b.o; x.z = b.z; x.dq = x.q; delete x.q; duzelen++;
+      }
+      kaliteSonuc = { sayac: kal.sayac, duzelen, dogrulanan, kalan: epdk.filter(x => x.q).length, durdu: sonuc.durdu };
+    } else kaliteSonuc = { sayac: kal.sayac, duzelen: 0, kalan: 0 };
+    for (const x of epdk) delete x.eskiKonum;
+    console.log(`Konum kalitesi: il dışı=${kal.sayac.il}, kaba=${kal.sayac.kaba}, ortak nokta=${kal.sayac.ortak} | adresle düzeltilen=${kaliteSonuc.duzelen}, adresle doğrulanan=${kaliteSonuc.dogrulanan || 0}, şüpheli kalan=${kaliteSonuc.kalan}`);
+  }
+  if (konumRapor) {
+    const kr = konumRapor;
+    console.log("EPDK konum sorunları: " + (Object.entries(kr.sebep).map(([k, n]) => k + "=" + n).join(", ") || "yok") +
+      " | düzeltilen: " + (Object.entries(kr.duzeltilen).map(([k, n]) => k + "=" + n).join(", ") || "yok"));
+    if (kr.konumsuz.length) {
+      konumSonuc = await konumsuzlariCoz(kr.konumsuz, new Date().toISOString().slice(0, 10), secenek.konum || {});
+      const sc = konumSonuc.sayac;
+      console.log(`Adresten konum: sokak=${sc.adres}, mahalle=${sc.mahalle}, bulunamadı=${sc.bulunamadi}, sırada=${sc.aranmadi}` + (konumSonuc.durdu ? " | durdu: " + konumSonuc.durdu : ""));
+      epdk = epdk.concat(konumSonuc.list);
+    }
   }
   const ocmHam = await getir(OCM_URL);
   const ocm = ocmDonustur(ocmHam);
@@ -255,7 +437,9 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   let kul = { eklenen: 0, durumlu: 0 }, kulHata = "";
   try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
   const veri = {
-    ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
+    ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum,
+      kalite: kaliteSonuc,
+      konum: konumRapor ? { sebep: konumRapor.sebep, duzeltilen: konumRapor.duzeltilen, adrestenBulunan: konumSonuc ? konumSonuc.sayac : null } : null, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
     license: "EPDK Serbest Erişim Platformu; Open Charge Map (CC BY 4.0); © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
     list: b.list
   };
