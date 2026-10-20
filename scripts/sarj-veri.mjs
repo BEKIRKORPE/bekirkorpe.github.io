@@ -1,6 +1,8 @@
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
+import https from "node:https";
+import http from "node:http";
 
 const OCM_KEY = process.env.OCM_KEY || "";
 const OCM_URL = "https://api.openchargemap.io/v3/poi/?output=json&countrycode=TR&maxresults=20000&compact=false&verbose=false&opendata=true&key=" + OCM_KEY;
@@ -8,6 +10,11 @@ const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.k
 const SORGU = '[out:json][timeout:180];area["ISO3166-1"="TR"][admin_level=2]->.a;nwr["amenity"="charging_station"](area.a);out center meta;';
 const UA = "TurkiyeSarjHaritasi-veri/1.0 (github.com/bekirkorpe)";
 const ESIK_M = 150;
+// EPDK Serbest Erişim Platformu (Şarj Hizmeti Yönetmeliği md. 17/2, 30/1). Resmi, kimlik doğrulamasız REST servisi.
+// Kota çok sıkı (filtresiz istek saatte 1): tek istek atılır, ASLA tekrar denenmez.
+const EPDK_URL = process.env.EPDK_URL || "https://apigateway.epdk.gov.tr/sarjIstasyonlari";
+const EPDK_ID = 3e14;          // EPDK istasyonlarının kimlik aralığı
+const EPDK_EN_AZ = 5000;       // bundan azı bozuk çekim sayılır, önceki EPDK verisi kullanılır
 // Kullanıcı bildirimleri (Supabase). Anahtar herkese açık "publishable" anahtardır; sadece özet fonksiyonunu çağırabilir.
 const SUPA_URL = process.env.SUPA_URL || "https://njovzzztvxdmrqlfrcvo.supabase.co";
 const SUPA_KEY = process.env.SUPA_KEY || "sb_publishable_L8lNaClfegwTgJFiiOorGw_zC0KvTs2";
@@ -92,6 +99,64 @@ export function birlestir(ocm, osm, esikM = ESIK_M) {
   return { list: ocm.concat(eklenen), eklenen: eklenen.length, ortak: osm.length - eklenen.length };
 }
 
+// ---- EPDK
+const EPDK_SOKET = { AC_TYPE2: "Type 2", AC_TYPE_2: "Type 2", DC_CCS: "CCS (Type 2)", DC_CCS2: "CCS (Type 2)", DC_CHADEMO: "CHAdeMO",
+  AC_SCHUKO: "Schuko (Ev prizi)", DC_GBT: "GB/T DC", AC_GBT: "GB/T AC", DC_TESLA: "Tesla Supercharger", AC_TYPE1: "Type 1 (J1772)" };
+function marka(raw) { // "zes" -> "Zes", "eşarj" -> "Eşarj"; zaten büyük harfli olana dokunma
+  return s(raw).split(/\s+/).filter(Boolean).map(w => (w === w.toLocaleLowerCase("tr") && /^\p{L}/u.test(w)) ? w.charAt(0).toLocaleUpperCase("tr") + w.slice(1) : w).join(" ");
+}
+function epdkKimlik(kod) {
+  const m = s(kod).match(/(\d+)\s*$/);
+  if (m) return -(EPDK_ID + Number(m[1]));
+  let h = 0; for (const ch of s(kod)) h = (h * 31 + ch.codePointAt(0)) % 1e9;
+  return -(EPDK_ID + 5e13 + h);
+}
+export function epdkDonustur(feed, bugun = new Date().toISOString().slice(0, 10)) {
+  const kayitlar = Array.isArray(feed) ? feed : (feed && Array.isArray(feed.data) ? feed.data : null);
+  if (!kayitlar) throw new Error("EPDK beklenmeyen cevap biçimi");
+  const out = [];
+  for (const r of kayitlar) {
+    if (!r) continue;
+    if (!s(r.hizmetSekli).toLocaleLowerCase("tr").startsWith("halka")) continue; // sadece halka açık
+    const kod = s(r.sarjIstasyonuNo), lat = Number(r.enlem), lon = Number(r.boylam);
+    if (!kod || !isFinite(lat) || !isFinite(lon) || lat < 35.5 || lat > 42.5 || lon < 25.5 || lon > 45) continue;
+    const gruplar = new Map();
+    for (const k of r.soketler || []) {
+      if (!k) continue;
+      const tur = s(k.soketTuru).toUpperCase(), tip = s(k.soketTipi).toUpperCase();
+      const ad = EPDK_SOKET[tur] || (tur.includes("CHADEMO") ? "CHAdeMO" : tur.includes("CCS") ? "CCS (Type 2)" : tur.includes("TYPE2") ? "Type 2" : (tur || tip || "Bilinmeyen"));
+      const dc = tip === "DC" || tur.startsWith("DC") ? 1 : (tip === "AC" || tur.startsWith("AC") ? 0 : -1);
+      const kw = Math.round((Number(k.soketGucu) || 0) * 10) / 10;
+      const anahtar = ad + "|" + kw + "|" + dc;
+      gruplar.set(anahtar, (gruplar.get(anahtar) || 0) + 1);
+    }
+    const c = [...gruplar].map(([k, q]) => { const [ad, kw, dc] = k.split("|"); return [ad, Number(kw), Number(dc), q]; })
+      .sort((x, y) => y[1] - x[1]);
+    // Not: kişi adı içerebilecek "sarjIstasyonuIsletmecisi" alanı bilerek alınmaz (KVKK)
+    out.push({ i: epdkKimlik(kod), e: kod, a: r6(lat), o: r6(lon), t: s(r.sarjIstasyonuAdi) || (marka(r.marka) + " Şarj Noktası").trim(),
+      d: s(r.adres), p: marka(r.marka), s: -1, v: bugun, u: "", c });
+  }
+  return out;
+}
+export function epdkGetir() { // GET + boş JSON gövde; node fetch GET'te gövdeye izin vermediği için https modülü
+  return new Promise((ok, hata) => {
+    const govde = "{}";
+    const istek = (EPDK_URL.startsWith("http:") ? http : https).request(EPDK_URL, { method: "GET", headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(govde), "User-Agent": UA }, timeout: 180000 }, cevap => {
+      const parcalar = []; cevap.on("data", x => parcalar.push(x));
+      cevap.on("end", () => {
+        if (cevap.statusCode !== 200) return hata(new Error("EPDK " + cevap.statusCode));
+        try { ok(JSON.parse(Buffer.concat(parcalar).toString("utf8"))); } catch (e) { hata(new Error("EPDK JSON çözülemedi")); }
+      });
+    });
+    istek.on("timeout", () => istek.destroy(new Error("EPDK zaman aşımı")));
+    istek.on("error", hata);
+    istek.end(govde);
+  });
+}
+function oncekiEpdk(cikti) { // EPDK erişilemezse dünkü yayındaki EPDK kayıtları kullanılır
+  try { if (!existsSync(cikti)) return []; const d = JSON.parse(readFileSync(cikti, "utf8")); return (d.list || []).filter(x => x.e); } catch (e) { return []; }
+}
+
 const KULLANICI_SOKET = { "CCS": ["CCS (Type 2)", 1], "Type 2": ["Type 2 (Socket Only)", 0], "CHAdeMO": ["CHAdeMO", 1], "Tesla": ["Tesla Supercharger", 1], "Diğer": ["Diğer", -1] };
 function enCok(arr) { const m = new Map(); for (const x of arr) if (x) m.set(x, (m.get(x) || 0) + 1); let best = "", n = 0; for (const [k, v] of m) if (v > n) { best = k; n = v; } return best; }
 
@@ -159,8 +224,17 @@ async function getir(url, opt, deneme = 3) {
   throw son;
 }
 
-export async function calistir(cikti = "sarjharitasi/stations.json") {
+export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {}) {
   if (!OCM_KEY) throw new Error("OCM_KEY tanımlı değil (GitHub Secrets)");
+  let epdk = [], epdkDurum = "";
+  try {
+    epdk = epdkDonustur(await (secenek.epdkGetir || epdkGetir)());
+    if (epdk.length < EPDK_EN_AZ) throw new Error("EPDK verisi şüpheli derecede az: " + epdk.length);
+    epdkDurum = "güncel";
+  } catch (e) {
+    epdk = oncekiEpdk(cikti);
+    epdkDurum = (epdk.length ? "dünkü veri (" : "yok (") + e.message + ")";
+  }
   const ocmHam = await getir(OCM_URL);
   const ocm = ocmDonustur(ocmHam);
   let osm = [], osmHata = "";
@@ -170,18 +244,20 @@ export async function calistir(cikti = "sarjharitasi/stations.json") {
       osm = osmDonustur(j.elements); osmHata = ""; break;
     } catch (e) { osmHata = e.message; }
   }
-  if (ocm.length < 500) throw new Error("OCM verisi şüpheli derecede az: " + ocm.length + " (eski dosya korunuyor)");
-  const b = birlestir(ocm, osm);
+  if (ocm.length < 500 && epdk.length < EPDK_EN_AZ) throw new Error("OCM verisi şüpheli derecede az: " + ocm.length + " (eski dosya korunuyor)");
+  // Öncelik: EPDK > OCM > OSM. Daha alttaki kaynak, üsttekinde 150 m içinde karşılığı yoksa eklenir.
+  const e1 = birlestir(epdk, ocm), ocmEklenen = e1.eklenen;
+  const b = birlestir(e1.list, osm);
   let kul = { eklenen: 0, durumlu: 0 }, kulHata = "";
   try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
   const veri = {
-    ts: Date.now(), count: b.list.length, sources: { ocm: ocm.length, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
-    license: "Open Charge Map (CC BY 4.0) ve © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
+    ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkDurum, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
+    license: "EPDK Serbest Erişim Platformu; Open Charge Map (CC BY 4.0); © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
     list: b.list
   };
   mkdirSync(cikti.split("/").slice(0, -1).join("/") || ".", { recursive: true });
   writeFileSync(cikti, JSON.stringify(veri));
-  console.log(`Tamam: OCM ${ocm.length}, OSM ${osm.length} (yeni ${b.eklenen}), kullanıcı ${kul.eklenen}, durum bildirimli ${kul.durumlu}, toplam ${b.list.length}${osmHata ? " | OSM hatası: " + osmHata : ""}${kulHata ? " | Bildirim hatası: " + kulHata : ""}`);
+  console.log(`Tamam: EPDK ${epdk.length} [${epdkDurum}], OCM ${ocm.length} (yeni ${ocmEklenen}), OSM ${osm.length} (yeni ${b.eklenen}), kullanıcı ${kul.eklenen}, durum bildirimli ${kul.durumlu}, toplam ${b.list.length}${osmHata ? " | OSM hatası: " + osmHata : ""}${kulHata ? " | Bildirim hatası: " + kulHata : ""}`);
   return veri;
 }
 
