@@ -8,6 +8,12 @@ const OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.k
 const SORGU = '[out:json][timeout:180];area["ISO3166-1"="TR"][admin_level=2]->.a;nwr["amenity"="charging_station"](area.a);out center meta;';
 const UA = "TurkiyeSarjHaritasi-veri/1.0 (github.com/bekirkorpe)";
 const ESIK_M = 150;
+// Kullanıcı bildirimleri (Supabase). Anahtar herkese açık "publishable" anahtardır; sadece özet fonksiyonunu çağırabilir.
+const SUPA_URL = process.env.SUPA_URL || "https://njovzzztvxdmrqlfrcvo.supabase.co";
+const SUPA_KEY = process.env.SUPA_KEY || "sb_publishable_L8lNaClfegwTgJFiiOorGw_zC0KvTs2";
+const KULLANICI_ID = 1e14;      // kullanıcı istasyonlarının kimlik aralığı (OCM ve OSM ile çakışmaz)
+const DURUM_GUN = 14;           // çalışıyor/çalışmıyor bildirimleri bu kadar gün geçerli
+const DOGRULANMAMIS_GUN = 120;  // tek kişinin eklediği istasyon bu kadar gün sonra düşer
 
 export function km(a1, o1, a2, o2) {
   const R = 6371, r = Math.PI / 180, x = (a2 - a1) * r, y = (o2 - o1) * r;
@@ -86,6 +92,61 @@ export function birlestir(ocm, osm, esikM = ESIK_M) {
   return { list: ocm.concat(eklenen), eklenen: eklenen.length, ortak: osm.length - eklenen.length };
 }
 
+const KULLANICI_SOKET = { "CCS": ["CCS (Type 2)", 1], "Type 2": ["Type 2 (Socket Only)", 0], "CHAdeMO": ["CHAdeMO", 1], "Tesla": ["Tesla Supercharger", 1], "Diğer": ["Diğer", -1] };
+function enCok(arr) { const m = new Map(); for (const x of arr) if (x) m.set(x, (m.get(x) || 0) + 1); let best = "", n = 0; for (const [k, v] of m) if (v > n) { best = k; n = v; } return best; }
+
+// raporlar: [{id, created_at, tur, istasyon_id, lat, lon, ad, operator, soket, kw, c}] (c = cihaz özeti)
+export function kullaniciBirlestir(list, raporlar, simdi = Date.now()) {
+  const gun = 864e5, mevcut = new Map(list.map(s => [s.i, s]));
+  const yeniler = raporlar.filter(r => r.tur === "yeni" && typeof r.lat === "number" && typeof r.lon === "number").sort((a, b) => a.id - b.id);
+  const kumeler = [];
+  for (const r of yeniler) {
+    let kume = kumeler.find(k => km(k.lat, k.lon, r.lat, r.lon) * 1000 <= 30);
+    if (!kume) { kume = { id: r.id, lat: r.lat, lon: r.lon, r: [] }; kumeler.push(kume); }
+    kume.r.push(r);
+  }
+  let eklenen = 0;
+  for (const k of kumeler) {
+    if (list.some(s => km(s.a, s.o, k.lat, k.lon) * 1000 <= 30)) continue; // 30 m içinde: aynı istasyon (kullanıcı "yine de ekle" dese bile)
+    const i = -(KULLANICI_ID + k.id);
+    const cihazlar = new Set(k.r.map(r => r.c));
+    for (const r of raporlar) if (r.tur === "dogrula" && r.istasyon_id === i) cihazlar.add(r.c);
+    const sonTarih = Math.max(...k.r.map(r => Date.parse(r.created_at) || 0));
+    if (cihazlar.size < 2 && simdi - sonTarih > DOGRULANMAMIS_GUN * gun) continue;
+    const soketli = k.r.filter(r => r.soket).slice(-1)[0];
+    const tanim = soketli ? (KULLANICI_SOKET[soketli.soket] || ["Diğer", -1]) : null;
+    const st = { i, a: r6(k.lat), o: r6(k.lon), t: enCok(k.r.map(r => s(r.ad))) || "Şarj istasyonu", d: "", p: enCok(k.r.map(r => s(r.operator))),
+      s: -1, v: new Date(sonTarih).toISOString().slice(0, 10), u: "", c: tanim ? [[tanim[0], Number(soketli.kw) || 0, tanim[1], 1]] : [], y: 1, k: cihazlar.size };
+    list.push(st); mevcut.set(i, st); eklenen++;
+  }
+  // çalışıyor / çalışmıyor: her cihazın son bildirimi sayılır
+  const son = new Map();
+  for (const r of raporlar) {
+    if (r.tur !== "calismiyor" && r.tur !== "calisiyor") continue;
+    if (simdi - (Date.parse(r.created_at) || 0) > DURUM_GUN * gun) continue;
+    const key = r.istasyon_id + "|" + r.c, onceki = son.get(key);
+    if (!onceki || r.id > onceki.id) son.set(key, r);
+  }
+  let durumlu = 0;
+  const sayac = new Map();
+  for (const r of son.values()) {
+    const x = sayac.get(r.istasyon_id) || { b: 0, w: 0 };
+    if (r.tur === "calismiyor") x.b++; else x.w++;
+    sayac.set(r.istasyon_id, x);
+  }
+  for (const [id, x] of sayac) { const st = mevcut.get(id); if (st) { st.b = x.b; st.w = x.w; durumlu++; } }
+  return { eklenen, durumlu };
+}
+
+async function raporlariGetir() {
+  const r = await fetch(SUPA_URL + "/rest/v1/rpc/sarj_bildirim_liste", { method: "POST",
+    headers: { apikey: SUPA_KEY, "Content-Type": "application/json", "User-Agent": UA }, body: "{}", signal: AbortSignal.timeout(60000) });
+  if (!r.ok) throw new Error("Supabase " + r.status);
+  const j = await r.json();
+  if (!Array.isArray(j)) throw new Error("Supabase beklenmeyen cevap");
+  return j;
+}
+
 async function getir(url, opt, deneme = 3) {
   let son;
   for (let n = 1; n <= deneme; n++) {
@@ -111,14 +172,16 @@ export async function calistir(cikti = "sarjharitasi/stations.json") {
   }
   if (ocm.length < 500) throw new Error("OCM verisi şüpheli derecede az: " + ocm.length + " (eski dosya korunuyor)");
   const b = birlestir(ocm, osm);
+  let kul = { eklenen: 0, durumlu: 0 }, kulHata = "";
+  try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
   const veri = {
-    ts: Date.now(), count: b.list.length, sources: { ocm: ocm.length, osm: osm.length, osmEklenen: b.eklenen, osmHata },
+    ts: Date.now(), count: b.list.length, sources: { ocm: ocm.length, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
     license: "Open Charge Map (CC BY 4.0) ve © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
     list: b.list
   };
   mkdirSync(cikti.split("/").slice(0, -1).join("/") || ".", { recursive: true });
   writeFileSync(cikti, JSON.stringify(veri));
-  console.log(`Tamam: OCM ${ocm.length}, OSM ${osm.length} (yeni ${b.eklenen}), toplam ${b.list.length}${osmHata ? " | OSM hatası: " + osmHata : ""}`);
+  console.log(`Tamam: OCM ${ocm.length}, OSM ${osm.length} (yeni ${b.eklenen}), kullanıcı ${kul.eklenen}, durum bildirimli ${kul.durumlu}, toplam ${b.list.length}${osmHata ? " | OSM hatası: " + osmHata : ""}${kulHata ? " | Bildirim hatası: " + kulHata : ""}`);
   return veri;
 }
 
