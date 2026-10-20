@@ -117,7 +117,7 @@ export function epdkDonustur(feed, bugun = new Date().toISOString().slice(0, 10)
   const out = [];
   for (const r of kayitlar) {
     if (!r) continue;
-    if (!s(r.hizmetSekli).toLocaleLowerCase("tr").startsWith("halka")) continue; // sadece halka açık
+    const hizmet = s(r.hizmetSekli), halka = hizmet.toLocaleLowerCase("tr").startsWith("halka");
     const kod = s(r.sarjIstasyonuNo), lat = Number(r.enlem), lon = Number(r.boylam);
     if (!kod || !isFinite(lat) || !isFinite(lon) || lat < 35.5 || lat > 42.5 || lon < 25.5 || lon > 45) continue;
     const gruplar = new Map();
@@ -133,8 +133,10 @@ export function epdkDonustur(feed, bugun = new Date().toISOString().slice(0, 10)
     const c = [...gruplar].map(([k, q]) => { const [ad, kw, dc] = k.split("|"); return [ad, Number(kw), Number(dc), q]; })
       .sort((x, y) => y[1] - x[1]);
     // Not: kişi adı içerebilecek "sarjIstasyonuIsletmecisi" alanı bilerek alınmaz (KVKK)
-    out.push({ i: epdkKimlik(kod), e: kod, a: r6(lat), o: r6(lon), t: s(r.sarjIstasyonuAdi) || (marka(r.marka) + " Şarj Noktası").trim(),
-      d: s(r.adres), p: marka(r.marka), s: -1, v: bugun, u: "", c });
+    const st = { i: epdkKimlik(kod), e: kod, a: r6(lat), o: r6(lon), t: s(r.sarjIstasyonuAdi) || (marka(r.marka) + " Şarj Noktası").trim(),
+      d: s(r.adres), p: marka(r.marka), s: -1, v: bugun, u: "", c };
+    if (!halka) { st.k = 1; st.h = hizmet || "Belirtilmemiş"; } // özel / erişimi kısıtlı: uygulamada uyarı notuyla gösterilir
+    out.push(st);
   }
   return out;
 }
@@ -229,6 +231,8 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   let epdk = [], epdkDurum = "";
   try {
     epdk = epdkDonustur(await (secenek.epdkGetir || epdkGetir)());
+    const say = {}; for (const x of epdk) { const k = x.k ? x.h : "Halka Açık"; say[k] = (say[k] || 0) + 1; }
+    console.log("EPDK hizmet şekilleri: " + Object.entries(say).sort((a, b) => b[1] - a[1]).map(([k, n]) => k + "=" + n).join(", "));
     if (epdk.length < EPDK_EN_AZ) throw new Error("EPDK verisi şüpheli derecede az: " + epdk.length);
     epdkDurum = "güncel";
   } catch (e) {
@@ -251,7 +255,7 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   let kul = { eklenen: 0, durumlu: 0 }, kulHata = "";
   try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
   const veri = {
-    ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkDurum, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
+    ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
     license: "EPDK Serbest Erişim Platformu; Open Charge Map (CC BY 4.0); © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
     list: b.list
   };
