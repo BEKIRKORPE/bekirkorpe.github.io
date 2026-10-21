@@ -1,7 +1,20 @@
 {
- "guncelleme": 1792576509777,
+ "guncelleme": 1792577020126,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
+  "ZES": {
+   "ac": [
+    10.99,
+    10.99
+   ],
+   "dc": [
+    12.99,
+    12.99
+   ],
+   "kaynak": "https://zes.net/tr/fiyatlandirma",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21"
+  },
   "Trugo": {
    "ac": [
     9.95,
@@ -43,11 +56,9 @@
   }
  },
  "okunamayan": {
-  "ZES": [
-   "https://zes.net/tr/fiyatlandirma: robots"
-  ],
   "Voltrun": [
-   "https://www.voltrun.com/tr/tarifeler: HTTP 429"
+   "https://www.voltrun.com/tr/tarifeler: HTTP 429",
+   "https://voltrun.com/tr/tarifeler: HTTP 429"
   ],
   "Eşarj": [
    "https://www.esarj.com/fiyatlar: HTTP 403",
