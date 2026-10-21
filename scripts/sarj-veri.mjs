@@ -472,18 +472,22 @@ export async function fiyatlariGuncelle(secenek = {}) {
   const yol = secenek.dosya || FIYAT_DOSYA, getir = secenek.getir || sayfaGetir, izin = secenek.robots || robotsIzin;
   const bugun = (secenek.bugun || new Date().toISOString().slice(0, 10));
   let eski = {}; try { if (existsSync(yol)) eski = JSON.parse(readFileSync(yol, "utf8")).sirketler || {}; } catch (e) { eski = {}; }
-  const sirketler = {}, kayit = [];
+  const sirketler = {}, kayit = [], tani = {};
   for (const k of secenek.kaynak || FIYAT_KAYNAK) {
-    const onceki = eski[k.ad] || null; let bulundu = null, hata = "";
+    const onceki = eski[k.ad] || null; let bulundu = null, hata = "", iz = [];
     for (const url of k.url) {
       try {
-        if (!(await izin(url))) { hata = "robots.txt izin vermiyor"; continue; }
+        if (!(await izin(url))) { hata = "robots.txt izin vermiyor"; iz.push(url + ": robots"); continue; }
         const html = await getir(url);
-        let f = fiyatAyikla(htmlMetin(html));
+        const metin = htmlMetin(html);
+        let f = fiyatAyikla(metin);
         if (!f.ac && !f.dc) f = fiyatAyikla(s(html).replace(/<[^>]+>/g, " ")); // fiyat sayfa içi veride olabilir
         if (f.ac || f.dc) { bulundu = { ...f, kaynak: url }; break; }
         hata = "sayfada fiyat bulunamadı";
-      } catch (e) { hata = e.message; }
+        // teşhis: sayfa ne kadar büyük, metinde kWh / TL geçiyor mu, kWh'in çevresi ne
+        const i = metin.search(/kwh|₺|\btl\b/i);
+        iz.push(url + ": html " + s(html).length + " bayt, metin " + metin.length + " | " + (i >= 0 ? metin.slice(Math.max(0, i - 120), i + 120) : metin.slice(0, 240)));
+      } catch (e) { hata = (e && e.cause && e.cause.code) ? e.message + " (" + e.cause.code + ")" : e.message; iz.push(url + ": " + hata); }
     }
     if (bulundu) {
       const ayni = onceki && JSON.stringify([onceki.ac, onceki.dc]) === JSON.stringify([bulundu.ac, bulundu.dc]);
@@ -491,8 +495,9 @@ export async function fiyatlariGuncelle(secenek = {}) {
       kayit.push(k.ad + " ✓ AC " + (bulundu.ac ? bulundu.ac.join("-") : "—") + " / DC " + (bulundu.dc ? bulundu.dc.join("-") : "—") + (ayni ? "" : onceki ? " (DEĞİŞTİ)" : " (ilk kayıt)"));
     } else if (onceki) { sirketler[k.ad] = { ...onceki, hata }; kayit.push(k.ad + " ✗ " + hata + " → son fiyat korunuyor (" + onceki.kontrol + ")"); }
     else kayit.push(k.ad + " ✗ " + hata);
+    if (!bulundu) tani[k.ad] = iz;
   }
-  const veri = { guncelleme: Date.now(), not: "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.", sirketler };
+  const veri = { guncelleme: Date.now(), not: "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.", sirketler, okunamayan: tani };
   try { mkdirSync(yol.split("/").slice(0, -1).join("/") || ".", { recursive: true }); writeFileSync(yol, JSON.stringify(veri, null, 1)); } catch (e) { }
   return { veri, kayit };
 }
