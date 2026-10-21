@@ -348,6 +348,54 @@ export function kullaniciBirlestir(list, raporlar, simdi = Date.now()) {
   return { eklenen, durumlu, tasinan };
 }
 
+// ---- Şirket adlarını birleştir: aynı şirket kaynaklara göre farklı yazılıyor ("Zes", "ZES", "Zorlu Enerji"...).
+// Uygulamadaki şirket listesi ve filtresi adı birebir karşılaştırdığı için hepsi tek yazıma çevrilir.
+const HUKUKI = new Set(["a.s", "as", "a.s.", "anonim", "sirketi", "ltd", "sti", "limited", "san", "tic", "sanayi", "ticaret", "ve", "inc", "gmbh", "co", "llc"]);
+function sirketAnahtar(ad) {
+  const n = s(ad).toLocaleLowerCase("tr").replace(/[çğıöşüâîû]/g, ch => ({ "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u", "â": "a", "î": "i", "û": "u" })[ch])
+    .replace(/i̇/g, "i").replace(/[(),;]/g, " ");
+  return n.split(/\s+/).map(w => w.replace(/\.+$/, "")).filter(w => w && !HUKUKI.has(w)).join(" ");
+}
+// Bilinen markalar: anahtarın başı bu kelimelerle başlıyorsa marka adına çevrilir
+const MARKALAR = [
+  [/^(zes|zorlu)\b/, "ZES"],
+  [/^(esarj|e-sarj|enerjisa esarj|enerjisa)\b/, "Eşarj"],
+  [/^(trugo|togg)\b/, "Trugo"],
+  [/^voltrun\b/, "Voltrun"],
+  [/^sharz\b/, "Sharz.net"],
+  [/^tesla\b/, "Tesla"],
+  [/^beefull\b/, "Beefull"],
+  [/^otopriz\b/, "Otopriz"]
+];
+export function sirketleriBirlestir(list) {
+  const yazimlar = new Map(); // anahtar -> {yazım: adet}
+  for (const x of list) {
+    if (!x.p) continue;
+    const k = sirketAnahtar(x.p); if (!k) continue;
+    if (!yazimlar.has(k)) yazimlar.set(k, new Map());
+    const m = yazimlar.get(k); m.set(x.p, (m.get(x.p) || 0) + 1);
+  }
+  const hedef = new Map();
+  for (const [k, m] of yazimlar) {
+    const marka = MARKALAR.find(([re]) => re.test(k));
+    if (marka) { hedef.set(k, marka[1]); continue; }
+    // markası bilinmiyorsa en çok kullanılan yazım; eşitlikte büyük/küçük harf karışık olan ("Astor" > "ASTOR"), sonra kısa olan ("Aksa Şarj" > "Aksa Şarj A.Ş.")
+    const puan = (y, c) => [c, y !== y.toLocaleUpperCase("tr") ? 1 : 0, -y.length];
+    const iyi = (x, y) => { for (let i = 0; i < 3; i++) if (x[i] !== y[i]) return x[i] > y[i]; return false; };
+    let enIyi = "", ep = null;
+    for (const [y, c] of m) { const p = puan(y, c); if (!ep || iyi(p, ep)) { enIyi = y; ep = p; } }
+    hedef.set(k, enIyi);
+  }
+  let degisen = 0;
+  for (const x of list) {
+    if (!x.p) continue;
+    const yeni = hedef.get(sirketAnahtar(x.p));
+    if (yeni && yeni !== x.p) { x.p = yeni; degisen++; }
+  }
+  const once = [...yazimlar.values()].reduce((t, m) => t + m.size, 0);
+  return { degisen, once, sonra: new Set(list.filter(x => x.p).map(x => x.p)).size };
+}
+
 async function raporlariGetir() {
   const r = await fetch(SUPA_URL + "/rest/v1/rpc/sarj_bildirim_liste", { method: "POST",
     headers: { apikey: SUPA_KEY, "Content-Type": "application/json", "User-Agent": UA }, body: "{}", signal: AbortSignal.timeout(60000) });
@@ -436,6 +484,8 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   const b = birlestir(e1.list, osm);
   let kul = { eklenen: 0, durumlu: 0 }, kulHata = "";
   try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
+  const sirket = sirketleriBirlestir(b.list);
+  console.log(`Şirket adları: ${sirket.once} farklı yazım -> ${sirket.sonra} şirket (${sirket.degisen} istasyonun adı düzeltildi)`);
   const veri = {
     ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum,
       kalite: kaliteSonuc,
