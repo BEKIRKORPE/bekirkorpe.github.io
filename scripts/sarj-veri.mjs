@@ -399,6 +399,122 @@ export function sirketleriBirlestir(list) {
   return { degisen, once, sonra: new Set(list.filter(x => x.p).map(x => x.p)).size };
 }
 
+// ---- Şirket fiyatları: her gün şirketlerin RESMİ sitelerindeki tarife sayfasından okunur.
+// Yönetmelik gereği fiyatlar sitede ilan edilmek zorunda. robots.txt izin vermeyen site okunmaz.
+// Okunamazsa son doğru fiyat (kontrol tarihiyle) kullanılmaya devam eder.
+const FIYAT_DOSYA = "sarjharitasi/fiyatlar.json";
+export const FIYAT_KAYNAK = [ // ad: birleştirilmiş şirket adı (sirketleriBirlestir sonrası) · url: sırayla denenir
+  { ad: "ZES", url: ["https://zes.net/tr/fiyatlandirma"] },
+  { ad: "Trugo", url: ["https://www.trugo.com.tr/price"] },
+  { ad: "Voltrun", url: ["https://www.voltrun.com/tr/tarifeler"] },
+  { ad: "Wat Mobilite", url: ["https://www.watmobilite.com/cozumler/kamusal-alanlar"] },
+  { ad: "Beefull", url: ["https://beefull.com/tarifeler/elektrikli-arac-tarifesi/"] },
+  { ad: "Eşarj", url: ["https://www.esarj.com/fiyatlar", "https://esarj.com/tr/fiyatlar"] } // doğrulanmadı: kayıtta sonucu görünür
+];
+const FIYAT_MIN = 3, FIYAT_MAX = 40; // TL/kWh: bunun dışı yanlış okuma sayılır
+
+export function htmlMetin(html) {
+  return s(html)
+    .replace(/<(script|style|noscript)[^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<br\s*\/?>|<\/(p|div|li|tr|td|th|h\d|span)>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;|&#160;/g, " ").replace(/&#8378;|&#x20ba;/gi, "₺").replace(/&amp;/g, "&").replace(/&#\d+;/g, " ")
+    .replace(/\s+/g, " ").trim();
+}
+// "AC 9.90TL / kWh", "1 kWh ücreti 12,00 TL - 14,98 TL", "10,99₺", "9,99 - 10,99 ₺/kWh" biçimlerinin hepsini okur
+export function fiyatAyikla(metin) {
+  const t = s(metin).replace(/\\u20ba/gi, "₺"), sonuc = {};
+  const sayi = x => Math.round(parseFloat(x.replace(",", ".")) * 100) / 100;
+  const FIYAT = /(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?(?:\s*[-–]\s*(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?)?/gi;
+  const ANAHTAR = /(?:^|[^a-zçğıöşü0-9])(ac|dc)(?=[^a-zçğıöşü]|$)/gi;
+  let m;
+  while ((m = ANAHTAR.exec(t))) {
+    const tur = m[1].toLowerCase(); if (sonuc[tur]) continue;
+    const bas = m.index + m[0].length, pencere = t.slice(bas, bas + 160);
+    // pencerede öbür tür geçiyorsa onun öncesine kadar bak (AC'nin fiyatı DC'ninkiyle karışmasın)
+    const ote = pencere.search(new RegExp("(^|[^a-zçğıöşü0-9])" + (tur === "ac" ? "dc" : "ac") + "([^a-zçğıöşü]|$)", "i"));
+    const alan = ote > 0 ? pencere.slice(0, ote) : pencere;
+    FIYAT.lastIndex = 0; let f;
+    while ((f = FIYAT.exec(alan))) {
+      const sonra = alan.slice(f.index + f[0].length, f.index + f[0].length + 14).toLowerCase();
+      const once = alan.slice(Math.max(0, f.index - 40), f.index).toLowerCase();
+      if (/^\s*kw(?!h)/.test(sonra) || /^\s*\/?\s*(dk|dak|saat|sa\b)/.test(sonra) || /^\s*%/.test(sonra)) continue; // güç (kW), dakika ücreti, yüzde
+      const paraVar = f[2] || f[4] || /^\s*\/?\s*kwh/.test(sonra) || /kwh/.test(once);
+      if (!paraVar) continue;
+      const a = sayi(f[1]), b = f[3] ? sayi(f[3]) : a;
+      if (!(a >= FIYAT_MIN && b <= FIYAT_MAX && b >= a)) continue;
+      sonuc[tur] = [a, b]; break;
+    }
+  }
+  return sonuc;
+}
+async function robotsIzin(url) {
+  try {
+    const u = new URL(url);
+    const r = await fetch(u.origin + "/robots.txt", { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) });
+    if (!r.ok) return true; // robots.txt yoksa izin var sayılır
+    let ilgili = false; const yasak = [];
+    for (const satir of (await r.text()).split(/\r?\n/)) {
+      const [k, ...v] = satir.split(":"); const anahtar = s(k).toLowerCase(), deger = s(v.join(":")).split("#")[0].trim();
+      if (anahtar === "user-agent") ilgili = deger === "*" || /turkiyesarj/i.test(deger);
+      else if (ilgili && anahtar === "disallow" && deger) yasak.push(deger);
+    }
+    return !yasak.some(y => u.pathname.startsWith(y.replace(/\*.*$/, "")));
+  } catch (e) { return true; }
+}
+async function sayfaGetir(url) {
+  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "text/html", "Accept-Language": "tr" }, signal: AbortSignal.timeout(30000) });
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  return await r.text();
+}
+// Fiyatları oku; önceki dosyayla birleştir (okunamayan şirketin son doğru fiyatı kalır)
+export async function fiyatlariGuncelle(secenek = {}) {
+  const yol = secenek.dosya || FIYAT_DOSYA, getir = secenek.getir || sayfaGetir, izin = secenek.robots || robotsIzin;
+  const bugun = (secenek.bugun || new Date().toISOString().slice(0, 10));
+  let eski = {}; try { if (existsSync(yol)) eski = JSON.parse(readFileSync(yol, "utf8")).sirketler || {}; } catch (e) { eski = {}; }
+  const sirketler = {}, kayit = [];
+  for (const k of secenek.kaynak || FIYAT_KAYNAK) {
+    const onceki = eski[k.ad] || null; let bulundu = null, hata = "";
+    for (const url of k.url) {
+      try {
+        if (!(await izin(url))) { hata = "robots.txt izin vermiyor"; continue; }
+        const html = await getir(url);
+        let f = fiyatAyikla(htmlMetin(html));
+        if (!f.ac && !f.dc) f = fiyatAyikla(s(html).replace(/<[^>]+>/g, " ")); // fiyat sayfa içi veride olabilir
+        if (f.ac || f.dc) { bulundu = { ...f, kaynak: url }; break; }
+        hata = "sayfada fiyat bulunamadı";
+      } catch (e) { hata = e.message; }
+    }
+    if (bulundu) {
+      const ayni = onceki && JSON.stringify([onceki.ac, onceki.dc]) === JSON.stringify([bulundu.ac, bulundu.dc]);
+      sirketler[k.ad] = { ac: bulundu.ac || null, dc: bulundu.dc || null, kaynak: bulundu.kaynak, kontrol: bugun, degisim: ayni ? (onceki.degisim || bugun) : bugun };
+      kayit.push(k.ad + " ✓ AC " + (bulundu.ac ? bulundu.ac.join("-") : "—") + " / DC " + (bulundu.dc ? bulundu.dc.join("-") : "—") + (ayni ? "" : onceki ? " (DEĞİŞTİ)" : " (ilk kayıt)"));
+    } else if (onceki) { sirketler[k.ad] = { ...onceki, hata }; kayit.push(k.ad + " ✗ " + hata + " → son fiyat korunuyor (" + onceki.kontrol + ")"); }
+    else kayit.push(k.ad + " ✗ " + hata);
+  }
+  const veri = { guncelleme: Date.now(), not: "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.", sirketler };
+  try { mkdirSync(yol.split("/").slice(0, -1).join("/") || ".", { recursive: true }); writeFileSync(yol, JSON.stringify(veri, null, 1)); } catch (e) { }
+  return { veri, kayit };
+}
+const tl = x => x.toFixed(2).replace(".", ",");
+const aralik = f => f[0] === f[1] ? tl(f[0]) : tl(f[0]) + "–" + tl(f[1]);
+// İstasyonların "u" alanına şirket tarifesini yazar (eski uygulama sürümleri de "Ücret:" satırında gösterir)
+export function fiyatlariUygula(list, sirketler) {
+  let n = 0;
+  for (const x of list) {
+    const f = x.p && sirketler[x.p]; if (!f || (!f.ac && !f.dc)) continue;
+    const dcVar = (x.c || []).some(c => c[2] === 1 || c[1] >= 50), acVar = (x.c || []).some(c => c[2] === 0 || (c[2] !== 1 && c[1] > 0 && c[1] < 50));
+    const parca = [];
+    if (f.ac && (acVar || !dcVar)) parca.push("AC " + aralik(f.ac) + " TL");
+    if (f.dc && (dcVar || !acVar)) parca.push("DC " + aralik(f.dc) + " TL");
+    if (!parca.length) continue;
+    const [y, a, g] = f.kontrol.split("-");
+    x.u = parca.join(" · ") + " /kWh · " + x.p + " tarifesi, " + g + "." + a + "." + y;
+    n++;
+  }
+  return n;
+}
+
 async function raporlariGetir() {
   const r = await fetch(SUPA_URL + "/rest/v1/rpc/sarj_bildirim_liste", { method: "POST",
     headers: { apikey: SUPA_KEY, "Content-Type": "application/json", "User-Agent": UA }, body: "{}", signal: AbortSignal.timeout(60000) });
@@ -489,10 +605,17 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
   try { kul = kullaniciBirlestir(b.list, await raporlariGetir()); } catch (e) { kulHata = e.message; }
   const sirket = sirketleriBirlestir(b.list);
   console.log(`Şirket adları: ${sirket.once} farklı yazım -> ${sirket.sonra} şirket (${sirket.degisen} istasyonun adı düzeltildi)`);
+  let fiyatOzet = null;
+  try {
+    const fy = await fiyatlariGuncelle(secenek.fiyat || {});
+    const n = fiyatlariUygula(b.list, fy.veri.sirketler);
+    console.log("Fiyatlar:\n  " + fy.kayit.join("\n  ") + "\n  → " + n + " istasyona tarife yazıldı");
+    fiyatOzet = { sirket: Object.keys(fy.veri.sirketler).length, istasyon: n };
+  } catch (e) { console.log("Fiyat adımı atlandı: " + e.message); }
   const veri = {
     ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum,
       kalite: kaliteSonuc,
-      konum: konumRapor ? { sebep: konumRapor.sebep, duzeltilen: konumRapor.duzeltilen, adrestenBulunan: konumSonuc ? konumSonuc.sayac : null } : null, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata },
+      konum: konumRapor ? { sebep: konumRapor.sebep, duzeltilen: konumRapor.duzeltilen, adrestenBulunan: konumSonuc ? konumSonuc.sayac : null } : null, ocm: ocm.length, ocmEklenen, osm: osm.length, osmEklenen: b.eklenen, osmHata, kullanici: kul.eklenen, durumBildirimli: kul.durumlu, kulHata, fiyat: fiyatOzet },
     license: "EPDK Serbest Erişim Platformu; Open Charge Map (CC BY 4.0); © OpenStreetMap katkıcıları (ODbL). Birleşik veri ODbL kapsamında açıktır.",
     list: b.list
   };
