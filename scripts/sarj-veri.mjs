@@ -1,4 +1,4 @@
-// sürüm: 2026-10-21 E (ZES "/ kWh -" aralığı)
+// sürüm: 2026-10-21 F (+7 şirket, "₺ 9,89" biçimi)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
@@ -410,6 +410,13 @@ export const FIYAT_KAYNAK = [ // ad: birleştirilmiş şirket adı (sirketleriBi
   { ad: "Voltrun", url: ["https://www.voltrun.com/tr/tarifeler", "https://voltrun.com/tr/tarifeler"] },
   { ad: "Wat Mobilite", url: ["https://www.watmobilite.com/cozumler/kamusal-alanlar"] },
   { ad: "Beefull", url: ["https://beefull.com/tarifeler/elektrikli-arac-tarifesi/"] },
+  { ad: "ASTOR", url: ["https://www.astorsarj.com.tr/", "https://www.astorsarj.com.tr/index.html"] }, // fiyat ana sayfada ("₺ 9,89 / kWh")
+  { ad: "En Yakıt", url: ["https://www.enyakit.com.tr/ucretlendirme"] },
+  { ad: "Oncharge", url: ["https://www.oncharge.com.tr/fiyatlar"] },
+  { ad: "AKSA ŞARJ", url: ["https://www.aksasarj.com.tr/tr/ucretler"] },
+  { ad: "Toger", url: ["https://www.toger.co/pricing"] },
+  { ad: "otoWATT", url: ["https://www.otowatt.com.tr/tarifelerimiz"] },
+  { ad: "Efish", url: ["https://www.efish.com.tr/tr/fiyatlandirma/"] },
   { ad: "Eşarj", url: ["https://www.esarj.com/fiyatlar", "https://esarj.com/tr/fiyatlar"] } // 21.10.2026: site GitHub'dan gelen isteğe 403 veriyor (engel aşılmaz)
 ];
 const FIYAT_MIN = 3, FIYAT_MAX = 40; // TL/kWh: bunun dışı yanlış okuma sayılır
@@ -444,7 +451,7 @@ export function fiyatAyikla(metin, kanitIste) {
       const once = alan.slice(Math.max(0, f.index - 40), f.index).toLowerCase();
       const birimli = !!(f[2] || f[4] || /kwh/i.test(f[0])); // yanında TL/₺/kWh olan sayı yüzde ya da güç olamaz ("9,99 TL/kWh %20 indirim")
       if (/^\s*kw(?!h)/.test(sonra) || /^\s*\/?\s*(dk|dak|saat|sa\b)/.test(sonra) || (!birimli && /^\s*%/.test(sonra))) continue; // güç (kW), dakika ücreti, yüzde
-      const paraVar = f[2] || f[4] || /^\s*\/?\s*kwh/.test(sonra) || /kwh/.test(once);
+      const paraVar = f[2] || f[4] || /kwh/i.test(f[0]) || /^\s*\/?\s*kwh/.test(sonra) || /kwh/.test(once) || /(₺|\btl)\s*$/.test(once); // "₺ 9,89 / kWh": işaret sayının önünde
       if (!paraVar) continue;
       const a = sayi(f[1]), b = f[3] ? sayi(f[3]) : a;
       if (!(a >= FIYAT_MIN && b <= FIYAT_MAX && b >= a)) continue;
@@ -539,8 +546,9 @@ const aralik = f => f[0] === f[1] ? tl(f[0]) : tl(f[0]) + "–" + tl(f[1]);
 // İstasyonların "u" alanına şirket tarifesini yazar (eski uygulama sürümleri de "Ücret:" satırında gösterir)
 export function fiyatlariUygula(list, sirketler) {
   let n = 0;
+  const anahtarla = new Map(Object.entries(sirketler).map(([ad, f]) => [sirketAnahtar(ad), f])); // "ASTOR" = "Astor"
   for (const x of list) {
-    const f = x.p && sirketler[x.p]; if (!f || (!f.ac && !f.dc)) continue;
+    const f = x.p && (sirketler[x.p] || anahtarla.get(sirketAnahtar(x.p))); if (!f || (!f.ac && !f.dc)) continue;
     const dcVar = (x.c || []).some(c => c[2] === 1 || c[1] >= 50), acVar = (x.c || []).some(c => c[2] === 0 || (c[2] !== 1 && c[1] > 0 && c[1] < 50));
     const parca = [];
     if (f.ac && (acVar || !dcVar)) parca.push("AC " + aralik(f.ac) + " TL");
