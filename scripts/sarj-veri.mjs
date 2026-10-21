@@ -442,7 +442,8 @@ export function fiyatAyikla(metin, kanitIste) {
     while ((f = FIYAT.exec(alan))) {
       const sonra = alan.slice(f.index + f[0].length, f.index + f[0].length + 14).toLowerCase();
       const once = alan.slice(Math.max(0, f.index - 40), f.index).toLowerCase();
-      if (/^\s*kw(?!h)/.test(sonra) || /^\s*\/?\s*(dk|dak|saat|sa\b)/.test(sonra) || /^\s*%/.test(sonra)) continue; // güç (kW), dakika ücreti, yüzde
+      const birimli = !!(f[2] || f[4] || /kwh/i.test(f[0])); // yanında TL/₺/kWh olan sayı yüzde ya da güç olamaz ("9,99 TL/kWh %20 indirim")
+      if (/^\s*kw(?!h)/.test(sonra) || /^\s*\/?\s*(dk|dak|saat|sa\b)/.test(sonra) || (!birimli && /^\s*%/.test(sonra))) continue; // güç (kW), dakika ücreti, yüzde
       const paraVar = f[2] || f[4] || /^\s*\/?\s*kwh/.test(sonra) || /kwh/.test(once);
       if (!paraVar) continue;
       const a = sayi(f[1]), b = f[3] ? sayi(f[3]) : a;
