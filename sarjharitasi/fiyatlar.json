@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792587622869,
+ "guncelleme": 1792588102707,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -140,15 +140,15 @@
     9.9
    ],
    "dc": [
-    9.9,
+    13.39,
     13.39
    ],
    "kaynak": "https://www.toger.co/pricing",
    "kontrol": "2026-10-21",
    "degisim": "2026-10-21",
    "okunan": [
-    "DC/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … DC Sarj DC şarj ile aracınıza hızlı enerji takviyesi",
-    "/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir "
+    "/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir ",
+    "DC Sarj DC şarj ile aracınıza hızlı enerji takviyesi yaparak, daha az bekleyip daha çok yol alın. ₺ 13,39 kWh KDV Dahi … DC şarj ile aracınıza hızlı enerji takviyesi yaparak, daha az bekleyip daha çok"
    ]
   },
   "otoWATT": {
