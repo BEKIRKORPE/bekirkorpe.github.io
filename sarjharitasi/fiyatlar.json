@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792581894217,
+ "guncelleme": 1792582265500,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -9,14 +9,14 @@
    ],
    "dc": [
     12.99,
-    12.99
+    16.49
    ],
    "kaynak": "https://zes.net/tr/fiyatlandirma",
    "kontrol": "2026-10-21",
    "degisim": "2026-10-21",
    "okunan": [
-    "AC 10,99₺ / kWh DC-1",
-    "DC-1 DC-2 12,99₺ / kWh - 16, … DC-2 12,99₺ / kWh - 16,"
+    "AC 10,99₺ / kWh DC-1 DC-2 1",
+    "DC-1 DC-2 12,99₺ / kWh - 16,49₺ / kWh Bilgi … DC-2 12,99₺ / kWh - 16,49₺ / kWh Bilgi"
    ]
   },
   "Trugo": {
@@ -66,8 +66,8 @@
    "kontrol": "2026-10-21",
    "degisim": "2026-10-21",
    "okunan": [
-    "AC SOKET TARİFESİ Fiyat / Birim 9,90 TL/kWh Soket:",
-    "DC SOKET TARİFESİ Fiyat / Birim 13,99 TL/kWh Soket:"
+    "AC SOKET TARİFESİ Fiyat / Birim 9,90 TL/kWh Soket: Tip-",
+    "DC SOKET TARİFESİ Fiyat / Birim 13,99 TL/kWh Soket: DC-H"
    ]
   }
  },
