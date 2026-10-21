@@ -1,4 +1,4 @@
-// sürüm: 2026-10-21 F (+7 şirket, "₺ 9,89" biçimi)
+// sürüm: 2026-10-21 G (Toger "DC/AC" başlığı düzeltmesi)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
@@ -444,7 +444,7 @@ export function fiyatAyikla(metin, kanitIste) {
     const bas = m.index + m[0].length, pencere = t.slice(bas, bas + 160);
     // pencerede öbür tür geçiyorsa onun öncesine kadar bak (AC'nin fiyatı DC'ninkiyle karışmasın)
     const ote = pencere.search(new RegExp("(^|[^a-zçğıöşü0-9])" + (tur === "ac" ? "dc" : "ac") + "([^a-zçğıöşü]|$)", "i"));
-    const alan = ote > 0 ? pencere.slice(0, ote) : pencere;
+    const alan = ote >= 0 ? pencere.slice(0, ote) : pencere; // "DC/AC Hızlı…" gibi bitişik yazımda (ote = 0) bu geçiş atlanır
     FIYAT.lastIndex = 0; let f;
     while ((f = FIYAT.exec(alan))) {
       const sonra = alan.slice(f.index + f[0].length, f.index + f[0].length + 14).toLowerCase();
