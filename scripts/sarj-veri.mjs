@@ -350,7 +350,7 @@ export function kullaniciBirlestir(list, raporlar, simdi = Date.now()) {
 
 // ---- Şirket adlarını birleştir: aynı şirket kaynaklara göre farklı yazılıyor ("Zes", "ZES", "Zorlu Enerji"...).
 // Uygulamadaki şirket listesi ve filtresi adı birebir karşılaştırdığı için hepsi tek yazıma çevrilir.
-const HUKUKI = new Set(["a.s", "as", "a.s.", "anonim", "sirketi", "ltd", "sti", "limited", "san", "tic", "sanayi", "ticaret", "ve", "inc", "gmbh", "co", "llc"]);
+const HUKUKI = new Set(["a.s", "as", "a.s.", "anonim", "sirketi", "ltd", "sti", "limited", "san", "tic", "sanayi", "ticaret", "ve", "inc", "gmbh", "co", "llc", "tr", "turkiye", "turkey"]);
 function sirketAnahtar(ad) {
   const n = s(ad).toLocaleLowerCase("tr").replace(/[çğıöşüâîû]/g, ch => ({ "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u", "â": "a", "î": "i", "û": "u" })[ch])
     .replace(/i̇/g, "i").replace(/[(),;]/g, " ");
@@ -379,11 +379,14 @@ export function sirketleriBirlestir(list) {
   for (const [k, m] of yazimlar) {
     const marka = MARKALAR.find(([re]) => re.test(k));
     if (marka) { hedef.set(k, marka[1]); continue; }
-    // markası bilinmiyorsa en çok kullanılan yazım; eşitlikte büyük/küçük harf karışık olan ("Astor" > "ASTOR"), sonra kısa olan ("Aksa Şarj" > "Aksa Şarj A.Ş.")
-    const puan = (y, c) => [c, y !== y.toLocaleUpperCase("tr") ? 1 : 0, -y.length];
+    // markası bilinmiyorsa: önce düzgün yazılmış olan ("Toger" > "TOGER"), sonra en çok kullanılan, sonra kısa olan ("Aksa Şarj" > "Aksa Şarj A.Ş.")
+    const puan = (y, c) => [y !== y.toLocaleUpperCase("tr") ? 1 : 0, c, -y.length];
     const iyi = (x, y) => { for (let i = 0; i < 3; i++) if (x[i] !== y[i]) return x[i] > y[i]; return false; };
     let enIyi = "", ep = null;
-    for (const [y, c] of m) { const p = puan(y, c); if (!ep || iyi(p, ep)) { enIyi = y; ep = p; } }
+    for (const [ham, c] of m) {
+      const y = ham.replace(/\s*\((tr|türkiye|turkiye|turkey)\)\s*$/i, "").trim() || ham; // OCM'nin "(TR)" ekini at
+      const p = puan(y, c); if (!ep || iyi(p, ep)) { enIyi = y; ep = p; }
+    }
     hedef.set(k, enIyi);
   }
   let degisen = 0;
