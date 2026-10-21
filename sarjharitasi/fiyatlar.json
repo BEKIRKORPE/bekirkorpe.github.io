@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792577020126,
+ "guncelleme": 1792581894217,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -13,7 +13,11 @@
    ],
    "kaynak": "https://zes.net/tr/fiyatlandirma",
    "kontrol": "2026-10-21",
-   "degisim": "2026-10-21"
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC 10,99₺ / kWh DC-1",
+    "DC-1 DC-2 12,99₺ / kWh - 16, … DC-2 12,99₺ / kWh - 16,"
+   ]
   },
   "Trugo": {
    "ac": [
@@ -26,7 +30,11 @@
    ],
    "kaynak": "https://www.trugo.com.tr/price",
    "kontrol": "2026-10-21",
-   "degisim": "2026-10-21"
+   "degisim": "2026-10-21",
+   "okunan": [
+    "DC cihazlar için 1 kWh ücreti 12,00 TL - 14,98 TL AC cihazlar",
+    "AC cihazlar için 1 kWh ücreti 9,95 TL Muallimköy"
+   ]
   },
   "Wat Mobilite": {
    "ac": [
@@ -39,7 +47,11 @@
    ],
    "kaynak": "https://www.watmobilite.com/cozumler/kamusal-alanlar",
    "kontrol": "2026-10-21",
-   "degisim": "2026-10-21"
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC Tarife AC: 9,99 - 10,99 ₺/kWh WAT Mob … AC: 9,99 - 10,99 ₺/kWh WAT Mob",
+    "DC Tarife DC: 11,99 - 14,49 ₺/kWh ​​​​​ * … DC: 11,99 - 14,49 ₺/kWh ​​​​​ *"
+   ]
   },
   "Beefull": {
    "ac": [
@@ -52,7 +64,11 @@
    ],
    "kaynak": "https://beefull.com/tarifeler/elektrikli-arac-tarifesi/",
    "kontrol": "2026-10-21",
-   "degisim": "2026-10-21"
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC SOKET TARİFESİ Fiyat / Birim 9,90 TL/kWh Soket:",
+    "DC SOKET TARİFESİ Fiyat / Birim 13,99 TL/kWh Soket:"
+   ]
   }
  },
  "okunamayan": {
