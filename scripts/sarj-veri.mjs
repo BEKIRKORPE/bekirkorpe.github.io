@@ -406,10 +406,10 @@ const FIYAT_DOSYA = "sarjharitasi/fiyatlar.json";
 export const FIYAT_KAYNAK = [ // ad: birleştirilmiş şirket adı (sirketleriBirlestir sonrası) · url: sırayla denenir
   { ad: "ZES", url: ["https://zes.net/tr/fiyatlandirma"] },
   { ad: "Trugo", url: ["https://www.trugo.com.tr/price"] },
-  { ad: "Voltrun", url: ["https://www.voltrun.com/tr/tarifeler"] },
+  { ad: "Voltrun", url: ["https://www.voltrun.com/tr/tarifeler", "https://voltrun.com/tr/tarifeler"] },
   { ad: "Wat Mobilite", url: ["https://www.watmobilite.com/cozumler/kamusal-alanlar"] },
   { ad: "Beefull", url: ["https://beefull.com/tarifeler/elektrikli-arac-tarifesi/"] },
-  { ad: "Eşarj", url: ["https://www.esarj.com/fiyatlar", "https://esarj.com/tr/fiyatlar"] } // doğrulanmadı: kayıtta sonucu görünür
+  { ad: "Eşarj", url: ["https://www.esarj.com/fiyatlar", "https://esarj.com/tr/fiyatlar"] } // 21.10.2026: site GitHub'dan gelen isteğe 403 veriyor (engel aşılmaz)
 ];
 const FIYAT_MIN = 3, FIYAT_MAX = 40; // TL/kWh: bunun dışı yanlış okuma sayılır
 
@@ -448,24 +448,48 @@ export function fiyatAyikla(metin) {
   }
   return sonuc;
 }
+// robots.txt kuralı: * herhangi bir dizi, $ satır sonu. En uzun eşleşen kural kazanır; eşitlikte Allow.
+function robotsKurali(desen) {
+  const kacir = desen.replace(/[.+?^{}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*");
+  return new RegExp("^" + (kacir.endsWith("\\$") ? kacir.slice(0, -2) + "$" : kacir.replace(/\$$/, "$")));
+}
+export function robotsDegerlendir(metin, yol, ajan = UA.toLowerCase()) { // ajan: bizim User-Agent (TurkiyeSarjHaritasi-veri/…)
+  const gruplar = []; let g = null, sonAjan = false;
+  for (const satir of s(metin).split(/\r?\n/)) {
+    const temiz = satir.split("#")[0]; const i = temiz.indexOf(":"); if (i < 0) continue;
+    const k = temiz.slice(0, i).trim().toLowerCase(), v = temiz.slice(i + 1).trim();
+    if (k === "user-agent") { if (!sonAjan) { g = { ajan: [], kural: [] }; gruplar.push(g); } g.ajan.push(v.toLowerCase()); sonAjan = true; }
+    else if (g && (k === "allow" || k === "disallow")) { sonAjan = false; if (v) g.kural.push([k === "allow", v]); }
+    else sonAjan = false;
+  }
+  const ozel = gruplar.filter(x => x.ajan.some(a => a !== "*" && ajan.includes(a)));
+  const kurallar = (ozel.length ? ozel : gruplar.filter(x => x.ajan.includes("*"))).flatMap(x => x.kural);
+  let enIyi = null;
+  for (const [izin, desen] of kurallar) {
+    if (!robotsKurali(desen).test(yol)) continue;
+    if (!enIyi || desen.length > enIyi[1].length || (desen.length === enIyi[1].length && izin)) enIyi = [izin, desen];
+  }
+  return !enIyi || enIyi[0];
+}
 async function robotsIzin(url) {
   try {
     const u = new URL(url);
     const r = await fetch(u.origin + "/robots.txt", { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) });
     if (!r.ok) return true; // robots.txt yoksa izin var sayılır
-    let ilgili = false; const yasak = [];
-    for (const satir of (await r.text()).split(/\r?\n/)) {
-      const [k, ...v] = satir.split(":"); const anahtar = s(k).toLowerCase(), deger = s(v.join(":")).split("#")[0].trim();
-      if (anahtar === "user-agent") ilgili = deger === "*" || /turkiyesarj/i.test(deger);
-      else if (ilgili && anahtar === "disallow" && deger) yasak.push(deger);
-    }
-    return !yasak.some(y => u.pathname.startsWith(y.replace(/\*.*$/, "")));
+    return robotsDegerlendir(await r.text(), u.pathname + u.search);
   } catch (e) { return true; }
 }
 async function sayfaGetir(url) {
-  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "text/html", "Accept-Language": "tr" }, signal: AbortSignal.timeout(30000) });
-  if (!r.ok) throw new Error("HTTP " + r.status);
-  return await r.text();
+  // 429 (çok fazla istek) / 503 gelirse sitenin istediği kadar (en çok 60 sn) bekleyip 2 kez daha dener
+  for (let n = 0; ; n++) {
+    const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "text/html", "Accept-Language": "tr" }, signal: AbortSignal.timeout(30000) });
+    if (r.ok) return await r.text();
+    if ((r.status === 429 || r.status === 503) && n < 2) {
+      const bekle = Math.min(60, Math.max(15, parseInt(r.headers.get("retry-after"), 10) || 20 * (n + 1)));
+      await new Promise(z => setTimeout(z, bekle * 1000)); continue;
+    }
+    throw new Error("HTTP " + r.status);
+  }
 }
 // Fiyatları oku; önceki dosyayla birleştir (okunamayan şirketin son doğru fiyatı kalır)
 export async function fiyatlariGuncelle(secenek = {}) {
