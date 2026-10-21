@@ -1,4 +1,4 @@
-// sürüm: 2026-10-21 D (fiyat aralığı + okunan metin)
+// sürüm: 2026-10-21 E (ZES "/ kWh -" aralığı)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
@@ -426,7 +426,7 @@ export function htmlMetin(html) {
 export function fiyatAyikla(metin, kanitIste) {
   const t = s(metin).replace(/\\u20ba/gi, "₺"), sonuc = {}, ilkYer = {}, kanit = {};
   const sayi = x => Math.round(parseFloat(x.replace(",", ".")) * 100) / 100;
-  const FIYAT = /(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?(?:\s*(?:[-–—~]|ile|ila)\s*(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?)?/gi;
+  const FIYAT = /(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?(?:\s*\/\s*kwh)?(?:\s*(?:[-–—~]|ile|ila)\s*(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?)?/gi; // "12,99₺ / kWh - 16,49₺ / kWh" de aralıktır
   const ANAHTAR = /(?:^|[^a-zçğıöşü0-9])(ac|dc)(?=[^a-zçğıöşü]|$)/gi;
   let m;
   while ((m = ANAHTAR.exec(t))) {
