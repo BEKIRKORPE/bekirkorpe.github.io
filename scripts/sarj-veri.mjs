@@ -1,3 +1,4 @@
+// sürüm: 2026-10-21 D (fiyat aralığı + okunan metin)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
@@ -422,14 +423,17 @@ export function htmlMetin(html) {
     .replace(/\s+/g, " ").trim();
 }
 // "AC 9.90TL / kWh", "1 kWh ücreti 12,00 TL - 14,98 TL", "10,99₺", "9,99 - 10,99 ₺/kWh" biçimlerinin hepsini okur
-export function fiyatAyikla(metin) {
-  const t = s(metin).replace(/\\u20ba/gi, "₺"), sonuc = {};
+export function fiyatAyikla(metin, kanitIste) {
+  const t = s(metin).replace(/\\u20ba/gi, "₺"), sonuc = {}, ilkYer = {}, kanit = {};
   const sayi = x => Math.round(parseFloat(x.replace(",", ".")) * 100) / 100;
-  const FIYAT = /(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?(?:\s*[-–]\s*(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?)?/gi;
+  const FIYAT = /(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?(?:\s*(?:[-–—~]|ile|ila)\s*(\d{1,2}[.,]\d{1,2})\s*(tl|₺|try)?)?/gi;
   const ANAHTAR = /(?:^|[^a-zçğıöşü0-9])(ac|dc)(?=[^a-zçğıöşü]|$)/gi;
   let m;
   while ((m = ANAHTAR.exec(t))) {
-    const tur = m[1].toLowerCase(); if (sonuc[tur]) continue;
+    const tur = m[1].toLowerCase();
+    // aynı türün sonraki geçişleri (ör. "DC-1 … DC-2 …") sadece ilk fiyata yakınsa (600 karakter) aralığa eklenir;
+    // sayfanın çok aşağısındaki kampanya metinleri fiyatı bozmasın
+    if (sonuc[tur] && m.index - ilkYer[tur] > 600) continue;
     const bas = m.index + m[0].length, pencere = t.slice(bas, bas + 160);
     // pencerede öbür tür geçiyorsa onun öncesine kadar bak (AC'nin fiyatı DC'ninkiyle karışmasın)
     const ote = pencere.search(new RegExp("(^|[^a-zçğıöşü0-9])" + (tur === "ac" ? "dc" : "ac") + "([^a-zçğıöşü]|$)", "i"));
@@ -443,9 +447,12 @@ export function fiyatAyikla(metin) {
       if (!paraVar) continue;
       const a = sayi(f[1]), b = f[3] ? sayi(f[3]) : a;
       if (!(a >= FIYAT_MIN && b <= FIYAT_MAX && b >= a)) continue;
-      sonuc[tur] = [a, b]; break;
+      if (!sonuc[tur]) { sonuc[tur] = [a, b]; ilkYer[tur] = m.index; kanit[tur] = t.slice(m.index, bas + f.index + f[0].length + 12).trim(); }
+      else { sonuc[tur] = [Math.min(sonuc[tur][0], a), Math.max(sonuc[tur][1], b)]; kanit[tur] += " … " + t.slice(m.index, bas + f.index + f[0].length + 12).trim(); }
+      break;
     }
   }
+  if (kanitIste) sonuc.kanit = kanit;
   return sonuc;
 }
 // robots.txt kuralı: * herhangi bir dizi, $ satır sonu. En uzun eşleşen kural kazanır; eşitlikte Allow.
@@ -504,8 +511,8 @@ export async function fiyatlariGuncelle(secenek = {}) {
         if (!(await izin(url))) { hata = "robots.txt izin vermiyor"; iz.push(url + ": robots"); continue; }
         const html = await getir(url);
         const metin = htmlMetin(html);
-        let f = fiyatAyikla(metin);
-        if (!f.ac && !f.dc) f = fiyatAyikla(s(html).replace(/<[^>]+>/g, " ")); // fiyat sayfa içi veride olabilir
+        let f = fiyatAyikla(metin, true);
+        if (!f.ac && !f.dc) f = fiyatAyikla(s(html).replace(/<[^>]+>/g, " "), true); // fiyat sayfa içi veride olabilir
         if (f.ac || f.dc) { bulundu = { ...f, kaynak: url }; break; }
         hata = "sayfada fiyat bulunamadı";
         // teşhis: sayfa ne kadar büyük, metinde kWh / TL geçiyor mu, kWh'in çevresi ne
@@ -515,7 +522,8 @@ export async function fiyatlariGuncelle(secenek = {}) {
     }
     if (bulundu) {
       const ayni = onceki && JSON.stringify([onceki.ac, onceki.dc]) === JSON.stringify([bulundu.ac, bulundu.dc]);
-      sirketler[k.ad] = { ac: bulundu.ac || null, dc: bulundu.dc || null, kaynak: bulundu.kaynak, kontrol: bugun, degisim: ayni ? (onceki.degisim || bugun) : bugun };
+      sirketler[k.ad] = { ac: bulundu.ac || null, dc: bulundu.dc || null, kaynak: bulundu.kaynak, kontrol: bugun, degisim: ayni ? (onceki.degisim || bugun) : bugun,
+        okunan: Object.values(bulundu.kanit || {}).map(x => x.slice(0, 200)) }; // sayfada fiyatın göründüğü metin (kontrol için)
       kayit.push(k.ad + " ✓ AC " + (bulundu.ac ? bulundu.ac.join("-") : "—") + " / DC " + (bulundu.dc ? bulundu.dc.join("-") : "—") + (ayni ? "" : onceki ? " (DEĞİŞTİ)" : " (ilk kayıt)"));
     } else if (onceki) { sirketler[k.ad] = { ...onceki, hata }; kayit.push(k.ad + " ✗ " + hata + " → son fiyat korunuyor (" + onceki.kontrol + ")"); }
     else kayit.push(k.ad + " ✗ " + hata);
