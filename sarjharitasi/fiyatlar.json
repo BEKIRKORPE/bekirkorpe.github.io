@@ -1,0 +1,45 @@
+{
+ "guncelleme": 1792576027354,
+ "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
+ "sirketler": {
+  "Trugo": {
+   "ac": [
+    9.95,
+    9.95
+   ],
+   "dc": [
+    12,
+    14.98
+   ],
+   "kaynak": "https://www.trugo.com.tr/price",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21"
+  },
+  "Wat Mobilite": {
+   "ac": [
+    9.99,
+    10.99
+   ],
+   "dc": [
+    11.99,
+    14.49
+   ],
+   "kaynak": "https://www.watmobilite.com/cozumler/kamusal-alanlar",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21"
+  },
+  "Beefull": {
+   "ac": [
+    9.9,
+    9.9
+   ],
+   "dc": [
+    13.99,
+    13.99
+   ],
+   "kaynak": "https://beefull.com/tarifeler/elektrikli-arac-tarifesi/",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21"
+  }
+ }
+}
