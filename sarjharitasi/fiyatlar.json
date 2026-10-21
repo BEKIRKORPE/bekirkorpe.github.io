@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792582265500,
+ "guncelleme": 1792587622869,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -68,6 +68,121 @@
    "okunan": [
     "AC SOKET TARİFESİ Fiyat / Birim 9,90 TL/kWh Soket: Tip-",
     "DC SOKET TARİFESİ Fiyat / Birim 13,99 TL/kWh Soket: DC-H"
+   ]
+  },
+  "ASTOR": {
+   "ac": [
+    9.89,
+    9.89
+   ],
+   "dc": [
+    13.99,
+    13.99
+   ],
+   "kaynak": "https://www.astorsarj.com.tr/",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC FİYATLANDIRMA ₺ 9,89 / kWh Daha Fazlas",
+    "DC FİYATLANDIRMA ₺ 13,99 / kWh Daha Fazlas"
+   ]
+  },
+  "En Yakıt": {
+   "ac": null,
+   "dc": [
+    14.9,
+    14.9
+   ],
+   "kaynak": "https://www.enyakit.com.tr/ucretlendirme",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "DC hızlı şarj cihazlarından oluşan ağımızda, 14,90 TL/kWh fiyatla hız"
+   ]
+  },
+  "Oncharge": {
+   "ac": [
+    9.99,
+    9.99
+   ],
+   "dc": [
+    13.5,
+    13.5
+   ],
+   "kaynak": "https://www.oncharge.com.tr/fiyatlar",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC Soket Tarifesi 9.99 TL /kWh AC Cihazlar",
+    "DC Soket Tarifesi 13.50 TL /kWh DC Cihazlar"
+   ]
+  },
+  "AKSA ŞARJ": {
+   "ac": [
+    9.9,
+    10.9
+   ],
+   "dc": [
+    11.99,
+    13.99
+   ],
+   "kaynak": "https://www.aksasarj.com.tr/tr/ucretler",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC 9,90 - 10,90 TL / kWh DC 11",
+    "DC 11,99 - 13,99 TL / kWh Aksa"
+   ]
+  },
+  "Toger": {
+   "ac": [
+    9.9,
+    9.9
+   ],
+   "dc": [
+    9.9,
+    13.39
+   ],
+   "kaynak": "https://www.toger.co/pricing",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "DC/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … DC Sarj DC şarj ile aracınıza hızlı enerji takviyesi",
+    "/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir "
+   ]
+  },
+  "otoWATT": {
+   "ac": [
+    9.49,
+    10.99
+   ],
+   "dc": [
+    11.99,
+    13.99
+   ],
+   "kaynak": "https://www.otowatt.com.tr/tarifelerimiz",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC Şarj Tarifesi Fiyat/Birim 10,99 ₺/kWh DC Şarj Tar … AC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 9,49 ₺/kWh DC Şarj Tar",
+    "DC Şarj Tarifesi Fiyat/Birim 13,99 ₺/kWh AC Şarj Tar … DC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 11,99 ₺/kWh Otowatt tar"
+   ]
+  },
+  "Efish": {
+   "ac": [
+    10.99,
+    10.99
+   ],
+   "dc": [
+    15.99,
+    15.99
+   ],
+   "kaynak": "https://www.efish.com.tr/tr/fiyatlandirma/",
+   "kontrol": "2026-10-21",
+   "degisim": "2026-10-21",
+   "okunan": [
+    "AC 10,99 TL/kWh DC 15,99 TL",
+    "DC 15,99 TL/kWh İşgaliye Üc"
    ]
   }
  },
