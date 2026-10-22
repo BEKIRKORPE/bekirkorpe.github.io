@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792588102707,
+ "guncelleme": 1792657833756,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -12,7 +12,7 @@
     16.49
    ],
    "kaynak": "https://zes.net/tr/fiyatlandirma",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC 10,99₺ / kWh DC-1 DC-2 1",
@@ -29,7 +29,7 @@
     14.98
    ],
    "kaynak": "https://www.trugo.com.tr/price",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "DC cihazlar için 1 kWh ücreti 12,00 TL - 14,98 TL AC cihazlar",
@@ -46,7 +46,7 @@
     14.49
    ],
    "kaynak": "https://www.watmobilite.com/cozumler/kamusal-alanlar",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC Tarife AC: 9,99 - 10,99 ₺/kWh WAT Mob … AC: 9,99 - 10,99 ₺/kWh WAT Mob",
@@ -63,7 +63,7 @@
     13.99
    ],
    "kaynak": "https://beefull.com/tarifeler/elektrikli-arac-tarifesi/",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC SOKET TARİFESİ Fiyat / Birim 9,90 TL/kWh Soket: Tip-",
@@ -80,7 +80,7 @@
     13.99
    ],
    "kaynak": "https://www.astorsarj.com.tr/",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC FİYATLANDIRMA ₺ 9,89 / kWh Daha Fazlas",
@@ -94,7 +94,7 @@
     14.9
    ],
    "kaynak": "https://www.enyakit.com.tr/ucretlendirme",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "DC hızlı şarj cihazlarından oluşan ağımızda, 14,90 TL/kWh fiyatla hız"
@@ -110,7 +110,7 @@
     13.5
    ],
    "kaynak": "https://www.oncharge.com.tr/fiyatlar",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC Soket Tarifesi 9.99 TL /kWh AC Cihazlar",
@@ -127,7 +127,7 @@
     13.99
    ],
    "kaynak": "https://www.aksasarj.com.tr/tr/ucretler",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC 9,90 - 10,90 TL / kWh DC 11",
@@ -144,7 +144,7 @@
     13.39
    ],
    "kaynak": "https://www.toger.co/pricing",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "/AC Hızlı ve Güvenilir Araç Şarjının Adresi Toger. AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir şekilde şarj edin. ₺ 9.90 kWh KDV Dahi … AC Sarj AC şarj ile aracınızı ekonomik ve verimli bir ",
@@ -166,7 +166,8 @@
    "okunan": [
     "AC Şarj Tarifesi Fiyat/Birim 10,99 ₺/kWh DC Şarj Tar … AC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 9,49 ₺/kWh DC Şarj Tar",
     "DC Şarj Tarifesi Fiyat/Birim 13,99 ₺/kWh AC Şarj Tar … DC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 11,99 ₺/kWh Otowatt tar"
-   ]
+   ],
+   "hata": "fetch failed (UND_ERR_CONNECT_TIMEOUT)"
   },
   "Efish": {
    "ac": [
@@ -178,7 +179,7 @@
     15.99
    ],
    "kaynak": "https://www.efish.com.tr/tr/fiyatlandirma/",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC 10,99 TL/kWh DC 15,99 TL",
@@ -190,6 +191,9 @@
   "Voltrun": [
    "https://www.voltrun.com/tr/tarifeler: HTTP 429",
    "https://voltrun.com/tr/tarifeler: HTTP 429"
+  ],
+  "otoWATT": [
+   "https://www.otowatt.com.tr/tarifelerimiz: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
   ],
   "Eşarj": [
    "https://www.esarj.com/fiyatlar: HTTP 403",
