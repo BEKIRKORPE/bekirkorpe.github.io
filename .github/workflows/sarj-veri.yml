@@ -27,4 +27,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add sarjharitasi/stations.json
           for f in sarjharitasi/konum-onbellek.json sarjharitasi/konum-kalite-onbellek.json sarjharitasi/fiyatlar.json; do [ -f "$f" ] && git add "$f"; done; true
+          [ -d sarjharitasi/logolar ] && git add -A sarjharitasi/logolar; true
           if git diff --cached --quiet; then echo "Degisiklik yok"; else git commit -m "Sarj verisi guncellendi" && git push; fi
