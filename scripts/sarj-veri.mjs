@@ -1,7 +1,7 @@
-// sürüm: 2026-10-21 G (Toger "DC/AC" başlığı düzeltmesi)
+// sürüm: 2026-10-22 H (şirket logoları: sarjharitasi/logolar/)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, unlinkSync } from "node:fs";
 import https from "node:https";
 import http from "node:http";
 
@@ -506,6 +506,89 @@ async function sayfaGetir(url) {
     throw new Error("HTTP " + r.status);
   }
 }
+// ---------- Şirket logoları ----------
+// Şirketin kendi sitesinden kare uygulama simgesi (apple-touch-icon / manifest simgesi) ya da sitedeki logo dosyası indirilir,
+// sarjharitasi/logolar/<kod>.<uzantı> olarak saklanır. robots.txt'ye uyulur; haftada bir yenilenir.
+export const LOGO_KAYNAK = [
+  { kod: "zes", site: "https://zes.net" }, { kod: "trugo", site: "https://www.trugo.com.tr" }, { kod: "voltrun", site: "https://www.voltrun.com" },
+  { kod: "watmobilite", site: "https://www.watmobilite.com" }, { kod: "beefull", site: "https://beefull.com" }, { kod: "astor", site: "https://www.astorsarj.com.tr" },
+  { kod: "enyakit", site: "https://www.enyakit.com.tr" }, { kod: "oncharge", site: "https://www.oncharge.com.tr" }, { kod: "aksasarj", site: "https://www.aksasarj.com.tr" },
+  { kod: "toger", site: "https://www.toger.co" }, { kod: "otowatt", site: "https://www.otowatt.com.tr" }, { kod: "efish", site: "https://www.efish.com.tr" },
+  { kod: "esarj", site: "https://www.esarj.com" }, { kod: "otopriz", site: "https://otopriz.com.tr" }, { kod: "solinved", site: "https://www.solinved.com" }
+];
+const LOGO_DIZIN = "sarjharitasi/logolar";
+function nitelik(etiket, ad) { const m = new RegExp("\\b" + ad + "\\s*=\\s*(\"([^\"]*)\"|'([^']*)'|([^\\s>]+))", "i").exec(etiket); return m ? (m[2] ?? m[3] ?? m[4] ?? "") : ""; }
+// HTML'den logo adayları, iyiden kötüye: kare uygulama simgesi > büyük site simgesi > manifest > sitedeki "logo" resmi > favicon
+export function logoAdaylari(html, taban) {
+  const ad = [], ekle = (u, puan, tur) => { if (!u || /^data:/i.test(u)) return; try { ad.push({ url: new URL(u, taban).href, puan, tur }); } catch (e) { } };
+  for (const m of html.matchAll(/<link\b[^>]*>/gi)) {
+    const t = m[0], rel = nitelik(t, "rel").toLowerCase(), href = nitelik(t, "href"), boy = parseInt((nitelik(t, "sizes").match(/\d+/) || [0])[0], 10);
+    if (/apple-touch-icon/.test(rel)) ekle(href, 100 + Math.min(boy, 512) / 10, "ikon");
+    else if (/\bicon\b/.test(rel) && (boy >= 96 || /\.svg(\?|$)/i.test(href))) ekle(href, 80 + Math.min(boy, 512) / 10, "ikon");
+    else if (rel === "manifest") ekle(href, 0, "manifest");
+    else if (/\bicon\b/.test(rel)) ekle(href, 10 + boy / 10, "ikon");
+  }
+  const bas = Math.max(4000, Math.floor(html.length * 0.35));
+  for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
+    const t = m[0], src = nitelik(t, "src") || nitelik(t, "data-src"), iz = (src + " " + nitelik(t, "alt") + " " + nitelik(t, "class") + " " + nitelik(t, "id")).toLowerCase();
+    if (!/logo/.test(iz) || /footer|partner|sponsor|payment|odeme|app-?store|google-?play|banka/.test(iz)) continue;
+    ekle(src, 50 + (m.index < bas ? 10 : 0) + (/\.svg(\?|$)/i.test(src) ? 5 : 0), "logo");
+  }
+  ekle("/apple-touch-icon.png", 60, "ikon"); ekle("/favicon.ico", 5, "ikon");
+  const gor = new Set();
+  return ad.filter(x => !gor.has(x.url) && gor.add(x.url)).sort((a, b) => b.puan - a.puan);
+}
+function pngBoyu(b) { return b.length > 24 && b[0] === 0x89 && b[1] === 0x50 ? b.readUInt32BE(16) : null; }
+function svgAcikMi(metin) { // beyaz/açık renkli logo (koyu başlık için çizilmiş): uygulamada koyu zeminde gösterilir
+  const r = [...metin.matchAll(/(?:fill|stop-color|color)\s*[:=]\s*["']?\s*(#[0-9a-f]{3,6}|white|rgb\([^)]*\))/gi)].map(m => m[1].toLowerCase());
+  if (!r.length) return false;
+  const acik = r.filter(c => c === "white" || c === "#fff" || c === "#ffffff" || /^#f[0-9a-f]f[0-9a-f]f/.test(c) || /rgb\(\s*2[4-5]\d\s*,\s*2[4-5]\d\s*,\s*2[4-5]\d/.test(c)).length;
+  return acik / r.length >= 0.6;
+}
+async function resimGetir(url) {
+  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "image/*" }, signal: AbortSignal.timeout(20000) });
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const tip = (r.headers.get("content-type") || "").toLowerCase(), b = Buffer.from(await r.arrayBuffer());
+  const uz = /svg/.test(tip) || /^\s*(<\?xml|<svg)/.test(b.slice(0, 200).toString()) ? "svg" : /png/.test(tip) || pngBoyu(b) ? "png" : /jpe?g/.test(tip) ? "jpg" : /webp/.test(tip) ? "webp" : /icon|ico/.test(tip) ? "ico" : null;
+  if (!uz) throw new Error("resim değil (" + tip + ")");
+  if (b.length < 200 || b.length > 400000) throw new Error("boyut uygun değil (" + b.length + " bayt)");
+  if (uz === "png" && pngBoyu(b) < 64) throw new Error("çok küçük (" + pngBoyu(b) + " px)");
+  if (uz === "ico" && b.length < 4000) throw new Error("çok küçük simge (ico)");
+  if (uz === "svg" && /<script|on\w+\s*=/i.test(b.toString())) throw new Error("svg içinde betik");
+  return { b, uz };
+}
+export async function logolariGuncelle(secenek = {}) {
+  const dizin = secenek.dizin || LOGO_DIZIN, getir = secenek.getir || sayfaGetir, resim = secenek.resim || resimGetir, izin = secenek.robots || robotsIzin;
+  const bugun = secenek.bugun || new Date().toISOString().slice(0, 10), kayit = [];
+  let onceki = { logolar: {} };
+  try { onceki = JSON.parse(readFileSync(dizin + "/logolar.json", "utf8")); } catch (e) { }
+  const logolar = Object.assign({}, onceki.logolar || {});
+  mkdirSync(dizin, { recursive: true });
+  for (const k of (secenek.kaynak || LOGO_KAYNAK)) {
+    const eski = logolar[k.kod];
+    if (eski && existsSync(dizin + "/" + eski.dosya) && (Date.parse(bugun) - Date.parse(eski.tarih)) / 864e5 < 7 && !secenek.zorla) { kayit.push(k.kod + ": güncel (" + eski.tarih + ")"); continue; }
+    try {
+      if (!(await izin(k.site + "/"))) { kayit.push(k.kod + ": robots.txt izin vermiyor, atlandı"); continue; }
+      let adaylar = [];
+      try { adaylar = logoAdaylari(await getir(k.site + "/"), k.site + "/"); } catch (e) { adaylar = logoAdaylari("", k.site + "/"); }
+      const man = adaylar.find(a => a.tur === "manifest");
+      if (man) { try { const j = JSON.parse(await getir(man.url)); for (const i of j.icons || []) { const boy = parseInt(String(i.sizes || "").match(/\d+/) || 0, 10); adaylar.push({ url: new URL(i.src, man.url).href, puan: 90 + Math.min(boy, 512) / 10, tur: "ikon" }); } } catch (e) { } }
+      adaylar = adaylar.filter(a => a.tur !== "manifest").sort((a, b) => b.puan - a.puan);
+      let bulundu = null, son = "aday yok";
+      for (const a of adaylar.slice(0, 8)) {
+        try { if (!(await izin(a.url))) { son = "robots"; continue; } const r = await resim(a.url); bulundu = Object.assign(r, { url: a.url, tur: a.tur }); break; } catch (e) { son = e.message; }
+      }
+      if (!bulundu) { kayit.push(k.kod + ": bulunamadı (" + son + ")" + (eski ? ", eskisi korunuyor" : "")); continue; }
+      const dosya = k.kod + "." + bulundu.uz;
+      for (const f of readdirSync(dizin)) if (f.startsWith(k.kod + ".") && f !== dosya) try { unlinkSync(dizin + "/" + f); } catch (e) { }
+      writeFileSync(dizin + "/" + dosya, bulundu.b);
+      logolar[k.kod] = { dosya, kaynak: bulundu.url, tur: bulundu.tur, acik: bulundu.uz === "svg" ? svgAcikMi(bulundu.b.toString()) : false, tarih: bugun };
+      kayit.push(k.kod + ": " + dosya + " ← " + bulundu.url);
+    } catch (e) { kayit.push(k.kod + ": hata " + e.message); }
+  }
+  writeFileSync(dizin + "/logolar.json", JSON.stringify({ guncelleme: bugun, logolar }, null, 1));
+  return { logolar, kayit };
+}
 // Fiyatları oku; önceki dosyayla birleştir (okunamayan şirketin son doğru fiyatı kalır)
 export async function fiyatlariGuncelle(secenek = {}) {
   const yol = secenek.dosya || FIYAT_DOSYA, getir = secenek.getir || sayfaGetir, izin = secenek.robots || robotsIzin;
@@ -658,6 +741,8 @@ export async function calistir(cikti = "sarjharitasi/stations.json", secenek = {
     console.log("Fiyatlar:\n  " + fy.kayit.join("\n  ") + "\n  → " + n + " istasyona tarife yazıldı");
     fiyatOzet = { sirket: Object.keys(fy.veri.sirketler).length, istasyon: n };
   } catch (e) { console.log("Fiyat adımı atlandı: " + e.message); }
+  try { const lg = await logolariGuncelle(secenek.logo || {}); console.log("Logolar:\n  " + lg.kayit.join("\n  ")); }
+  catch (e) { console.log("Logo adımı atlandı: " + e.message); }
   const veri = {
     ts: Date.now(), count: b.list.length, sources: { epdk: epdk.length, epdkKisitli: epdk.filter(x => x.k).length, epdkDurum,
       kalite: kaliteSonuc,
