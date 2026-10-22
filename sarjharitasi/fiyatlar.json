@@ -1,5 +1,5 @@
 {
- "guncelleme": 1792657833756,
+ "guncelleme": 1792694590610,
  "not": "Şirketlerin resmi sitelerinden otomatik okunur; KDV dahil liste fiyatı, kampanyalar hariç.",
  "sirketler": {
   "ZES": {
@@ -161,13 +161,12 @@
     13.99
    ],
    "kaynak": "https://www.otowatt.com.tr/tarifelerimiz",
-   "kontrol": "2026-10-21",
+   "kontrol": "2026-10-22",
    "degisim": "2026-10-21",
    "okunan": [
     "AC Şarj Tarifesi Fiyat/Birim 10,99 ₺/kWh DC Şarj Tar … AC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 9,49 ₺/kWh DC Şarj Tar",
     "DC Şarj Tarifesi Fiyat/Birim 13,99 ₺/kWh AC Şarj Tar … DC Şarj Tarifesi - Site Lokasyonları Fiyat/Birim Lokasyon bazlı indirimli fiyat 11,99 ₺/kWh Otowatt tar"
-   ],
-   "hata": "fetch failed (UND_ERR_CONNECT_TIMEOUT)"
+   ]
   },
   "Efish": {
    "ac": [
@@ -191,9 +190,6 @@
   "Voltrun": [
    "https://www.voltrun.com/tr/tarifeler: HTTP 429",
    "https://voltrun.com/tr/tarifeler: HTTP 429"
-  ],
-  "otoWATT": [
-   "https://www.otowatt.com.tr/tarifelerimiz: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
   ],
   "Eşarj": [
    "https://www.esarj.com/fiyatlar: HTTP 403",

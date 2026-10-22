@@ -1,0 +1,96 @@
+{
+ "guncelleme": "2026-10-22",
+ "logolar": {
+  "zes": {
+   "dosya": "zes.png",
+   "kaynak": "https://zes.net/assets/img/favicon/apple-touch-icon.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "trugo": {
+   "dosya": "trugo.png",
+   "kaynak": "https://www.trugo.com.tr/android-chrome-512x512.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "watmobilite": {
+   "dosya": "watmobilite.svg",
+   "kaynak": "https://www.watmobilite.com/images/logo-wmy.svg",
+   "tur": "logo",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "beefull": {
+   "dosya": "beefull.png",
+   "kaynak": "https://beefull.com/wp-content/uploads/2024/07/cropped-bee-180x180.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "astor": {
+   "dosya": "astor.png",
+   "kaynak": "https://www.astorsarj.com.tr/images/favicon/apple-icon-180x180.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "enyakit": {
+   "dosya": "enyakit.png",
+   "kaynak": "https://www.enyakit.com.tr/apple-icon-180x180.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "oncharge": {
+   "dosya": "oncharge.png",
+   "kaynak": "https://www.oncharge.com.tr/images/webclip.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "aksasarj": {
+   "dosya": "aksasarj.png",
+   "kaynak": "https://www.aksasarj.com.tr/images/fav/apple-icon-180x180.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "toger": {
+   "dosya": "toger.svg",
+   "kaynak": "https://www.toger.co/tr/icon.svg?d9ce7ea22f3e1921",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "otowatt": {
+   "dosya": "otowatt.svg",
+   "kaynak": "https://www.otowatt.com.tr/images/svgw.svg",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "efish": {
+   "dosya": "efish.png",
+   "kaynak": "https://www.efish.com.tr/Images/logo.png?v=oJoZBO7OrSgITQySrFu8L0z08b3LGrCZ7QzXmD23FXc",
+   "tur": "logo",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "otopriz": {
+   "dosya": "otopriz.png",
+   "kaynak": "https://otopriz.com.tr/site/images/otopriz-fav.png",
+   "tur": "ikon",
+   "acik": false,
+   "tarih": "2026-10-22"
+  },
+  "solinved": {
+   "dosya": "solinved.svg",
+   "kaynak": "https://www.solinved.com/img/logo.svg",
+   "tur": "logo",
+   "acik": false,
+   "tarih": "2026-10-22"
+  }
+ }
+}
