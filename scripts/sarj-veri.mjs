@@ -1,4 +1,4 @@
-// sürüm: 2026-10-22 H (şirket logoları: sarjharitasi/logolar/)
+// sürüm: 2026-10-22 I (11 şirketin daha logosu)
 // Türkiye Şarj Haritası — günlük veri birleştirme (GitHub Actions'ta çalışır)
 // Open Charge Map + OpenStreetMap -> sarjharitasi/stations.json
 import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, unlinkSync } from "node:fs";
@@ -514,7 +514,11 @@ export const LOGO_KAYNAK = [
   { kod: "watmobilite", site: "https://www.watmobilite.com" }, { kod: "beefull", site: "https://beefull.com" }, { kod: "astor", site: "https://www.astorsarj.com.tr" },
   { kod: "enyakit", site: "https://www.enyakit.com.tr" }, { kod: "oncharge", site: "https://www.oncharge.com.tr" }, { kod: "aksasarj", site: "https://www.aksasarj.com.tr" },
   { kod: "toger", site: "https://www.toger.co" }, { kod: "otowatt", site: "https://www.otowatt.com.tr" }, { kod: "efish", site: "https://www.efish.com.tr" },
-  { kod: "esarj", site: "https://www.esarj.com" }, { kod: "otopriz", site: "https://otopriz.com.tr" }, { kod: "solinved", site: "https://www.solinved.com" }
+  { kod: "esarj", site: "https://www.esarj.com" }, { kod: "otopriz", site: "https://otopriz.com.tr" }, { kod: "solinved", site: "https://www.solinved.com" },
+  { kod: "5sarj", site: "https://5sarj.com" }, { kod: "otojet", site: "https://www.oto-jet.com.tr" }, { kod: "sharz", site: "https://www.sharz.net" },
+  { kod: "tuncmatik", site: "https://tuncmatikcharge.com" }, { kod: "powersarj", site: "https://powersarj.com" }, { kod: "sarjon", site: "https://sarjon.com.tr" },
+  { kod: "tora", site: "https://torasarj.com" }, { kod: "rst", site: "https://rstchargepoint.com" }, { kod: "elaris", site: "https://elaris.com.tr" },
+  { kod: "lumicle", site: "https://lumicle.com.tr" }, { kod: "cvcharging", site: "https://cv-charging.com" }
 ];
 const LOGO_DIZIN = "sarjharitasi/logolar";
 function nitelik(etiket, ad) { const m = new RegExp("\\b" + ad + "\\s*=\\s*(\"([^\"]*)\"|'([^']*)'|([^\\s>]+))", "i").exec(etiket); return m ? (m[2] ?? m[3] ?? m[4] ?? "") : ""; }
