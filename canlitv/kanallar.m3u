@@ -1,1 +1,75 @@
+#EXTM3U
+# =====================================================================
+# KorpeSoft Canlı TV — EK KANAL LİSTESİ
+# Yer: github.com/bekirkorpe/bekirkorpe.github.io deposunda  canlitv/kanallar.m3u
+# Adres: https://bekirkorpe.github.io/canlitv/kanallar.m3u
+#
+# Uygulama bu listeyi her gün (ve listeye dokununca) diğer listelerden ÖNCE okur.
+# Buraya eklenen kanal, uygulamaya güncelleme yapmadan herkeste görünür.
+# Aynı tvg-id başka listede de varsa ikisi birleşir; bu listedeki adres önce denenir.
+#
+# KURALLAR
+# - Sadece kanalın KENDİ sitesinde / resmî uygulamasında herkese açık yayınlanan adresleri ekle.
+# - Ücretli (şifreli) kanalları ekleme; uygulama zaten listeden çıkarır.
+# - tvg-id Türkiye kanallarında ".tr" ile bitsin (örn. TV85.tr) — yoksa Türkiye listesinde görünmez.
+# - group-title kategoriyi belirler: Ulusal, Haber, Spor, Belgesel, Çocuk, Film, Müzik, Dini, Yaşam
+#   (boş bırakırsan uygulama adına göre kendisi seçer).
+# - Adres sonunda .m3u8 olan canlı yayın adresi olmalı. Önce VLC'de açılıyor mu dene.
+#
+# ÖRNEK (başındaki "# " işaretlerini sil, adresi gerçek yayın adresiyle değiştir):
+# #EXTINF:-1 tvg-id="TV85.tr" tvg-logo="https://.../tv85.png" group-title="Ulusal",TV8,5
+# https://ORNEK-ADRES/tv85/playlist.m3u8
+#
+# Yayın özel başlık istiyorsa adresin üstüne şu satırlar eklenebilir:
+# #EXTVLCOPT:http-referrer=https://www.kanalinsitesi.com/
+# #EXTVLCOPT:http-user-agent=Mozilla/5.0
+# =====================================================================
 
+# ===================== EKLENEN KANALLAR (30 Ekim 2026) =====================
+# Sadece kanalların kendi resmî yayın sunucuları (daioncdn / ercdn / mncdn / duhnet / ibb.gov.tr).
+# Çalışmayan adres uygulamada kendiliğinden gizlenir; aynı tvg-id varsa mevcut kanala yedek adres olur.
+#EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+#EXTINF:-1 tvg-id="Teve2.tr" group-title="Ulusal",Teve2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://demiroren-live.daioncdn.net/teve2/teve2.m3u8
+#EXTINF:-1 tvg-id="TV100.tr" group-title="Haber",TV100
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://tv100-live.daioncdn.net/tv100/tv100.m3u8
+#EXTINF:-1 tvg-id="TV100.tr" group-title="Haber",TV100
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
+#EXTINF:-1 tvg-id="24TV.tr" group-title="Haber",24 TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 tvg-id="24TV.tr" group-title="Haber",24 TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AkitTV.tr" group-title="Haber",Akit TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://akittv-live.ercdn.net/akittv/akittv.m3u8
+#EXTINF:-1 tvg-id="HaberturkTV.tr" group-title="Haber",Habertürk TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8
+#EXTINF:-1 tvg-id="HalkTV.tr" group-title="Haber",Halk TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+#EXTINF:-1 tvg-id="EuroD.tr" group-title="Ulusal",Euro D
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+#EXTINF:-1 tvg-id="IBBTV.tr" group-title="Yaşam",İBB TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
+#EXTINF:-1 tvg-id="TV85.tr" group-title="Ulusal",TV8,5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://tv8-live.daioncdn.net/tv8bucuk/tv8bucuk.m3u8
+#EXTINF:-1 tvg-id="TV85.tr" group-title="Ulusal",TV8,5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web
+#EXTINF:-1 tvg-id="EkolTV.tr" group-title="Haber",Ekol TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
+#EXTINF:-1 tvg-id="APara.tr" group-title="Haber",A Para
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8
