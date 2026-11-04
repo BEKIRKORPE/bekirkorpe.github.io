@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aila – Gizlilik Politikası</title>
+<style>
+:root{--bg:#ffffff;--fg:#1f2937;--muted:#6b7280;--card:#f3f4f6}
+@media (prefers-color-scheme: dark){:root{--bg:#0f172a;--fg:#e5e7eb;--muted:#9ca3af;--card:#1e293b}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 18px 48px}
+h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.15rem;margin:28px 0 8px}
+.muted{color:var(--muted);font-size:.9rem}.box{background:var(--card);border-radius:12px;padding:14px 16px}
+ul{padding-left:20px}
+</style>
+</head>
+<body><main>
+<h1>Aila – Gizlilik Politikası</h1>
+<p class="muted">Uygulama: Aila (com.korpesoft.aila) · Geliştirici: Bekir Körpe (KorpeSoft, bireysel geliştirici) · Son güncelleme: 4 Kasım 2026</p>
+
+<div class="box"><b>Kısaca:</b> Aila, ebeveynlerin çocuklarının telefonundaki uygulama kullanımını görmesini ve sınırlamasını sağlayan bir ebeveyn denetimi uygulamasıdır. Çalışabilmek için ebeveyn hesabı bilgilerini ve çocuk cihazındaki uygulama kullanım sürelerini kendi sunucumuzda saklar. Konum, rehber, mesaj, fotoğraf, mikrofon veya kamera verisi toplamaz. Ekrandaki içerikleri okumaz. Reklam göstermez, verileri satmaz ve reklam amaçlı paylaşmaz.</div>
+
+<h2>1. Uygulama nasıl çalışır?</h2>
+<p>Aila tek bir uygulamadır ve iki modda kullanılır:</p>
+<ul>
+<li><b>Ebeveyn modu:</b> Ebeveyn hesap açar, çocuk cihazını eşleştirir, kullanım raporlarını görür ve kurallar (süre sınırı, uygulama engelleme, saat aralığı) belirler.</li>
+<li><b>Çocuk modu:</b> Çocuğun telefonuna kurulur. Ebeveynin verdiği eşleştirme koduyla bağlanır, kullanım sürelerini ebeveyne iletir ve ebeveynin kurallarını uygular.</li>
+</ul>
+<p>Çocuk modu yalnızca ebeveynin bilgisi ve kurulumuyla, cihazda açıkça görünür şekilde çalışır. Gizli izleme amacıyla kullanılamaz.</p>
+
+<h2>2. Topladığımız veriler</h2>
+<p><b>Ebeveyn hesabı</b></p>
+<ul>
+<li>E-posta adresi ve şifre (giriş için). Şifre sunucuda açık metin olarak tutulmaz.</li>
+<li>Ebeveynin eklediği çocuk için verdiği ad veya takma ad.</li>
+</ul>
+<p><b>Çocuk cihazından (yalnızca eşleştirildikten sonra)</b></p>
+<ul>
+<li>Cihazda yüklü uygulamaların listesi (paket adı, uygulama adı ve simgesi). Ebeveynin hangi uygulamaya kural koyacağını seçebilmesi için kullanılır.</li>
+<li>Günlük uygulama kullanım süreleri (hangi uygulamada kaç dakika geçirildiği).</li>
+<li>Cihaz modeli, uygulama sürümü ve gerekli izinlerin açık olup olmadığı bilgisi (uygulamanın düzgün çalıştığını ebeveyne göstermek için).</li>
+</ul>
+<p><b>Toplamadığımız veriler:</b> Konum, rehber, arama kayıtları, SMS/mesaj içerikleri, fotoğraflar, dosyalar, mikrofon, kamera, tarama geçmişi, ekranda yazan yazılar ve uygulamaların içindeki içerikler.</p>
+
+<h2>3. İzinler ve neden kullanıldıkları</h2>
+<ul>
+<li><b>Erişilebilirlik hizmeti (yalnızca çocuk modunda):</b> Yalnızca o an ön plana gelen uygulamanın <i>hangi uygulama olduğunu</i> (paket adını) algılamak ve ebeveynin engellediği bir uygulama açıldığında engel ekranını göstermek için kullanılır. Ekran içeriği, yazılan metinler veya şifreler okunmaz, kaydedilmez ve gönderilmez.</li>
+<li><b>Kullanım erişimi (PACKAGE_USAGE_STATS):</b> Uygulama başına günlük kullanım süresini hesaplamak için.</li>
+<li><b>Yüklü uygulamaları görme (QUERY_ALL_PACKAGES):</b> Ebeveynin kural koyabilmesi için çocuk cihazındaki uygulamaları listelemek için.</li>
+<li><b>Cihaz yöneticisi:</b> Çocuğun Aila'yı ebeveyn izni olmadan kaldırmasını zorlaştırmak için. Cihazdaki verileri silmek veya değiştirmek için kullanılmaz.</li>
+<li><b>Diğer uygulamaların üzerinde gösterme:</b> Engellenen uygulamanın üzerine engel ekranı göstermek için.</li>
+<li><b>Telefon durumu (READ_PHONE_STATE):</b> Yalnızca bir telefon görüşmesi sürerken engel ekranının görüşmeyi kesmemesi için görüşme olup olmadığını kontrol eder. Telefon numarası, arama kayıtları veya cihaz kimliği okunmaz.</li>
+<li><b>Bildirim, ön plan hizmeti ve açılışta başlama:</b> Kuralların telefon yeniden başlatılsa bile uygulanmaya devam etmesi ve verilerin ebeveyne iletilmesi için.</li>
+<li><b>İnternet:</b> Ebeveyn ve çocuk cihazı arasında kural ve kullanım verisi aktarmak için.</li>
+</ul>
+
+<h2>4. Verileri nasıl kullanıyoruz?</h2>
+<p>Veriler yalnızca uygulamanın ebeveyn denetimi işlevini yerine getirmek için kullanılır: kullanım raporlarını ebeveyne göstermek, kuralları çocuk cihazına iletmek ve aboneliği doğrulamak. Reklam, profil çıkarma veya pazarlama amacıyla kullanılmaz.</p>
+
+<h2>5. Verilerin saklanması ve paylaşılması</h2>
+<ul>
+<li>Veriler, uygulamanın sunucusunda (Render.com barındırma hizmeti) şifreli bağlantı (HTTPS) üzerinden aktarılır ve saklanır.</li>
+<li>Bir çocuğun verilerini yalnızca o çocuğu eşleştiren ebeveyn hesabı görebilir.</li>
+<li>Abonelik ve ödeme işlemleri <b>Google Play</b> üzerinden yapılır. Kart bilgileriniz bize ulaşmaz. Aboneliği doğrulamak için yalnızca Google Play'in verdiği satın alma bilgisi sunucumuza gönderilir. Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li>Verileriniz üçüncü kişilere satılmaz, kiralanmaz ve reklam amaçlı paylaşılmaz. Yasal bir zorunluluk olmadıkça kimseyle paylaşılmaz.</li>
+</ul>
+
+<h2>6. Abonelik</h2>
+<p>Aila ücretsiz indirilir. Tam özellikler, 7 günlük ücretsiz denemenin ardından Google Play aboneliğiyle kullanılır. Deneme süresi bitmeden iptal edilmezse abonelik ücreti Google Play hesabınızdan alınır. Aboneliğinizi istediğiniz zaman Google Play Store &gt; Ödemeler ve abonelikler bölümünden iptal edebilirsiniz.</p>
+
+<h2>7. Verilerin silinmesi</h2>
+<ul>
+<li><b>Çocuk cihazının bağlantısını kaldırma:</b> Ebeveyn, çocuk cihazının eşleştirmesini kaldırdığında o cihaza ait kullanım verileri silinir.</li>
+<li><b>Hesap ve tüm verilerin silinmesi:</b> Hesabınızı ve ona bağlı tüm verileri sildirmek için kayıtlı e-posta adresinizden <a href="mailto:korpe.bekir71@gmail.com?subject=Aila%20hesap%20silme">korpe.bekir71@gmail.com</a> adresine "Aila hesap silme" konulu e-posta gönderin. Talebiniz en geç 30 gün içinde yerine getirilir.</li>
+</ul>
+
+<h2>8. Çocukların gizliliği</h2>
+<p>Aila'nın hesap sahibi ve kullanıcısı ebeveyndir. Çocuk modu, ebeveynin kendi çocuğunun cihazına, onun bilgisiyle kurması için tasarlanmıştır. Çocuklardan doğrudan ad, e-posta veya iletişim bilgisi istenmez. Ebeveynler, çocuklarına ait verileri istedikleri zaman eşleştirmeyi kaldırarak veya hesap silme talebiyle sildirebilir.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Veriler HTTPS ile şifreli olarak aktarılır ve yetkisiz erişime karşı makul teknik önlemlerle korunur. Ancak internet üzerinden yapılan hiçbir aktarımın %100 güvenli olduğu garanti edilemez.</p>
+
+<h2>10. Haklarınız (KVKK)</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında verilerinize erişme, düzeltilmesini veya silinmesini isteme haklarına sahipsiniz. Bu talepler için aşağıdaki e-posta adresine yazabilirsiniz.</p>
+
+<h2>11. Değişiklikler</h2>
+<p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır ve sayfanın üstündeki tarih değiştirilir.</p>
+
+<h2>12. İletişim</h2>
+<p>Bekir Körpe (KorpeSoft)<br>E-posta: <a href="mailto:korpe.bekir71@gmail.com">korpe.bekir71@gmail.com</a></p>
+</main></body>
+</html>
