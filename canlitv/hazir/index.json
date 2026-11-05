@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-05T20:09:39Z",
+ "guncelleme": "2026-11-05T20:16:55Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -7,14 +7,14 @@
    "spor": false,
    "diziler": [
     {
-     "ad": "Şehrime Hoş Geldiniz",
-     "aciklama": "Dünyanın çeşitli ülkelerinden Türkçe öğrenen insanların, yaşadıkları şehri tanıttıkları program #ŞehrimeHoşGeldiniz her pazar 18.00’de TRT 1’de!",
-     "afis": "https://i.ytimg.com/vi/YFt52gIEItk/maxresdefault.jpg",
+     "ad": "Taşacak Bu Deniz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/FZc_XS2ojWA/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLSbwxLODHTfO8-0VZfhB6bSidQVQLGhzl",
-       "adet": 31
+       "id": "PLkowzc1JKWSj-LXZoBKue22W-RIPiIPiW",
+       "adet": 36
       }
      ]
     },
@@ -55,35 +55,6 @@
      ]
     },
     {
-     "ad": "Hayallerinin Peşinde",
-     "aciklama": "\"Hayallerinin Peşinde\" programında, cesurca girişimleriyle kendi hikayelerinin başkahramanı olan kadınların başarı yolculuğuna şahitlik ediyoruz. Tüm zorlukları aşan, inatçı, hayalperest kadınlar...",
-     "afis": "https://i.ytimg.com/vi/eiAjHI5zoDE/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLSbwxLODHTfP4GA8wQ0Nx7wnEKwKEGh5F",
-       "adet": 123
-      }
-     ]
-    },
-    {
-     "ad": "3'te 3",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/uUugvkTyNRk/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler 1",
-       "id": "PLSbwxLODHTfM_d_gKI6fBU4gjLo5R8xBE",
-       "adet": 4
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLSbwxLODHTfPV_bBqdAQ4B_SO74EoyWM1",
-       "adet": 217
-      }
-     ]
-    },
-    {
      "ad": "Kumpas",
      "aciklama": "Orduya, devlete, millete kumpas! #Kumpas her cuma TRT 1'de!",
      "afis": "https://i.ytimg.com/vi/1TSm-VPM-v8/maxresdefault.jpg",
@@ -92,30 +63,6 @@
        "ad": "Bölümler",
        "id": "PLSbwxLODHTfOkzo8C4WJOY-CpNnNfazf1",
        "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "Şefin Sağlıklı Masası",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/hTzKFeZuZi8/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLSbwxLODHTfOE5PdawJAO1vzFMgNMCfAb",
-       "adet": 13
-      }
-     ]
-    },
-    {
-     "ad": "Bu Toprağın Sesi",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/gbU8m97u0lE/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLSbwxLODHTfO5kdZiTTlHLzlwLSuSOTl7",
-       "adet": 10
       }
      ]
     },
@@ -132,7 +79,7 @@
      ]
     },
     {
-     "ad": "Seksenler I Öncesi",
+     "ad": "Seksenler Öncesi",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/oymzAJ3s8Aw/maxresdefault.jpg",
      "sezonlar": [
@@ -144,7 +91,7 @@
      ]
     },
     {
-     "ad": "Mahrem TRT 1",
+     "ad": "Mahrem",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/k-goNb_wUDo/maxresdefault.jpg",
      "sezonlar": [
@@ -156,7 +103,7 @@
      ]
     },
     {
-     "ad": "Türkan Hanım'ın Konağı TRT 1",
+     "ad": "Türkan Hanım'ın Konağı",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/3rHulp8GqXQ/maxresdefault.jpg",
      "sezonlar": [
@@ -164,30 +111,6 @@
        "ad": "Bölümler",
        "id": "PLSbwxLODHTfO1hjdv_BlKPUyeXpgg62X5",
        "adet": 192
-      }
-     ]
-    },
-    {
-     "ad": "Zaman Matinesi I TRT 1",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/Zv3Y11NXn34/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLSbwxLODHTfMDssiRzhk73JKdqJrfxGT7",
-       "adet": 26
-      }
-     ]
-    },
-    {
-     "ad": "Taşacak Bu Deniz I",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/FZc_XS2ojWA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLkowzc1JKWSj-LXZoBKue22W-RIPiIPiW",
-       "adet": 36
       }
      ]
     }
@@ -243,42 +166,6 @@
        "ad": "Bölümler",
        "id": "PLwsOdwF4mVeL4DWkBVshCO_Q-u2M0gYE1",
        "adet": 3
-      }
-     ]
-    },
-    {
-     "ad": "atv'den Öneriler",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/EF3paEl3Vwo/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLwsOdwF4mVeJtt4FJO6nralE3QVoV3UhA",
-       "adet": 10
-      }
-     ]
-    },
-    {
-     "ad": "Sezon Finalleri📺",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/Niymd9MYZiI/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLwsOdwF4mVeIh6NbGfwNsU-Z3u8nPGVB8",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "BİRLİKTE İZLEYELİM",
-     "aciklama": "Dizinin ilk 5 dakikasını TV ile aynı anda sohbet ederek izliyoruz 😍",
-     "afis": "https://i.ytimg.com/vi/Y7hwKYTUg1s/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLwsOdwF4mVeIRdizqW73YGTnVj8SbrxiU",
-       "adet": 44
       }
      ]
     },
@@ -482,18 +369,6 @@
      ]
     },
     {
-     "ad": "Titiz misin?",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/i6rXsJvCgZA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiG7d8TP5aP783IroXOt73by",
-       "adet": 30
-      }
-     ]
-    },
-    {
      "ad": "Ah Neriman",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/GgK5rItHiqI/maxresdefault.jpg",
@@ -530,18 +405,6 @@
      ]
     },
     {
-     "ad": "Kız Tarafı Erkek Tarafı",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/QUJePEN7SQg/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHwVm326GVOKZtHOkYdpahh",
-       "adet": 23
-      }
-     ]
-    },
-    {
      "ad": "Gamsız Hayat",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/4ksJq2acQ7o/maxresdefault.jpg",
@@ -566,18 +429,6 @@
      ]
     },
     {
-     "ad": "Gizli Dünyalar",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/t3B17dd4OXo/sddefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiGuLC-FGtg3VTk-baBfRSFT",
-       "adet": 25
-      }
-     ]
-    },
-    {
      "ad": "Ne Münasebet",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/elB9UNOPRWM/maxresdefault.jpg",
@@ -586,30 +437,6 @@
        "ad": "Bölümler",
        "id": "PLdw1RMMZ1UiH7eHq9kqCfZLBtDiOA7tFR",
        "adet": 11
-      }
-     ]
-    },
-    {
-     "ad": "Tutar mı Tutar",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/TyscMiFd2oE/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHVN8OsNiHJIH-b5I6lI-SC",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "Ev Kuşu Ünlüler",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/w_hcgDX1sVE/sddefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiGxt5Q7BYNniyLHdQey7pFz",
-       "adet": 75
       }
      ]
     },
@@ -634,18 +461,6 @@
        "ad": "Bölümler",
        "id": "PLdw1RMMZ1UiGYDgoSCo3SrM1a69eXClu_",
        "adet": 49
-      }
-     ]
-    },
-    {
-     "ad": "Bu Tarz Benim",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/37Ujt1GFeA8/sddefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHX4QDSGmDejTCfW9SDlF2L",
-       "adet": 38
       }
      ]
     },
@@ -741,30 +556,6 @@
    "spor": false,
    "diziler": [
     {
-     "ad": "Star TV Unutulmaz Diziler",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/EhW_A67wNs4/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP196zVVltboxknDMPL3EsgbHt",
-       "adet": 5
-      }
-     ]
-    },
-    {
-     "ad": "Evde Hareket Zamanı",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/BuYJiJduHcI/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP19570EgCQ104UZGld-69RubN",
-       "adet": 26
-      }
-     ]
-    },
-    {
      "ad": "İşler Güçler",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/6cMa3M9ls_Q/maxresdefault.jpg",
@@ -820,19 +611,7 @@
    "spor": false,
    "diziler": [
     {
-     "ad": "Avrupa'dan Anadolu'ya Köprüler",
-     "aciklama": "Avrupa'dan Anadolu'ya: Köprüler her Pazar Günü NOW'da! Avrupa’dan Anadolu’ya: Köprüler, Stefanie Von-Brochowski’nin sunumuyla Avrupa ile Anadolu arasında geçmişten bugüne uzanan kültürel bağları ekrana taşıyor.",
-     "afis": "https://i.ytimg.com/vi/bCFGPgN8gXg/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI6NMEW7h63KFg80FdLB-JZ4",
-       "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "Nostalji Serisi Ruhun Duymaz",
+     "ad": "Ruhun Duymaz",
      "aciklama": "Onur Karasu (Şükrü Özyıldız) genç yaşında daire başkanlığına terfi etmiş başarılı bir istihbarat ajanıdır ve bir süredir Türkiye'nin en büyük kuyumculuk şirketinin sahibi Civan Koral  (Tuğrul Tülek)’in  peş…",
      "afis": "https://i.ytimg.com/vi/SRryyQtJbls/maxresdefault.jpg",
      "sezonlar": [
@@ -844,7 +623,7 @@
      ]
     },
     {
-     "ad": "Nostalji Serisi İnadına Aşk",
+     "ad": "İnadına Aşk",
      "aciklama": "Erkekler inatçı, kadınlar inatçı, aşk hepsinden inatçı. İnadına Aşk; aşk, sevgi, nefret ve oyunlarla dolu bir romantik komedi dizisi.",
      "afis": "https://i.ytimg.com/vi/WI5r5mvaJU0/maxresdefault.jpg",
      "sezonlar": [
@@ -856,7 +635,7 @@
      ]
     },
     {
-     "ad": "Nostalji̇ Seri̇si̇ Yaz Şarkısı",
+     "ad": "Yaz Şarkısı",
      "aciklama": "Platonik aşıklar, aşık olduğu kişinin kendini fark etmesi için hep gözünün önünde olmak, onun için iyi bir şeyler yapmak, hayatını kolaylaştırmak ister. Sessiz, sakin ve umudunu hiç kaybetmeden görünür olmayı beklerler.",
      "afis": "https://i.ytimg.com/vi/VDJm8cv3qMA/maxresdefault.jpg",
      "sezonlar": [
@@ -868,7 +647,7 @@
      ]
     },
     {
-     "ad": "Nostalji̇ Seri̇si̇ Senden Daha Güzel",
+     "ad": "Senden Daha Güzel",
      "aciklama": "Dermatolog olarak çalışan Efsun, Gaziantep’te bir köyde babasıyla birlikte  çiftlikte  huzur içinde yaşamaktadır.",
      "afis": "https://i.ytimg.com/vi/MBPY53AxB7o/maxresdefault.jpg",
      "sezonlar": [
@@ -880,7 +659,7 @@
      ]
     },
     {
-     "ad": "Nostalji Serisi Bay Yanlış",
+     "ad": "Bay Yanlış",
      "aciklama": "Özgür (Can Yaman); zengin ancak salaş bir hayat süren, aşka inanmayan restoran-bar sahibidir. Ezgi (Özge Gürel) ise; artık yanlış ilişkilerden yorulmuş ve düzgün bir ilişki yaşayıp, evlenmeye kararlıdır.",
      "afis": "https://i.ytimg.com/vi/1YlkAUhlb-Y/maxresdefault.jpg",
      "sezonlar": [
@@ -888,18 +667,6 @@
        "ad": "Bölümler",
        "id": "PL-2mShPfUwI4AGYVdIiaWY9GQYWUJDBLQ",
        "adet": 14
-      }
-     ]
-    },
-    {
-     "ad": "Su Koruyucuları Okula Dönüş",
-     "aciklama": "Su Koruyucuları: Okula Dönüş",
-     "afis": "https://i.ytimg.com/vi/-nemVS8o_GE/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI4PJzmu4lTf0MjDSKGgYbLk",
-       "adet": 6
       }
      ]
     },
@@ -912,30 +679,6 @@
        "ad": "Bölümler",
        "id": "PL-2mShPfUwI5efThWo5Pl3CrbZlWzSnU9",
        "adet": 16
-      }
-     ]
-    },
-    {
-     "ad": "Kazanan Restoran",
-     "aciklama": "Yeni yarışma, \"Restoranımın hem aşçısı hem işletmecisi benim\" diyen yarışmacıları bekliyor.",
-     "afis": "https://i.ytimg.com/vi/gUOqgI6GOd0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5ploZ2SPs0XB0I0CyJkU9Y",
-       "adet": 15
-      }
-     ]
-    },
-    {
-     "ad": "En Hamarat Benim",
-     "aciklama": "Birbirinden eğlenceli ve becerikli beş yarışmacı önce temizlik dedektifimiz Kadir Ezildi’nin göz hapsinde kendi evlerinin temizliğini gösterecek.",
-     "afis": "https://i.ytimg.com/vi/hc3eRTKmw2U/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI446xZKssXfUf_48XmP6NnQ",
-       "adet": 35
       }
      ]
     },
@@ -962,18 +705,6 @@
        "adet": 10
       }
      ]
-    },
-    {
-     "ad": "Sizi Böyle Alalım",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/_yL2MWB2N5A/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5fAWLZsvcsAa9chpmsQwj9",
-       "adet": 104
-      }
-     ]
     }
    ]
   },
@@ -982,30 +713,6 @@
    "logo": "",
    "spor": false,
    "diziler": [
-    {
-     "ad": "Ali Yeşilırmak ve Dostları",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/N4YGFjfvDos/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLZZP0W2HrSga7XGEdT66drWrw1xblETj2",
-       "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "Paylaş Benimle",
-     "aciklama": "“Paylaş Benimle” konuklarının hayat hikayeleri seyircinin yüreğine dokunacak ve herkesi kendi hayat hikayesinde bir yolculuğa çıkartacak.",
-     "afis": "https://i.ytimg.com/vi/EOi8hOU-rEk/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLZZP0W2HrSgZovNAodk1uNoCAOPckZrU8",
-       "adet": 42
-      }
-     ]
-    },
     {
      "ad": "Aile Doktoru",
      "aciklama": "Prof. Dr. Cihan Aksoy ve Nur Tuğba Algül’ün sunacağı “Aile Doktoru” hafta içi her gün TV8 ekranlarından izleyici ile buluşacak.",
