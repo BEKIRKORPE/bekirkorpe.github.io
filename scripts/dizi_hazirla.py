@@ -100,7 +100,7 @@ DIZI_DEGIL = re.compile(
     r"milyon|var mısın|kim gitsin|lingo|sahne|canlı|live|podcast|vlog|best|en güzel)", I)
 HOST = re.compile(r"(\bile\b|\b\w+['’](la|le|yla|yle)\b)", I)        # "Ömür Akkor ile …", "Zahide Yetiş'le …" → sunuculu program
 YIL = re.compile(r"\b20\d\d\b")                                          # "… 2026" → yıllık program sezonu
-SPOR_EVET = re.compile(r"(özet|ozet|goller|full maç|geniş özet|maçın tamamı)", I)
+SPOR_EVET = re.compile(r"(özet|ozet|goller|\bgol\b|full maç|geniş özet|maçın tamamı|highlights|goals)", I)
 SPOR_HAYIR = re.compile(r"(shorts|kısa|önemli an|röportaj|basın toplantısı|transfer|tanıyalım|teknik|taktik|antrenman)", I)
 
 
@@ -298,12 +298,12 @@ def main():
             lists += listeler(cid, 2 if spor else 8)
 
         if spor:
-            for l in lists[:30]:
+            for l in lists[:60]:
                 if l["adet"] < 3 or key(l["baslik"]) in gizle or key(l["baslik"]) in var:
                     continue
                 if not SPOR_EVET.search(l["baslik"]) or SPOR_HAYIR.search(l["baslik"]):   # sadece maç özetleri / goller
                     continue
-                eps = bolumler(l["id"], True, 2, l["adet"])
+                eps = bolumler(l["id"], True, 3, l["adet"])
                 if not eps:
                     continue
                 sezon_yaz(l["id"], eps)

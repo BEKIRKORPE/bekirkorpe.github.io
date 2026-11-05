@@ -123,6 +123,23 @@
         "@aspor"
       ],
       "diziler": []
+    },
+    {
+      "ad": "S Sport",
+      "tur": "spor",
+      "youtube": [
+        "user:SSport",
+        "UCCUP-lWggERaEFd0qFPI7JA"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "Tivibu Spor",
+      "tur": "spor",
+      "youtube": [
+        "UCzzylIZKbeIDhohxAaQFy1Q"
+      ],
+      "diziler": []
     }
   ]
 }
