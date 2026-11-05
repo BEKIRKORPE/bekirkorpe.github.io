@@ -28,6 +28,25 @@ if not KEY:
 units = 0
 
 
+class KotaDoldu(Exception):
+    pass
+
+
+# Önbellek: oynatma listesinin video sayısı değişmediyse bölümleri yeniden sorulmaz (günlük kota çok az harcanır)
+CACHE_F = os.path.join(ROOT, "scripts", "dizi_onbellek.json")
+KURAL = "v1"   # ayıklama kuralları değişirse artır → önbellek yenilenir
+try:
+    CACHE = json.load(open(CACHE_F, encoding="utf-8"))
+    if CACHE.get("_kural") != KURAL:
+        CACHE = {"_kural": KURAL}
+except Exception:
+    CACHE = {"_kural": KURAL}
+
+
+def cache_kaydet():
+    json.dump(CACHE, open(CACHE_F, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+
+
 def get(path, **params):
     global units
     params["key"] = KEY
@@ -43,7 +62,7 @@ def get(path, **params):
             if e.code in (400, 403, 404):
                 print(f"  ! {path} {e.code} {body}", flush=True)
                 if "quotaExceeded" in body:
-                    raise SystemExit("YouTube kotası doldu")
+                    raise KotaDoldu()
                 return None
             time.sleep(2 + attempt * 3)
         except Exception as e:
@@ -173,7 +192,18 @@ def listeler(cid, max_pages):
     return out
 
 
-def bolumler(liste_id, spor, max_pages):
+def bolumler(liste_id, spor, max_pages, adet=-1):
+    ck = ("s:" if spor else "d:") + liste_id
+    c = CACHE.get(ck)
+    if adet >= 0 and c and c.get("adet") == adet:
+        return c["eps"]
+    eps = _bolumler(liste_id, spor, max_pages)
+    if adet >= 0:
+        CACHE[ck] = {"adet": adet, "eps": eps}
+    return eps
+
+
+def _bolumler(liste_id, spor, max_pages):
     vids, page = [], None
     for _ in range(max_pages):
         p = dict(part="snippet", playlistId=liste_id, maxResults=50)
@@ -265,7 +295,7 @@ def main():
             if not cid:
                 print(f"  ! kanal bulunamadı: {src}", flush=True)
                 continue
-            lists += listeler(cid, 2 if spor else 4)
+            lists += listeler(cid, 2 if spor else 8)
 
         if spor:
             for l in lists[:30]:
@@ -273,7 +303,7 @@ def main():
                     continue
                 if not SPOR_EVET.search(l["baslik"]) or SPOR_HAYIR.search(l["baslik"]):   # sadece maç özetleri / goller
                     continue
-                eps = bolumler(l["id"], True, 2)
+                eps = bolumler(l["id"], True, 2, l["adet"])
                 if not eps:
                     continue
                 sezon_yaz(l["id"], eps)
@@ -295,7 +325,7 @@ def main():
                 g.sort(key=lambda l: max(num(SEZON, l["baslik"]), 0))
                 dolu = []
                 for l in g:
-                    eps = bolumler(l["id"], False, 10)
+                    eps = bolumler(l["id"], False, 10, l["adet"])
                     # dizi bölümü: başlıkların çoğunda "N. Bölüm" olmalı (sohbet/derleme listelerini eler)
                     if eps and sum(1 for e in eps if e["n"] >= 0) >= max(2, 0.6 * len(eps)):
                         dolu.append((l, eps))
@@ -332,4 +362,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    finally:
+        # yarıda kalsa bile (kota doldu) önbellek kaydedilir; ertesi gün kaldığı yerden devam eder, eski liste korunur
+        CACHE.pop("_kural", None); CACHE["_kural"] = KURAL
+        cache_kaydet()
+        print(f"YouTube kotası ~{units} birim", flush=True)
