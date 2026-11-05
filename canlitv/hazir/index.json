@@ -1,0 +1,4831 @@
+{
+ "guncelleme": "2026-11-05T19:55:13Z",
+ "kanallar": [
+  {
+   "ad": "TRT 1",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Evlilik Güzeldir",
+     "aciklama": "Evlilik Güzeldir, yeni bölümleriyle her pazartesi saat 20.00’de TRT 1‘de!",
+     "afis": "https://i.ytimg.com/vi/pCy8HUlGJ5g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLbnOMhzzH1IY",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Kur'an'ın Mesajı",
+     "aciklama": "Kur’an’ın Mesajı, Ramazan ayı boyunca TRT 1 ekranlarında izleyicileri Kur’an-ı Kerim’in çağları aşan hakikatleriyle buluşturdu.",
+     "afis": "https://i.ytimg.com/vi/_uTCamF0AIw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLTt569AVBPUo",
+       "adet": 29
+      }
+     ]
+    },
+    {
+     "ad": "Kur’an ı Kerim’i Güzel Okuma Yarışması",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/p3e6q1nYW7Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "6. Sezon",
+       "id": "PLSbwxLODHTfMA7tNc3SvQAAuefejTqGXD",
+       "adet": 8
+      },
+      {
+       "ad": "7. Sezon",
+       "id": "PLSbwxLODHTfM6hzKJSZBquczgNDPLjJN_",
+       "adet": 21
+      },
+      {
+       "ad": "9. Sezon",
+       "id": "PLSbwxLODHTfOM_pwqex0A694MjXW28qR_",
+       "adet": 27
+      },
+      {
+       "ad": "10. Sezon",
+       "id": "PLSbwxLODHTfMqy-SzD7FxVmGfsipPqCwB",
+       "adet": 27
+      }
+     ]
+    },
+    {
+     "ad": "Sizden Gelen Sorular",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/5nyXpo1g_Q0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOAcpwb104t9xRIcTTTu7jK",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Son Sefer",
+     "aciklama": "15 Temmuz gecesi, emekli olmaya hazırlanan Ercan, aralarında kızının sevdiği adamın da (Kerem) olduğu yolcularla birlikte son seferine çıkar.",
+     "afis": "https://i.ytimg.com/vi/s9JUVReE7Dw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfP5YShDoeBg6ZCy5y49P6TU",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Ömür Akkor ile Bir Sofra Bin Bereket",
+     "aciklama": "Ömür Akkor ile Bir Sofra Bin Bereket, Ramazan ayı boyunca her gün saat 15.45’te TRT 1’de!",
+     "afis": "https://i.ytimg.com/vi/AgGMQXP4WLM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOBs6zhJ4p-YxedINQIr1yj",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Şehrime Hoş Geldiniz",
+     "aciklama": "Dünyanın çeşitli ülkelerinden Türkçe öğrenen insanların, yaşadıkları şehri tanıttıkları program #ŞehrimeHoşGeldiniz her pazar 18.00’de TRT 1’de!",
+     "afis": "https://i.ytimg.com/vi/YFt52gIEItk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLSbwxLODHTfNQmKnOvhHjmZn9Qg2KwAKG",
+       "adet": 1
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLSbwxLODHTfO8-0VZfhB6bSidQVQLGhzl",
+       "adet": 31
+      }
+     ]
+    },
+    {
+     "ad": "Lingo Türkiye",
+     "aciklama": "Lingo Türkiye, hafta içi her gün TRT 1'de!",
+     "afis": "https://i.ytimg.com/vi/kpuu6gjo-R0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMB_fJzMtGFufF2-Ffg7Cyb",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Turgay Başyayla ile Lezzetli Tavsiye",
+     "aciklama": "Turgay Başyayla ile Lezzetli Tavsiye yeni bölümleriyle her cumartesi saat 17.45’te TRT 1’de!",
+     "afis": "https://i.ytimg.com/vi/TmJiXt7jfqA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLSbwxLODHTfNzPFGiim-c07w9StiEs4E6",
+       "adet": 1
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLSbwxLODHTfP8WZhm5K0y_mN-daZWGrZm",
+       "adet": 115
+      }
+     ]
+    },
+    {
+     "ad": "\"Ben ve Babam Vatan\"",
+     "aciklama": "Ben ve Babam -Vatan, 15 Temmuz darbe gecesi Ankara’da yaşananlara odaklanacak. Bir baba ile oğulun o gece Ankara sokaklarında darbecilere karşı mücadelesini ekranlara getirecek olan filmin yapımcılığını Uğur Uzunok üs…",
+     "afis": "https://i.ytimg.com/vi/dmbNj1JlYI4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMtjwXyIH8j3NV8qKgUrkrF",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Yaşam Başka Yerde",
+     "aciklama": "Cesaretle yola çıkanların hikâyesi #YaşamBaşkaYerde her cumartesi saat 11.30'da TRT 1'de!",
+     "afis": "https://i.ytimg.com/vi/OGpeALk4Ei0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMV3ohDpDuNnzJ_Zv-JaHAu",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Kur'an ı Kerim'i Güzel Okuma Yarışması'nın",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/rbFpLlyT7z8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "8. Sezon",
+       "id": "PLSbwxLODHTfMY-VYtQ7225n48kdiUEw-B",
+       "adet": 27
+      }
+     ]
+    },
+    {
+     "ad": "Selami Ferses Gönül Dağı Müzikleri 🎶",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/iYHUsRSfiaU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfNICSvBtfDa9ZX64L6foKLl",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Biraz Kül Biraz Duman",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/85Eo2iKufLg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMzB0_Gf99ZUmxTOnxGOyEg",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Sen Türkülerini Söyle",
+     "aciklama": "Sen Türkülerini Söyle, TRT 1’de!",
+     "afis": "https://i.ytimg.com/vi/OvWNSFDV2qA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMxxK9A3lb2ct4Wn2ya6dBq",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Tek Yürek",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ld3tmnatJBg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOX-av3pa7ILX5NktB-TcuE",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "YouTube Özel İçerikler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/bdhoBlG0U6g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMwL7vMPxKobikQ9YPYBUPD",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Hayallerinin Peşinde",
+     "aciklama": "\"Hayallerinin Peşinde\" programında, cesurca girişimleriyle kendi hikayelerinin başkahramanı olan kadınların başarı yolculuğuna şahitlik ediyoruz. Tüm zorlukları aşan, inatçı, hayalperest kadınlar...",
+     "afis": "https://i.ytimg.com/vi/eiAjHI5zoDE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfP4GA8wQ0Nx7wnEKwKEGh5F",
+       "adet": 123
+      }
+     ]
+    },
+    {
+     "ad": "3'te 3",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/uUugvkTyNRk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLSbwxLODHTfM_d_gKI6fBU4gjLo5R8xBE",
+       "adet": 4
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLSbwxLODHTfPV_bBqdAQ4B_SO74EoyWM1",
+       "adet": 217
+      }
+     ]
+    },
+    {
+     "ad": "Kumpas",
+     "aciklama": "Orduya, devlete, millete kumpas! #Kumpas her cuma TRT 1'de!",
+     "afis": "https://i.ytimg.com/vi/1TSm-VPM-v8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOkzo8C4WJOY-CpNnNfazf1",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Şefin Sağlıklı Masası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/hTzKFeZuZi8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOE5PdawJAO1vzFMgNMCfAb",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Bu Toprağın Sesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gbU8m97u0lE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfO5kdZiTTlHLzlwLSuSOTl7",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Alişan İle Hayata Gülümse",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qVF0Th4hdjU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfO02ogCt8Z_LaKOYsz2u8-s",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Ramazan Günlüğü",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/54lPdooMUmY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOKwWfw2BRECps2OI2o8mET",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "112 Acil Çağrı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3EjC1JjV3oQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOhIkgDWvomJ3_2VOIVNaU_",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Seksenler I Öncesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/oymzAJ3s8Aw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "9. Sezon",
+       "id": "PLSbwxLODHTfPBJRnTKgHbOb6oMrw7A2cD",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Alparslan Büyük Selçuklu",
+     "aciklama": "Hakk aşığı Türklerin efsanesi Alparslan: Büyük Selçuklu, unutulmaz sahneleriyle TRT 1'de!",
+     "afis": "https://i.ytimg.com/vi/memyuW0WfZo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMmHh_LJVzNUAV950B_mlej",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Mahrem TRT 1",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/k-goNb_wUDo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOqN2SidQnj-3exAhe4V8cN",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Sahur Bereketi 2021 Tam",
+     "aciklama": "Ramazan boyunca beraber olacağımız #SahurBereketi​ programı her gece 03.00’te TRT 1’de!",
+     "afis": "https://i.ytimg.com/vi/pyNYs1RPQWg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOxVsPJ3gvW3g52qGtzdTk0",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Kur'an ı Kerim'i Güzel Okuma Yarışması İftar Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HZVeWWsWVmU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "5. Sezon",
+       "id": "PLSbwxLODHTfMYvMLfHsG25rmmkC39UDem",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Türkan Hanım'ın Konağı TRT 1",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3rHulp8GqXQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfO1hjdv_BlKPUyeXpgg62X5",
+       "adet": 192
+      }
+     ]
+    },
+    {
+     "ad": "Zaman Matinesi I TRT 1",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Zv3Y11NXn34/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMDssiRzhk73JKdqJrfxGT7",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Kur’an ı Kerim’i Güzel Okuma Yarışması TRT 1",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/I58s1RLlrc4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfNMRuw-qK6_h49ELrEDYPVR",
+       "adet": 49
+      }
+     ]
+    },
+    {
+     "ad": "Taşacak Bu Deniz l Kolajlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qVmnbTEQhHE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLkowzc1JKWSht3HF_Nn2jU0Wz24qhuTw5",
+       "adet": 23
+      }
+     ]
+    },
+    {
+     "ad": "Taşacak Bu Deniz I",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/FZc_XS2ojWA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLkowzc1JKWSj-LXZoBKue22W-RIPiIPiW",
+       "adet": 36
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "ATV",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Güneşin Doğduğu Yer Öne Çıkanlar",
+     "aciklama": "Güneşin Doğduğu Yer Perşembe 20.00'de atv'de!",
+     "afis": "https://i.ytimg.com/vi/nk9J7foTzQU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLaLtqShKFhS0",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "atv Dizileri",
+     "aciklama": "atv’nin sevilen dizilerinin tüm bölümleri bu oynatma listesinde! 📺✨ Güncel atv dizilerini, yeni bölümleri ve sevdiğiniz hikâyelerin tüm bölümlerini tek bir yerde izleyebilirsiniz.",
+     "afis": "https://i.ytimg.com/vi/-tEdgnKXjjM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLClhtpdHaOEc",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Kırgın Çiçekler Kolaj",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/GSOtxiuAjos/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLMgz8vWjDgww",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Kardeşlerim Kısa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/rmCQYZAWvEE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLeNhpf59n0nI",
+       "adet": 16
+      }
+     ]
+    },
+    {
+     "ad": "4K Kuruluş Osman",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/OcPNXaQtyG8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLDnGt7yw8Qug",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "4K Eşkıya Dünyaya Hükümdar Olmaz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8svdDiER38U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLAh4BG7TzyZ8",
+       "adet": 28
+      }
+     ]
+    },
+    {
+     "ad": "Dünya Kupası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/yvHAYR1fNY8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeL2wuz2JvZWT3Z_q4HojvHX",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Var Mısın Yok Musun Öne Çıkanlar",
+     "aciklama": "Var Mısın Yok Musun Salı - Çarşamba - Perşembe 20.00'de atv'de!",
+     "afis": "https://i.ytimg.com/vi/wBdtxnxjlUg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJW23QUNv4EG0UzlnzEUUKJ",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Müge Anlı ile Tatlı Sert Öne Çıkanlar",
+     "aciklama": "Müge Anlı ile Tatlı Sert hafta içi her gün 10.00'da atv'de!",
+     "afis": "https://i.ytimg.com/vi/S6B3U1ca8YI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLPHSYOdT43CHYmhPp1_ek0",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Aynı Yağmur Altında Öne Çıkanlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JxSYNFkRHA0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJ9ze64TZBpmTRBBYPjoxO9",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "atv Arşiv",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ZBWpIL8UVqQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJw0qEpHRO7O-3p4N8oyoGo",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "A.B.İ. Öne Çıkanlar",
+     "aciklama": "A.B.İ.  atv'de!",
+     "afis": "https://i.ytimg.com/vi/Ec2gVQUT8w4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLD3I2Gn4uddyjrCUEWsNfI",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Fenerbahçe Samsunspor Turkcell Süper Kupa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/eSvkNUzDgbk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeICrIo9et8GxbXQRhZyIC8e",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Galatasaray Trabzonspor Turkcell Süper Kupa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/zfDorwtwJaY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKZhDJqQ7N9nmqt9mWH4bVV",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Sıla",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/uQtQffO0IfE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeI-70hLIF5x9dqc33bgpm_F",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "4K Kader Oyunları",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CXMhhBWN1rU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKogKmL5njiYbjxMGJRC4Vw",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Can Borcu Öne Çıkanlar",
+     "aciklama": "Can Borcu Çarşamba 20.00'de atv'de",
+     "afis": "https://i.ytimg.com/vi/ZO5LavgxEm4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLA8np4esdQ5BQMy4otXxWx",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Bir Gece Masalı Öne Çıkanlar",
+     "aciklama": "Bir Gece Masalı Salı 20.00'de atv'de ✨",
+     "afis": "https://i.ytimg.com/vi/0uiF1Dn2xqk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeK0W5WPz8OgjT9g60bDjPUg",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Trabzonspor St. Gallen UEFA Konferans Ligi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/feQCcQBwRTs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKy1Ur-b7LX96cvd8-KNRtZ",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "St. Gallen Trabzonspor UEFA Avrupa Konferans Ligi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JduqyJk1q1U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLudK2WmzQEs57yMlxJRTOO",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Galatasaray Beşiktaş Süper Kupa 2024",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/q1NbJqrGfYE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJ2etVFwt9a82s_aasAnpe8",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Beşiktaş Trabzonspor Ziraat Türkiye Kupası Finali",
+     "aciklama": "Beşiktaş - Trabzonspor | Ziraat Türkiye Kupası Finali",
+     "afis": "https://i.ytimg.com/vi/iwVJP4BLBSs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJksJMoN1OhXxhA1FdMmliQ",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Yıldızlar Bana Uzak Öne Çıkanlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7kPT0Vclr5Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeL2QCFs-g-c96C9tkmX8Ftk",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası Finali",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/tgnQMVQpLxY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIoEe-YCKo3phBsWZlPenYU",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Sultan Mehmet Yeni Çağ",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Os303_ftkvQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLDhXu5d84R-UVfZMiU7WJP",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Cumhurbaşkanı ile Gündem Özel 26 Mayıs 2023",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Y-vVONsW4i8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLsaXZlncaumuuV0_391CsG",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Cumhurbaşkanı ile Gündem Özel 12 Mayıs 2023",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/j-Up41jm-wc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeK9Bx9nbaZSYfJmqWgMeU7e",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Cumhurbaşkanı Özel Yayını",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/nnOb4LbwUSk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIjHA0U7YPWobIYgR6djJ86",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "TürkiyeTekYürek",
+     "aciklama": "Türkiye’nin yüreğinde derin yaralar açan, son yüzyılın en büyük deprem felaketinin yaşandığı bu günlerde tüm TV kanalları yardım için ortak yayında bir arada.",
+     "afis": "https://i.ytimg.com/vi/YB2DH-ji2IA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLkOtNKYQugVDS-BIIfZVaj",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Deprem Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7nO9q2U2SOo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKECiruJJI4arPKfdM6LzcZ",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Akıncı Çizgi Dizi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/w3oxfLrNnes/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLwsOdwF4mVeIt_1E9ORXZeq-wW7cpsXDt",
+       "adet": 1
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLwsOdwF4mVeL4DWkBVshCO_Q-u2M0gYE1",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Arife Gökçe Sinan Sardoğan Olayı Müge Anlı ile Tatlı Sert",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Kqs4DK1mY3U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKgv15QAiyDneUAhcdsn1xc",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Kim Milyoner Olmak İster? Öne Çıkanlar",
+     "aciklama": "Kim Milyoner Olmak İster? Pazar 20.00'de atv'de!",
+     "afis": "https://i.ytimg.com/vi/bvKO6DF5Z38/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLgKfMfrgVFaJ1sK4Wno1zh",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "atv Haber",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/GDLh_X_LDz4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKPXKvav2MdOaQfM7D-qOwL",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Aldatmak Öne Çıkanlar",
+     "aciklama": "Aldatmak Perşembe 20.00'de atv'de!✨",
+     "afis": "https://i.ytimg.com/vi/963KJrPHb4c/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLJnM9gF6wuK97XynSgR5DQ",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "atv'den Öneriler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/EF3paEl3Vwo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJtt4FJO6nralE3QVoV3UhA",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Mutfak Bahane Öne Çıkanlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TB7NgSWzclc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJOSs4cIxZfYvLp4hKw7969",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Süper Kupa Trabzonspor D.G Sivasspor Özel Videolar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Oh4sxZDd530/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLpKmbCfRvA2goWnGjwNFVw",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Sezon Finalleri📺",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Niymd9MYZiI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIh6NbGfwNsU-Z3u8nPGVB8",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Yaz Dizileri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/xTCEmC-8GIw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJx58jU8WEp676Fqv9OPdZs",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Turkcell Süper Kupa 2022 Beşiktaş Antalyaspor",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/uCaQEy_svxc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKRsyrhUBQ4YOJskKGCXmfs",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "atv Filmleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_Nc3igSb2uM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJWhoHmdNGCk9mYuSdjfo4Y",
+       "adet": 12
+      }
+     ]
+    },
+    {
+     "ad": "Kardeşlerim Öne Çıkanlar",
+     "aciklama": "Kardeşlerim Cumartesi 20.00'de atv'de!✨",
+     "afis": "https://i.ytimg.com/vi/VDDhtpAmPWs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLp1hgzkTTNeEXn8WtD7dSx",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "YouTube Özel İçerikler",
+     "aciklama": "Özel röportajları izlemeyi unutmayın 🔔",
+     "afis": "https://i.ytimg.com/vi/WbsrqAbu8XI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeJC4Fqmx2G4uWCFaioaT8IU",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "BİRLİKTE İZLEYELİM",
+     "aciklama": "Dizinin ilk 5 dakikasını TV ile aynı anda sohbet ederek izliyoruz 😍",
+     "afis": "https://i.ytimg.com/vi/Y7hwKYTUg1s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIRdizqW73YGTnVj8SbrxiU",
+       "adet": 44
+      }
+     ]
+    },
+    {
+     "ad": "Maria ile Mustafa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ES3618xzYMo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIJle8wBUvfEClNiybzg7pq",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Gençliğim Eyvah",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/49Vj_aSGfZM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKjO5t9OEXaVmR6rQgGndgO",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Zamanlar Çukurova Zaman Tüneli",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7gZDa4bYP4g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKonQKX98_yqtQglr8cS2qK",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Evde Biz Bize",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CIDZvUhBgDI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLwsOdwF4mVeIAC2LZVz2pkexnX94Z8Juj",
+       "adet": 16
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLwsOdwF4mVeK7BmFVuFW1GyxARuxpcCAH",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Süper Baba Özel Kısa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qekJNe1g77c/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLjX2e_UYkFexr6S4-0tpu4",
+       "adet": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "Kanal D",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Karakuyu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qAK8ryb3knc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLfl5Dc9otl6k",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Haysiyet",
+     "aciklama": "Haysiyet'in yayınlanan tüm bölümlerini kesintisiz ve tek parça olarak izleyin. Haysiyet, birbirine taban tabana zıt iki ailenin yaşam biçimleri, değerleri ve doğruları üzerinden yaşadığı çatışmayı; bu çatışmanın tam o…",
+     "afis": "https://i.ytimg.com/vi/SWjrCZtFi1A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZHSJD3kGiKg",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Arda'nın Ramazan Mutfağı 2026",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/oCh0a37IXWo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Up8-e6kS8CXuEO0PaTce_i",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "M. Fatih Çıtlak ile Sahur Vakti 2026",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CbEUF0RGudA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Wq3IDeL5doEYUuulf9MhVF",
+       "adet": 29
+      }
+     ]
+    },
+    {
+     "ad": "Pazar Gezmesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/DSg5B0qU4NM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448X0O5JEV5fQa6qA3U3xraXG",
+       "adet": 47
+      }
+     ]
+    },
+    {
+     "ad": "Kuralsız Sokaklar 🌍🚶🏻‍♂️",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/5P8VyfILpQw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448W9gDBvELu4w5XKDGGBcIRF",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "M. Fatih Çıtlak ile Sahur Vakti 2025",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ORUsnlPcf1M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448X0NiDZkuuM8M9H69glPOO5",
+       "adet": 29
+      }
+     ]
+    },
+    {
+     "ad": "Arda'nın Ramazan Mutfağı 2025",
+     "aciklama": "Ramazan demek bolluk demek, bereket demek, paylaşmak demek! İster 1 tas çorba olsun, ister mükellef bir sofra! Hazırlanan yemeğin lezzeti bir başka, kurulan sofranın huzuru bambaşka olur!",
+     "afis": "https://i.ytimg.com/vi/MnvzRtCDB8Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Vk5G4cjSNKSboZOZOL1K6R",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Oyuncu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/I_yY2KuTBb8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448UULqEB1UbgiWHXBC-LsYZD",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Yalan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4LU9K49qYyc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448V5kLF2UygD6RwMef55GSKL",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "İnci Taneleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/g5C9yobViZA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WqOqN77QXWQLr7I2bFCh7B",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Evrim Akın ile Ev Gezmesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/og0cthYgTUs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448VL9gB8c5v7bnQJig9mFMkI",
+       "adet": 120
+      }
+     ]
+    },
+    {
+     "ad": "Ebru Ener ile Yeni Gibi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/h94P0Cbrihg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448XDhmHIZ6ShXcL3pvC0Povt",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "M. Fatih Çıtlak ile Sahur Vakti 2023",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/85biVc-Ar0g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Vj7j61oxEOfOLz_JRGIB3c",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Arda'nın Ramazan Mutfağı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/p_R7Cx5WaaE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WC-FCLO3H2xiBNaPm-VjDX",
+       "adet": 75
+      }
+     ]
+    },
+    {
+     "ad": "Yıldız De Bana",
+     "aciklama": "Yıldızlara giden yolun kapıları Kanal D'de açılıyor! \"Bende yıldız kumaşı var\" diyenler, Kanal D ekranlarında yepyeni bir yarışma başlıyor! Jüri koltuğunda Büşra Pekin, Zafer Algöz ve Hülya Avşar bulunuyor.",
+     "afis": "https://i.ytimg.com/vi/6LtWAbuQOp8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448VHOMlCVkkCpC8e0-SzrIdE",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Konteynır",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CqWfIaftT34/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448VHqK4SlQs2Jdw4KYFnmJww",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Arda ile Omuz Omuza",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/kKR3e--dNhM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLb60Ul3t448WN0O9ZUHpVTx6yhQwasXbL",
+       "adet": 266
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLb60Ul3t448U8q27G5-xM2oqJvCTY1qt5",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Arda'nın Mutfağı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/w6Wb7NXRIcg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLb60Ul3t448X1SZtMSX_uRlm1bmLGv3qK",
+       "adet": 294
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLb60Ul3t448W8iHMGNZchtKlozC89kzgl",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Ece Üner ile Susma",
+     "aciklama": "O sözünü hiç sakınmadı! Hiç bir zaman susmadı! Şimdi çözüm bulmaya geliyor! \"Ece Üner ile Susma\" 9 Ağustos Pazartesiden itibaren hafta içi her gün saat 16.00'da Kanal D'de!",
+     "afis": "https://i.ytimg.com/vi/mmP0Qv7fp2Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WY9DPXuE5wdgWpeHwOpgXp",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "Hem Kadın Hem Anne",
+     "aciklama": "Her hafta birbirinden komik sit-com'lar, ilginç konular ve uzman konuklarla sosyal medyanın ünlü yüzü İpek Dağıstanlı'nın hazırlayıp sunduğu Hem Kadın Hem Anne her cumartesi Kanal D'de!",
+     "afis": "https://i.ytimg.com/vi/VQsJoEELtA4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WET2kxD2R8yXJo7hdJI1VH",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Hekimoğlu",
+     "aciklama": "Ateş Hekimoğlu 40’lı yaşlarında başarılı bir doktordur. Tıp Fakültesinden arkadaşı İpek’in yönetici olduğu vakıf hastanesinde Enfeksiyon Hastalıkları ve Nefroloji Uzmanı olarak görev yapmaktadır.",
+     "afis": "https://i.ytimg.com/vi/Mee8-qyFtTM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Vc4cFonVIqKinZTMm0TZUe",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Balçiçek ile Dr. Cankurtaran",
+     "aciklama": "Gazeteci Balçiçek İlter araştırıyor, soruyor hasta ve hasta yakını Dr. Özlem Cankurtaran anlatıyor!",
+     "afis": "https://i.ytimg.com/vi/TFcS_hy2RZE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WL1LHP9i1qRLXhzL1CFUK0",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "M. Fatih Çıtlak ile Huzur Vakti",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/NfII6C1K8q4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448VWes6iSZmDEBgMzKpQVnAg",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Müge ve Gülşen'le 2. Sayfa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/jTvHkP1WDuI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448UddJDdOIV9_vkqv7NUdbf3",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Gülizar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cIil5HSMdrU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448V3vzSnr-dYWqCwvHHewHJA",
+       "adet": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "Show TV",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Güldür Güldür Skeçler",
+     "aciklama": "Güldür Güldür Cumartesi 20.00'de Show TV",
+     "afis": "https://i.ytimg.com/vi/YX96jk1sJOM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEXeqv3p6J9G_1Xh87IfdjZ",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "Show Kuşu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Ux1Za8PZezs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiG2qtc_LQyXXMV2yOeGckqS",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Turgay Başyayla ile Lezzet Yolculuğu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/86ntfzj09ck/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHAGOgyoaukKl0yOOzLm2qN",
+       "adet": 57
+      }
+     ]
+    },
+    {
+     "ad": "Sevcan'la Lezzet Yolunda",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/EsG7wo0ECis/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFEkwR-Gn36gVig7_BTSNxE",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Çukur",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/UmR3_teRS-Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGP97gpb5KYt2alIzRiCJim",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Bir Bebek Masalı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/f3vdnPA4FCc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHIrd-LxAh9D5F8UimGWW_N",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Güz Yangını",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7zks05-aqM8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGygHqcPR4nnz5JOilg4msZ",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Kara Duvak",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/yjD8ca95ab4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEulklAn8fo2iOxptueLcOh",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Yeni Bir Hayat",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qBQtbA0hok4/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHFOvmXEBiTds3yrRA_B8xB",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Düşman Kardeşler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YjRTRgGf7Zw/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiF1Ck-a34eyrCn281wBX3Tv",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Güneydoğu'dan Öyküler Önce Vatan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4sLYuaYEB-0/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiF2T2suamhrolmL32sFGLqE",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Sensiz Olmaz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-JCivtH6pEE/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFuvKzftA6OtwCGlpYiVacQ",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Lale Devri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CIPJ9kv4Nsc/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHas_cOz_Wh9SQTp6YEpTtc",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Acı Aşk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/szORsFjP2_o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHH-ysz4qc-9YGw4CztNQHq",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Titiz misin?",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/i6rXsJvCgZA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiG7d8TP5aP783IroXOt73by",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Zahide Yetiş'le",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/B0PMD1x0nOc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGHiVIpJwFTlO3vNEHzk-0d",
+       "adet": 106
+      }
+     ]
+    },
+    {
+     "ad": "Ah Neriman",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/GgK5rItHiqI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGojTkkD5dekX-cIzqFrfnc",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Merhaba Bebek",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8nbRd-f5uVo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFG5B4ggWaQIetRIz00R9Ft",
+       "adet": 25
+      }
+     ]
+    },
+    {
+     "ad": "Mayıs Kraliçesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/tQEf9U5MLRQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHg4K1Wx-kastY_s77bTy3O",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Kız Tarafı Erkek Tarafı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QUJePEN7SQg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHwVm326GVOKZtHOkYdpahh",
+       "adet": 23
+      }
+     ]
+    },
+    {
+     "ad": "Gamsız Hayat",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4ksJq2acQ7o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEeiaMoA9Jpz45j7dDPPVC6",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Deniz Yıldızı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/B2b9OX0bHVA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "7. Sezon",
+       "id": "PLdw1RMMZ1UiGOGx_PrYCtyHfd8aELDl1t",
+       "adet": 29
+      }
+     ]
+    },
+    {
+     "ad": "Gizli Dünyalar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/t3B17dd4OXo/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGuLC-FGtg3VTk-baBfRSFT",
+       "adet": 25
+      }
+     ]
+    },
+    {
+     "ad": "Mustafa Karataş Ramazan Programı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BzduK2U59_k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFhFzIBDzKfOQEu1KPyAm51",
+       "adet": 59
+      }
+     ]
+    },
+    {
+     "ad": "Ne Münasebet",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/elB9UNOPRWM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiH7eHq9kqCfZLBtDiOA7tFR",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Tutar mı Tutar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TyscMiFd2oE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHVN8OsNiHJIH-b5I6lI-SC",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Yemek Tarifleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7txQ9vbnfkY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHBNi6LV1ar9d5WIIbxP0UD",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Evleneceksen Gel 2015",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/XzQrgiCZaC8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHHNR5HeVmoQ6LO-7hSoY7q",
+       "adet": 114
+      }
+     ]
+    },
+    {
+     "ad": "Lezzet Haritası Video Listesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/xZz5nRbk0U0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiH0BU-mIwGDzU-bZHIlrXnB",
+       "adet": 58
+      }
+     ]
+    },
+    {
+     "ad": "Ev Kuşu Ünlüler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/w_hcgDX1sVE/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGxt5Q7BYNniyLHdQey7pFz",
+       "adet": 75
+      }
+     ]
+    },
+    {
+     "ad": "Nursel'in Mutfağı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Y1u_xR6dzVM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFhEUUjgphOH3lm45xfpgOV",
+       "adet": 316
+      }
+     ]
+    },
+    {
+     "ad": "Beyaz Yalan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3kBTpEVqOTA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEzJAFKHylQRMXKaS6nXi2C",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Yılanların Öcü",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/UIlmu5f7RVU/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGYDgoSCo3SrM1a69eXClu_",
+       "adet": 49
+      }
+     ]
+    },
+    {
+     "ad": "Bu Tarz Benim",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/37Ujt1GFeA8/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHX4QDSGmDejTCfW9SDlF2L",
+       "adet": 38
+      }
+     ]
+    },
+    {
+     "ad": "Çılgın Dersane Üniversitede",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/fLwaC2T0m5M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiG4DEhn9frrYeOuX-RgEX8G",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Büyük Risk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Z_g1hpzoRs4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFroTvhjkvpaXL1vWuXxCpM",
+       "adet": 61
+      }
+     ]
+    },
+    {
+     "ad": "Mihrap Yerinde",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0xTvgrE7A8Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGmx8l8JLkvy4zfpZfFfDwq",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Analı Oğullu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ilaa84FaS2o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHlLk8P0bnsBoUumqOCbOqY",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Kuzeyin Oğlu Volkan Konak",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/54usWYoYz3k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiGkDvijM_LZ7hWyACUf1znL",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Gölgedekiler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4CRiCuRZK4Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiE3MFN9DqbuXY8hLZMHh8-c",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Saklı Kalan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/R8sOcCGmDdQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHcs4d5BjOCPsmYwuc0MsEr",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Cennet Mahallesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QH5hxZiMd4E/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFP2dGk4wLf5oXV6d-cM2qr",
+       "adet": 74
+      }
+     ]
+    },
+    {
+     "ad": "Benim İçin Üzülme",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/9rZ5W_xufMY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHu95A_c_vFPIHjx24L7zN_",
+       "adet": 42
+      }
+     ]
+    },
+    {
+     "ad": "Rüzgarlı Sokak",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/SrTROBfmbi0/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiFh3kd7wt5Ll5pWOi7RZ0xt",
+       "adet": 12
+      }
+     ]
+    },
+    {
+     "ad": "Pis Yedili",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-IU0-laLM7s/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHGOSIwTSMybGDaBvGk5eqz",
+       "adet": 52
+      }
+     ]
+    },
+    {
+     "ad": "Hey Canlı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/kUVzuo5l6kM/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHimrT-lsMH7jBt38-8H6fQ",
+       "adet": 24
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "Star TV",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Cansu Canan ile Bugün",
+     "aciklama": "Geniş bir konu yelpazesine sahip olan “Cansu Canan ile Bugün”; sağlıktan yaşama, toplumsal konulardan insan hikayelerine ve güne dair merak edilen tüm sıcak gelişmelere kadar hayatın tam merkezindeki başlıkları masaya…",
+     "afis": "https://i.ytimg.com/vi/A7U7i2TSZW0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLbRPUnt2gyDI",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Didem Arslan Yılmaz'la Vazgeçme",
+     "aciklama": "Gündem yaratan, Türkiye’nin günlerce konuştuğu dosyalara imza atan; altı sezon boyunca yüzlerce kaybı yakınlarına kavuşturan ve çözülemez denilen şüpheli cinayet dosyalarını çözüme kavuşturan Didem Arslan Yılmaz, başa…",
+     "afis": "https://i.ytimg.com/vi/0SgqS38WQ3U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLccWCc82o7R4",
+       "adet": 51
+      }
+     ]
+    },
+    {
+     "ad": "Vahe ile Tatildeki Mutluluk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lbDYJvSLuoc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLU5euBjKwhQU",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Asuman Krause ile Hayat Güzeldir",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8WDX8zHchoA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP19658OcMnADSY6P4zlSBUDjk",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Pelin ve Tahsin Mutfakta Enfes Tarifler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/VOkhLaeJQII/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194c7ZIx9eMgGapKfpPEQqNs",
+       "adet": 41
+      }
+     ]
+    },
+    {
+     "ad": "Vahe ile Evdeki Mutluluk",
+     "aciklama": "28 yıldır ekranlarda olan, Vahe Kılıçarslan’ın hazırlayıp sunduğu Vahe ile Evdeki Mutluluk Her Pazar Star'da!",
+     "afis": "https://i.ytimg.com/vi/gAvbXvRmCqk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194FAfZDB_2dc-a-BE_Eyh2s",
+       "adet": 25
+      }
+     ]
+    },
+    {
+     "ad": "Aslı Özkaya ile Bir Şansım Olsa",
+     "aciklama": "Gerçek hikayelerin buluşma noktası: Bir Şansım Olsa, Klinik Psikolog Dr. Aslı Özkaya’nın sunuculuğunda yeniden Star ekranlarında izleyiciyle buluşuyor.",
+     "afis": "https://i.ytimg.com/vi/GO9nZHmsirA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196fMSPduSoBQihoPsibOF05",
+       "adet": 44
+      }
+     ]
+    },
+    {
+     "ad": "Songül ve Uğur ile Sana Değer",
+     "aciklama": "Türkiye’nin en sevilen ikilisi Songül Karlı ve Uğur Arslan, Star ekranlarında buluşuyor!",
+     "afis": "https://i.ytimg.com/vi/FYvUlejXcL4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP1968B4wqY3ZbKi4KHbIOl4MH",
+       "adet": 83
+      }
+     ]
+    },
+    {
+     "ad": "Lezzet Rotası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HGUbks6-oXQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP197qFFKolM9kmu2tqxHY4lUV",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "En Güzel Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/5XzNPibE4mE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195lVYAMiUbCOvQ8RiEQH424",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Meltem Demir ile Hanımeli",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lg7fDYeVz2Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196TagZjU17jKgRxDD-zlvFl",
+       "adet": 25
+      }
+     ]
+    },
+    {
+     "ad": "Tülin Şahin'le Moda",
+     "aciklama": "Ekranların en kaliteli, en şık ve bilgi dolu programı Tülin Şahin ile Moda her Pazar Star'da!",
+     "afis": "https://i.ytimg.com/vi/JU2ygFo1iXM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196bzHlBaFqlq1nD9DkikRll",
+       "adet": 22
+      }
+     ]
+    },
+    {
+     "ad": "Halit Yerebakan'la Doktor Geldi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lxBUSpkcyOQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP197vEd9KKNcvLxP3Qz-W7Sks",
+       "adet": 107
+      }
+     ]
+    },
+    {
+     "ad": "Ercan Saatçi ile Çok Akustik",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/H3IKTMHDstI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP197jW1RMeHEbOJDXfW1WSFfo",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Star TV Unutulmaz Diziler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/EhW_A67wNs4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196zVVltboxknDMPL3EsgbHt",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Pelin'in Mutfağı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JX2QsNC0fxI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP1940e6siRsXq4uzaecVlrSoQ",
+       "adet": 45
+      }
+     ]
+    },
+    {
+     "ad": "Kaderimin Oyunu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/dEtHfL98weA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195DidpTCr3XlzdbB_pngBR8",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bekir Köse ile İftara Doğru",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/UbM_kTp2YE8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196XzgovoALOnciJ7nFcqU7y",
+       "adet": 24
+      }
+     ]
+    },
+    {
+     "ad": "Burcu ile Hafta Sonu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0uutCvlRx3M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP1974Ub-Xo4XE-g6cse9rYfoT",
+       "adet": 49
+      }
+     ]
+    },
+    {
+     "ad": "Demet ve Alişan ile Sabah Sabah",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/EiXlNjgekSQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP197NF5WVEhLj8mdmTOLiQyqO",
+       "adet": 34
+      }
+     ]
+    },
+    {
+     "ad": "Evde Hareket Zamanı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BuYJiJduHcI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP19570EgCQ104UZGld-69RubN",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Ufak Tefek Cinayetler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cHAtJC0tjpo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195hUewPQndvyKzlrF7VkKZ0",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Anne",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HdDH7Qum3fs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP196-qJ3KkzuY0FfMzir5be3E",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "İşler Güçler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6cMa3M9ls_Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194He1tHkLfC6wXrCoLzOi66",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "TBT",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/tRasWEHC82E/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195QJD_pRPp2_qD-q_jG3sQJ",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Babil",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6a9srMnxIGM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194OQEeAPT9aHC3Yoh-pX6nm",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Sefirin Kızı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ukmKabmzq60/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194ig1GHLVGHUtkqlZZS2Vvj",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Eyvah Düşüyorum",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/S9vcKv7a_QU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195SgbF4D8mUnOuGNJ2-6Mcg",
+       "adet": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "NOW",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Refika'yla Özlediğimiz Ramazanlar",
+     "aciklama": "Ramazan ayı boyunca NOW ekranlarında yayınlanacak “Refika’yla Özlediğimiz Ramazanlar”da çorbadan ana yemeğe, ana yemekten tatlıya, bizi biz yapan hikayelerden, lezzet ipuçlarına kadar uzanan içeriklere yer verilecek.",
+     "afis": "https://i.ytimg.com/vi/LMuAd_4HwJc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI42UEY2eIVgOs-VjtMxIQSi",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Avrupa'dan Anadolu'ya Köprüler",
+     "aciklama": "Avrupa'dan Anadolu'ya: Köprüler her Pazar Günü NOW'da! Avrupa’dan Anadolu’ya: Köprüler, Stefanie Von-Brochowski’nin sunumuyla Avrupa ile Anadolu arasında geçmişten bugüne uzanan kültürel bağları ekrana taşıyor.",
+     "afis": "https://i.ytimg.com/vi/bCFGPgN8gXg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6NMEW7h63KFg80FdLB-JZ4",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Çifte Milyon",
+     "aciklama": "Stüdyoda milyonlarca liranın olduğu dev bir kasa... Kadınlar 2 milyonu alabilmek için birbirleriyle kapışıyorlar.",
+     "afis": "https://i.ytimg.com/vi/ll5w7xSc2Is/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6N81uhZysvron5KBeYFidr",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Nostalji Serisi Ruhun Duymaz",
+     "aciklama": "Onur Karasu (Şükrü Özyıldız) genç yaşında daire başkanlığına terfi etmiş başarılı bir istihbarat ajanıdır ve bir süredir Türkiye'nin en büyük kuyumculuk şirketinin sahibi Civan Koral  (Tuğrul Tülek)’in  peş…",
+     "afis": "https://i.ytimg.com/vi/SRryyQtJbls/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI4aEo6O6xEKYGoCwhEkylg1",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Efsane Futbol",
+     "aciklama": "Efsane Futbol Maç analizleri, takımların son durumları, kamplardan haberler... Oyun Planı, NOW Spor Youtube kanalında! Anlık tüm gelişmeler NOW Spor sosyal medya hesaplarında👇",
+     "afis": "https://i.ytimg.com/vi/LqvKPMyMT2M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI77mZcJGAiPOvp0p9HF61bh",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Nostalji Serisi İnadına Aşk",
+     "aciklama": "Erkekler inatçı, kadınlar inatçı, aşk hepsinden inatçı. İnadına Aşk; aşk, sevgi, nefret ve oyunlarla dolu bir romantik komedi dizisi.",
+     "afis": "https://i.ytimg.com/vi/WI5r5mvaJU0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7QlUPhXmJd-7jbxUOc88y0",
+       "adet": 32
+      }
+     ]
+    },
+    {
+     "ad": "Nostalji̇ Seri̇si̇ Yaz Şarkısı",
+     "aciklama": "Platonik aşıklar, aşık olduğu kişinin kendini fark etmesi için hep gözünün önünde olmak, onun için iyi bir şeyler yapmak, hayatını kolaylaştırmak ister. Sessiz, sakin ve umudunu hiç kaybetmeden görünür olmayı beklerler.",
+     "afis": "https://i.ytimg.com/vi/VDJm8cv3qMA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7G1CV2qy_QOdwj2zi8vF-o",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Nostalji̇ Seri̇si̇ Senden Daha Güzel",
+     "aciklama": "Dermatolog olarak çalışan Efsun, Gaziantep’te bir köyde babasıyla birlikte  çiftlikte  huzur içinde yaşamaktadır.",
+     "afis": "https://i.ytimg.com/vi/MBPY53AxB7o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6V1Hw-22RrEPCsE1K8BPJ0",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Şevval Sam 30. Yıl Konseri",
+     "aciklama": "Şevval Sam 30. Yıl Konseri",
+     "afis": "https://i.ytimg.com/vi/EHOBraVjyIo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6bYMoByN1ty3CX7ao4M24i",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Nostalji Serisi Bay Yanlış",
+     "aciklama": "Özgür (Can Yaman); zengin ancak salaş bir hayat süren, aşka inanmayan restoran-bar sahibidir. Ezgi (Özge Gürel) ise; artık yanlış ilişkilerden yorulmuş ve düzgün bir ilişki yaşayıp, evlenmeye kararlıdır.",
+     "afis": "https://i.ytimg.com/vi/1YlkAUhlb-Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI4AGYVdIiaWY9GQYWUJDBLQ",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Bir Destek Bir Gelecek Bağış Yayını",
+     "aciklama": "Bir Destek Bir Gelecek Bağış Yayını",
+     "afis": "https://i.ytimg.com/vi/WoX4dUeqZAM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI65ohsMBTaxV2FwsnHsYmWe",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Ürek ile Gelin Görümce",
+     "aciklama": "Başvuru Numaramız: 0533 890 43 83 Yapımını Karga Film’in, sunuculuğunu ise ekranların sevilen ismi Fatih Ürek’in üstleneceği yeni yemek yarışması “Fatih Ürek’le Gelin Görümce” NOW izleyicisiyle buluşuyor.",
+     "afis": "https://i.ytimg.com/vi/QnL0FRF0BAA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5vGYwEl0fmJ7zn7axXP7ed",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Savaş ile Ramazan Sohbetleri",
+     "aciklama": "Fatih Savaş ile Ramazan Sohbetleri Her Ramazan NOW'da!",
+     "afis": "https://i.ytimg.com/vi/PB5pVEwQvk8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7tHf5uen0yIgK-t_aFlLEj",
+       "adet": 22
+      }
+     ]
+    },
+    {
+     "ad": "Su Koruyucuları Okula Dönüş",
+     "aciklama": "Su Koruyucuları: Okula Dönüş",
+     "afis": "https://i.ytimg.com/vi/-nemVS8o_GE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI4PJzmu4lTf0MjDSKGgYbLk",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Sahrap Soysal ile Ramazan Sofrası",
+     "aciklama": "Türk mutfağı uzmanı ve yazar Sahrap Soysal’ın sunduğu “Sahrap Soysal ile Ramazan Sofrası başlıyor.",
+     "afis": "https://i.ytimg.com/vi/xHKLxjX4dEg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5wycFAqpsy0E7aY7WuBgX5",
+       "adet": 84
+      }
+     ]
+    },
+    {
+     "ad": "Kapımdaki Dedektif",
+     "aciklama": "İbrahim Selim'in sunumu ve Eda Ece'nin dedektiflik yetenekleriyle her hafta başka bir ünlümüzün evindeyiz! Dedektif Eda Ece, bu evin kime ait olduğunu ipuçlarını takip ederek bulmaya çalışacak.",
+     "afis": "https://i.ytimg.com/vi/59A-aImT3uA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5efThWo5Pl3CrbZlWzSnU9",
+       "adet": 16
+      }
+     ]
+    },
+    {
+     "ad": "Kazanan Restoran",
+     "aciklama": "Yeni yarışma, \"Restoranımın hem aşçısı hem işletmecisi benim\" diyen yarışmacıları bekliyor.",
+     "afis": "https://i.ytimg.com/vi/gUOqgI6GOd0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5ploZ2SPs0XB0I0CyJkU9Y",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "Orta Sayfa",
+     "aciklama": "NOW Haber Genel Yayın Yönetmeni Doğan Şentürk’ün moderatörlüğünü üstleneceği, Nevşin Mengü, Murat Yetkin, Çiğdem Toker ve Deniz Zeyrek gibi birbirinden deneyimli gazetecilerin yer alacağı tartışma programı her hafta e…",
+     "afis": "https://i.ytimg.com/vi/65Skp8hz0xY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7zH1g8UifiYTgHSFozZqEN",
+       "adet": 34
+      }
+     ]
+    },
+    {
+     "ad": "En Hamarat Benim",
+     "aciklama": "Birbirinden eğlenceli ve becerikli beş yarışmacı önce temizlik dedektifimiz Kadir Ezildi’nin göz hapsinde kendi evlerinin temizliğini gösterecek.",
+     "afis": "https://i.ytimg.com/vi/hc3eRTKmw2U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI446xZKssXfUf_48XmP6NnQ",
+       "adet": 35
+      }
+     ]
+    },
+    {
+     "ad": "Kadının Eseri",
+     "aciklama": "Kadının Eseri Yapımını Provizyon Medya, sunuculuğunu ise Elçin Ateş Ersoy’un üstlendiği program izleyicisiyle buluşmaya hazırlanıyor.",
+     "afis": "https://i.ytimg.com/vi/iF77JnvAckQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7mZ2mkexZpeIk8Wr0sMjK-",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Son Yaz",
+     "aciklama": "İdealist Cumhuriyet Savcısı Selim Kara (Ali Atay), 8 yıl önce hapse yolladığı organize suç lideri Selçuk Taşkın’dan (Arif Pişkin) reddedemeyeceği bir teklif alır.",
+     "afis": "https://i.ytimg.com/vi/mOe_qFQw9ZY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI483FSCBCbhY0ZWcZCOEItk",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Hepsi Benim",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/KTAYuy46FLo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5Bti8O1i02lhznyZj68ffP",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Savaş ile Sabah Sohbetleri",
+     "aciklama": "Fatih Savaş ile Sabah Sohbetleri Fatih Savaş'ın dini sohbetler gerçekleştirdiği, birbirinden farklı ünlü konuklarının bulunduğu Sabah Sohbetleri sizlerle.",
+     "afis": "https://i.ytimg.com/vi/YCXJgk_4ah8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6yvslXz8A8t6wIBd6drR7A",
+       "adet": 202
+      }
+     ]
+    },
+    {
+     "ad": "Dostumun Dünyası Dijital Ekstra",
+     "aciklama": "Arkadaşlarımıza \"pati ver\" nasıl öğretilir? Ali Yeşilırmak'tan öğreniyoruz! Ali Yeşilırmak, sevimli dostlarımızla nasıl iletişim kuracağımız konusunda bize yardımcı oluyor!",
+     "afis": "https://i.ytimg.com/vi/2xoixTX9WnM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6J7WGyM_epQS63iR3rrSLI",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Dostumun Dünyası",
+     "aciklama": "Her hafta farklı köpeklerin ve sahiplerinin sıra dışı hikayelerini konu alan program, evcil dostlarının dünyasında neler olup bittiğini merak edenler için benzersiz bir rehber niteliğinde.",
+     "afis": "https://i.ytimg.com/vi/vryshvvJS6I/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5Nl81Eq6A-YgcVYwIAVAgt",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "ALEF",
+     "aciklama": "Bu işe bulaşanların gizlediği hiçbir sır kalmayacak",
+     "afis": "https://i.ytimg.com/vi/3pdq8_iS2AI/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7UWSbZ8s_THvAeAqKGaxC8",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Mucize Doktor",
+     "aciklama": "Başrolünü Taner Ölmez’in üstlendiği, kadrosunda Onur Tuna, Murat Aygen, Sinem Ünsal, Özge Özder, Hazal Türesan, Bihter Dinçel, Fırat Altunmeşe, Hayal Köseoğlu, Korhan Herduran ve Reha Özcan gibi birbirinden başarılı o…",
+     "afis": "https://i.ytimg.com/vi/OeCGmVwdOSU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI43Hr9rqU-0vVZ202IRyn-B",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Savaş ile Sohbet Gecesi",
+     "aciklama": "Fatih Savaş'ın dini sohbetler gerçekleştirdiği, birbirinden farklı ünlü konuklarının bulunduğu gece sohbetleri.",
+     "afis": "https://i.ytimg.com/vi/NVjbEv6-Z-k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6aCgrIItcg7icqurDpOkbh",
+       "adet": 61
+      }
+     ]
+    },
+    {
+     "ad": "Çağla ile Yeni Bir Gün",
+     "aciklama": "“Çağla Şıkel ile Yeni Bir Gün” sağlıktan iyi beslenmeye, doğru alışverişten estetiğe, kadınlara yönelik tüm konular ele alınacak, son trendler, farklı ve detaylı bilgiler izleyiciyle paylaşılacak.",
+     "afis": "https://i.ytimg.com/vi/mCVeJqevapU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6_-K_uKXn-sy1S3YznDDUD",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Sizi Böyle Alalım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_yL2MWB2N5A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5fAWLZsvcsAa9chpmsQwj9",
+       "adet": 104
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "TV8",
+   "logo": "",
+   "spor": false,
+   "diziler": [
+    {
+     "ad": "Şanslı Pasaport TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-zgky4kO400/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbSrh_IaRpUgqIXt8LHqix9",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Zahide Yetiş'le Tadımız Kaçmasın TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/c3eu2i7vWWk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgae4B8saadguLCTalgq29Fh",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Caner Taslaman ile Aklımdaki Sorular 2026",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JiSyHHD9QJQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYHH3ypiE0kXyUQicO2R-Y_",
+       "adet": 61
+      }
+     ]
+    },
+    {
+     "ad": "Yemekteyiz TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-zz0gjxQiDI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbJWUoQsPtnjkYYKCANVa0F",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Zahide Yetiş'le Sence? TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_7t_fgBE9cg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZLAVv4yTWhF_yCZxJxqPGg",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Yaparsın Bilirim TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ExL6fL4YB4Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbbxRVJIPEDgQXfOIyN-N2b",
+       "adet": 16
+      }
+     ]
+    },
+    {
+     "ad": "Caner Taslaman ile Aklımdaki Sorular 2025",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/owQ443soz_Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgY-OHFCBHRfLrp6s23TFXFI",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "İşte Benim Stilim TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/2cfi4Hc4Uok/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZOpbOCUr6IlUuQbycv6s3-",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Emre Dorman ile Aklımdaki Sorular Ramazan 2025",
+     "aciklama": "Emre Dorman ile Aklımdaki Sorular Ramazan'ın yeni bölümü yayınlandı.",
+     "afis": "https://i.ytimg.com/vi/9ZNmi15e37s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgatdka3Ap9mRvE-hYKHhvDf",
+       "adet": 28
+      }
+     ]
+    },
+    {
+     "ad": "Gel Konuşalım TV8",
+     "aciklama": "Gel Konuşalım ile ilgili tüm videolara bu listeden ulaşabilirsiniz. :)",
+     "afis": "https://i.ytimg.com/vi/j-srJiFS1sw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLZZP0W2HrSgY3pnjnCUGC7JPHC1s6XUx8",
+       "adet": 39
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLZZP0W2HrSgZb7kk_KVJZHqA9jk11YPT7",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Ben Eşimi Bilmez Miyim",
+     "aciklama": "Ben Eşimi Bilmez Miyim",
+     "afis": "https://i.ytimg.com/vi/AKlmODq1Mzk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaWIx62xyYx45GhwDzeLc52",
+       "adet": 12
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 87. Bölüm",
+     "aciklama": "Bir Yemek Olsan | 87. Bölüm",
+     "afis": "https://i.ytimg.com/vi/mYOUcGkLNwg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZYmjsH8BGApu9bVqL3FNXB",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 86. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/kyI--H-inr0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbT83wzbZOJrvGPWczZHoft",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 85. Bölüm",
+     "aciklama": "Bir Yemek Olsan'ın yeni bölümü yayınlandı.",
+     "afis": "https://i.ytimg.com/vi/oiL4ToMwXr8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbsooSy9TJvXhJmeP_52dpy",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 83. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/KkPU3Lm0wM8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgasC7AmyS4HeP229HQMkpc-",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 82. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/1l_zxzZcOKc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZCYugcM2Yd1cf9zV-C4Hlt",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 81. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_YBjA_MIYy0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaRYrVO1hlcAfCbqSXBPh5_",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 80. Bölüm",
+     "aciklama": "Bir Yemek Olsan'ın yeni bölümü yayınlandı.",
+     "afis": "https://i.ytimg.com/vi/8A0_fB82tTQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYwqGN-PzOKIV_HrZoufJsL",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 79. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TBBSGjK6bpU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb-Me7zHhI-XxRznOBceQYe",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 78. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/X9bT3JO0DjM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYIZrhziLsJahcVvR7s_xnm",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 75. Bölüm",
+     "aciklama": "Bir Yemek Olsan | 75. Bölüm",
+     "afis": "https://i.ytimg.com/vi/84PdzjBLtBE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbs5o-RLjA9b6YUI5Yz1N0H",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan 74. Bölüm",
+     "aciklama": "Bir Yemek Olsan | 74. Bölüm",
+     "afis": "https://i.ytimg.com/vi/K3CfSfnSlGw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYp10-0X9LoCoXv-1YSrub6",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Emre Dorman ile Aklımdaki Sorular 2024",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/emUWAWhD6Zo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbG1wNL7UXKXWbNv4_RzdV8",
+       "adet": 67
+      }
+     ]
+    },
+    {
+     "ad": "Aramızda Kalmasın TV8",
+     "aciklama": "Aramızda Kalmasın | TV8",
+     "afis": "https://i.ytimg.com/vi/OQ4SIQXTRig/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb42uJouhpWVXlwHTR76ZvU",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Bir Yemek Olsan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/oho50iK3Gas/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbILmm27ouzbe6kCd2s5AQe",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Demet ve Jess'le Gel Konuşalım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/L27QsDk8fi4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbA1GRTh4NYEuBovf8G1iuX",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Emre Dorman ve Aklımdaki Sorular 2023",
+     "aciklama": "TV8'de izleyiciyle buluşan Emre Dorman ile Aklımdaki Sorular'ın yeni bölümleri sizlerle...",
+     "afis": "https://i.ytimg.com/vi/XP0U_8Xe8SA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaZiqrnA52CBgeggeWFcI2S",
+       "adet": 17
+      }
+     ]
+    },
+    {
+     "ad": "Gençlik Rüzgarı TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/WHie89QnZRw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb6IGzFG5it3RSgV2Ghu8cg",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Ali Yeşilırmak ve Dostları",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/N4YGFjfvDos/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSga7XGEdT66drWrw1xblETj2",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Emre Dorman ile Aklımdaki Sorular Ramazan Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/GsFmgMDHhQ4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbzC3VihKqWW7g7_q3NgDOO",
+       "adet": 22
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 45. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/wqLPdYtV1Vg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSga9eaFdVsQTVjlRpc-qE5Ax",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 44. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/XM1RLTk-CHg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZRrXg9vsIReqzc30x_5Qg_",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 43. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/XGUxtAUaYrg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZuLCSodA7klQQXjYXrSEl6",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 42. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/2GfrvJA5lgg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaR49SzY2A3zy5f-gs8Nxte",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Müge ve Gülşen'le 2. Sayfa",
+     "aciklama": "Magazinin nabzı burada tutulacak. Müge Dağıstanlı ve Gülşen Yüksel’in sunumuyla “Müge ve Gülşen’le 2. Sayfa” TV8’de",
+     "afis": "https://i.ytimg.com/vi/-Z9_-g5ZG3c/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZt2K2I8b5mw7lSWSDBUE01",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 40. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/pPFppt-PJy8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYmVfYqkx7gdII8dJr_eXE7",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 39. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/k75PUe-HGQE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZbkWLQWpuvjQuZerLe-rtC",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 38. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/2amTtC6pUhc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZttUtvwBre1k2PZAcEIO6h",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 37. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ty8WLNK0P_4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZcUCHIwp-W77E_pwpE6uio",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 36. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/m6ZlTDlx0io/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbR5CLgB3JH0yInYXJqdM2t",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 35. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qtJx_g5AAqM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaS0upH9CqmrRoHifl1uGvZ",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 34. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JPgyUSHGPVc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ5ePUKWpro3BY7N3zxlOkw",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 33. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/irFoFB719lw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYYpjdmIoqm8es0YceI8Mtj",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 32. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ZNnfhyRTOY0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYBI8fjKS1Lj_r0NQTfcRyb",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 31. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8SbCOtuhBkM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYdEOZnJgmrSInWZb2K7Yse",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 30. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0UGaNpROTJI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaCLsolC8KOCqhodZL7O4x6",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 29. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/pRfiPrPE5aY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbm2xh200fpmEeV2EMR-LlC",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 28. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/rIxsKYWGw4w/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaTib6PL9wQamPnsObhOyZc",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 27. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/thuvn_Pgtcw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZPOhvbTwzVxe96XvvU_FVp",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 26. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YlgI7fgJawA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ_RdgmABqHRDFWyKMtGJNp",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 25. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Nlenf1uVcP4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ3jjnJIHFBQMU_1znHn75J",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 24. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/PsA2XaEhXCE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgY5LzucSe0rUPeZD4ghPn3n",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 23. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HCGdb4PInsg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaibT2lbq5kilPjRN8AR7oc",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 22. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/hBw7fHtFeQc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgba3m9NDNBdI8jV6dh1v6en",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 21. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/f9EydekOsR0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZeaPCtvxzlD99ik48QMIua",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 20. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/LYPFvFv3P3Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbKKRaViyUvideHLrIKExBt",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 18. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/28tPk65smlg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYNFxgmVS2Oj_d4QSP44LSq",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 17. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QnS0GTOXdvM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaCnWJyv-VsEWU4yo9f_4uB",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 16. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Ugac3eL6ows/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaUVfEryI0-9W7eEeKifqfJ",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 15. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/fbDBUOPIqwA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSga7g6dpvrjWEloL1xfoPoGW",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 14. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/17Dc8zRQ5EM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbHt0-FUamPuYV6lVfxZFp7",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 13. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gwjZpG20nTs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb0A5KgPRb1p2u8Yxyn2LWN",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 12. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lBRjs2z1AJw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaqR9yKnAMbOrwMgL_--tW8",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle Tüm Hikayeler",
+     "aciklama": "“Paylaş Benimle” konuklarının hayat hikayeleri seyircinin yüreğine dokunacak ve herkesi kendi hayat hikayesinde bir yolculuğa çıkartacak.",
+     "afis": "https://i.ytimg.com/vi/8mh2jEzenbg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbAv6kzFL3Kz1tpjscWHfCp",
+       "adet": 17
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 11. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HCOmu1dr0AU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZPxuIg5KiKIlLaoURkcPjv",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 10. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3Q8LXKlaKNI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYGsPl0wSNIgLYhW6_a-hsF",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 1. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/k2W5iw0MMBE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYsU4jNIj1EGFIk7MRQV1-R",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 2. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Y8AmdSjPa-4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbjk7pW6k63J6yNcw8nhL_0",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 3. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/09BN5XiyieQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYyC62EqsQwBLXA_yqE36KX",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 4. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Hua0sBzbECE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaELBx9n0OOzN7bdpz4rFNr",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 5. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6FrcC9ZAIKw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaBF_3lKcZnYvAVWkx9PKFO",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 7. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/hF0I7wpuaEg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbfIhxMzUo3Y4UPBDjD1eWe",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 8. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4YybJ_iswyQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ-3U9l9UWARJfiMqZDMKdq",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle 9. Bölüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/FEmLw4lEnLc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaNtzLyd7KfnWwASIYiP6oW",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Paylaş Benimle",
+     "aciklama": "“Paylaş Benimle” konuklarının hayat hikayeleri seyircinin yüreğine dokunacak ve herkesi kendi hayat hikayesinde bir yolculuğa çıkartacak.",
+     "afis": "https://i.ytimg.com/vi/EOi8hOU-rEk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZovNAodk1uNoCAOPckZrU8",
+       "adet": 42
+      }
+     ]
+    },
+    {
+     "ad": "Survivor Panorama TV8",
+     "aciklama": "Survivor Panorama ile ilgili tüm videolara bu listeden ulaşabilirsiniz!",
+     "afis": "https://i.ytimg.com/vi/D9Urjc2h49k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbqanKrMC6Yk9lQjxu_e_ws",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Survivor Ekstra TV8",
+     "aciklama": "Survivor Ekstra ile ilgili tüm videolara bu listeden ulaşabilirsiniz!",
+     "afis": "https://i.ytimg.com/vi/tVuQVWMbA40/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaZ-qh3GABY4joA3GBbCLYG",
+       "adet": 39
+      }
+     ]
+    },
+    {
+     "ad": "Şaşkın Bakkal 216 TV8",
+     "aciklama": "Şaşkın Bakkal 216 ile ilgili tüm videolara bu listeden ulaşabilirsiniz. :)",
+     "afis": "https://i.ytimg.com/vi/IE4EzcRhyEY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb4RK4EfpuiRrfhcs3N-sf9",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Doya Doya Moda TV8",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/V_yv1bJJBQQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaBt14X7M1D1hNbJvUTaPP3",
+       "adet": 91
+      }
+     ]
+    },
+    {
+     "ad": "O Ses Türkiye TV8",
+     "aciklama": "O Ses Türkiye ile ilgili tüm videolara bu listeden ulaşabilirsiniz. :)",
+     "afis": "https://i.ytimg.com/vi/C7AUt2lGTDo/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZgF5t28DtBBmXnHAAgHwKm",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "Seda Sayan ile Yemekteyiz TV8",
+     "aciklama": "Seda Sayan ile Yemekteyiz ile ilgili tüm videolara bu listeden ulaşabilirsiniz. :)",
+     "afis": "https://i.ytimg.com/vi/RMirEKS_YKE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgb2rm6-8NGFiSwbT96fZsiP",
+       "adet": 1
+      }
+     ]
+    },
+    {
+     "ad": "MasterChef Türkiye 2019 Özetler TV8",
+     "aciklama": "MasterChef Türkiye ile ilgili tüm videolara bu listeden ulaşabilirsiniz. :)",
+     "afis": "https://i.ytimg.com/vi/cGh-ny0ukUs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaBw8tIVuitwilZ6qysDjnF",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Buyur Bi De Burdan Bak",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BqmKpghrTfs/hqdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ6VOXa_7QTBkZA33xaL32X",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "4 Büyükler Salon Turnuvası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6SP2A_V4HGU/hqdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgbsxTPP5QsVAW_NCHSydzHE",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Saba ile Oyuna Geldik",
+     "aciklama": "6 ünlü konuk, eğlenceli sohbet, birbirinden keyifli oyunlar, rekabet, atışma ve tabi ki bol kahkaha ve ünlülerin en eğlenceli halleri “SABA İLE OYUNA GELDİK” programında.",
+     "afis": "https://i.ytimg.com/vi/1RvSYAQiEFQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYT5LB_t0hThcqeT5KzPHpL",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Aile Doktoru",
+     "aciklama": "Prof. Dr. Cihan Aksoy ve Nur Tuğba Algül’ün sunacağı “Aile Doktoru” hafta içi her gün TV8 ekranlarından izleyici ile buluşacak.",
+     "afis": "https://i.ytimg.com/vi/g2jlmwSBTN0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgaziwBJDcASPJSSH7G1aa2U",
+       "adet": 69
+      }
+     ]
+    },
+    {
+     "ad": "Kaçak Gelinler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/M4VrMooP1Qg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgYepL-SczEv0nIp0C9Tz4NF",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Aramızda Kalmasın",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/vCrJ_R-Y5Gg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgY9HY_SsjHm2kZGlSzYML9E",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Ver Fırına",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Yb0Xic1Oink/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLZZP0W2HrSgZ6t7clY7pmhPDatNXWdosD",
+       "adet": 326
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": "beIN SPORTS",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "Galatasaray - Fenerbahçe Shorts İçerikler",
+     "aciklama": "Galatasaray - Fenerbahçe Shorts İçerikleri İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/RuQQJiyJnso/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLbGwb-R53MiI",
+       "adet": 17
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Galatasaray - Fenerbahçe Derbi Özel İçerikler",
+     "aciklama": "Galatasaray - Fenerbahçe Derbisine Dair Özel İçerikleri İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/ash1fLbXY68/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLMkaSzsjv4Xk",
+       "adet": 33
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "beIN Teknik",
+     "aciklama": "beIN SPORTS Türkiye, yeşil sahadaki mücadelenin teknik ve taktiksel detaylarını ele alan programı beIN teknik’i 20 Ekim’de futbolseverlerle buluşturuyor.",
+     "afis": "https://i.ytimg.com/vi/pJ-JxIkEw3s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLcGNizI9fS9M",
+       "adet": 4
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Taktik Tahtası 2026/2027",
+     "aciklama": "Ekranların tecrübeli ve sevilen yorumcuları İhsan Bayülken ve Cüneyt Erden, Taktik Tahtası'nda basketboldaki son gelişmeleri, teknik ve taktik detayları yorumluyor!",
+     "afis": "https://i.ytimg.com/vi/adJkX1PXKQQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLLGTSxkOcA88",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Basketbol Shorts - 2026/2027",
+     "aciklama": "Basketbol Shorts - 2026/2027",
+     "afis": "https://i.ytimg.com/vi/m16eNr2NVcc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLG6-oECGqZZg",
+       "adet": 1
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Glint Çayırova Belediyesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/oDFBbx_0hJg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLEKUZIPLVMJs",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Biotekno Körfez Basket",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CmfIviTPyLo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLGJnmQJjX-r0",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "A101 | Türkiye Sigorta Basketbol Süper Ligi - 2026/27",
+     "aciklama": "Türkiye Sigorta Basketbol Süper Ligi'nde Oynanan Maçların Özetleri Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/oDFBbx_0hJg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLbR6Oi5YfJ4g",
+       "adet": 48
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Yukatel Denizli Basket",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Hi8wUIhA_zw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLR-3zq-zFGYI",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Pizzabulls Bordo Bandırma",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/uCc4Hwev3r0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLL8-q8fDYUqE",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trabzonspor vs Galatasaray | Derbi Özel İçerikler",
+     "aciklama": "Trabzonspor - Galatasaray Maçına Dair İçerikler Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/ROGrIc015To/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLE8PN0KvtCZI",
+       "adet": 17
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "F1 2026 Sıralama Turları Özetleri",
+     "aciklama": "F1 2026 Sıralama Turları Özetlerini İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/Bz9NeAulxJ0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA1VFpe1qr-Y",
+       "adet": 8
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Fenerbahçe vs Beşiktaş | Derbi Özel İçerikler",
+     "aciklama": "Fenerbahçe - Beşiktaş Derbisi İçin Hazırlanan Özel İçerikler Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/OhRL1eQAXWg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLJy-HT1F3Gy0",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bir Zamanlar Anadolu'da",
+     "aciklama": "Süper Lig tarihine damga vuran unutulmaz yıldızlar, efsanevi Anadolu hikayeleriyle geri dönüyor! ⚽️",
+     "afis": "https://i.ytimg.com/vi/sYZAX_senL8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLWg4mX67ubuc",
+       "adet": 8
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Academico Viseu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/O9uZpzJsKK4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLawtHsRUoDCs",
+       "adet": 5
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Premier Express 2026/2027",
+     "aciklama": "Arda Vatansever Ve Tugay Kosova'nın Yorumlarıyla Premier Express Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/2NEYo2EvdZs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLLbdFJMhuM_o",
+       "adet": 8
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Le Mans",
+     "aciklama": "Le Mans",
+     "afis": "https://i.ytimg.com/vi/zC9Sk8UStGw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLRTiWcEq3L6Q",
+       "adet": 9
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ligue 1 McDonald's  2026-2027 Sezonu Golleri Shorts",
+     "aciklama": "Ligue 1 McDonald's  2026-2027 Sezonu Golleri Shorts",
+     "afis": "https://i.ytimg.com/vi/TknzruLUh4g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLBqlkHlQdCE8",
+       "adet": 2
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Premier League 2026-2027 Sezonu Golleri Shorts",
+     "aciklama": "Premier League 2026-2027 Sezonu Golleri Shorts",
+     "afis": "https://i.ytimg.com/vi/-HREt8QkfUY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLGLl-zIPX8N0",
+       "adet": 4
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Coventry",
+     "aciklama": "Coventry",
+     "afis": "https://i.ytimg.com/vi/h0SKdJTc0IE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLHUUVQU81qGs",
+       "adet": 9
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu",
+     "aciklama": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/VJ0wuZVUet0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLC-ntSjW5uvU",
+       "adet": 90
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ligue 1 McDonald's Maç Özetleri - 2026/2027 Sezonu",
+     "aciklama": "Ligue 1 McDonald's 2026/2027 Sezonu Maç Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/Lj0He_5nMUc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLN2uIXbY_9ZA",
+       "adet": 81
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İstatistik Bankası | Shorts",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Kfly7dT-Frc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLW8yvl_kV5O4",
+       "adet": 8
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "A101 | Trendyol Süper Lig Özetleri | 2026/2027 Sezonu",
+     "aciklama": "Trendyol Süper Lig 2026/2027 Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/F_YE8E84i-s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSBL5_PlWv-4",
+       "adet": 90
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "10 Numara - 2026/2027 Sezonu",
+     "aciklama": "Futbol dünyasında neler oluyor? Uğur Meleke’nin benzersiz analizleri ve yorumlarıyla Süper Lig ve Avrupa futbolundaki tüm gelişmeleri 10 Numara’da keşfedin!",
+     "afis": "https://i.ytimg.com/vi/kwH86c6W6O8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLDyvCvBrbFY0",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trio - 2026/2027 Sezonu",
+     "aciklama": "Trendyol Süper Lig’de haftanın tüm maçlarının tartışmalı pozisyonları.Hakemlerin performansları ve verilen kararların detaylı analizleri Trio'da.",
+     "afis": "https://i.ytimg.com/vi/cMbNy8g3aqM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfwwh7x0pe7w",
+       "adet": 39
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol 1. Lig 2026-2027 Sezonu Golleri Shorts",
+     "aciklama": "Trendyol 1. Lig 2026-2027 Sezonu Golleri Shorts",
+     "afis": "https://i.ytimg.com/vi/ujV7oH148FQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLYSZon-EUDZc",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig 2026-2027 Sezonu Golleri Shorts",
+     "aciklama": "Trendyol Süper Lig 2026-2027 Sezonu Golleri Shorts",
+     "afis": "https://i.ytimg.com/vi/UGx3XUl6rNg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSvdVcfDcSug",
+       "adet": 30
+      }
+     ],
+     "spor": true
+    }
+   ]
+  },
+  {
+   "ad": "TRT Spor",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "Avrupa Ligi Maç Özetleri (2026-27)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CF3P8WYxyxI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLOWxTUd8YsIs",
+       "adet": 45
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Şampiyonlar Ligi Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qiJTG_aM4Is/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLeN5eCfUnz7E",
+       "adet": 23
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Şampiyonlar Ligi Özetleri (2026-27)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/yAa7ZAcL2IM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLQs_w-FaXbl0",
+       "adet": 85
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İtalya Kupası Özetleri (2026-27)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/MrU9k3p6RdA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLX8scjh2K1nQ",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Konferans Ligi Özetleri (2026-27 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/K9O55lFpA1A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLFwIjFJS4so0",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Transfer 2026-2027",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0OYnfany5tE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSzUfQz3DYhI",
+       "adet": 21
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2026 Dünya Kupası Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/XFT1RKppBWI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTTihk0_1xcDJdxuowFAQWO",
+       "adet": 100
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İhtimaller Kupası - 2026 Dünya Kupası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lrcBXMF0RRA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTZe51nMw9Iub1j9JuqN0jM",
+       "adet": 8
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2026 Dünya Kupası Takımları Tanıyalım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/RUgRLxZDXBY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSlwUan-meN6v4WcX0u-rer",
+       "adet": 15
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2026 Dünya Kupası Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Vq4deo0XCc0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTUL68tKbRxIIhoSOg8Dr7X",
+       "adet": 81
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "FA Cup Maç Özetleri (2025-26 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CylA3SfKPzc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQKo-HSaUtliXPva_Ke1gyI",
+       "adet": 33
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İtalya Kupası Maç Özetleri (2025-26)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/nN-uHpWxd0Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTHUMW-LqPgS-0Wc80cz6_W",
+       "adet": 17
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Abdullah Avcı ile Analiz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TFxl7njpK6Y/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQGQKTTvfJlopwOlTmVqMii",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Konferans Ligi Özetleri (2025-26 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/jv0Jz5xPz-w/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRzVk82Y8cNI1b-ldjvkEPK",
+       "adet": 60
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Avrupa Ligi Maç Özetleri (2025-2026 sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/EeXQ83Yc9yU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSbOPo8ZpnjDAT4RBaEaEKA",
+       "adet": 100
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Şampiyonlar Ligi Özetleri (2025-26 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/O_mqd_o3oSA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQ3W0FjwZJqPt-Ez5u1Asd4",
+       "adet": 100
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Teknik Analiz",
+     "aciklama": "Hünkar Mutlu, Bünyamin Gezer ve Tarık Üstün ile Teknik Analiz TRT Spor'da",
+     "afis": "https://i.ytimg.com/vi/ENrG8zt6Epk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQxIDQHYaV27NG59ch6oSQe",
+       "adet": 100
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2025 Avrupa Kadınlar Futbol Şampiyonası",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Z2_GxjjJEHw/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQ3lQ-tAIWhyEYhHlq8G9AH",
+       "adet": 30
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Çizginin Ötesinde",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0alzBTsaxzA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSPXw3IOqcMwi2WkktDgg4I",
+       "adet": 5
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "FIFA Kulüpler Dünya Kupası Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/NlI0y5roftU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRURKiSsdHTxkKNjpkEC7SY",
+       "adet": 63
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Transfer 2025-2026",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/2bB97bGtYWs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRg680stowcOwL2ftG23e5I",
+       "adet": 53
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bizim Ligler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cV4dfJM1EEw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTgiOEa4m1M7F3Pzk4rXqJT",
+       "adet": 20
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "FA Cup Maç Özetleri (2024-25 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/nXYJxoY67dI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRWBUf497Cqm03i4CZ3Zlex",
+       "adet": 28
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Tabii Ki Spor",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/OAgz0jK8VIo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRgVmeKb7O4dELbGcUwvEGU",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Konferans Ligi Maç Özetleri (2024-2025 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/INHvIFyFg2g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSN7Mv0O8FVrSzJTBN24XA5",
+       "adet": 62
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Avrupa Sahnesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/s7PdB3QX5kg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsT5glu2lmBmKFvt-YIEePl2",
+       "adet": 53
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Suudi Arabistan Pro Lig maç özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ZVmp8hYyIUc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSNu4TwdEM_0iscQRfI8lOp",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    }
+   ]
+  },
+  {
+   "ad": "A Spor",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "Ziraat Türkiye Kupası - Full Maç | 2026-2027",
+     "aciklama": "Ziraat Türkiye Kupası 2026-2027 | Maçların Full Bölümü ⚽📺 Ziraat Türkiye Kupası'nın 2026-2027 sezonundaki tüm karşılaşmaların full bölümü ve kesintisiz tekrarı bu listede!",
+     "afis": "https://i.ytimg.com/vi/dhsHgBrFW_s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLP352Jvxgtog",
+       "adet": 26
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası - Maç Özetleri | 2026-2027",
+     "aciklama": "Ziraat Türkiye Kupası 2026-2027 Sezonu - Maç Özetleri ⚽📺 Ziraat Türkiye Kupası'nın 2026-2027 sezonunda oynanan tüm karşılaşmaların heyecan dolu özetleri bu listede!",
+     "afis": "https://i.ytimg.com/vi/3qEm7Kn00gU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLPteTDQSu-LM",
+       "adet": 39
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası - Shorts | 2026-2027",
+     "aciklama": "2026 / 2027 Ziraat Türkiye Kupası'nın en heyecanlı anları, muhteşem goller, penaltılar ve kırmızı kartlar dikey video formatıyla bu listede!",
+     "afis": "https://i.ytimg.com/vi/X5zLxGyKJ-g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLYO4eyquxZ_U",
+       "adet": 2
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası - Önemli Anlar | 2026-2027",
+     "aciklama": "Ziraat Türkiye Kupası 2026-2027 Sezonu - Tüm Önemli Anlar! ⚽🔥 ZTK 2026-2027 sezonunun en heyecanlı anları tek bir listede!",
+     "afis": "https://i.ytimg.com/vi/ONH8X9zHPiU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLG_b3QNvqSmc",
+       "adet": 45
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "UEFA Uluslar Ligi - Shorts",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/N00QnOsNZC8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLZuaRwnpvhFU",
+       "adet": 4
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "UEFA Uluslar Ligi Önemli Anlar - A Spor",
+     "aciklama": "UEFA Uluslar Ligi’nde oynanan maçların en önemli anları bu oynatma listesinde! İyi seyirler...",
+     "afis": "https://i.ytimg.com/vi/ZsyjdRCr7_A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLRdkys-cuY8Q",
+       "adet": 88
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "UEFA Uluslar Ligi Maç Özetleri & Goller | A Spor",
+     "aciklama": "Uluslar Ligi maç özetlerini izlemek için ihtiyacınız olan tek oynatma listesi. 2026 UEFA Uluslar Ligi'nin heyecan dolu maç özetleri, muhteşem goller ve tartışmalı pozisyonlar A Spor kalitesiyle tek bir oynatma listesi…",
+     "afis": "https://i.ytimg.com/vi/hQCX9Llb4YA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLD5F8F5IWQwE",
+       "adet": 100
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Uluslar Ligi Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6qKgIDS4PcY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLPeZqita2xQk",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası 2026-2027 Sezonu",
+     "aciklama": "Ziraat Türkiye Kupası 2026-2027 Sezonu",
+     "afis": "https://i.ytimg.com/vi/S0Ou2rAOezE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLY5MUjX9Fblc",
+       "adet": 71
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İbrahim Yavuz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4nZRkpf9mxo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLGd-of_bzT9I",
+       "adet": 21
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Çakar’ın Kupa Defteri - Midas",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/LlMsPHaD2R8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OLiBfZhGuwGpXwz_9EmzAMI",
+       "adet": 15
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Kupada Neler Oluyor? - Halkbank - Shorts",
+     "aciklama": "Dünya Kupası'na dair son gelişmeler, maç analizleri ve çok daha fazlası A Spor YouTube'da!",
+     "afis": "https://i.ytimg.com/vi/vWdQvHCqCaY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OJ1Ck1c43GyC6Zj_NDpFtpl",
+       "adet": 1
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Dünya Kupası Özel - Shorts - Türk Telekom 5G",
+     "aciklama": "Dünya Kupası'na dair tüm sıcak gelişmeler A Spor YouTube'da!",
+     "afis": "https://i.ytimg.com/vi/LhdLweAZMkg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OKe7CzA4oyWEcUYTohFAmny",
+       "adet": 9
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Kupa'da Neler Oluyor? - Halkbank",
+     "aciklama": "2026 FIFA Dünya Kupası’nda futbol heyecanı tüm dünyayı sararken, turnuvaya dair en sıcak gelişmeler, taktiksel analizler ve daha fazlası A Spor YouTube ekranlarında sizlerle buluşuyor Taner Karaman ve Onur Özkan  Düny…",
+     "afis": "https://i.ytimg.com/vi/mx--YqfT6gA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OL8gylhpqeWD25cfuOMgbAp",
+       "adet": 19
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "A Spor YouTube Özel - 90+5G - Türk Telekom",
+     "aciklama": "2026 Dünya Kupası heyecanı canlı yayınlarla A Spor Youtube'da! Heyecanı ortak olmak için yayınlarımızı kaçırmayın.",
+     "afis": "https://i.ytimg.com/vi/_ZJu8KQ-pAc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLE3fYdywoH8Q",
+       "adet": 35
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ay Yıldız Masası - Shorts - Kızılay Maden Suyu",
+     "aciklama": "Dünya Kupası heyecanı A Spor Youtube'da yaşanıyor. Milli Takım'dan son haberler, kupaya dair önemli bilgiler. Hepsi A Spor Youtube'da.",
+     "afis": "https://i.ytimg.com/vi/ykePkoqklu4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLHmRKb_BGsm8",
+       "adet": 4
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Dünya Kupası Özel",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0MctZVHpjDo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLV2qK7OaGVI4",
+       "adet": 19
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Dünya Kupası'nda Bugün",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Rm7Ly5o4zS0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLcpizgsqLSQE",
+       "adet": 18
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Küresel Taktik Masası - Shorts - İyi Finans",
+     "aciklama": "A Spor YouTube’da Dünya Kupası heyecanı başlıyor! Küresel Taktik Masası programımızda; Abdullah Ercan, Taner Karaman ve Demet Gedik ile Dünya Kupası’nda kullanılan tüm yeni taktikleri, A Millî Takımımızın taktiksel ol…",
+     "afis": "https://i.ytimg.com/vi/rxJImlfyTBQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLB3ChwmQNExA",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2026 Dünya Kupası - Shorts",
+     "aciklama": "2026 FIFA Dünya Kupası, 48 takımın katılımıyla 11 Haziran - 19 Temmuz 2026 tarihleri arasında Kuzey Amerika kıtasının üç büyük ülkesinde futbol rüzgarları estirecek.",
+     "afis": "https://i.ytimg.com/vi/N5qJ8aGldpQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLWAcjMC4vZ2E",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Küresel Taktik Masası - A Spor Youtube - İyi Finans",
+     "aciklama": "A Spor YouTube’da Dünya Kupası heyecanı başlıyor! Küresel Taktik Masası programımızda; Abdullah Ercan, Taner Karaman ve Demet Gedik ile Dünya Kupası’nda kullanılan tüm yeni taktikleri, A Millî Takımımızın taktiksel ol…",
+     "afis": "https://i.ytimg.com/vi/sc6XZd4euf4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSP1SU_7wzUQ",
+       "adet": 35
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ay Yıldız Masası - A Spor Youtube - Kızılay Maden Suyu",
+     "aciklama": "A Spor YouTube’da Dünya Kupası heyecanı başlıyor! Ay Yıldız Masası programımızda; Fatih Akyel, Murat Özbostan ve Serkan Korkmaz, Dünya Kupası’na dair tüm detayları, A Millî Takımımızın kadrosundaki güçlü ve zayıf yönl…",
+     "afis": "https://i.ytimg.com/vi/_YTjOiwJ370/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLbgd0NgcuVs8",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Dünya Kupası 2026",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/znn-oUF37-Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSdHQVQXLVso",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2026 Dünya Kupası Analizleri - Canlı Yayınlar - Özel Programlar",
+     "aciklama": "Dünya Kupası'na dair aradığınız her şey A Spor YouTube'da!",
+     "afis": "https://i.ytimg.com/vi/0dLjq6i5U-0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLVIs3Dv3tyeI",
+       "adet": 52
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Dünya Kupası Yolunda",
+     "aciklama": "Dünya Kupası Yolunda",
+     "afis": "https://i.ytimg.com/vi/6GC4lCc8-_A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OInd-OJZj8fh5Ny3yyBLQpC",
+       "adet": 7
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "İbrahim Yavuz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6RdTyzCDfcc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OLdaR1d54rd4IPhE2EZzVS_",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    }
+   ]
+  }
+ ]
+}
