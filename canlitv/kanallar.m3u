@@ -43,6 +43,11 @@ https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
 #EXTINF:-1 tvg-id="BeyazTV.tr" tvg-logo="https://i.imgur.com/uykIdML.png" group-title="Ulusal",Beyaz TV
 https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3
 #EXTINF:-1 tvg-id="Teve2.tr" tvg-logo="https://i.imgur.com/rsoSLih.png" group-title="Ulusal",Teve2
+https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd
+#EXTINF:-1 tvg-id="Teve2.tr" tvg-logo="https://i.imgur.com/rsoSLih.png" group-title="Ulusal",Teve2
+#EXTVLCOPT:http-referrer=https://www.teve2.com.tr/
+https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd
+#EXTINF:-1 tvg-id="Teve2.tr" tvg-logo="https://i.imgur.com/rsoSLih.png" group-title="Ulusal",Teve2
 https://demiroren-live.daioncdn.net/teve2/teve2.m3u8
 #EXTINF:-1 tvg-id="360.tr" tvg-logo="https://i.imgur.com/agn47sQ.png" group-title="Ulusal",360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
