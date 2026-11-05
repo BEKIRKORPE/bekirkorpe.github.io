@@ -94,6 +94,9 @@ def dizi_adi(t):
     for r in TEMIZLE:
         s = re.sub(r, " ", s, flags=I)
     s = re.sub(r"[|•·–—:_/#-]+", " ", s)
+    s = re.sub(r"\s+I\s+|\s+I$", " ", s)                                         # "Taşacak Bu Deniz I" ayıracı
+    s = re.sub(r"\b(trt ?1|atv|show ?tv|star ?tv|now ?tv|tv ?8)\b", " ", s, flags=I)    # "Mahrem TRT 1" → "Mahrem"
+    s = re.sub(r"^nostal[jJ]i̇? ?seri̇?si̇?\s*", "", s, flags=I)                       # "Nostalji Serisi Bay Yanlış" → "Bay Yanlış"
     return re.sub(r"\s+", " ", s).strip()
 
 
