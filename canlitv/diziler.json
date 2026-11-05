@@ -1,0 +1,22 @@
+{
+  "_nasil": "Bu dosya https://bekirkorpe.github.io/canlitv/diziler.json adresinde yayinlanir. Degisince uygulama kendiliginden yeniler (guncelleme gerekmez). Sadece kanallarin RESMI YouTube oynatma listeleri konur. 'liste' alanina YouTube'daki Paylas linki aynen yapistirilabilir. Resmi YouTube'u olmayan dizi icin 'sezonlar' yerine 'link' (resmi site) yazilir. Dizisi olmayan kanal uygulamada gorunmez; hic dizi yoksa Diziler dugmesi gizli kalir.",
+  "_ornek": {
+    "ad": "Dizi Adi",
+    "aciklama": "Iki-uc cumlelik kisa aciklama.",
+    "afis": "",
+    "sezonlar": [
+      { "ad": "1. Sezon", "liste": "https://www.youtube.com/playlist?list=PL..." },
+      { "ad": "2. Sezon", "liste": "PL..." }
+    ]
+  },
+  "apiKey": "",
+  "kanallar": [
+    { "ad": "TRT 1", "diziler": [] },
+    { "ad": "ATV", "diziler": [] },
+    { "ad": "Kanal D", "diziler": [] },
+    { "ad": "Show TV", "diziler": [] },
+    { "ad": "Star TV", "diziler": [] },
+    { "ad": "NOW", "diziler": [] },
+    { "ad": "TV8", "diziler": [] }
+  ]
+}
