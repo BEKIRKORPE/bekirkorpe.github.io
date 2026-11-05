@@ -68,9 +68,25 @@ LISTE_ATLA = re.compile(r"(kesit|en çok izlenen|özel klip|yeni sezon|yakında|
                         r"tanıtım|shorts|sahneler|sahnesi|dizi müzik|şarkıları|jenerik|canlı yayın|röportaj|teaser|trailer|best of|"
                         r"behind the scenes|unutulmaz an)", I)
 VIDEO_ATLA = re.compile(r"(fragman|ön ?izleme|onizleme|tanıtım|teaser|trailer|kamera arkas|kamera önü|#shorts|\bshorts\b|sezon finali özeti)", I)
-TEMIZLE = [r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*b[oö]l[uü]mleri?", r"b[oö]l[uü]mleri?",
+TEMIZLE = [r"\b4k\b", r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*b[oö]l[uü]mleri?", r"b[oö]l[uü]mleri?",
            r"full\s*b[oö]l[uü]m(ler)?", r"\bfull\b", r"\bhd\b", r"\(.*?\)", r"\[.*?\]"]
 MIN_SURE, MIN_KISIM, MIN_SPOR = 20 * 60, 8 * 60, 61
+
+# --- SADECE DİZİ: yarışma, yemek, sohbet, gezi, haber, derleme listeleri atlanır ---
+DIZI_DEGIL = re.compile(
+    r"(öne çıkan|one cikan|kolaj|\bkısa\b|arşiv|dizileri|shorts|özel|önemli an|yarışma|yarisma|konser|bağış|"
+    r"mutfa|tarif|lezzet|yemek|sofra|sahur|iftar|ramazan|bayram|kur['’]?an|kuran|dua|vaaz|hadis|ilmihal|"
+    r"gezi|gezme|tatil|moda|stil|haber|bülten|sorular|soru|sohbet|söyleşi|talk|show kuşu|skeç|güldür|komedi dükkanı|"
+    r"futbol|maç|kupa|lig|spor|belgesel|çizgi film|klip|tv8\b|program|magazin|evlilik|gelin|yaparsın|pasaport|"
+    r"milyon|var mısın|kim gitsin|lingo|sahne|canlı|live|podcast|vlog|best|en güzel)", I)
+HOST = re.compile(r"(\bile\b|\b\w+['’](la|le|yla|yle)\b)", I)        # "Ömür Akkor ile …", "Zahide Yetiş'le …" → sunuculu program
+YIL = re.compile(r"\b20\d\d\b")                                          # "… 2026" → yıllık program sezonu
+SPOR_EVET = re.compile(r"(özet|ozet|goller|full maç|geniş özet|maçın tamamı)", I)
+SPOR_HAYIR = re.compile(r"(shorts|kısa|önemli an|röportaj|basın toplantısı|transfer|tanıyalım|teknik|taktik|antrenman)", I)
+
+
+def dizi_mi(baslik):
+    return not (DIZI_DEGIL.search(baslik) or HOST.search(baslik) or YIL.search(baslik))
 
 
 def dizi_adi(t):
@@ -252,6 +268,8 @@ def main():
             for l in lists[:30]:
                 if l["adet"] < 3 or key(l["baslik"]) in gizle or key(l["baslik"]) in var:
                     continue
+                if not SPOR_EVET.search(l["baslik"]) or SPOR_HAYIR.search(l["baslik"]):   # sadece maç özetleri / goller
+                    continue
                 eps = bolumler(l["id"], True, 2)
                 if not eps:
                     continue
@@ -261,7 +279,7 @@ def main():
         else:
             gruplar, adlar, gorulen = {}, {}, set()
             for l in lists:
-                if l["id"] in gorulen or l["adet"] < 3 or LISTE_ATLA.search(l["baslik"]):
+                if l["id"] in gorulen or l["adet"] < 3 or LISTE_ATLA.search(l["baslik"]) or not dizi_mi(l["baslik"]):
                     continue
                 gorulen.add(l["id"])
                 ad = dizi_adi(l["baslik"])
@@ -275,7 +293,8 @@ def main():
                 dolu = []
                 for l in g:
                     eps = bolumler(l["id"], False, 10)
-                    if eps:
+                    # dizi bölümü: başlıkların çoğunda "N. Bölüm" olmalı (sohbet/derleme listelerini eler)
+                    if eps and sum(1 for e in eps if e["n"] >= 0) >= max(2, 0.6 * len(eps)):
                         dolu.append((l, eps))
                 if not dolu:   # içi boş dizi: listeye hiç girmez
                     continue
