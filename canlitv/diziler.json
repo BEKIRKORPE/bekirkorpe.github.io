@@ -1,22 +1,91 @@
 {
-  "_nasil": "Bu dosya https://bekirkorpe.github.io/canlitv/diziler.json adresinde yayinlanir; degisince uygulama kendiliginden yeniler (guncelleme gerekmez). OTOMATIK: her kanalin 'youtube' satirina resmi YouTube hesabi yazilir (@kanal, user:Ad ya da UC... kimligi); uygulama o hesabin oynatma listelerinden dizileri ve sezonlari kendisi bulur (apiKey gerekir). Yanlis cikan dizinin adini 'gizle' listesine yaz. Elle eklenen dizi ('diziler') ayni adli otomatik dizinin yerine gecer. Resmi YouTube'u olmayan dizi icin 'sezonlar' yerine 'link' (resmi site) yazilir.",
+  "_nasil": "Bu dosya https://bekirkorpe.github.io/canlitv/diziler.json adresinde yayinlanir; degisince uygulama kendiliginden yeniler (guncelleme gerekmez). OTOMATIK: her kanalin 'youtube' satirina resmi YouTube hesabi yazilir (@kanal, user:Ad ya da UC... kimligi); uygulama o hesabin oynatma listelerinden dizileri ve sezonlari kendisi bulur (apiKey gerekir). Yanlis cikan dizinin adini 'gizle' listesine yaz. Elle eklenen dizi ('diziler') ayni adli otomatik dizinin yerine gecer. Resmi YouTube'u olmayan dizi icin 'sezonlar' yerine 'link' (resmi site) yazilir. SPOR: kanala \"tur\": \"spor\" yazilirsa her oynatma listesi ayri baslik olur (mac ozetleri), en yeni video en ustte.",
   "_ornek": {
     "ad": "Dizi Adi",
     "aciklama": "Iki-uc cumlelik kisa aciklama.",
     "afis": "",
     "sezonlar": [
-      { "ad": "1. Sezon", "liste": "https://www.youtube.com/playlist?list=PL..." }
+      {
+        "ad": "1. Sezon",
+        "liste": "https://www.youtube.com/playlist?list=PL..."
+      }
     ]
   },
   "apiKey": "AIzaSyChUHFpIXsCMJgnnXPRa5wDcMN0zzwBjmY",
   "gizle": [],
   "kanallar": [
-    { "ad": "TRT 1",   "youtube": ["@trt1"], "diziler": [] },
-    { "ad": "ATV",     "youtube": ["UCUVZ7T_kwkxDOGFcDlFI-hg"], "diziler": [] },
-    { "ad": "Kanal D", "youtube": ["user:KanalD"], "diziler": [] },
-    { "ad": "Show TV", "youtube": ["@showtv"], "diziler": [] },
-    { "ad": "Star TV", "youtube": ["user:STARTVSTAR"], "diziler": [] },
-    { "ad": "NOW",     "youtube": ["@nowtvturkiye"], "diziler": [] },
-    { "ad": "TV8",     "youtube": ["@TV8"], "diziler": [] }
+    {
+      "ad": "TRT 1",
+      "youtube": [
+        "@trt1"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "ATV",
+      "youtube": [
+        "UCUVZ7T_kwkxDOGFcDlFI-hg"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "Kanal D",
+      "youtube": [
+        "user:KanalD"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "Show TV",
+      "youtube": [
+        "@showtv"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "Star TV",
+      "youtube": [
+        "user:STARTVSTAR"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "NOW",
+      "youtube": [
+        "@nowtvturkiye"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "TV8",
+      "youtube": [
+        "@TV8"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "beIN SPORTS",
+      "tur": "spor",
+      "youtube": [
+        "UCPe9vNjHF1kEExT5kHwc7aw"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "TRT Spor",
+      "tur": "spor",
+      "youtube": [
+        "@trtspor"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "A Spor",
+      "tur": "spor",
+      "youtube": [
+        "@aspor"
+      ],
+      "diziler": []
+    }
   ]
 }
