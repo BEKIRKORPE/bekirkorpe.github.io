@@ -11,7 +11,7 @@
   "apiKey": "AIzaSyChUHFpIXsCMJgnnXPRa5wDcMN0zzwBjmY",
   "gizle": [],
   "kanallar": [
-    { "ad": "TRT 1",   "youtube": ["user:trt1"], "diziler": [] },
+    { "ad": "TRT 1",   "youtube": ["@trt1"], "diziler": [] },
     { "ad": "ATV",     "youtube": ["UCUVZ7T_kwkxDOGFcDlFI-hg"], "diziler": [] },
     { "ad": "Kanal D", "youtube": ["user:KanalD"], "diziler": [] },
     { "ad": "Show TV", "youtube": ["@showtv"], "diziler": [] },
