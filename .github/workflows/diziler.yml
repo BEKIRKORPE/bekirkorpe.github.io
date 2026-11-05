@@ -1,0 +1,35 @@
+name: Diziler hazirla (Canli TV)
+
+on:
+  schedule:
+    - cron: "37 2 * * *"   # her gün 05:37 (Türkiye saati)
+  workflow_dispatch: {}     # Actions sekmesinden elle çalıştırma
+  push:
+    paths:
+      - "canlitv/diziler.json"
+      - "scripts/dizi_hazirla.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: diziler
+  cancel-in-progress: false
+
+jobs:
+  hazirla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kanallari tara, sadece tam bolumu olan dizileri yaz
+        run: python3 scripts/dizi_hazirla.py
+      - name: Degisiklik varsa kaydet
+        run: |
+          git config user.name "diziler-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A canlitv/hazir
+          if git diff --cached --quiet; then echo "Degisiklik yok"; else git commit -m "Canli TV: diziler listesi guncellendi" && git pull --rebase && git push; fi
