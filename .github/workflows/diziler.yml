@@ -2,7 +2,7 @@ name: Diziler hazirla (Canli TV)
 
 on:
   schedule:
-    - cron: "37 2 * * *"   # her gün 05:37 (Türkiye saati)
+    - cron: "37 8 * * *"   # her gün 11:37 (Türkiye saati) — YouTube kotası 11:00'de yenilenir
   workflow_dispatch: {}     # Actions sekmesinden elle çalıştırma
   push:
     paths:

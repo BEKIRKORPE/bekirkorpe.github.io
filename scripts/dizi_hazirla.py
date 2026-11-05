@@ -58,10 +58,10 @@ def get(path, **params):
                 units += 1
                 return json.load(r)
         except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8", "ignore")[:300]
+            body = e.read().decode("utf-8", "ignore")
             if e.code in (400, 403, 404):
-                print(f"  ! {path} {e.code} {body}", flush=True)
-                if "quotaExceeded" in body:
+                print(f"  ! {path} {e.code} {body[:200]}", flush=True)
+                if "quota" in body.lower() or "rateLimitExceeded" in body:   # kota: yarım liste yazılmasın
                     raise KotaDoldu()
                 return None
             time.sleep(2 + attempt * 3)
@@ -351,6 +351,22 @@ def main():
         if diziler:
             index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=spor, diziler=diziler))
 
+    # Bir kanal bu sefer hiç dizi vermediyse (YouTube geçici hata vb.) önceki hazır listedeki hâli korunur
+    try:
+        eski = json.load(open(os.path.join(OUT, "index.json"), encoding="utf-8"))
+    except Exception:
+        eski = {"kanallar": []}
+    var_ad = {k["ad"] for k in index["kanallar"]}
+    sira = {k["ad"]: i for i, k in enumerate(cfg.get("kanallar", []))}
+    for k in eski.get("kanallar", []):
+        if k["ad"] in var_ad or k["ad"] not in sira:
+            continue
+        index["kanallar"].append(k)
+        print(f"  ~ {k['ad']}: bu sefer alınamadı, önceki liste korundu", flush=True)
+        for d in k.get("diziler", []):
+            for z in d.get("sezonlar", []):
+                yazilan.add(z["id"] + ".json")
+    index["kanallar"].sort(key=lambda k: sira.get(k["ad"], 999))
     if not index["kanallar"]:
         sys.exit("Hiç dizi bulunamadı, eski liste korunuyor")
     json.dump(index, open(os.path.join(OUT, "index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
