@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-05T20:16:55Z",
+ "guncelleme": "2026-11-05T20:34:57Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -113,6 +113,198 @@
        "adet": 192
       }
      ]
+    },
+    {
+     "ad": "Mesnevi'den Hikayeler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gKyPuQuEzzw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfM-ariThnTxgFqjTt2QV99R",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Ev Yapımı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/S_SxSsSnMaI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfP7Ud6356y2oddQgF1azm70",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "3'te 3 Tarih",
+     "aciklama": "Pelin Çift'in sunumuyla yüzde yüz yerli, Türkiye’nin tek tarih içerikli bilgi yarışması.",
+     "afis": "https://i.ytimg.com/vi/YSqyJZRbhDs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMD8NWinlhCN5reN2Sd0hW_",
+       "adet": 32
+      }
+     ]
+    },
+    {
+     "ad": "İncir Ağacı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/23nqi1C_9YI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfN8oM0_1FtmwgqY82Bg4suL",
+       "adet": 138
+      }
+     ]
+    },
+    {
+     "ad": "1 Gün Kala",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_SWZW5Ezp3o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfP3JopsiMnX87yXkJAQg0Ha",
+       "adet": 27
+      }
+     ]
+    },
+    {
+     "ad": "Halka",
+     "aciklama": "İki genç adam, iki farklı insan, iki kurban, bambaşka yerlerden gelip, yan yana durarak, inat ve öfkeyle,  kader sandıkları, tesadüf saydıkları bir kumpasla savaşıyorlar.",
+     "afis": "https://i.ytimg.com/vi/PwLAfZ2Q-U4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfNX12Cjjcfb082MeyAl9jH8",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Komşum Benim",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/jG9IxZiO3RQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfN0vZ7BBLhxyjMfWNBG7vbT",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Payitaht Abdülhamid",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7NvWptR3HtI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfM4hI1uxmSnu96VAJ9c7wgj",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Pastane",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-__VZAaWa04/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfOMjaIgdAz4MtlTJpldtWJ1",
+       "adet": 183
+      }
+     ]
+    },
+    {
+     "ad": "Ana Ocağı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/AZQt2Qmrz_I/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfNY0suUGDBzmHZKODZh5cx2",
+       "adet": 116
+      }
+     ]
+    },
+    {
+     "ad": "Büyük Yürüyüş",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/k6x_O9e4Bmg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfMWwEnZVq3a0mtQgP6-zhgJ",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Hayat Ağacı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/STdHl0yHllU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfO9X0NhUkK9olkHJb91F553",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Hayat Yokuşu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/P-HcBrRsd60/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfNECk17J_9lTETTHxzSGgbP",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Zengin Kız Fakir Oğlan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/9Zytv2Iy3F0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLSbwxLODHTfODmv6TQlwHzf3J7fgpMXKF",
+       "adet": 12
+      }
+     ]
+    },
+    {
+     "ad": "Dünyaya Doğan Güneş",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QCcEt8-PRjA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLX7eNJcnlKoLqvLhmXY9MeVbYjjfek5MO",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Tarih Tekerrür Ve Ekonomik Krizler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/sqSb4UgINT4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLX7eNJcnlKoIqb8Bwvb2PSNbO6vqzu6wk",
+       "adet": 13
+      }
+     ]
     }
    ]
   },
@@ -185,6 +377,114 @@
        "adet": 5
       }
      ]
+    },
+    {
+     "ad": "Tam İzle",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/g9_OIZ20lrw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeL8OEmHF48vu6RchebsAvnp",
+       "adet": 69
+      }
+     ]
+    },
+    {
+     "ad": "Kehribar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/eC6EKWWa5RY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeI7qGYhwfhziNrhqlPoxoCf",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Hayal ve Gerçek",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/VcWLnUm_XA4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKuVI0_ozhv1_bmcQWPNK_K",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Gazi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QtW0WcSoKyQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeKYI4rIB1A-WGT8yocFnOTM",
+       "adet": 18
+      }
+     ]
+    },
+    {
+     "ad": "Doksanlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JjlTJDCLGlU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIdzHOCHsSJPJK262ybiQBY",
+       "adet": 33
+      }
+     ]
+    },
+    {
+     "ad": "Senden Başka",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/dBKQKBzK5xk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLspFLK17UA-Cs7PBoCBQhD",
+       "adet": 18
+      }
+     ]
+    },
+    {
+     "ad": "Reis",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8S5k1QkW5DE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeLCIjSJVbgES_4J83oTj11A",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Es Es",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6TOUrq7IQ1M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLwsOdwF4mVeIY8PYmF_piHTxzdDuYIcIp",
+       "adet": 17
+      }
+     ]
+    },
+    {
+     "ad": "Dizi TV",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cM40xGJEMp4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLrFhnFrz1zGR06C8556HqhuOqLcB_rtdq",
+       "adet": 326
+      }
+     ]
     }
    ]
   },
@@ -242,14 +542,1077 @@
      ]
     },
     {
-     "ad": "Gülizar",
+     "ad": "Çarkıfelek",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/cIil5HSMdrU/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/DtLxEjoxMgY/sddefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcCZ0mPaA4ChO-T9Fq0UGPe",
+       "adet": 67
+      }
+     ]
+    },
+    {
+     "ad": "İnsanlık Suçu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/iawRcNOsHoU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKd119hHoPmqzRlivUIHSMLn",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Gülizar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/46fiIau3_Qg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
        "id": "PLb60Ul3t448V3vzSnr-dYWqCwvHHewHJA",
        "adet": 4
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKfFJLgbggsrnsWvESulqHhG",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Hıçkırık",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/vxpZUqYa8g4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKekRcGVeTWiUjP0_cRWOx90",
+       "adet": 50
+      }
+     ]
+    },
+    {
+     "ad": "Dostlar Mahallesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/mdcsJNGr_xE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdtOz74_5WDoQsGx75q6gqB",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Kızlarım İçin",
+     "aciklama": "Yaşar evin geçimini sağlamak için mahalleden komşuları Zübeyir’in kahvehanesinde ve oto yıkamacıda çalışmaya başlamış lakin yine de karısının dırdırından kurtulamamıştır.",
+     "afis": "https://i.ytimg.com/vi/W0UwayV2PrI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448WE4OU8UVpDqRr8oru_lley",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Hayati ve Diğerleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/T9nGU7w-sIE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKejGwmYPjBkao5PPdYbQaIG",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Tutsak",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/zAixcQR4NDo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKd6eV-9OObK5t0wQwsx9oOg",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Sevda'nın Bahçesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/rpnHhOcNUyQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKek8Yem0zJFWjFuw_Kc0dHz",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Ver Elini Aşk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7iwU-D5Cc0U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeowCVMIAe1-EHYy0NlRf4p",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Meryem",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gJ_y5h8tI0M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448Wjxj3tnLFCwUcZKCb-ppnw",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "İki Yalancı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0oLechDTuVo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdiQjhdJwqmpvU_GovL4ApY",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Kara Yazı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/O71wRt1ksGM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdusaaODHgXbVZs0hgW7gZi",
+       "adet": 6
+      }
+     ]
+    },
+    {
+     "ad": "Evlat Kokusu",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YY8NsRSEvhI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfvIphtHoC5eZ4mYSzDuw8p",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "İsimsizler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ycjx2EP46BY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf5k__SNct96_E1Igx3EI3N",
+       "adet": 27
+      }
+     ]
+    },
+    {
+     "ad": "Adı Efsane",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Y77JP_gyB80/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeVNXL0MTE3FCxwurKnuXZo",
+       "adet": 58
+      }
+     ]
+    },
+    {
+     "ad": "Babam ve Ailesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/mR-VQjIW4eA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKew3fl_3VTyPa7ab-7sdOc1",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Hayatımın Aşkı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/F0Zgjdbk7DQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKet5r4Gwsy5FvcE8l9mpnq4",
+       "adet": 17
+      }
+     ]
+    },
+    {
+     "ad": "Renkli Sayfalar",
+     "aciklama": "Sağlık, yaşam ve magazin haberleriyle ekrana gelen programı ünlü sunucu Şule Zeybek, ünlü şarkıcı ve televizyoncu Lerzan Mutlu ve Op.Dr. Aytuğ Kolankaya beraber sunuyor..",
+     "afis": "https://i.ytimg.com/vi/hP5vdTdd_os/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448UKYv0F65XFYLqfzvG-5t2g",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Tatlı İntikam",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/wSvQYiBvaNU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcj74mrH_Uuc42TGfX2HEp2",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Kısmetse Olur",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/-YwbhKZeAz0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdjPrPh9T2z17l_yCAefHG9",
+       "adet": 153
+      },
+      {
+       "ad": "2. Sezon",
+       "id": "PL6nM1RK5nFKchOaKJ5hB8IydAr51iSW-J",
+       "adet": 123
+      }
+     ]
+    },
+    {
+     "ad": "Bir Deniz Hikayesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/dzJzI_6Soag/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfIV_SDE_lvKGqHz5CaOwvF",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Yaz'ın Öyküsü",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6BYGVVjzubA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfoTSM5ZkdrFurUDnZU9uEJ",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Hayat Yolunda",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/H2_rDBYnisA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcft6soWoVEXS_PZXoJeFrR",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Şeref Meselesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/m64DxuS1ujU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeJ9rnr47FTOIcD8jL3gpql",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Alın Yazım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gTbf8m3fauk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfKUYmzGokleomir1vensN6",
+       "adet": 240
+      }
+     ]
+    },
+    {
+     "ad": "Bana Artık Hicran De",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/rqoDYtagffM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKc51zByarPCMlXf3ihbLICC",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Benim Adım Gültepe",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/QyTSadad2Tk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcOnWCJCIyoMhWgUd-446jj",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Paşa Gönlüm",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TmU1MJKwBJ0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeTeH6TDynRuiN9juVJa-Ls",
+       "adet": 3
+      }
+     ]
+    },
+    {
+     "ad": "Ankara'nın Dikmen'i",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/mx6cygRwR3o/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeF5OGwpKWFSPdSJj10h5VC",
+       "adet": 16
+      }
+     ]
+    },
+    {
+     "ad": "Boynu Bükükler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gHCsCf8aU3s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKc67nBzkE8LqDd_oHxZ5j3g",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Küçük Ağa",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/m88jB7PqUmU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKch2VEtLOrd7tSNN4k1fa6O",
+       "adet": 50
+      }
+     ]
+    },
+    {
+     "ad": "Vicdan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/zRqSu18BfDQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdFd4rKxLXk_VIq1slO2DrT",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Aşk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/GCuRr724XGc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLb60Ul3t448XUFR_wD1xl5H35wyCqd5mH",
+       "adet": 2
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKch-9sm2iJ6U3itvPIBbkoA",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Kayıp",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/aHYXHjcfOAY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PLb60Ul3t448VnMX9WUnLSE8mIhZ99u89n",
+       "adet": 4
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKf9vlysnYXVqwABmSHfHfdF",
+       "adet": 18
+      }
+     ]
+    },
+    {
+     "ad": "Kayıp Şehir",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/5CRy3pwTxDU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdYk_nFyXi8p6Jqo4-foG19",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Arka Sokaklar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/B6IuFw0urvE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLb60Ul3t448XiVlRQuT9Su8q6KWugUeQn",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "Sessiz Fırtına",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/XxGEKe8SVxs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKfkUkPb6f9jRMw5QhDjW3c_",
+       "adet": 19
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKfVefVzJ0RRfFl7sAyCz_My",
+       "adet": 19
+      }
+     ]
+    },
+    {
+     "ad": "Çılgın Bediş",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/V1lVYPoJ-K8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKcuhTv-Bnyr-M14H1RBm65C",
+       "adet": 64
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKcaYCwcoIXMZ9BC99QMx6vv",
+       "adet": 65
+      }
+     ]
+    },
+    {
+     "ad": "Bıçak Sırtı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/7dGxrOHyZ-c/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKdR59QXKp_jFc4th0c_Bg1a",
+       "adet": 30
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKd3Cxt6ez0To5SnPvTLC-uQ",
+       "adet": 30
+      }
+     ]
+    },
+    {
+     "ad": "Lise Defteri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/VFaZ8hXPZI8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKdYKAxAurjJOjYFEUw_xK2d",
+       "adet": 26
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKdwAKOO4WOqLxz3PeQke7Qe",
+       "adet": 28
+      }
+     ]
+    },
+    {
+     "ad": "Gülbeyaz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Nkp9TeTZR4M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeOGSgi6tGWiduioJVdapD6",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Yılan Hikayesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/q2cCIb4_2oY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKf4kG2EBRV4HBa3BltzXQhv",
+       "adet": 90
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKed6EXaslaMchVPPNj5aKPN",
+       "adet": 90
+      }
+     ]
+    },
+    {
+     "ad": "Sultan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/RBZ_1gNEFs8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKfDyJ4JkAS2NadFqDm0lxRp",
+       "adet": 17
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKd8O36nvjmzhgR_d_mXprK1",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Hayat Bilgisi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Y1jBC6o9_uc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL6nM1RK5nFKc-RumZkZMTf2BofpM7EJIs",
+       "adet": 19
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL6nM1RK5nFKfqJKXXX4xIkk2wKvhJ6Ig6",
+       "adet": 19
+      }
+     ]
+    },
+    {
+     "ad": "Geniş Aile",
+     "aciklama": "Cevahir (Ufuk Özkan) 28 yaşlarında genç bir delikanlıdır. Almanya'dan yeni dönmüş ve eski aşkı Şuküfe'yle (Zuhal Topal) evlenmek istemektedir. Fakat en eski düşmanı Koyu Bilal (Fırat Tanış) da bu amaçtadır.",
+     "afis": "https://i.ytimg.com/vi/gjr-X2vFNaQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKejf4MEg0KpRtsMlTK5luSl",
+       "adet": 57
+      }
+     ]
+    },
+    {
+     "ad": "Haziran Gecesi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/wQcn68BmrSE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKerLKGWu3Ov-eqgfKPr7i_T",
+       "adet": 62
+      }
+     ]
+    },
+    {
+     "ad": "Türkan",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YYJf86iacPA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdSoAVdLDFKcThM2jqnCilF",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Sana Mecburum",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/fbwNHYw1Tg4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf7PuSwMwdauJRgAcap7iOz",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Kötü Yol",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YvEqMhcDnyA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfbr9wRxO60RIDMOyUJDIMj",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Sağır Oda",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/35NAmAH-yEg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdQ_zgY_Nd5dXac06kyb6sg",
+       "adet": 34
+      }
+     ]
+    },
+    {
+     "ad": "Aşkım Aşkım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lROSnlw_qOM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfbjvrhWyA-QS7YIOwHxWrc",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Vay Anam Vay",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Lf2xSeO-4HA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfyxY52BzFhMo1Zqjd2I8Bt",
+       "adet": 60
+      }
+     ]
+    },
+    {
+     "ad": "Çarli İş Başında",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/njDG-_WXCAk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf8b7Gf4KHAXqGDQaTl1eAG",
+       "adet": 17
+      }
+     ]
+    },
+    {
+     "ad": "Evdeki Yabancı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/AuiN7J-hnNk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKc-vy2mOBnpLWkF8y0daYoI",
+       "adet": 55
+      }
+     ]
+    },
+    {
+     "ad": "Ruhsar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/r9JlHIEjUvk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfQ-Ip8eTIilxY43Gzlf_h1",
+       "adet": 107
+      }
+     ]
+    },
+    {
+     "ad": "Düğün Şarkıcısı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/SuCRPk7oKuc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfRctCe2NuYRvqcuo3fCO9v",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Aşk Yakar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/X2hMCzo7CuM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcsoC-uWqG0IW8Bafxgc2st",
+       "adet": 21
+      }
+     ]
+    },
+    {
+     "ad": "Yol Arkadaşım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/S-mJAdYLqYY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeVoLxUJqp3ToKOwr7NjCB8",
+       "adet": 41
+      }
+     ]
+    },
+    {
+     "ad": "Üsküdar'a Giderken",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/iPFDdN8mAcg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKel05sgjXU7RYdmrff8Wjfr",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Zoraki Koca",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cbQNhJGX23Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf_4TjzIMonm3sEafWVwV54",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "Yarım Elma",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ZMSX4kN9Lik/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf1GtEXNm1rWwnsk6w1lSg_",
+       "adet": 36
+      }
+     ]
+    },
+    {
+     "ad": "Serseri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BTd3ZdxIKmY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKexCr4v6BekLY214BZ9x1QW",
+       "adet": 63
+      }
+     ]
+    },
+    {
+     "ad": "Annem",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/IDQM5s9eWtg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf_iXFpiOsdWbB1zrpXzP1F",
+       "adet": 64
+      }
+     ]
+    },
+    {
+     "ad": "Keşanlı Ali Destanı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3foW_U_8O_c/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdzX9m0D8bijrw5it10Qbnq",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Genco",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/WJ6oVOF3zx0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdP00yA3JSXOFokYzVmqIF2",
+       "adet": 51
+      }
+     ]
+    },
+    {
+     "ad": "Kanıt",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/pLXR6EzfB5Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdOqJZQDHNmxL8wJ_QTmJUU",
+       "adet": 100
+      }
+     ]
+    },
+    {
+     "ad": "Binbir Gece",
+     "aciklama": "Şehrazat, ataerkil bir ailenin oğlu olan Ahmet’le ailenin şiddetle karşı çıkmasına rağmen evlenmiş, bir çocuğu olmuştur.",
+     "afis": "https://i.ytimg.com/vi/bLigMefSslU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdaKc7QziGdijikYiMCcaRo",
+       "adet": 89
+      }
+     ]
+    },
+    {
+     "ad": "Bir Çocuk Sevdim",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/KVkmMHv6GFU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfWuJEnASTEg3KMXhapqcRE",
+       "adet": 16
+      }
+     ]
+    },
+    {
+     "ad": "Kaygısızlar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/m22q0-3CYaU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdCKNYfTGdrgevdxn8K1C9Z",
+       "adet": 79
+      }
+     ]
+    },
+    {
+     "ad": "Güzel ve Çirkin",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/i6lS1n5tMjI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeM7Hc9HNn3aRJhyiMy3DiI",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "İki Kere Kiki",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Gpeqci4CZJA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKeHPSnauGVa21W8N8tVmnMK",
+       "adet": 45
+      }
+     ]
+    },
+    {
+     "ad": "Bir Dilim Aşk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/OE2QihTHK60/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdmPbDpsxdt8D1BYmLEE0MQ",
+       "adet": 18
+      }
+     ]
+    },
+    {
+     "ad": "Veda",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BYH_aY2PlzU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfJtelkaGpkruFng2585FfJ",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Adı Aşk Olsun",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/vv3TnPSKnfc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfxzWkP5VXSsor0SBaGi_-A",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Cesaretin Var Mı Aşka",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/hLoFiYR3X6Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfToWaFFc6s0eU0eOA3vnwj",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Yıldızlar Savaşı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4FZI9sPYUOQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdvJj7OYo5h-9QR838CkhqW",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Tadımız Kaçmasın",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/JzdwjUwmX5Y/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKf6LLN7e6qdR2fnEUNIlMIU",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Fırtına",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/WmpivjFSRzE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfSaEoifkJTOZ2MSa1kLhw6",
+       "adet": 48
+      }
+     ]
+    },
+    {
+     "ad": "Gece Gündüz",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/RsUbx6oIv5E/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfGSC5_djSfUF4--oHfAMyG",
+       "adet": 29
+      }
+     ]
+    },
+    {
+     "ad": "Kod Adı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/imsZauvxTE0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKepZFH60AvR7tDVhAiPX3Kx",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Çemberimde Gül Oya",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/UP7MF9S9mW8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKcypLVXRvmFBxMUBhVkQsIn",
+       "adet": 40
+      }
+     ]
+    },
+    {
+     "ad": "Kınalı Kar",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/TJ5pEE4HB2E/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKdoUnPqd9j3cI4FsKsf0tcH",
+       "adet": 90
+      }
+     ]
+    },
+    {
+     "ad": "Şansa Davet",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/V5SvL95wJHg/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKfJ_VdGPJ-K-IB2J9mw5WLg",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Alabora",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/c9Ye7DVfTQQ/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL6nM1RK5nFKd3RbXGEtpPvL4XVMamQ7_T",
+       "adet": 10
       }
      ]
     }
@@ -299,12 +1662,17 @@
     {
      "ad": "Yeni Bir Hayat",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/qBQtbA0hok4/sddefault.jpg",
+     "afis": "https://i.ytimg.com/vi/hz1HzNcebPQ/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Bölümler 1",
        "id": "PLdw1RMMZ1UiHFOvmXEBiTds3yrRA_B8xB",
        "adet": 21
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLRdIRAeNz0rpXoF9HUGx5qsy9U0e8kRxI",
+       "adet": 8
       }
      ]
     },
@@ -371,12 +1739,17 @@
     {
      "ad": "Ah Neriman",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/GgK5rItHiqI/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/Q_8rMyoNGtk/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Bölümler 1",
        "id": "PLdw1RMMZ1UiGojTkkD5dekX-cIzqFrfnc",
        "adet": 4
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLYqYTwPHT6nU",
+       "adet": 12
       }
      ]
     },
@@ -547,6 +1920,66 @@
        "adet": 52
       }
      ]
+    },
+    {
+     "ad": "Bebek İşi",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cm-CN8tTHLY/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEYlNnw31kFhOMyOw1oJdqD",
+       "adet": 34
+      }
+     ]
+    },
+    {
+     "ad": "Dila Hanım",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/99sr3-ejd9Y/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "2. Sezon",
+       "id": "PLdw1RMMZ1UiFZY8ddbHbk3ECTS3PrjPcx",
+       "adet": 42
+      }
+     ]
+    },
+    {
+     "ad": "Firuze",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/BrGvSQWsG0M/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiEkVEl3LSZ81XOrbgMrgfT4",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Sevdaluk",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0GqLdsj3UVk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHD3GB1-z98KIxGbLAk0Ovc",
+       "adet": 19
+      }
+     ]
+    },
+    {
+     "ad": "Fatih Harbiye",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cOw-QQvHnvM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLdw1RMMZ1UiHDVfMHInANNUI9kn6KCOtS",
+       "adet": 50
+      }
+     ]
     }
    ]
   },
@@ -556,468 +1989,52 @@
    "spor": false,
    "diziler": [
     {
-     "ad": "İşler Güçler",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/6cMa3M9ls_Q/maxresdefault.jpg",
+     "ad": "Ay Tutulması Yeni Versiyon",
+     "aciklama": "Ay Tutulması - Yeni Versiyon Tüm Bölümler Evlilik dışı ikiz kızlarını dünyaya getiren Leyla daha baştan yenik başlamıştı verdiği hayat mücadelesine.",
+     "afis": "https://i.ytimg.com/vi/3bIR8KhJZ5A/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLf1nK8EMP194He1tHkLfC6wXrCoLzOi66",
-       "adet": 11
-      }
-     ]
-    },
-    {
-     "ad": "Babil",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/6a9srMnxIGM/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP194OQEeAPT9aHC3Yoh-pX6nm",
-       "adet": 2
-      }
-     ]
-    },
-    {
-     "ad": "Sefirin Kızı",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/ukmKabmzq60/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP194ig1GHLVGHUtkqlZZS2Vvj",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "Eyvah Düşüyorum",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/S9vcKv7a_QU/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP195SgbF4D8mUnOuGNJ2-6Mcg",
-       "adet": 4
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "ad": "NOW",
-   "logo": "",
-   "spor": false,
-   "diziler": [
-    {
-     "ad": "Ruhun Duymaz",
-     "aciklama": "Onur Karasu (Şükrü Özyıldız) genç yaşında daire başkanlığına terfi etmiş başarılı bir istihbarat ajanıdır ve bir süredir Türkiye'nin en büyük kuyumculuk şirketinin sahibi Civan Koral  (Tuğrul Tülek)’in  peş…",
-     "afis": "https://i.ytimg.com/vi/SRryyQtJbls/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI4aEo6O6xEKYGoCwhEkylg1",
-       "adet": 9
-      }
-     ]
-    },
-    {
-     "ad": "İnadına Aşk",
-     "aciklama": "Erkekler inatçı, kadınlar inatçı, aşk hepsinden inatçı. İnadına Aşk; aşk, sevgi, nefret ve oyunlarla dolu bir romantik komedi dizisi.",
-     "afis": "https://i.ytimg.com/vi/WI5r5mvaJU0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7QlUPhXmJd-7jbxUOc88y0",
-       "adet": 32
-      }
-     ]
-    },
-    {
-     "ad": "Yaz Şarkısı",
-     "aciklama": "Platonik aşıklar, aşık olduğu kişinin kendini fark etmesi için hep gözünün önünde olmak, onun için iyi bir şeyler yapmak, hayatını kolaylaştırmak ister. Sessiz, sakin ve umudunu hiç kaybetmeden görünür olmayı beklerler.",
-     "afis": "https://i.ytimg.com/vi/VDJm8cv3qMA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7G1CV2qy_QOdwj2zi8vF-o",
-       "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "Senden Daha Güzel",
-     "aciklama": "Dermatolog olarak çalışan Efsun, Gaziantep’te bir köyde babasıyla birlikte  çiftlikte  huzur içinde yaşamaktadır.",
-     "afis": "https://i.ytimg.com/vi/MBPY53AxB7o/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI6V1Hw-22RrEPCsE1K8BPJ0",
-       "adet": 14
-      }
-     ]
-    },
-    {
-     "ad": "Bay Yanlış",
-     "aciklama": "Özgür (Can Yaman); zengin ancak salaş bir hayat süren, aşka inanmayan restoran-bar sahibidir. Ezgi (Özge Gürel) ise; artık yanlış ilişkilerden yorulmuş ve düzgün bir ilişki yaşayıp, evlenmeye kararlıdır.",
-     "afis": "https://i.ytimg.com/vi/1YlkAUhlb-Y/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI4AGYVdIiaWY9GQYWUJDBLQ",
-       "adet": 14
-      }
-     ]
-    },
-    {
-     "ad": "Kapımdaki Dedektif",
-     "aciklama": "İbrahim Selim'in sunumu ve Eda Ece'nin dedektiflik yetenekleriyle her hafta başka bir ünlümüzün evindeyiz! Dedektif Eda Ece, bu evin kime ait olduğunu ipuçlarını takip ederek bulmaya çalışacak.",
-     "afis": "https://i.ytimg.com/vi/59A-aImT3uA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5efThWo5Pl3CrbZlWzSnU9",
-       "adet": 16
-      }
-     ]
-    },
-    {
-     "ad": "Kadının Eseri",
-     "aciklama": "Kadının Eseri Yapımını Provizyon Medya, sunuculuğunu ise Elçin Ateş Ersoy’un üstlendiği program izleyicisiyle buluşmaya hazırlanıyor.",
-     "afis": "https://i.ytimg.com/vi/iF77JnvAckQ/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7mZ2mkexZpeIk8Wr0sMjK-",
-       "adet": 21
-      }
-     ]
-    },
-    {
-     "ad": "Hepsi Benim",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/KTAYuy46FLo/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5Bti8O1i02lhznyZj68ffP",
-       "adet": 10
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "ad": "TV8",
-   "logo": "",
-   "spor": false,
-   "diziler": [
-    {
-     "ad": "Aile Doktoru",
-     "aciklama": "Prof. Dr. Cihan Aksoy ve Nur Tuğba Algül’ün sunacağı “Aile Doktoru” hafta içi her gün TV8 ekranlarından izleyici ile buluşacak.",
-     "afis": "https://i.ytimg.com/vi/g2jlmwSBTN0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLZZP0W2HrSgaziwBJDcASPJSSH7G1aa2U",
-       "adet": 69
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "ad": "beIN SPORTS",
-   "logo": "",
-   "spor": true,
-   "diziler": [
-    {
-     "ad": "F1 2026 Sıralama Turları Özetleri",
-     "aciklama": "F1 2026 Sıralama Turları Özetlerini İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/Bz9NeAulxJ0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA1VFpe1qr-Y",
-       "adet": 8
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu",
-     "aciklama": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/VJ0wuZVUet0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLC-ntSjW5uvU",
-       "adet": 90
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Ligue 1 McDonald's Maç Özetleri - 2026/2027 Sezonu",
-     "aciklama": "Ligue 1 McDonald's 2026/2027 Sezonu Maç Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/Lj0He_5nMUc/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLN2uIXbY_9ZA",
-       "adet": 81
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "A101 | Trendyol Süper Lig Özetleri | 2026/2027 Sezonu",
-     "aciklama": "Trendyol Süper Lig 2026/2027 Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/F_YE8E84i-s/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLSBL5_PlWv-4",
-       "adet": 90
-      }
-     ],
-     "spor": true
-    }
-   ]
-  },
-  {
-   "ad": "TRT Spor",
-   "logo": "",
-   "spor": true,
-   "diziler": [
-    {
-     "ad": "Avrupa Ligi Maç Özetleri (2026-27)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/dsbU0stKPdM/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLOWxTUd8YsIs",
-       "adet": 46
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Şampiyonlar Ligi Özetleri (2026-27)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/yAa7ZAcL2IM/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLQs_w-FaXbl0",
-       "adet": 85
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "İtalya Kupası Özetleri (2026-27)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/MrU9k3p6RdA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLX8scjh2K1nQ",
-       "adet": 6
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Konferans Ligi Özetleri (2026-27 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/K9O55lFpA1A/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLFwIjFJS4so0",
+       "id": "PLGcnVTr2Om2w",
        "adet": 7
       }
-     ],
-     "spor": true
+     ]
     },
     {
-     "ad": "2026 Dünya Kupası Maç Özetleri",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/XFT1RKppBWI/maxresdefault.jpg",
+     "ad": "Urfalıyam Ezelden",
+     "aciklama": "Urfalıyam Ezelden - Tüm Bölümler Mehmet Bozoğlu nam-ı diğer ‘Yanık Memed’; beş oğlu ile beraber Urfa sıra gecelerinin önde gelenlerindendir.",
+     "afis": "https://i.ytimg.com/vi/JIE4xIT-_Yw/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsTTihk0_1xcDJdxuowFAQWO",
-       "adet": 100
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "FA Cup Maç Özetleri (2025-26 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/CylA3SfKPzc/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsQKo-HSaUtliXPva_Ke1gyI",
-       "adet": 33
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "İtalya Kupası Maç Özetleri (2025-26)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/nN-uHpWxd0Y/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsTHUMW-LqPgS-0Wc80cz6_W",
-       "adet": 17
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Konferans Ligi Özetleri (2025-26 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/jv0Jz5xPz-w/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsRzVk82Y8cNI1b-ldjvkEPK",
-       "adet": 60
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Avrupa Ligi Maç Özetleri (2025-2026 sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/EeXQ83Yc9yU/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsSbOPo8ZpnjDAT4RBaEaEKA",
-       "adet": 100
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Şampiyonlar Ligi Özetleri (2025-26 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/O_mqd_o3oSA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsQ3W0FjwZJqPt-Ez5u1Asd4",
-       "adet": 100
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "FIFA Kulüpler Dünya Kupası Özetleri",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/NlI0y5roftU/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsRURKiSsdHTxkKNjpkEC7SY",
-       "adet": 63
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "FA Cup Maç Özetleri (2024-25 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/nXYJxoY67dI/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsRWBUf497Cqm03i4CZ3Zlex",
-       "adet": 28
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Konferans Ligi Maç Özetleri (2024-2025 Sezonu)",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/INHvIFyFg2g/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsSN7Mv0O8FVrSzJTBN24XA5",
-       "adet": 62
-      }
-     ],
-     "spor": true
-    },
-    {
-     "ad": "Suudi Arabistan Pro Lig maç özetleri",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/ZVmp8hYyIUc/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLA_JQAuwYFsSNu4TwdEM_0iscQRfI8lOp",
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpOCikRPY1mPcgOZ0IJbLxE",
        "adet": 6
       }
-     ],
-     "spor": true
-    }
-   ]
-  },
-  {
-   "ad": "A Spor",
-   "logo": "",
-   "spor": true,
-   "diziler": [
-    {
-     "ad": "Ziraat Türkiye Kupası - Full Maç | 2026-2027",
-     "aciklama": "Ziraat Türkiye Kupası 2026-2027 | Maçların Full Bölümü ⚽📺 Ziraat Türkiye Kupası'nın 2026-2027 sezonundaki tüm karşılaşmaların full bölümü ve kesintisiz tekrarı bu listede!",
-     "afis": "https://i.ytimg.com/vi/dhsHgBrFW_s/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Videolar",
-       "id": "PLP352Jvxgtog",
-       "adet": 26
-      }
-     ],
-     "spor": true
+     ]
     },
     {
-     "ad": "Ziraat Türkiye Kupası - Maç Özetleri | 2026-2027",
-     "aciklama": "Ziraat Türkiye Kupası 2026-2027 Sezonu - Maç Özetleri ⚽📺 Ziraat Türkiye Kupası'nın 2026-2027 sezonunda oynanan tüm karşılaşmaların heyecan dolu özetleri bu listede!",
-     "afis": "https://i.ytimg.com/vi/3qEm7Kn00gU/maxresdefault.jpg",
+     "ad": "Kalbim 4 Mevsim",
+     "aciklama": "Hayatında ardarda gelen felaketlere göğüs geren Buket’in her şey bitti derken tekrar hayata tutunmasını ve parçalanmış ailesini tekrar biraraya getirmek için gösterdiği çabayı konu ediyor.",
+     "afis": "https://i.ytimg.com/vi/yI3pTZ1Pw8g/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Videolar",
-       "id": "PLPteTDQSu-LM",
-       "adet": 39
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWotgGI3WSbWrozeJqhftk5q",
+       "adet": 3
       }
-     ],
-     "spor": true
+     ]
     },
     {
-     "ad": "UEFA Uluslar Ligi Maç Özetleri & Goller | A Spor",
-     "aciklama": "Uluslar Ligi maç özetlerini izlemek için ihtiyacınız olan tek oynatma listesi. 2026 UEFA Uluslar Ligi'nin heyecan dolu maç özetleri, muhteşem goller ve tartışmalı pozisyonlar A Spor kalitesiyle tek bir oynatma listesi…",
-     "afis": "https://i.ytimg.com/vi/hQCX9Llb4YA/maxresdefault.jpg",
+     "ad": "Ay Tutulması",
+     "aciklama": "Ay Tutulması - Tüm Bölümler (İyileştirilmiş Versiyon) Kader, kardeş değil; düşman olmalarını istedi AY tutulması Doğduktan hemen sonra birbirlerinden koparılan iki kız kardeş ve özlemle onları arayan bir annenin bekle…",
+     "afis": "https://i.ytimg.com/vi/KTkiHKYsfNg/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Videolar",
-       "id": "PLD5F8F5IWQwE",
-       "adet": 100
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWorWGpns370dH_lEQdxh7Dj",
+       "adet": 13
       }
-     ],
-     "spor": true
+     ]
     }
    ]
   }
