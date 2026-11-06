@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-05T20:34:57Z",
+ "guncelleme": "2026-11-06T08:03:16Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -1989,14 +1989,74 @@
    "spor": false,
    "diziler": [
     {
-     "ad": "Ay Tutulması Yeni Versiyon",
-     "aciklama": "Ay Tutulması - Yeni Versiyon Tüm Bölümler Evlilik dışı ikiz kızlarını dünyaya getiren Leyla daha baştan yenik başlamıştı verdiği hayat mücadelesine.",
-     "afis": "https://i.ytimg.com/vi/3bIR8KhJZ5A/maxresdefault.jpg",
+     "ad": "Sana Söz",
+     "aciklama": "Elif Karaca, Türkiye’nin merakla takip ettiği \"Elif Karaca ile Sessiz Kalma\" programının yaratıcısıdır. Elif, yaşamını, çocukluğundan bu yana şahit olduğu adaletsizlikler ve kötülülüklerle mücadeleye adamıştır.",
+     "afis": "https://i.ytimg.com/vi/1bus_a2GY5s/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLGcnVTr2Om2w",
+       "id": "PL_zRZfKAtvWqJeU6MOa4CGBLy3Jictbf3",
        "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Akrep",
+     "aciklama": "Perihan (Demet Akbağ) kırk yıl önce kızını terk edip, zengin bir adamla evlenmiştir. Güzel bir hayata kaçarken arkasında bıraktığı kızı Ferda (Evrim Alasya) yıllar sonra Perihan’ı bulur.",
+     "afis": "https://i.ytimg.com/vi/kUXoAqrPZss/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWryd5l87RosE_Z73SKWyGUy",
+       "adet": 26
+      }
+     ]
+    },
+    {
+     "ad": "İşler Güçler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6cMa3M9ls_Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194He1tHkLfC6wXrCoLzOi66",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Babil",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/6a9srMnxIGM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194OQEeAPT9aHC3Yoh-pX6nm",
+       "adet": 2
+      }
+     ]
+    },
+    {
+     "ad": "Sefirin Kızı",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ukmKabmzq60/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP194ig1GHLVGHUtkqlZZS2Vvj",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Eyvah Düşüyorum",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/S9vcKv7a_QU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLf1nK8EMP195SgbF4D8mUnOuGNJ2-6Mcg",
+       "adet": 4
       }
      ]
     },
@@ -2013,6 +2073,71 @@
      ]
     },
     {
+     "ad": "Hatırla Gönül",
+     "aciklama": "Hatırla Gönül - Tüm Bölümler Yusuf polisten kaçarken Jülide’yi de yanında götürür.",
+     "afis": "https://i.ytimg.com/vi/IbLetqqnNKQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpZcv2DgFrdVrxR2lR3IbMZ",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "Kaybolan Yıllar",
+     "aciklama": "Yetimhanede büyümüş, birbirlerini kaybetmiş üç çocuğun hikayesidir. Esmer ile Ali yetimhanede büyüyen ve geçmişlerini bilmeyen iki küçük çocuktur.",
+     "afis": "https://i.ytimg.com/vi/3xclSkZq6jQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrL0UQSGcZlzC2DPYj_d2PM",
+       "adet": 46
+      }
+     ]
+    },
+    {
+     "ad": "Ay Tutulması Yeni Versiyon",
+     "aciklama": "Ay Tutulması - Yeni Versiyon Tüm Bölümler Evlilik dışı ikiz kızlarını dünyaya getiren Leyla daha baştan yenik başlamıştı verdiği hayat mücadelesine.",
+     "afis": "https://i.ytimg.com/vi/3bIR8KhJZ5A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PLGcnVTr2Om2w",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "Yıldızlar Şahidim",
+     "aciklama": "Tüm ülkenin hayran olduğu pop yıldızı Aras ve ona olan hayranlığı aşka dönüşmüş, şarkıcı olma hayalleri kuran genç kız Haziran'ın imkansız hikayesini anlatan Yıldızlar Şahidimdir, iki gencin tüm imkansızlıklara rağmen…",
+     "afis": "https://i.ytimg.com/vi/I0R9QI4J-nU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpfTj8Yal1BuvXghluFkg1_",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "Kayıp Prenses",
+     "aciklama": "Duru, henüz 7 yaşında küçük bir peri kızıdır ve yeteneklerini yeni keşfetmiştir. Güneş Ülkesi’nin kraliçesi Defne’nin kızı olan Duru, annesinin esaretine son vererek ülkesini kurtarmakla görevlidir.",
+     "afis": "https://i.ytimg.com/vi/eXdBIJmw4ck/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL_zRZfKAtvWpq77yuXVFmmrG9V4h7XL1i",
+       "adet": 18
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL_zRZfKAtvWqMMFeyWY2tRTy6FJqqNp8V",
+       "adet": 18
+      }
+     ]
+    },
+    {
      "ad": "Kalbim 4 Mevsim",
      "aciklama": "Hayatında ardarda gelen felaketlere göğüs geren Buket’in her şey bitti derken tekrar hayata tutunmasını ve parçalanmış ailesini tekrar biraraya getirmek için gösterdiği çabayı konu ediyor.",
      "afis": "https://i.ytimg.com/vi/yI3pTZ1Pw8g/maxresdefault.jpg",
@@ -2025,14 +2150,305 @@
      ]
     },
     {
-     "ad": "Ay Tutulması",
-     "aciklama": "Ay Tutulması - Tüm Bölümler (İyileştirilmiş Versiyon) Kader, kardeş değil; düşman olmalarını istedi AY tutulması Doğduktan hemen sonra birbirlerinden koparılan iki kız kardeş ve özlemle onları arayan bir annenin bekle…",
-     "afis": "https://i.ytimg.com/vi/KTkiHKYsfNg/maxresdefault.jpg",
+     "ad": "İffet",
+     "aciklama": "İffet; İstanbul'un eski mahallelerinden birinde babası ve kız kardeşiyle birlikte yaşayan İffet'in babasının tüm baskılarına rağmen delicesine âşık olduğu taksi şoförü Cemil (İbrahim Çelikkol) tarafından tecavüze uğra…",
+     "afis": "https://i.ytimg.com/vi/cl72-UhEA_0/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWo0ZBZIkdKKZu3ZYGHsPCm0",
+       "adet": 40
+      }
+     ]
+    },
+    {
+     "ad": "Güzel Köylü",
+     "aciklama": "Bir çok farklı hayat ve yaşamın tek bir başlık altında birleşmesi \"AŞK\"... İstanbul’dan Muğla’ya uzanan eğlenceli bir aşk hikayesi...",
+     "afis": "https://i.ytimg.com/vi/nAohSGKcFHs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWolWvTdGz44VlNgDJryX45w",
+       "adet": 47
+      }
+     ]
+    },
+    {
+     "ad": "Dürüye'nin Güğümleri",
+     "aciklama": "Hayata karşı dimdik ayakta kalmayı başarmış, hala güzel, hala çekici bir köylü kadını olan Dürüye ve dört kızının, yani güğümlerinin başından geçen olayların anlatıldığı sıcak bir köy hikayesidir.",
+     "afis": "https://i.ytimg.com/vi/mCkrKJoybVU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpOnvcqMHz-__YQk120qH5a",
+       "adet": 48
+      }
+     ]
+    },
+    {
+     "ad": "Vazgeç Gönlüm",
+     "aciklama": "Genç yaşında ailesine bakmak zorunda kalan Salih, bir minibüs hattında şoförlük yapmaktadır. Hayat kavgasında aşkla tanışacak fırsat bulamamıştır. Ta ki dünyalar güzeli Bahar'la karşılaşıncaya dek.",
+     "afis": "https://i.ytimg.com/vi/lZr6FUSvtdg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrP_2gNP9qtqdtidcSOx2H8",
+       "adet": 36
+      }
+     ]
+    },
+    {
+     "ad": "Kalpsiz Adam",
+     "aciklama": "Ülkenin en önde gelen şirketlerinden birinin başında olan Oktay, işi gereği saygın ve zengin bir adamdır.",
+     "afis": "https://i.ytimg.com/vi/8aS0ya3T8S8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWqE2-ZFjCo7Kb2sqQyoyaw6",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Ay Tutulması",
+     "aciklama": "Ay Tutulması Tüm Bölümler Doğduktan hemen sonra birbirlerinden koparılan ikiz kız kardeşlerin ve yüreği onların hasretiyle yanan bir annenin beklenmedik bir şekilde hayatlarının birleşmesinin hikayesi",
+     "afis": "https://i.ytimg.com/vi/K6BpbALaq2I/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
        "id": "PL_zRZfKAtvWorWGpns370dH_lEQdxh7Dj",
        "adet": 13
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL_zRZfKAtvWrmy6Twlb4N1IsM7QJF5Diy",
+       "adet": 14
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN Yıldızlar Şahidim",
+     "aciklama": "İstanbul’un kenar mahallelerinden birinde yaşarken şarkıcı olma hayalleri kuran Haziran, pop yıldızı Aras’ın en büyük hayranıdır. İkilinin yollarının kesişmesi çok zordur; ama bir mucize gerçekleşir.",
+     "afis": "https://i.ytimg.com/vi/d7Rj151JtVA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpwm4P5_7yp7ogc0Mz9QOjR",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN İhanet",
+     "aciklama": "Türkiye'nin büyük holdinglerinden birinde bir suikast yaşanır. Bu suikast sonucu ablası öldürülen genç bir polis, ablasının intikamını almak için büyük bir mücadeleye girer, bu mücadelenin bir boyutu da holding ve ulu…",
+     "afis": "https://i.ytimg.com/vi/n0VaVOuO6fQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrrei4TgZr3iTLvYAqTnnaQ",
+       "adet": 7
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN Şahane Damat",
+     "aciklama": "Melike, gurbetçi ailesini İstanbul'da bir başına namusuyla yaşayabileceğine ikna etmek için, bazı küçük(!) yalanlar söyleyen bir kızdır.",
+     "afis": "https://i.ytimg.com/vi/GpBDjW_A1Ps/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpD-9zu7DVL-6p23wNGTwGG",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN Yalancı Bahar",
+     "aciklama": "Geçmişte sevgilisiyle beraber dolandırıcılık yapan ancak daha sonra başka bir hayatı seçen çok güzel bir kadın (Fahriye Evcen).",
+     "afis": "https://i.ytimg.com/vi/Qai_BVVOmtg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpoAdy46Epe4YhVhKCOml49",
+       "adet": 9
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN Göç Zamanı Tam",
+     "aciklama": "Göç Zamanı, bir annenin, zulümden kaçırdığı çocuklarını bilmeden bir cehenneme sokuşunun; gözlerinin önünde her birinin dağılıp gidişinin; onlara sahip çıkmak için çırpınışının öyküsünü anlatıyor.",
+     "afis": "https://i.ytimg.com/vi/uSUs0gibnhU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrD_aJR_L6rM8TuteDaED3w",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "YENİDEN Babalar ve ve Evlatlar Tam",
+     "aciklama": "Babalar ve Evlatlar dizisinin tüm bölümlerini sizler için bir araya getirdik! İyi seyirler...",
+     "afis": "https://i.ytimg.com/vi/ZB7PCxgBiK0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWqS6GyvsdIafqWRs-gtrrdU",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Babalar ve Evlatlar Yeniden",
+     "aciklama": "Babalar ve Evlatlar dizisinin tüm bölümlerini sizler için bir araya getirdik! İyi seyirler...",
+     "afis": "https://i.ytimg.com/vi/QD0L48M7QXs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpgwDZpjXtfkp9lwaT0gjK0",
+       "adet": 4
+      }
+     ]
+    },
+    {
+     "ad": "Küçük Sırlar",
+     "aciklama": "Küçük Sırlar Tüm Bölümler Sahip oldukları paranın, dolayısıyla sahip oldukları gücün sınırı yok.",
+     "afis": "https://i.ytimg.com/vi/tZi0UWIkN4I/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL_zRZfKAtvWoqXTwFvtoFtJMv-2rqx9qS",
+       "adet": 36
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL_zRZfKAtvWpX_Fdx6oldQUmB0vDEVajK",
+       "adet": 38
+      }
+     ]
+    },
+    {
+     "ad": "Şahane Damat",
+     "aciklama": "Şahane Damat Tüm Bölümler Melike, İstanbul denen vahşi ormanda açlık sınırında yaşamaya çalışan sakar bir kızdır ve habercilik hayallerine ancak bir magazin gazetesinde burç yorumu yazacak kadar yaklaşabilmiştir.",
+     "afis": "https://i.ytimg.com/vi/9dFX8iqOOo0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler 1",
+       "id": "PL_zRZfKAtvWqJh98UQSiK70g6vb3vNg4t",
+       "adet": 8
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL_zRZfKAtvWqeIwrbcPWafTKmv1glbrnS",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "İbreti Ailem",
+     "aciklama": "Onlar Küçükbaş ailesi… Onların hikayesi, evde kalmışların, işsiz güçsüzlerin, yırtmaya çalışanların,  hayatından memnun olmayanların hikayesi.Ufak amaçları olan ama yanlış yoldan koşan insanlar…Zengin olmak için her ş…",
+     "afis": "https://i.ytimg.com/vi/8pL9znihV6M/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrJ3nKicoEsxF9reDx8-CVd",
+       "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Nefes Nefese",
+     "aciklama": "Berlin'de, babası Ayaz Kıran'la (Uğur Yücel) sakin bir hayat süren Rüya'nın (Melisa Şenolsun) bir gün hiç görmediği annesinin Suriye'de olduğunu öğrenmesiyle başlıyor.",
+     "afis": "https://i.ytimg.com/vi/W7fN1wV5bu8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWofKD0MU7tCxteISAiD7wFY",
+       "adet": 10
+      }
+     ]
+    },
+    {
+     "ad": "Yalancı Yarim",
+     "aciklama": "Tarık, babasından saklandığı için gerçek kimliğini yani zengin bir ailenin çocuğu olduğunu patronlarından saklar. Naz, evin şımarık kızıdır, ne yapar ne eder; fakat Tarık'ı bir türlü kovamaz.",
+     "afis": "https://i.ytimg.com/vi/iIq5E_upIo4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpFT3jlSew_ccfEUoGVALZF",
+       "adet": 49
+      }
+     ]
+    },
+    {
+     "ad": "Sevgili Dünürüm",
+     "aciklama": "Dizide, bir hayli zengin ancak görgüsüzlüğüyle dünürü Yıldız Hanım'ı çileden çıkartan Ahmet Bey ile kibarlık budalası Yıldız Hanım'ın komik zıtlaşmaları ve arada kalan çocuklarının iki aileyi bir arada tutmak için gös…",
+     "afis": "https://i.ytimg.com/vi/UeH-bhMPmls/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWo7xYMPUTdyWnyLmJcBBeHT",
+       "adet": 20
+      }
+     ]
+    },
+    {
+     "ad": "Yalancı Bahar",
+     "aciklama": "Geçmişte sevgilisiyle beraber dolandırıcılık yapan ancak daha sonra başka bir hayatı seçen çok güzel bir kadın (Fahriye Evcen).",
+     "afis": "https://i.ytimg.com/vi/FMfJ7zTYz10/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWq7xdSPx3e_FVOd79UI65jp",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Kader",
+     "aciklama": "Halabiler Suriye'nin köklü ailelerinden biri olup aynı zamanda Arap şeyhlerinden Şeyh Ömer ile ortak iş yapmaktadırlar.",
+     "afis": "https://i.ytimg.com/vi/4vztoWcwUSc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpsZYA2jwxdrAoy1e_OpPI7",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Göç Zamanı",
+     "aciklama": "Göç Zamanı Tüm Bölümler Göç Zamanı, bir annenin, zulümden kaçırdığı çocuklarını bilmeden bir cehenneme sokuşunun; gözlerinin önünde her birinin dağılıp gidişinin; onlara sahip çıkmak için çırpınışının öyküsünü anlatıy…",
+     "afis": "https://i.ytimg.com/vi/5BFRmcryXng/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrxgpo5rtUdh4SIxOAXdDE6",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "Babalar ve Evlatlar",
+     "aciklama": "Babalar ve Evlatlar Tüm Bölümler İki düşman aile ve birbirini ölesiye seven çocukları… Eski kabadayılardan Aslan’ın oğlu Burhan, yine eski kabadayılardan Tahsin’in oğlu Eyyo’yu öldürmekten 12 yıl cezaevinde yatmıştır.",
+     "afis": "https://i.ytimg.com/vi/1UDs7oNjSdY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWoiIAfj-r_oBXGfVD0PwIYy",
+       "adet": 5
+      }
+     ]
+    },
+    {
+     "ad": "İhanet Dizisi",
+     "aciklama": "İhanet Dizisi Tüm Bölümler Türkiye'nin büyük holdinglerinden birinde bir suikast yaşanır.",
+     "afis": "https://i.ytimg.com/vi/gPzxj3a6rJA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrGjlTmzB7xryu95yE0WW4d",
+       "adet": 7
       }
      ]
     }
@@ -2138,6 +2554,114 @@
        "adet": 10
       }
      ]
+    },
+    {
+     "ad": "Kaybolan Çiçekler",
+     "aciklama": "İnci Ertuğrul, Kaybolan Çiçekler ile aileleri çocukları ile kavuşturmak için kolları sıvıyor ve herkes FOX'ta bu duygusal mücadeleye tanıklık ediyor.",
+     "afis": "https://i.ytimg.com/vi/2aqmNFmu29Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5gUPx_fviYZikLqMxjE5JD",
+       "adet": 215
+      }
+     ]
+    },
+    {
+     "ad": "Dinle Sevgili",
+     "aciklama": "Dinle Sevgili",
+     "afis": "https://i.ytimg.com/vi/4iC-oyo6ZPs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI56S-xKpkAipo5XMkpTdBCA",
+       "adet": 56
+      }
+     ]
+    },
+    {
+     "ad": "Çifte Saadet",
+     "aciklama": "Hikayesinin başlangıcı 2003 yılına uzanan Çifte Saadet, Konyalı mutlu bir çiftin hayatını ve büyük değişimlerini ele alıyor. Hikaye Perihan’ın bir gün Bursa’ya gitmesiyle değişir.",
+     "afis": "https://i.ytimg.com/vi/PJ9YH6dv7ug/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7pbuueDEDpgcrbb62K962L",
+       "adet": 11
+      }
+     ]
+    },
+    {
+     "ad": "Benden Söylemesi",
+     "aciklama": "Haftanızı renklendirecek, hayatınızı kolaylaştıracak ne varsa bu programda.",
+     "afis": "https://i.ytimg.com/vi/vEJ2_piyaac/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI6ZV6HgH872qbcpZuV3gWMx",
+       "adet": 65
+      }
+     ]
+    },
+    {
+     "ad": "Aşk Yeniden Tam",
+     "aciklama": "Sevdiklerini, tüm ailesini, hayatını geride bırakarak, aşık olduğu Ertan’ın peşinden Amerika’ya kaçan Zeynep, elinde hayal kırıklıkları ve bebeğiyle Türkiye’ye geri döner.",
+     "afis": "https://i.ytimg.com/vi/BEHPAiN03Bw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI5DDF2PlE1Z699VtFw6Bid3",
+       "adet": 59
+      }
+     ]
+    },
+    {
+     "ad": "İnadına Aşk Tam",
+     "aciklama": "Erkekler inatçı, kadınlar inatçı,aşk hepsinden inatçı. İnadına Aşk; içinde aşk, sevgi, nefret ve oyun dolu bir romantik komedi dizisi.",
+     "afis": "https://i.ytimg.com/vi/kK7jeajllXk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI4vkf8aM51yXbZNTSoZ2-un",
+       "adet": 32
+      }
+     ]
+    },
+    {
+     "ad": "Kiraz Mevsimi Tam",
+     "aciklama": "Öykü, tekstil ve moda tasarımı bölümü öğrencisi, akıllı ve güzel bir kızdır. En büyük hayali başarılı bir moda tasarımcısı olmaktır.",
+     "afis": "https://i.ytimg.com/vi/Ttl5omjchPQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI43KOZEuC2qD3LnbkaUd3TG",
+       "adet": 59
+      }
+     ]
+    },
+    {
+     "ad": "Not Defteri",
+     "aciklama": "Mahir Soysal, ilk ders günü için Dersaadet Lisesi’nin kapısından adımını atarken aynı zamanda içine sığınabileceği yeni bir hayat arayışındadır.",
+     "afis": "https://i.ytimg.com/vi/Nt1VIx2coGg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI7WVfoYLPAjT--tNAe8AAys",
+       "adet": 13
+      }
+     ]
+    },
+    {
+     "ad": "Babam Sınıfta Kaldı",
+     "aciklama": "Liseyi yeni bitiren Yağmur kazandığı üniversite sayesinde özgürlüğe adım attığını sandığı anda, aftan yararlanan babası ile birlikte okuyacağını öğrenir ve bütün hayalleri suya düşer.",
+     "afis": "https://i.ytimg.com/vi/FtrQMsL5zsw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL-2mShPfUwI4G1yUNtFabcbSpOR55jK-w",
+       "adet": 18
+      }
+     ]
     }
    ]
   },
@@ -2216,6 +2740,71 @@
       }
      ],
      "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig 2026-2027 Sezonu Golleri",
+     "aciklama": "Trendyol Süper Lig 2026-2027 Sezonunda Atılan Şık Golleri İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/QGWiyhO_kBc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLT_nMfUQc9S8",
+       "adet": 92
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig Özetleri - 2026/2027 Sezonu",
+     "aciklama": "Trendyol Süper Lig'de 2026-2027 Sezonundaki Özetler Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/p-wExi7TE00/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSGspeteW8dg",
+       "adet": 90
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Haftanın Golleri | 2026-2027 Sezonu",
+     "aciklama": "2026-2027 Sezonunda Ligue 1, Premier League, Süper Lig, Portekiz Süper Ligi, Trendyol 1. Lig'de Atılan Tüm Goller Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/6NX_msFSTs4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLUwjdtKvNTck",
+       "adet": 49
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Portekiz Ligi Maç Özetleri | 2026/27",
+     "aciklama": "Portekiz Ligi'nde 2026/2027 Sezonunda Oynanan Maçların Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/O9uZpzJsKK4/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLB2Buib-imU0",
+       "adet": 71
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Petrol Ofisi | Trendyol 1. Lig Maç Özetleri | 2026/27",
+     "aciklama": "Trendyol 1. Lig'de 2026/2027 Sezonunda Oynanan Maçların Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/E1nyQWOufiA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfhMYO3Oj2JM",
+       "adet": 129
+      }
+     ],
+     "spor": true
     }
    ]
   },
@@ -2227,12 +2816,12 @@
     {
      "ad": "Avrupa Ligi Maç Özetleri (2026-27)",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/dsbU0stKPdM/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/QyZ_3wlVF5Q/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLOWxTUd8YsIs",
-       "adet": 46
+       "adet": 53
       }
      ],
      "spor": true
@@ -2266,12 +2855,12 @@
     {
      "ad": "Konferans Ligi Özetleri (2026-27 Sezonu)",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/K9O55lFpA1A/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/MS2qCmEwPZs/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLFwIjFJS4so0",
-       "adet": 7
+       "adet": 11
       }
      ],
      "spor": true
@@ -2284,7 +2873,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsTTihk0_1xcDJdxuowFAQWO",
-       "adet": 100
+       "adet": 108
       }
      ],
      "spor": true
@@ -2336,7 +2925,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsSbOPo8ZpnjDAT4RBaEaEKA",
-       "adet": 100
+       "adet": 141
       }
      ],
      "spor": true
@@ -2349,7 +2938,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsQ3W0FjwZJqPt-Ez5u1Asd4",
-       "adet": 100
+       "adet": 150
       }
      ],
      "spor": true
@@ -2405,6 +2994,84 @@
       }
      ],
      "spor": true
+    },
+    {
+     "ad": "Avrupa Ligi Maç Özetleri (2024-2025 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/s7bu6YWigTI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsQPo1yttLisODa0-12bCO9z",
+       "adet": 149
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Temsilcilerimizin Maç Özetleri",
+     "aciklama": "Avrupa'da mücadele eden takımlarımızın maç özetleri",
+     "afis": "https://i.ytimg.com/vi/mFKEO-E4qVc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTELLvJiYfcJh08PScRNPVU",
+       "adet": 97
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Şampiyonlar Ligi Maç Özetleri (2024-25 Sezonu)",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/_qK2H0BnP-A/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRBRghldoTFSiTn-zbjiuc3",
+       "adet": 149
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Paris 2024 | Futbol Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/KYA_9D3u9Xo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTMg9dQg8nLPI2fTH0kgiqq",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "EURO 2024 Maç Özetleri X MediaMarkt",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/bPQiGKEU7uI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsRJYYx4OP1dMOJwEXH4scjc",
+       "adet": 50
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2022 Dünya Kupası Maç Özetleri X Media Markt",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/2WEZZr-0CPw/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSen1wJIYccXQ08TEojkFEM",
+       "adet": 101
+      }
+     ],
+     "spor": true
     }
    ]
   },
@@ -2447,7 +3114,346 @@
       {
        "ad": "Videolar",
        "id": "PLD5F8F5IWQwE",
-       "adet": 100
+       "adet": 116
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası En İkonik Goller",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lMUOVolxA6g/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OJN9J334BfcVjt4YRdmHJIa",
+       "adet": 1
+      }
+     ],
+     "spor": true
+    }
+   ]
+  },
+  {
+   "ad": "S Sport",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "NBA 2026/27 Sezonu Özetleri",
+     "aciklama": "NBA'de yeni sezon heyecanı başladı. New York Knicks, Oklahoma City Thunder, San Antonio Sprus ve diğer köklü takımların şampiyonluk yarışıyla milli yıldızlarımız Alperen Şengün, Adem Bona ve Tarık Biberovic'in tüm sez…",
+     "afis": "https://i.ytimg.com/vi/0FCwctRxn3w/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLKUeBB1rW3W0",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "EuroLeague 2026/27 Sezonu Özetleri",
+     "aciklama": "Avrupa basketbolunun en büyük sahnesinde yeni sezon başladı. Anadolu Efes, Beşiktaş, Fenerbahçe Tarfin, Panathinaikos, Olympiacos ve EuroLeague'in köklü kulüplerinin şampiyonluk mücadelesini sezon boyunca S Sport Plus…",
+     "afis": "https://i.ytimg.com/vi/qU6YX2yC_4U/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLNlsRPugIMbQ",
+       "adet": 69
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2026/27 Sezonu Özetleri",
+     "aciklama": "Almanya futbolunun en büyük sahnesinde yeni sezon başladı. Bayern Münih, Borussia Dortmund, Bayer Leverkusen ve Bundesliga'nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca…",
+     "afis": "https://i.ytimg.com/vi/2sJBr4pa2gI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLQaAJjYQx-cs",
+       "adet": 65
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Serie A 2026/27 Sezonu Özetleri",
+     "aciklama": "İtalya futbolunun en büyük sahnesinde yeni sezon başladı. Inter, Juventus, Milan ve Serie A'nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus ile takip et.",
+     "afis": "https://i.ytimg.com/vi/_S4aw6zpV2k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLSIrQ1-ImWCw",
+       "adet": 92
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Suudi Arabistan Pro Lig 2026/27 Sezonu Özetleri",
+     "aciklama": "Suudi Arabistan futbolunun en büyük sahnesinde yeni sezon başladı. Al Hilal, Al Nassr, Al Ittihad ve ligin diğer köklü kulüplerinin şampiyonluk, Asya kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus ile…",
+     "afis": "https://i.ytimg.com/vi/X8EA1TffTTc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLe7xefq3u3cA",
+       "adet": 45
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Eredivisie 2026/27 Sezonu Özetleri",
+     "aciklama": "Hollanda futbolunun en büyük sahnesinde yeni sezon başladı. Ajax, PSV, Feyenoord ve Eredivisie'nin diğer takımlarının şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus ile takip et.",
+     "afis": "https://i.ytimg.com/vi/LaRgFLK2jmY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLGMqgGYoI-7Y",
+       "adet": 65
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "LaLiga 2026/27 Sezonu Özetleri",
+     "aciklama": "İspanya futbolunun en büyük sahnesinde yeni sezon başladı. Barcelona, Real Madrid, Atlético Madrid ve LaLiga’nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus i…",
+     "afis": "https://i.ytimg.com/vi/y959a-QkzOs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLHJY4Q-oLz88",
+       "adet": 104
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "LaLiga Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/b9Vsj3kZZCk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLqWxwtzap_OuhBZMBONFqslXHG6iZlUE7",
+       "adet": 17
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Serie A Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/FmD1AF8pErE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLqWxwtzap_Os5ov0A9cXHAL8iSAXYuc1Y",
+       "adet": 17
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "NBA Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/8AW5CnLMso0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLqWxwtzap_OusCK_BfeDEEIjHwmDJKSzE",
+       "adet": 66
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2025/26 Özetler",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/YSid3e7btzQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLqWxwtzap_OshzUoufKAV5R_s5EHu1IS1",
+       "adet": 71
+      }
+     ],
+     "spor": true
+    }
+   ]
+  },
+  {
+   "ad": "Tivibu Spor",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "Nesine 2. Lig 2026-27 Sezonu Haftanın Golleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cis8k_3cV0I/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLPTSBvjCuOJk",
+       "adet": 3
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Nesine 2. Lig 2026-27 Sezonu Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/OE2FFNCTFAY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLYW2GWgDlMEE",
+       "adet": 65
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Shakhtar 2026-27 Sezonu Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/redUSxppkrE/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLVeilB3R7hfk",
+       "adet": 6
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Nesine 3. Lig 2026-27 Sezonu Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/bHQa1GaDozg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLLQQS15VqZ6U",
+       "adet": 55
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bologna 2025-26 Sezonu Maç Özetleri",
+     "aciklama": "Beşiktaş'ın yeni teknik direktörü olması beklenen Vincenzo Italiano'nun 2025-26 sezonunda çalıştırdığı Bologna'nın lig maçlarının özetleri",
+     "afis": "https://i.ytimg.com/vi/4wlF0woFp-M/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2wMBpS60UIm3zoguYfCfLQ0",
+       "adet": 28
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Nesine 2. Lig Play-Off Maç Özeti 2025-26",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cFvQgqw6kx8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2w-NMSeR3j2uRSjGA8WfrlY",
+       "adet": 10
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Nesine 3. Lig Maç Özeti 2025-26",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/wK2gXmrbNbk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2y9Pa2kk9dsahnQ91blMy4E",
+       "adet": 26
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ajax 2025-26 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qPvLCJaVE98/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yuAP4Nhu0535sQ65zaEQPl",
+       "adet": 11
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Frankfurt 2025 Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/bwLMXwZppHQ/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2xz4ay5KRz-2lUi5lTFesCL",
+       "adet": 4
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Serie A 2025-26 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/gnAZXQSEMtk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2ybckxmtB2-PUJ8eVW7xa9D",
+       "adet": 150
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2025-2026 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/HJCpHLkvaMo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yPv4kyzqAW-GGHsft6_N2f",
+       "adet": 150
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Hollanda Ligi Maç Özeti (2025-26)",
+     "aciklama": "Hollanda Eredivisie maçlarının özetleri burada!",
+     "afis": "https://i.ytimg.com/vi/p35WvdJ0KIs/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2xKEHg1NwY6ORVjWWtv3Rof",
+       "adet": 85
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Portekiz Ligi 2025-26 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qy_nSPE25sg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yOmDF7M_dYxLBIo4GHykb_",
+       "adet": 57
       }
      ],
      "spor": true
