@@ -104,6 +104,85 @@ SPOR_EVET = re.compile(r"(özet|ozet|goller|\bgol\b|full maç|geniş özet|maç�
 SPOR_HAYIR = re.compile(r"(shorts|kısa|önemli an|röportaj|basın toplantısı|transfer|tanıyalım|teknik|taktik|antrenman)", I)
 
 
+TR_ASCII = str.maketrans("çğıöşüÇĞİÖŞÜâîû", "cgiosuCGIOSUaiu")
+
+
+def fold(s):
+    """Karşılaştırma için: Türkçe harfler sadeleşir, sadece harf/rakam kalır. "Kuruluş Osman" → "kurulusosman" """
+    return "".join(c for c in tr_lower(s).translate(TR_ASCII) if c.isalnum())
+
+
+HANDLE_RX = re.compile(r"@([A-Za-z0-9._-]{3,})")
+_kanal_listeleri = {}
+
+
+def diziyi_tamamla(d, kanal_kaynaklari, gizle, sezon_yaz):
+    """
+    Eksik sezon: Kanallar çoğu dizinin eski sezonlarını dizinin KENDİ resmî YouTube hesabına koyuyor
+    (ör. bölüm başlıklarında "@KurulusOsman"). Bölüm başlıklarındaki @hesap dizi adına benziyorsa o hesabın
+    oynatma listeleri de taranır, aynı diziye ait sezonlar eklenir. Hesap adı dizi adıyla eşleşmezse dokunulmaz.
+    """
+    hedef = fold(d["ad"])
+    if len(hedef) < 4 or not d.get("sezonlar"):
+        return
+    kendi = {fold(x.lstrip("@").replace("user:", "")) for x in kanal_kaynaklari}
+    handles = set()
+    for z in d["sezonlar"]:
+        try:
+            eps = json.load(open(os.path.join(OUT, z["id"] + ".json"), encoding="utf-8"))
+        except Exception:
+            continue
+        for e in eps[:40]:
+            for h in HANDLE_RX.findall(e.get("t", "")):
+                fh = fold(h)
+                if fh in kendi:
+                    continue
+                if hedef in fh or (len(fh) >= 6 and fh in hedef):   # @KurulusOsman ↔ "Kuruluş Osman"
+                    handles.add(h)
+    if not handles:
+        return
+    var = {z["id"] for z in d["sezonlar"]}
+    eklenen = 0
+    for h in sorted(handles)[:2]:
+        if h not in _kanal_listeleri:
+            cid = kanal_id("@" + h)
+            _kanal_listeleri[h] = listeler(cid, 4) if cid else []
+        for l in _kanal_listeleri[h]:
+            if l["id"] in var or l["adet"] < 3 or LISTE_ATLA.search(l["baslik"]):
+                continue
+            ad_k = fold(dizi_adi(l["baslik"]))
+            if not (ad_k == hedef or (hedef in fold(l["baslik"]) and len(ad_k) <= len(hedef) + 4)):
+                continue
+            if key(l["baslik"]) in gizle:
+                continue
+            eps = bolumler(l["id"], False, 10, l["adet"])
+            if not eps or sum(1 for e in eps if e["n"] >= 0) < max(2, 0.6 * len(eps)):
+                continue
+            n = num(SEZON, l["baslik"])
+            sezon_yaz(l["id"], eps)
+            d["sezonlar"].append(dict(ad=f"{n}. Sezon" if n > 0 else "Bölümler", id=l["id"], adet=len(eps), _n=n, _ilk=min([e["n"] for e in eps if e["n"] >= 0] or [0])))
+            var.add(l["id"])
+            eklenen += 1
+    if not eklenen:
+        return
+    # Sezon sırası: başlıktaki sezon numarası, yoksa ilk bölüm numarası. Aynı bölümleri içeren tekrar listeler elenir.
+    for z in d["sezonlar"]:
+        if "_n" not in z:
+            z["_n"] = num(SEZON, z["ad"])
+            try:
+                eps = json.load(open(os.path.join(OUT, z["id"] + ".json"), encoding="utf-8"))
+                z["_ilk"] = min([e["n"] for e in eps if e["n"] >= 0] or [0])
+            except Exception:
+                z["_ilk"] = 0
+    d["sezonlar"].sort(key=lambda z: (z["_n"] if z["_n"] > 0 else 999, z["_ilk"]))
+    numarasiz = [z for z in d["sezonlar"] if z["_n"] <= 0]
+    for i, z in enumerate(numarasiz):
+        z["ad"] = "Bölümler" if len(numarasiz) == 1 else f"Bölümler {i + 1}"
+    for z in d["sezonlar"]:
+        z.pop("_n", None); z.pop("_ilk", None)
+    print(f"  + {d['ad']}: dizinin kendi hesabından {eklenen} liste eklendi ({', '.join(sorted(handles))})", flush=True)
+
+
 def dizi_mi(baslik):
     return not (DIZI_DEGIL.search(baslik) or HOST.search(baslik) or YIL.search(baslik))
 
@@ -347,6 +426,14 @@ def main():
                 afis = son["resim"] or dolu[-1][1][0]["r"].replace("mqdefault", "hqdefault")
                 diziler.append(dict(ad=adlar[kk], aciklama=kisalt(son["aciklama"]), afis=afis, sezonlar=ss))
 
+        if not spor:
+            for d in diziler:
+                try:
+                    diziyi_tamamla(d, k.get("youtube", []), gizle, sezon_yaz)
+                except KotaDoldu:
+                    raise
+                except Exception as e:
+                    print(f"  ! tamamlama hatası {d['ad']}: {e}", flush=True)
         print(f"  {len(diziler)} dizi", flush=True)
         if diziler:
             index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=spor, diziler=diziler))
