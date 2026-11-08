@@ -126,8 +126,8 @@ def resmi_kanal_bul(ad, kendi):
     hedef = fold(ad)
     ck = "kanal:" + hedef
     c = CACHE.get(ck)
-    if c and time.time() - c.get("t", 0) < ARAMA_GECERLI:
-        return c.get("id")
+    if c and time.time() - c.get("t", 0) < ARAMA_GECERLI and (c.get("id") or c.get("v") == 2):
+        return c.get("id")   # eski "bulunamadı" kayıtları (v2 öncesi) @hesap tahminiyle bir kez daha denenir
     bh = bas_harfler(ad)
 
     def uygun(t):
@@ -163,7 +163,7 @@ def resmi_kanal_bul(ad, kendi):
         if uygun(t):
             bulunan = cid
             break
-    CACHE[ck] = {"id": bulunan, "t": int(time.time())}
+    CACHE[ck] = {"id": bulunan, "t": int(time.time()), "v": 2}
     return bulunan
 
 
