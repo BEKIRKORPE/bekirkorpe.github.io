@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-08T23:09:10Z",
+ "guncelleme": "2026-11-08T23:10:51Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -204,14 +204,9 @@
      "afis": "https://i.ytimg.com/vi/7NvWptR3HtI/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Tüm Bölümler",
        "id": "PLge_kMuGwvL8pfyOpLP0hXprI7yQ0L2q-",
        "adet": 154
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLSbwxLODHTfM4hI1uxmSnu96VAJ9c7wgj",
-       "adet": 3
       }
      ]
     },
@@ -281,14 +276,9 @@
      "afis": "https://i.ytimg.com/vi/9Zytv2Iy3F0/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Tüm Bölümler",
        "id": "PLbKyHS-JPs-A6MzfxSQ2N0kiejicbiF8C",
        "adet": 130
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLSbwxLODHTfODmv6TQlwHzf3J7fgpMXKF",
-       "adet": 12
       }
      ]
     },
@@ -357,11 +347,6 @@
        "ad": "6. Sezon",
        "id": "PLCuVYHE7O2A0YMhcxTmnltrDNFpnLEFMq",
        "adet": 30
-      },
-      {
-       "ad": "Bölümler",
-       "id": "PLDnGt7yw8Qug",
-       "adet": 13
       }
      ]
     },
@@ -371,23 +356,33 @@
      "afis": "https://i.ytimg.com/vi/8svdDiER38U/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLAh4BG7TzyZ8",
-       "adet": 28
+       "ad": "1. Sezon",
+       "id": "PLB-Qx1Kuaosn6UklBxZfH1m84qY6syMYK",
+       "adet": 40
       },
       {
-       "ad": "Bölümler 2",
-       "id": "PLB-Qx1Kuaosn73mqGlD3ws3v3eW8Yvuxe",
-       "adet": 7
+       "ad": "2. Sezon",
+       "id": "PLB-Qx1KuaoslYAN1OBsFoS5IiFgu1gvre",
+       "adet": 31
       },
       {
-       "ad": "Bölümler 3",
+       "ad": "3. Sezon",
+       "id": "PLB-Qx1KuaoslefJ1aBuwV_ABp8hHBbcHD",
+       "adet": 36
+      },
+      {
+       "ad": "4. Sezon",
+       "id": "PLB-Qx1KuaoslFCLdmrujCckHCZg5Y1i0y",
+       "adet": 32
+      },
+      {
+       "ad": "5. Sezon",
+       "id": "PLB-Qx1KuaosmckuUDmCZ158fuPgojF-ls",
+       "adet": 26
+      },
+      {
+       "ad": "Bölümler",
        "id": "PLB-Qx1Kuaosn4aD0Ahn_hG9hjm0LkT9Am",
-       "adet": 199
-      },
-      {
-       "ad": "Bölümler 4",
-       "id": "PLB-Qx1KuaosksBxosKPgsl2eUzCos18UL",
        "adet": 199
       }
      ]
@@ -398,12 +393,7 @@
      "afis": "https://i.ytimg.com/vi/CXMhhBWN1rU/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLwsOdwF4mVeKogKmL5njiYbjxMGJRC4Vw",
-       "adet": 3
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Tüm Bölümler",
        "id": "PLFFcKr8RiTc0j2ksCNhllsYqBrXf5gN83",
        "adet": 76
       }
@@ -427,14 +417,9 @@
      "afis": "https://i.ytimg.com/vi/CIDZvUhBgDI/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PLwsOdwF4mVeIAC2LZVz2pkexnX94Z8Juj",
        "adet": 16
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLwsOdwF4mVeK7BmFVuFW1GyxARuxpcCAH",
-       "adet": 5
       }
      ]
     },
@@ -492,12 +477,7 @@
      "afis": "https://i.ytimg.com/vi/JjlTJDCLGlU/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLwsOdwF4mVeIdzHOCHsSJPJK262ybiQBY",
-       "adet": 33
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL9oBTznzC7c419UJ3dMknKev-zGhUV79k",
        "adet": 43
       }
@@ -564,14 +544,9 @@
      "afis": "https://i.ytimg.com/vi/SWjrCZtFi1A/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PLF6Za_xPJ9nQ",
        "adet": 8
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLVPXrutVkb-E",
-       "adet": 3
       }
      ]
     },
@@ -581,14 +556,9 @@
      "afis": "https://i.ytimg.com/vi/4LU9K49qYyc/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PLpaBvso5Qp9YS_BogYqycX9oMXeOKfbna",
        "adet": 30
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLb60Ul3t448V5kLF2UygD6RwMef55GSKL",
-       "adet": 21
       }
      ]
     },
@@ -651,12 +621,7 @@
      "afis": "https://i.ytimg.com/vi/46fiIau3_Qg/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLb60Ul3t448V3vzSnr-dYWqCwvHHewHJA",
-       "adet": 4
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKfFJLgbggsrnsWvESulqHhG",
        "adet": 9
       }
@@ -753,8 +718,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLb60Ul3t448Wjxj3tnLFCwUcZKCb-ppnw",
-       "adet": 5
+       "id": "PLCW5-xf6GUJ1dJNNKCxYPFFVXtUD2mqTc",
+       "adet": 30
       }
      ]
     },
@@ -872,14 +837,19 @@
      "afis": "https://i.ytimg.com/vi/-YwbhKZeAz0/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PL6nM1RK5nFKdjPrPh9T2z17l_yCAefHG9",
-       "adet": 153
+       "ad": "1. Sezon",
+       "id": "PL6ygdk6cWbjuBG9STh9zCl6ScQPwcSwCd",
+       "adet": 235
       },
       {
        "ad": "2. Sezon",
        "id": "PL6nM1RK5nFKchOaKJ5hB8IydAr51iSW-J",
        "adet": 123
+      },
+      {
+       "ad": "2. Sezon",
+       "id": "PL6ygdk6cWbjuEvMomyN-HYjRsxxfN8vAQ",
+       "adet": 240
       }
      ]
     },
@@ -1033,12 +1003,7 @@
      "afis": "https://i.ytimg.com/vi/GCuRr724XGc/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLb60Ul3t448XUFR_wD1xl5H35wyCqd5mH",
-       "adet": 2
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKch-9sm2iJ6U3itvPIBbkoA",
        "adet": 13
       }
@@ -1050,12 +1015,7 @@
      "afis": "https://i.ytimg.com/vi/aHYXHjcfOAY/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLb60Ul3t448VnMX9WUnLSE8mIhZ99u89n",
-       "adet": 4
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKf9vlysnYXVqwABmSHfHfdF",
        "adet": 18
       }
@@ -1091,13 +1051,8 @@
      "afis": "https://i.ytimg.com/vi/XxGEKe8SVxs/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKfkUkPb6f9jRMw5QhDjW3c_",
-       "adet": 19
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PL6nM1RK5nFKfVefVzJ0RRfFl7sAyCz_My",
        "adet": 19
       }
      ]
@@ -1108,12 +1063,7 @@
      "afis": "https://i.ytimg.com/vi/V1lVYPoJ-K8/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PL6nM1RK5nFKcuhTv-Bnyr-M14H1RBm65C",
-       "adet": 64
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Tüm Bölümler",
        "id": "PL6nM1RK5nFKcaYCwcoIXMZ9BC99QMx6vv",
        "adet": 65
       }
@@ -1125,13 +1075,8 @@
      "afis": "https://i.ytimg.com/vi/7dGxrOHyZ-c/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKdR59QXKp_jFc4th0c_Bg1a",
-       "adet": 30
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PL6nM1RK5nFKd3Cxt6ez0To5SnPvTLC-uQ",
        "adet": 30
       }
      ]
@@ -1142,12 +1087,7 @@
      "afis": "https://i.ytimg.com/vi/VFaZ8hXPZI8/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PL6nM1RK5nFKdYKAxAurjJOjYFEUw_xK2d",
-       "adet": 26
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKdwAKOO4WOqLxz3PeQke7Qe",
        "adet": 28
       }
@@ -1171,13 +1111,8 @@
      "afis": "https://i.ytimg.com/vi/q2cCIb4_2oY/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Tüm Bölümler",
        "id": "PL6nM1RK5nFKf4kG2EBRV4HBa3BltzXQhv",
-       "adet": 90
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PL6nM1RK5nFKed6EXaslaMchVPPNj5aKPN",
        "adet": 90
       }
      ]
@@ -1188,12 +1123,7 @@
      "afis": "https://i.ytimg.com/vi/RBZ_1gNEFs8/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PL6nM1RK5nFKfDyJ4JkAS2NadFqDm0lxRp",
-       "adet": 17
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL6nM1RK5nFKd8O36nvjmzhgR_d_mXprK1",
        "adet": 20
       }
@@ -1211,8 +1141,8 @@
       },
       {
        "ad": "Bölümler 2",
-       "id": "PL6nM1RK5nFKfqJKXXX4xIkk2wKvhJ6Ig6",
-       "adet": 19
+       "id": "PLOToDKrp5c6s",
+       "adet": 118
       }
      ]
     },
@@ -1745,14 +1675,9 @@
      "afis": "https://i.ytimg.com/vi/hz1HzNcebPQ/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PLdw1RMMZ1UiHFOvmXEBiTds3yrRA_B8xB",
        "adet": 21
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PLRdIRAeNz0rpXoF9HUGx5qsy9U0e8kRxI",
-       "adet": 8
       }
      ]
     },
@@ -1822,12 +1747,7 @@
      "afis": "https://i.ytimg.com/vi/Q_8rMyoNGtk/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PLdw1RMMZ1UiGojTkkD5dekX-cIzqFrfnc",
-       "adet": 4
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PLYqYTwPHT6nU",
        "adet": 12
       }
@@ -2206,13 +2126,8 @@
      "afis": "https://i.ytimg.com/vi/eXdBIJmw4ck/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PL_zRZfKAtvWpq77yuXVFmmrG9V4h7XL1i",
-       "adet": 18
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PL_zRZfKAtvWqMMFeyWY2tRTy6FJqqNp8V",
        "adet": 18
       }
      ]
@@ -2295,12 +2210,7 @@
      "afis": "https://i.ytimg.com/vi/K6BpbALaq2I/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PL_zRZfKAtvWorWGpns370dH_lEQdxh7Dj",
-       "adet": 13
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL_zRZfKAtvWrmy6Twlb4N1IsM7QJF5Diy",
        "adet": 14
       }
@@ -2396,12 +2306,7 @@
      "afis": "https://i.ytimg.com/vi/tZi0UWIkN4I/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
-       "id": "PL_zRZfKAtvWoqXTwFvtoFtJMv-2rqx9qS",
-       "adet": 36
-      },
-      {
-       "ad": "Bölümler 2",
+       "ad": "Bölümler",
        "id": "PL_zRZfKAtvWpX_Fdx6oldQUmB0vDEVajK",
        "adet": 38
       }
@@ -2413,13 +2318,8 @@
      "afis": "https://i.ytimg.com/vi/9dFX8iqOOo0/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler 1",
+       "ad": "Bölümler",
        "id": "PL_zRZfKAtvWqJh98UQSiK70g6vb3vNg4t",
-       "adet": 8
-      },
-      {
-       "ad": "Bölümler 2",
-       "id": "PL_zRZfKAtvWqeIwrbcPWafTKmv1glbrnS",
        "adet": 8
       }
      ]
