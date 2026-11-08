@@ -112,6 +112,42 @@ def fold(s):
     return "".join(c for c in tr_lower(s).translate(TR_ASCII) if c.isalnum())
 
 
+ARAMA_HAKKI = [45]          # tek çalışmada en fazla 45 kanal araması (her biri 100 kota birimi); sonuçlar 30 gün saklanır
+ARAMA_GECERLI = 30 * 86400
+
+
+def bas_harfler(ad):
+    return "".join(w[0] for w in re.findall(r"[^\W\d_]+", tr_lower(ad).translate(TR_ASCII)) if w)
+
+
+def resmi_kanal_bul(ad, kendi):
+    """Dizinin kendi resmî YouTube kanalını arar (ör. "Eşkıya Dünyaya Hükümdar Olmaz" → EDHO kanalı).
+    Kanal adı dizi adıyla (ya da baş harfleriyle) eşleşmezse kabul edilmez. Sonuç 30 gün önbellekte."""
+    hedef = fold(ad)
+    ck = "kanal:" + hedef
+    c = CACHE.get(ck)
+    if c and time.time() - c.get("t", 0) < ARAMA_GECERLI:
+        return c.get("id")
+    if ARAMA_HAKKI[0] <= 0:
+        return None
+    ARAMA_HAKKI[0] -= 1
+    r = get("search", part="snippet", type="channel", q=ad + " dizi", maxResults=5, regionCode="TR")
+    bulunan = None
+    bh = bas_harfler(ad)
+    for it in (r or {}).get("items", []):
+        sn = it.get("snippet", {})
+        cid = (it.get("id") or {}).get("channelId") or sn.get("channelId")
+        t = fold(sn.get("title", "") or sn.get("channelTitle", ""))
+        if not cid or not t or t in kendi:
+            continue
+        # "Eşkıya Dünyaya Hükümdar Olmaz" ↔ "eskiyadunyayahukumdarolmaz" / "edho" / "edhoatv"
+        if t == hedef or (hedef in t and len(t) <= len(hedef) + 12) or (len(bh) >= 3 and (t == bh or t.startswith(bh) and len(t) <= len(bh) + 6)):
+            bulunan = cid
+            break
+    CACHE[ck] = {"id": bulunan, "t": int(time.time())}
+    return bulunan
+
+
 HANDLE_RX = re.compile(r"@([A-Za-z0-9._-]{3,})")
 _kanal_listeleri = {}
 
@@ -139,13 +175,19 @@ def diziyi_tamamla(d, kanal_kaynaklari, gizle, sezon_yaz):
                     continue
                 if hedef in fh or (len(fh) >= 6 and fh in hedef):   # @KurulusOsman ↔ "Kuruluş Osman"
                     handles.add(h)
-    if not handles:
+    kaynaklar = ["@" + h for h in sorted(handles)[:2]]
+    if not kaynaklar:
+        cid = resmi_kanal_bul(d["ad"], kendi)   # başlıkta @hesap yoksa: YouTube'da dizinin kendi resmî kanalı aranır
+        if cid:
+            kaynaklar = [cid]
+            handles.add(cid)
+    if not kaynaklar:
         return
     var = {z["id"] for z in d["sezonlar"]}
     eklenen = 0
-    for h in sorted(handles)[:2]:
+    for h in kaynaklar:
         if h not in _kanal_listeleri:
-            cid = kanal_id("@" + h)
+            cid = kanal_id(h)
             _kanal_listeleri[h] = listeler(cid, 4) if cid else []
         for l in _kanal_listeleri[h]:
             if l["id"] in var or l["adet"] < 3 or LISTE_ATLA.search(l["baslik"]):
@@ -180,7 +222,7 @@ def diziyi_tamamla(d, kanal_kaynaklari, gizle, sezon_yaz):
         z["ad"] = "Bölümler" if len(numarasiz) == 1 else f"Bölümler {i + 1}"
     for z in d["sezonlar"]:
         z.pop("_n", None); z.pop("_ilk", None)
-    print(f"  + {d['ad']}: dizinin kendi hesabından {eklenen} liste eklendi ({', '.join(sorted(handles))})", flush=True)
+    print(f"  + {d['ad']}: dizinin kendi hesabından {eklenen} liste eklendi ({', '.join(sorted(str(x) for x in handles))})", flush=True)
 
 
 def sezonlari_duzenle(d):
@@ -204,9 +246,8 @@ def sezonlari_duzenle(d):
     kalan.sort(key=lambda z: sira[z["id"]])
     numarali = [num(SEZON, z["ad"]) for z in kalan if num(SEZON, z["ad"]) > 0]
     numarasiz = [z for z in kalan if num(SEZON, z["ad"]) <= 0]
-    if numarali and len(numarasiz) == 1 and kalan[-1] is numarasiz[0]:
-        numarasiz[0]["ad"] = f"{max(numarali) + 1}. Sezon"
-    elif len(numarasiz) == 1:
+    # Not: numarasız liste otomatik "N+1. Sezon" yapılmaz — bazen yeni sezon, bazen eski sezonun 4K tekrarı oluyor.
+    if len(numarasiz) == 1:
         numarasiz[0]["ad"] = "Bölümler"
     else:
         for i, z in enumerate(numarasiz):
