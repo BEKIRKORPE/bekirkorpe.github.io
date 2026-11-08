@@ -183,6 +183,37 @@ def diziyi_tamamla(d, kanal_kaynaklari, gizle, sezon_yaz):
     print(f"  + {d['ad']}: dizinin kendi hesabından {eklenen} liste eklendi ({', '.join(sorted(handles))})", flush=True)
 
 
+def sezonlari_duzenle(d):
+    """Aynı bölümleri içeren tekrar listeler silinir; numarasız tek liste numaralı sezonlardan sonra geliyorsa "N+1. Sezon" olur."""
+    ss = d.get("sezonlar") or []
+    if len(ss) < 2:
+        return
+    kume = {}
+    for z in ss:
+        try:
+            kume[z["id"]] = {e["i"] for e in json.load(open(os.path.join(OUT, z["id"] + ".json"), encoding="utf-8"))}
+        except Exception:
+            kume[z["id"]] = set()
+    kalan = []
+    for z in sorted(ss, key=lambda z: -len(kume[z["id"]])):        # büyük liste önce, küçük tekrarlar elenir
+        a = kume[z["id"]]
+        if a and any(len(a & kume[y["id"]]) >= 0.8 * len(a) for y in kalan):
+            continue
+        kalan.append(z)
+    sira = {z["id"]: i for i, z in enumerate(ss)}
+    kalan.sort(key=lambda z: sira[z["id"]])
+    numarali = [num(SEZON, z["ad"]) for z in kalan if num(SEZON, z["ad"]) > 0]
+    numarasiz = [z for z in kalan if num(SEZON, z["ad"]) <= 0]
+    if numarali and len(numarasiz) == 1 and kalan[-1] is numarasiz[0]:
+        numarasiz[0]["ad"] = f"{max(numarali) + 1}. Sezon"
+    elif len(numarasiz) == 1:
+        numarasiz[0]["ad"] = "Bölümler"
+    else:
+        for i, z in enumerate(numarasiz):
+            z["ad"] = f"Bölümler {i + 1}"
+    d["sezonlar"] = kalan
+
+
 def dizi_mi(baslik):
     return not (DIZI_DEGIL.search(baslik) or HOST.search(baslik) or YIL.search(baslik))
 
@@ -430,6 +461,7 @@ def main():
             for d in diziler:
                 try:
                     diziyi_tamamla(d, k.get("youtube", []), gizle, sezon_yaz)
+                    sezonlari_duzenle(d)
                 except KotaDoldu:
                     raise
                 except Exception as e:
