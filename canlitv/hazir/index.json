@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-08T15:32:26Z",
+ "guncelleme": "2026-11-08T22:59:45Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -319,6 +319,36 @@
      "afis": "https://i.ytimg.com/vi/OcPNXaQtyG8/maxresdefault.jpg",
      "sezonlar": [
       {
+       "ad": "1. Sezon",
+       "id": "PLCuVYHE7O2A3Y6VE8qVPmAiHcvjh-GutM",
+       "adet": 27
+      },
+      {
+       "ad": "2. Sezon",
+       "id": "PLCuVYHE7O2A3QwcZpbVgfdBpBcyu87q4i",
+       "adet": 37
+      },
+      {
+       "ad": "3. Sezon",
+       "id": "PLCuVYHE7O2A21u57xQhsQHsSw9Qf1qdKk",
+       "adet": 34
+      },
+      {
+       "ad": "4. Sezon",
+       "id": "PLCuVYHE7O2A1P8V8X6uux9ezUuLfhWPK8",
+       "adet": 32
+      },
+      {
+       "ad": "5. Sezon",
+       "id": "PLCuVYHE7O2A3vbJ_K7-8T1qzRwg7sMFI-",
+       "adet": 34
+      },
+      {
+       "ad": "6. Sezon",
+       "id": "PLCuVYHE7O2A0YMhcxTmnltrDNFpnLEFMq",
+       "adet": 30
+      },
+      {
        "ad": "Bölümler",
        "id": "PLDnGt7yw8Qug",
        "adet": 13
@@ -343,9 +373,14 @@
      "afis": "https://i.ytimg.com/vi/CXMhhBWN1rU/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Bölümler 1",
        "id": "PLwsOdwF4mVeKogKmL5njiYbjxMGJRC4Vw",
        "adet": 3
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLFFcKr8RiTc0j2ksCNhllsYqBrXf5gN83",
+       "adet": 76
       }
      ]
     },
@@ -499,9 +534,19 @@
      "afis": "https://i.ytimg.com/vi/SWjrCZtFi1A/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Bölümler 1",
        "id": "PLZHSJD3kGiKg",
        "adet": 4
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PLF6Za_xPJ9nQ",
+       "adet": 8
+      },
+      {
+       "ad": "Bölümler 3",
+       "id": "PLVPXrutVkb-E",
+       "adet": 3
       }
      ]
     },
@@ -2705,12 +2750,12 @@
     {
      "ad": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu",
      "aciklama": "iddaa.com | Premier League Özetleri - 2026/2027 Sezonu Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/FCWUtckR2cQ/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/C-ULVS0DygQ/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLC-ntSjW5uvU",
-       "adet": 95
+       "adet": 100
       }
      ],
      "spor": true
@@ -2718,12 +2763,12 @@
     {
      "ad": "Ligue 1 McDonald's Maç Özetleri - 2026/2027 Sezonu",
      "aciklama": "Ligue 1 McDonald's 2026/2027 Sezonu Maç Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/tTErYB7UUag/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/3uKFWSdBQlo/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLN2uIXbY_9ZA",
-       "adet": 84
+       "adet": 86
       }
      ],
      "spor": true
@@ -2744,12 +2789,12 @@
     {
      "ad": "Trendyol Süper Lig 2026-2027 Sezonu Golleri",
      "aciklama": "Trendyol Süper Lig 2026-2027 Sezonunda Atılan Şık Golleri İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/m3-Jr4AzZqs/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/Q6vgPlD_ZeE/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLT_nMfUQc9S8",
-       "adet": 100
+       "adet": 102
       }
      ],
      "spor": true
@@ -2757,12 +2802,12 @@
     {
      "ad": "Trendyol Süper Lig Özetleri - 2026/2027 Sezonu",
      "aciklama": "Trendyol Süper Lig'de 2026-2027 Sezonundaki Özetler Sizlerle!",
-     "afis": "https://i.ytimg.com/vi/Jjgdm7emJrk/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/EWaqy239c58/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLSGspeteW8dg",
-       "adet": 97
+       "adet": 99
       }
      ],
      "spor": true
@@ -2783,12 +2828,12 @@
     {
      "ad": "Portekiz Ligi Maç Özetleri | 2026/27",
      "aciklama": "Portekiz Ligi'nde 2026/2027 Sezonunda Oynanan Maçların Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/pmD7u5_igFY/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/d16LUvV1lBE/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLB2Buib-imU0",
-       "adet": 72
+       "adet": 73
       }
      ],
      "spor": true
@@ -2796,12 +2841,12 @@
     {
      "ad": "Petrol Ofisi | Trendyol 1. Lig Maç Özetleri | 2026/27",
      "aciklama": "Trendyol 1. Lig'de 2026/2027 Sezonunda Oynanan Maçların Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/U0xE7bylX40/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/nqvBUVqHBkE/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLfhMYO3Oj2JM",
-       "adet": 137
+       "adet": 139
       }
      ],
      "spor": true
@@ -3168,12 +3213,12 @@
     {
      "ad": "Bundesliga 2026/27 Sezonu Özetleri",
      "aciklama": "Almanya futbolunun en büyük sahnesinde yeni sezon başladı. Bayern Münih, Borussia Dortmund, Bayer Leverkusen ve Bundesliga'nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca…",
-     "afis": "https://i.ytimg.com/vi/WhDfRYjkYNU/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/TAPUVELbhbw/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLQaAJjYQx-cs",
-       "adet": 68
+       "adet": 70
       }
      ],
      "spor": true
@@ -3181,12 +3226,12 @@
     {
      "ad": "Serie A 2026/27 Sezonu Özetleri",
      "aciklama": "İtalya futbolunun en büyük sahnesinde yeni sezon başladı. Inter, Juventus, Milan ve Serie A'nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus ile takip et.",
-     "afis": "https://i.ytimg.com/vi/PZU0jINVixs/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/DHaWB6gzl-Y/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLSIrQ1-ImWCw",
-       "adet": 96
+       "adet": 100
       }
      ],
      "spor": true
@@ -3220,12 +3265,12 @@
     {
      "ad": "LaLiga 2026/27 Sezonu Özetleri",
      "aciklama": "İspanya futbolunun en büyük sahnesinde yeni sezon başladı. Barcelona, Real Madrid, Atlético Madrid ve LaLiga’nın köklü kulüplerinin şampiyonluk, Avrupa kupaları ve ligde kalma mücadelesini sezon boyunca S Sport Plus i…",
-     "afis": "https://i.ytimg.com/vi/2WRfPpSaHLQ/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/oD4fVWpNWk8/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLHJY4Q-oLz88",
-       "adet": 109
+       "adet": 114
       }
      ],
      "spor": true
@@ -3305,12 +3350,12 @@
     {
      "ad": "Nesine 2. Lig 2026-27 Sezonu Maç Özetleri",
      "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/BlIBuL80jns/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/hVhgmTn5s6Q/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLYW2GWgDlMEE",
-       "adet": 71
+       "adet": 76
       }
      ],
      "spor": true
