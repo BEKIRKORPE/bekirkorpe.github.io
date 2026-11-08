@@ -8,6 +8,8 @@ on:
     paths:
       - "canlitv/diziler.json"
       - "scripts/dizi_hazirla.py"
+      - "canlitv/filmler.json"
+      - "scripts/film_hazirla.py"
 
 permissions:
   contents: write
@@ -19,7 +21,7 @@ concurrency:
 jobs:
   hazirla:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,11 +29,15 @@ jobs:
           python-version: "3.12"
       - name: Kanallari tara, sadece tam bolumu olan dizileri yaz
         run: python3 scripts/dizi_hazirla.py
+      - name: Sinema - resmi film kanallarini tara, filmleri yaz
+        if: always()
+        continue-on-error: true
+        run: python3 scripts/film_hazirla.py
       - name: Degisiklik varsa kaydet
         if: always()
         run: |
           git config user.name "diziler-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A canlitv/hazir
-          [ -f scripts/dizi_onbellek.json ] && git add scripts/dizi_onbellek.json; true
+          [ -f scripts/dizi_onbellek.json ] && git add scripts/dizi_onbellek.json; [ -f scripts/film_onbellek.json ] && git add scripts/film_onbellek.json; true
           if git diff --cached --quiet; then echo "Degisiklik yok"; else git commit -m "Canli TV: diziler listesi guncellendi" && git pull --rebase && git push; fi

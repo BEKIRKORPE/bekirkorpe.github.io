@@ -1,0 +1,15 @@
+{
+  "_not": "Sinema bölümü: SADECE filmlerin hak sahibi olan resmî YouTube kanalları. Korsan derleme kanalı eklenmez. 'klasik': true → filmleri Yeşilçam kategorisine de girer.",
+  "ilk": 600,
+  "gunluk": 60,
+  "kanallar": [
+    {"ad": "Arzu Film", "src": "UCUALYmnkEmx8vlxIbpr2gmw", "klasik": true},
+    {"ad": "Erler Film", "src": "UCUX_iQoFXw2nYzIuuYdeWhg", "klasik": true},
+    {"ad": "Avşar Film", "src": "UCcpY8WNM1xHPb8t2rjjZmwg"},
+    {"ad": "Fanatik Film Yerli", "src": "UCAJcU9SesgVqsJ8M0l7zYrA"},
+    {"ad": "Fanatik Film Klasik", "src": "UCfIf5PT-O5D6OjWMxGhF0kQ", "klasik": true},
+    {"ad": "25 Film", "src": "@25film"},
+    {"ad": "Boyut Film", "src": "UCYaAScGUBCzuiVeroAK6gSA"}
+  ],
+  "gizle": []
+}
