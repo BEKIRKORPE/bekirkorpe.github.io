@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-08T22:59:45Z",
+ "guncelleme": "2026-11-08T23:01:07Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -349,7 +349,7 @@
        "adet": 30
       },
       {
-       "ad": "Bölümler",
+       "ad": "7. Sezon",
        "id": "PLDnGt7yw8Qug",
        "adet": 13
       }
@@ -535,16 +535,11 @@
      "sezonlar": [
       {
        "ad": "Bölümler 1",
-       "id": "PLZHSJD3kGiKg",
-       "adet": 4
-      },
-      {
-       "ad": "Bölümler 2",
        "id": "PLF6Za_xPJ9nQ",
        "adet": 8
       },
       {
-       "ad": "Bölümler 3",
+       "ad": "Bölümler 2",
        "id": "PLVPXrutVkb-E",
        "adet": 3
       }
