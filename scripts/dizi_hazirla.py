@@ -230,16 +230,22 @@ def sezonlari_duzenle(d):
     ss = d.get("sezonlar") or []
     if len(ss) < 2:
         return
-    kume = {}
+    kume, nos = {}, {}
     for z in ss:
         try:
-            kume[z["id"]] = {e["i"] for e in json.load(open(os.path.join(OUT, z["id"] + ".json"), encoding="utf-8"))}
+            eps = json.load(open(os.path.join(OUT, z["id"] + ".json"), encoding="utf-8"))
         except Exception:
-            kume[z["id"]] = set()
+            eps = []
+        kume[z["id"]] = {e["i"] for e in eps}
+        nos[z["id"]] = {(e["n"], max(e.get("k", -1), 0)) for e in eps if e["n"] >= 0}
     kalan = []
     for z in sorted(ss, key=lambda z: -len(kume[z["id"]])):        # büyük liste önce, küçük tekrarlar elenir
-        a = kume[z["id"]]
+        a, an = kume[z["id"]], nos[z["id"]]
         if a and any(len(a & kume[y["id"]]) >= 0.8 * len(a) for y in kalan):
+            continue
+        # Numarasız liste, daha büyük bir listedeki bölüm numaralarının tekrarıysa (4K / "yeniden düzenlendi" tekrarları) elenir.
+        # Numaralı sezonlar ("2. Sezon") bu kuralla silinmez: her sezon 1. bölümden başlayabilir.
+        if an and num(SEZON, z["ad"]) <= 0 and any(len(an & nos[y["id"]]) >= 0.8 * len(an) for y in kalan):
             continue
         kalan.append(z)
     sira = {z["id"]: i for i, z in enumerate(ss)}
@@ -248,7 +254,7 @@ def sezonlari_duzenle(d):
     numarasiz = [z for z in kalan if num(SEZON, z["ad"]) <= 0]
     # Not: numarasız liste otomatik "N+1. Sezon" yapılmaz — bazen yeni sezon, bazen eski sezonun 4K tekrarı oluyor.
     if len(numarasiz) == 1:
-        numarasiz[0]["ad"] = "Bölümler"
+        numarasiz[0]["ad"] = "Tüm Bölümler" if len(kalan) == 1 and len(kume[numarasiz[0]["id"]]) >= 60 else "Bölümler"
     else:
         for i, z in enumerate(numarasiz):
             z["ad"] = f"Bölümler {i + 1}"
