@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-08T23:10:51Z",
+ "guncelleme": "2026-11-08T23:20:48Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -1272,7 +1272,7 @@
      "afis": "https://i.ytimg.com/vi/r9JlHIEjUvk/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Tüm Bölümler",
        "id": "PL6nM1RK5nFKfQ-Ip8eTIilxY43Gzlf_h1",
        "adet": 107
       }
@@ -1404,7 +1404,7 @@
      "afis": "https://i.ytimg.com/vi/pLXR6EzfB5Q/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Tüm Bölümler",
        "id": "PL6nM1RK5nFKdOqJZQDHNmxL8wJ_QTmJUU",
        "adet": 100
       }
@@ -1416,9 +1416,24 @@
      "afis": "https://i.ytimg.com/vi/bLigMefSslU/maxresdefault.jpg",
      "sezonlar": [
       {
+       "ad": "1. Sezon",
+       "id": "PLbSu1zI_-PTc6_7B2gW1LzTJVI7HotxNo",
+       "adet": 26
+      },
+      {
+       "ad": "2. Sezon",
+       "id": "PLbSu1zI_-PTc5DsSSJeSB1Y9GK3IiOgAo",
+       "adet": 37
+      },
+      {
+       "ad": "3. Sezon",
+       "id": "PLbSu1zI_-PTfjD_pXPS5IpSDeDOTvfpXE",
+       "adet": 24
+      },
+      {
        "ad": "Bölümler",
-       "id": "PL6nM1RK5nFKdaKc7QziGdijikYiMCcaRo",
-       "adet": 89
+       "id": "PLbSu1zI_-PTdbJtVLyzsMdzaHOwuNkhPf",
+       "adet": 90
       }
      ]
     },
@@ -1712,8 +1727,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiFuvKzftA6OtwCGlpYiVacQ",
-       "adet": 7
+       "id": "PLmGuGIh15su3BDSyksJm5rn2H5BVkjCAW",
+       "adet": 48
       }
      ]
     },
@@ -1772,8 +1787,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHg4K1Wx-kastY_s77bTy3O",
-       "adet": 11
+       "id": "PLLMVEkaw4r2ryVrmrDaowSxD-x0t-BuoA",
+       "adet": 43
       }
      ]
     },
@@ -1798,6 +1813,11 @@
        "ad": "7. Sezon",
        "id": "PLdw1RMMZ1UiGOGx_PrYCtyHfd8aELDl1t",
        "adet": 29
+      },
+      {
+       "ad": "Bölümler",
+       "id": "PLeTy3kE8EKht-1Uphk4t0UccMQVfuHox7",
+       "adet": 205
       }
      ]
     },
@@ -1808,8 +1828,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiH7eHq9kqCfZLBtDiOA7tFR",
-       "adet": 11
+       "id": "PLqrGFuI9NRUGGCRJoy_EoIf4aOrzV7wuc",
+       "adet": 53
       }
      ]
     },
@@ -1831,9 +1851,9 @@
      "afis": "https://i.ytimg.com/vi/UIlmu5f7RVU/sddefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiGYDgoSCo3SrM1a69eXClu_",
-       "adet": 49
+       "ad": "Tüm Bölümler",
+       "id": "PLJENy_HY9xaYJnIcx7S15ED5jcRzNf-Uu",
+       "adet": 144
       }
      ]
     },
@@ -1891,7 +1911,12 @@
      "afis": "https://i.ytimg.com/vi/9rZ5W_xufMY/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
+       "ad": "Bölümler 1",
+       "id": "PLygC5eB23NriBp__nj8wJhq-vbFFBjun0",
+       "adet": 32
+      },
+      {
+       "ad": "Bölümler 2",
        "id": "PLdw1RMMZ1UiHu95A_c_vFPIHjx24L7zN_",
        "adet": 42
       }
@@ -1942,6 +1967,11 @@
        "ad": "2. Sezon",
        "id": "PLdw1RMMZ1UiFZY8ddbHbk3ECTS3PrjPcx",
        "adet": 42
+      },
+      {
+       "ad": "Bölümler",
+       "id": "PLSYPFDzoEwYzQdVQtRWGMMwXF5ggGY2-t",
+       "adet": 39
       }
      ]
     },
@@ -1964,8 +1994,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHD3GB1-z98KIxGbLAk0Ovc",
-       "adet": 19
+       "id": "PLUg6ZlEFixldOfy9RVxQV1BHU5slJ6_3s",
+       "adet": 59
       }
      ]
     },
@@ -1975,9 +2005,14 @@
      "afis": "https://i.ytimg.com/vi/cOw-QQvHnvM/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PLdw1RMMZ1UiHDVfMHInANNUI9kn6KCOtS",
-       "adet": 50
+       "ad": "Bölümler 1",
+       "id": "PL5LKn5UYwrTdJlkHvj7Sdxl1eHKL9yYOp",
+       "adet": 125
+      },
+      {
+       "ad": "Bölümler 2",
+       "id": "PL5LKn5UYwrTdLA3SUqgfXKK0_L8UP2ecR",
+       "adet": 54
       }
      ]
     }
@@ -2019,8 +2054,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PLf1nK8EMP194He1tHkLfC6wXrCoLzOi66",
-       "adet": 11
+       "id": "PLr0YM2T6RrAdWrsfcfo8I6uelD1RhBeW8",
+       "adet": 41
       }
      ]
     },
@@ -2042,9 +2077,9 @@
      "afis": "https://i.ytimg.com/vi/ukmKabmzq60/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP194ig1GHLVGHUtkqlZZS2Vvj",
-       "adet": 4
+       "ad": "Tüm Bölümler",
+       "id": "PLAqdAUgvQw51hnmORWgZUb2Fht9O6SZ-u",
+       "adet": 104
       }
      ]
     },
@@ -2079,8 +2114,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpZcv2DgFrdVrxR2lR3IbMZ",
-       "adet": 14
+       "id": "PLGtmuXce8MhQ",
+       "adet": 20
       }
      ]
     },
@@ -2379,8 +2414,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWq7xdSPx3e_FVOd79UI65jp",
-       "adet": 11
+       "id": "PL3eN-lISBeeie3gz00irHMjFAMwsDFh08",
+       "adet": 23
       }
      ]
     },
@@ -2470,8 +2505,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7G1CV2qy_QOdwj2zi8vF-o",
-       "adet": 8
+       "id": "PLAvETdGmHsMGeHMtmjS8vNBxbY1b_KVXT",
+       "adet": 24
       }
      ]
     },
@@ -2482,8 +2517,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL-2mShPfUwI6V1Hw-22RrEPCsE1K8BPJ0",
-       "adet": 14
+       "id": "PLOyjhGAbji4_QXtXVHhRHgQ7K7Xqc3x_D",
+       "adet": 42
       }
      ]
     },
@@ -2494,8 +2529,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL-2mShPfUwI4AGYVdIiaWY9GQYWUJDBLQ",
-       "adet": 14
+       "id": "PLsfp8t8OdwyobbMrZJfGlL6dNaHDHhljP",
+       "adet": 42
       }
      ]
     },
@@ -2626,8 +2661,8 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7WVfoYLPAjT--tNAe8AAys",
-       "adet": 13
+       "id": "PLWCTYN7FtmFUUb3bS1m94Boo5HUFe_ryO",
+       "adet": 25
       }
      ]
     },
@@ -2698,12 +2733,12 @@
     {
      "ad": "Ligue 1 McDonald's Maç Özetleri - 2026/2027 Sezonu",
      "aciklama": "Ligue 1 McDonald's 2026/2027 Sezonu Maç Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/sDXxXC4LB0w/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/EXGM9hunEJw/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLN2uIXbY_9ZA",
-       "adet": 86
+       "adet": 90
       }
      ],
      "spor": true
