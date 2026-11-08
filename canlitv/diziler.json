@@ -112,7 +112,9 @@
       "ad": "TRT Spor",
       "tur": "spor",
       "youtube": [
-        "@trtspor"
+        "@trtspor",
+        "@trtsporyildiz",
+        "@tabiispor"
       ],
       "diziler": []
     },
@@ -138,6 +140,14 @@
       "tur": "spor",
       "youtube": [
         "UCzzylIZKbeIDhohxAaQFy1Q"
+      ],
+      "diziler": []
+    },
+    {
+      "ad": "HT Spor",
+      "tur": "spor",
+      "youtube": [
+        "@htspor"
       ],
       "diziler": []
     }

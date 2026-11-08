@@ -369,7 +369,7 @@ def listeler(cid, max_pages):
 
 
 def bolumler(liste_id, spor, max_pages, adet=-1):
-    ck = ("s:" if spor else "d:") + liste_id
+    ck = ("s2:" if spor else "d:") + liste_id   # s2: spor listeleri artık 400 videoya kadar
     c = CACHE.get(ck)
     if adet >= 0 and c and c.get("adet") == adet:
         return c["eps"]
@@ -421,7 +421,7 @@ def _bolumler(liste_id, spor, max_pages):
             keep.append(v)
     if spor:
         keep.sort(key=lambda v: v["d"], reverse=True)
-        keep = keep[:150]
+        keep = keep[:400]
     else:
         numbered = sum(1 for v in keep if v["n"] >= 0)
         if numbered * 2 > len(keep):
@@ -471,15 +471,15 @@ def main():
             if not cid:
                 print(f"  ! kanal bulunamadı: {src}", flush=True)
                 continue
-            lists += listeler(cid, 2 if spor else 8)
+            lists += listeler(cid, 6 if spor else 8)
 
         if spor:
-            for l in lists[:60]:
+            for l in lists[:120]:
                 if l["adet"] < 3 or key(l["baslik"]) in gizle or key(l["baslik"]) in var:
                     continue
                 if not SPOR_EVET.search(l["baslik"]) or SPOR_HAYIR.search(l["baslik"]):   # sadece maç özetleri / goller
                     continue
-                eps = bolumler(l["id"], True, 3, l["adet"])
+                eps = bolumler(l["id"], True, 8, l["adet"])
                 if not eps:
                     continue
                 sezon_yaz(l["id"], eps)
