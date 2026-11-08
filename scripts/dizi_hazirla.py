@@ -128,12 +128,31 @@ def resmi_kanal_bul(ad, kendi):
     c = CACHE.get(ck)
     if c and time.time() - c.get("t", 0) < ARAMA_GECERLI:
         return c.get("id")
+    bh = bas_harfler(ad)
+
+    def uygun(t):
+        return t == hedef or (hedef in t and len(t) <= len(hedef) + 12) or (len(bh) >= 3 and (t == bh or t.startswith(bh) and len(t) <= len(bh) + 6))
+
+    # 1) Ucuz yol: tahmini @hesap adları (her deneme 1 kota birimi; arama 100 birim)
+    tahminler = [hedef, hedef + "dizi", hedef + "atv", hedef + "kanald", hedef + "showtv", hedef + "startv", hedef + "nowtv", hedef + "trt", "dizi" + hedef]
+    if len(bh) >= 3:
+        tahminler += [bh, bh + "atv", bh + "dizi"]
+    for h in tahminler[:12]:
+        if len(h) > 30:
+            continue
+        r = get("channels", part="snippet", forHandle="@" + h)
+        items = (r or {}).get("items") or []
+        if items:
+            t = fold(items[0].get("snippet", {}).get("title", ""))
+            if t and t not in kendi and uygun(t):
+                CACHE[ck] = {"id": items[0]["id"], "t": int(time.time())}
+                return items[0]["id"]
+    # 2) Bulunamadıysa YouTube araması (pahalı, günlük sınırlı)
     if ARAMA_HAKKI[0] <= 0:
         return None
     ARAMA_HAKKI[0] -= 1
     r = get("search", part="snippet", type="channel", q=ad + " dizi", maxResults=5, regionCode="TR")
     bulunan = None
-    bh = bas_harfler(ad)
     for it in (r or {}).get("items", []):
         sn = it.get("snippet", {})
         cid = (it.get("id") or {}).get("channelId") or sn.get("channelId")
@@ -141,7 +160,7 @@ def resmi_kanal_bul(ad, kendi):
         if not cid or not t or t in kendi:
             continue
         # "Eşkıya Dünyaya Hükümdar Olmaz" ↔ "eskiyadunyayahukumdarolmaz" / "edho" / "edhoatv"
-        if t == hedef or (hedef in t and len(t) <= len(hedef) + 12) or (len(bh) >= 3 and (t == bh or t.startswith(bh) and len(t) <= len(bh) + 6)):
+        if uygun(t):
             bulunan = cid
             break
     CACHE[ck] = {"id": bulunan, "t": int(time.time())}
