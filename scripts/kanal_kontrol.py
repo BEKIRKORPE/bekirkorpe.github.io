@@ -137,9 +137,9 @@ def gizle(satirlar, k, on):
 
 # Kanalın kendi resmî canlı yayın sayfası: kapanınca sayfadaki yayın adresi (m3u8) okunur
 SITE = {
-    "TV100": ["https://www.tv100.com/canli-yayin"],
+    "TV100": ["https://www.tv100.com/canli-yayin", "https://www.tv100.com/"],
     "Akit TV": ["https://www.akittv.com.tr/canli-yayin"],
-    "TGRT Avrupa": ["https://www.tgrteu.com/canli-yayin", "https://www.tgrteu.com/"],
+    "TGRT Avrupa": ["https://www.tgrteu.com/canli-yayin", "https://www.tgrteu.com/", "https://www.tgrthaber.com/tgrt-eu-canli-yayin"],
     "TGRT Haber": ["https://www.tgrthaber.com/canli-yayin"],
     "Tele1": ["https://www.tele1.com.tr/canli-yayin"],
     "NOW": ["https://www.nowtv.com.tr/canli-yayin"],
@@ -150,7 +150,7 @@ SITE = {
     "TVNET": ["https://www.tvnet.com.tr/canli-yayin"],
     "GZT": ["https://www.gzt.com/canli-yayin"],
     "Beyaz TV": ["https://beyaztv.com.tr/canli-yayin"],
-    "İBB TV": ["https://tv.ibb.istanbul/canli-yayin", "https://tv.ibb.istanbul/"],
+    "İBB TV": ["https://tv.ibb.istanbul/canli-yayin", "https://tv.ibb.istanbul/", "https://www.ibb.istanbul/canli-yayin"],
     "Bursa TV": ["https://www.bursatv.com.tr/canli-yayin"],
     "Kardelen TV": ["https://www.kardelentv.com.tr/canli-yayin"],
     "Gonca TV": ["https://www.goncatv.com.tr/canli-yayin"],
