@@ -1,0 +1,1106 @@
+{
+ "kontrol": "2026-11-09 09:48 UTC",
+ "sayi": {
+  "acik": 45,
+  "belirsiz": 8,
+  "kapali": 15,
+  "yenilendi": 0
+ },
+ "kapali_24saat": [],
+ "kanallar": [
+  {
+   "ad": "TRT 1",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://trt.daioncdn.net/trt-1/master.m3u8?app=web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://tv-trt1-dai.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "503 (sunucu yoğun)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "ATV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8",
+     "durum": "kapali",
+     "neden": "alt liste: zaman aşımı",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
+     "durum": "kapali",
+     "neden": "zaman aşımı",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Kanal D",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://demiroren-live.daioncdn.net/kanald/kanald.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Star TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/startv/startv.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8l4w3lst4co5&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Show TV",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://ciner-live.daioncdn.net/showtv/showtv.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "NOW",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
+     "durum": "kapali",
+     "neden": "alt liste: zaman aşımı",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
+     "durum": "kapali",
+     "neden": "zaman aşımı",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TV8",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://tv8-live.daioncdn.net/tv8/tv8.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "5",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv8-live.daioncdn.net/tv8bucuk/tv8bucuk.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Kanal 7",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Beyaz TV",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3",
+     "durum": "belirsiz",
+     "neden": "401 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Teve2",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://demiroren-live.daioncdn.net/teve2/teve2.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "360",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "A2",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://trkvz-live.daioncdn.net/a2tv/a2tv.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TV4",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Euro D",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Haber",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "A Haber",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "NTV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/ntv/ntv.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Habertürk TV",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Halk TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://halktv-live.daioncdn.net/halktv/halktv.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TV100",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://tv100-live.daioncdn.net/tv100/tv100.m3u8",
+     "durum": "kapali",
+     "neden": "[Errno -2] Name or service not known",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
+     "durum": "kapali",
+     "neden": "[Errno -2] Name or service not known",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "24 TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "Remote end closed connection without response",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TGRT Haber",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://canli.tgrthaber.com/tgrt.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TVNET",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "Remote end closed connection without response",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Tele1",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Akit TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
+     "durum": "kapali",
+     "neden": "[Errno -2] Name or service not known",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Ekol TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Bloomberg HT",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "A Para",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "CNBC-e",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "GZT",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "Remote end closed connection without response",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TBMM TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Spor",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Spor Yıldız",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtspor2.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "A Spor",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://trkvz-live.daioncdn.net/aspor/aspor.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "HT Spor",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web&dfp_paln=AQzzBGQEBm1BO0E2iVe9tLfcsqJ3gAOMJ63P8Ch&ppid=675956db19f9bb686edda21d15d911e8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Çocuk",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Minika Çocuk",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://trkvz-live.daioncdn.net/minikago_cocuk/minikago_cocuk.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Minika Go",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://trkvz-live.daioncdn.net/minikago/minikago.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Diyanet Çocuk",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Belgesel",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "DMAX",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/dmax/dmax.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus-live.daioncdn.net/dmax/dmax_720p.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TLC",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/tlc/tlc.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus-live.daioncdn.net/tlc/tlc_720p.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Müzik",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
+    {
+     "url": "https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Kral Pop TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Kral TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://dogus-live.daioncdn.net/kraltv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Dream Türk",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "İBB TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "zaman aşımı",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Avaz",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtavaz.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Türk",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtturk.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Kurdî",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtkurdi.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Arabi",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtarabi.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT World",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT Genç",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://tv-trtgenc.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TRT 2",
+   "durum": "belirsiz",
+   "adres": [
+    {
+     "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TGRT Avrupa",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://canli.tgrteu.com/tgrteu.m3u8",
+     "durum": "kapali",
+     "neden": "[Errno -2] Name or service not known",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "TAY TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://duhnet.hipodrom.com/S2/HLS_LIVE/mislitaynp/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Bursa TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    },
+    {
+     "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "[Errno 111] Connection refused",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Edessa TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://canli.edessatv.com/hls/stream.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Alanya Posta TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://api-tv3.yayin.com.tr/postatv/postatv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "ATV Alanya",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://cdn-alanyatv.yayin.com.tr/alanyatv/alanyatv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Mercan TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Deha TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://live.artidijitalmedya.com/artidijital_dehatv/dehatv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Nora TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://live.artidijitalmedya.com/artidijital_noratv/noratv/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "404",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Ton TV",
+   "durum": "acik",
+   "adres": [
+    {
+     "url": "https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Kardelen TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Gonca TV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
+     "durum": "kapali",
+     "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  },
+  {
+   "ad": "Sun RTV",
+   "durum": "kapali",
+   "adres": [
+    {
+     "url": "https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8",
+     "durum": "kapali",
+     "neden": "zaman aşımı",
+     "kapali_sayi": 1
+    }
+   ],
+   "yeni": null
+  }
+ ]
+}
