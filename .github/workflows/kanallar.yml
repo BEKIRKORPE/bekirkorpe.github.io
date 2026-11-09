@@ -6,9 +6,6 @@ on:
   schedule:
     - cron: "41 */8 * * *"
   workflow_dispatch: {}
-  push:
-    paths:
-      - "scripts/kanal_kontrol.py"
 
 permissions:
   contents: write
