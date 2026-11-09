@@ -292,7 +292,14 @@ def dizi_adi(t):
     s = re.sub(r"\s+I\s+|\s+I$", " ", s)                                         # "Taşacak Bu Deniz I" ayıracı
     s = re.sub(r"\b(trt ?1|atv|show ?tv|star ?tv|now ?tv|tv ?8)\b", " ", s, flags=I)    # "Mahrem TRT 1" → "Mahrem"
     s = re.sub(r"^nostal[jJ]i̇? ?seri̇?si̇?\s*", "", s, flags=I)                       # "Nostalji Serisi Bay Yanlış" → "Bay Yanlış"
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    # "Aşk Yeniden Tam" (Tam Bölüm) → "Aşk Yeniden"; "YENİDEN Göç Zamanı" / "Babalar ve Evlatlar Yeniden" → aynı diziyle birleşsin
+    s = re.sub(r"\s+tam(\s+b[oö]l[uü]m)?$", "", s, flags=I)
+    s = re.sub(r"^(YEN[İI]DEN|Yeniden)\s+", "", s)
+    s = re.sub(r"\s+(YEN[İI]DEN|Yeniden)$", "", s) if not re.search(r"\başk\s+yeniden$", s, I) else s
+    s = re.sub(r"\s+(dizisi|Dizisi|DİZİSİ)$", "", s)
+    s = re.sub(r"\b(\w+)( \1\b)+", r"\1", s)                                         # "ve ve" → "ve"
+    return s.strip()
 
 
 def num(rx, t):
