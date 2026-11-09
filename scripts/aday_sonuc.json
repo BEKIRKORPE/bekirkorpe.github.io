@@ -1,0 +1,156 @@
+{
+ "TV100": [
+  {
+   "url": "https://ensonhaber-live.ercdn.net/tv100/tv100.m3u8",
+   "durum": "ok",
+   "neden": "200",
+   "sitede": false
+  },
+  {
+   "url": "https://tv.ensonhaber.com/tv100/tv100.m3u8",
+   "durum": "ok",
+   "neden": "200",
+   "sitede": false
+  },
+  {
+   "url": "https://tv100.daioncdn.net/tv100/tv100.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://tv100-live.ercdn.net/tv100/tv100.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://ensonhaber.daioncdn.net/tv100/tv100.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  }
+ ],
+ "Akit TV": [
+  {
+   "url": "https://akittv.ercdn.net/akittv/akittv.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://akittv-live.daioncdn.net/akittv/akittv.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://akittv.daioncdn.net/akittv/akittv.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://yeniakit-live.ercdn.net/akittv/akittv.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  }
+ ],
+ "TGRT Avrupa": [
+  {
+   "url": "https://canli.tgrthaber.com/tgrteu.m3u8",
+   "durum": "kapali",
+   "neden": "404",
+   "sitede": false
+  },
+  {
+   "url": "https://canli.tgrthaber.com/tgrt_eu.m3u8",
+   "durum": "kapali",
+   "neden": "404",
+   "sitede": false
+  },
+  {
+   "url": "https://canli.tgrthaber.com/tgrtavrupa.m3u8",
+   "durum": "kapali",
+   "neden": "404",
+   "sitede": false
+  },
+  {
+   "url": "https://tgrteu.daioncdn.net/tgrteu/tgrteu.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://tgrteu-live.ercdn.net/tgrteu/tgrteu.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  }
+ ],
+ "İBB TV": [
+  {
+   "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "zaman aşımı",
+   "sitede": false
+  },
+  {
+   "url": "https://npserver2.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "zaman aşımı",
+   "sitede": false
+  },
+  {
+   "url": "https://npserver.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  },
+  {
+   "url": "https://webtv.ibb.istanbul/live/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno -2] Name or service not known",
+   "sitede": false
+  }
+ ],
+ "Bursa TV": [
+  {
+   "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno 111] Connection refused",
+   "sitede": false
+  },
+  {
+   "url": "https://win2.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno 111] Connection refused",
+   "sitede": false
+  },
+  {
+   "url": "https://win3.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno 111] Connection refused",
+   "sitede": false
+  },
+  {
+   "url": "https://win4.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "[Errno 111] Connection refused",
+   "sitede": false
+  },
+  {
+   "url": "https://cdn.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
+   "durum": "kapali",
+   "neden": "404",
+   "sitede": false
+  }
+ ]
+}
