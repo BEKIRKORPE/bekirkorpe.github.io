@@ -27,6 +27,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Tarayici (kapali kanalin sitesinden adres bulmak icin)
+        continue-on-error: true
+        run: pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null
       - name: Butun kanallari dene
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

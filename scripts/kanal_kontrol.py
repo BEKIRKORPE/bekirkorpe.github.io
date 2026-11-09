@@ -159,6 +159,41 @@ def siteden(ad):
     return list(dict.fromkeys(out))
 
 
+def tarayici_ile(ad):
+    """Sitedeki oynatıcı adresi sonradan yüklüyorsa: sayfa gerçek tarayıcıda açılır, oynatıcının istediği .m3u8 yakalanır."""
+    sayfalar = SITE.get(ad, [])
+    if not sayfalar:
+        return []
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return []
+    bulunan = []
+    try:
+        with sync_playwright() as p:
+            b = p.chromium.launch(args=["--autoplay-policy=no-user-gesture-required"])
+            pg = b.new_page(user_agent=UA, locale="tr-TR")
+            pg.on("request", lambda req: bulunan.append(req.url) if ".m3u8" in req.url else None)
+            for sayfa in sayfalar:
+                try:
+                    pg.goto(sayfa, wait_until="domcontentloaded", timeout=30000)
+                    pg.wait_for_timeout(12000)
+                    for fr in pg.frames:          # oynatıcı çerçevesindeki "oynat" düğmesine basmayı dene
+                        try:
+                            fr.click("video, .vjs-big-play-button, .jw-icon-display, button[aria-label*='Play'], .play", timeout=1500)
+                        except Exception:
+                            pass
+                    pg.wait_for_timeout(8000)
+                except Exception:
+                    pass
+                if bulunan:
+                    break
+            b.close()
+    except Exception as e:
+        print("  tarayıcı açılamadı:", e, flush=True)
+    return list(dict.fromkeys(bulunan))
+
+
 def tahminler(url):
     """Aynı resmî sunucu ailesinde olası yeni adresler."""
     u = urllib.parse.urlsplit(url)
@@ -262,7 +297,9 @@ def main():
             dk = "kapali"
         uzun = dk == "kapali" and all(ST["url"].get(k["url"], 0) >= KAPALI_SAYI for k in ks)
         yeni = None
-        if dk == "kapali":   # Bekir: kapanan kanala hemen yeni adres aransın, bulunamazsa her 8 saatte haber verilsin
+        # Bekir: kapanan kanala hemen yeni adres aransın, bulunamazsa her 8 saatte haber verilsin.
+        # Yurt dışından açılmayan (belirsiz) kanal da resmî sitesi biliniyorsa yeni adres için taranır (ör. Tele1).
+        if dk == "kapali" or (dk == "belirsiz" and ad in SITE):
             # 1) kendi yeni adresini ara (resmî sunucu ailesi)
             adaylar = []
             for k in ks:
@@ -272,11 +309,15 @@ def main():
             tid = (ks[0]["id"] or "").split("@")[0].lower()
             adaylar += [u for u in iorg.get(tid, []) if RESMI.search(urllib.parse.urlsplit(u).netloc)]
             mevcut = {k["url"] for k in kayit}
-            site = siteden(ad)                       # kanalın kendi sitesinde yazan adres resmîdir
+            site = siteden(ad) or tarayici_ile(ad)   # kanalın kendi sitesinde yazan / oynatıcısının açtığı adres resmîdir
+            if site:
+                print(f"  {ad}: sitesinde bulunan adresler: {site[:4]}", flush=True)
             for u in dict.fromkeys(site + adaylar):
                 if u in mevcut or (u not in site and not RESMI.search(urllib.parse.urlsplit(u).netloc)):
                     continue
-                if dene(u)[0] == "ok":
+                d = dene(u)[0]
+                # sitesinden gelen adres yurt dışına kapalı olsa da (belirsiz) kabul: Türkiye'de açılır
+                if d == "ok" or (u in site and d == "belirsiz"):
                     yeni = u
                     break
             if yeni:
@@ -291,7 +332,7 @@ def main():
                 degisti = True
                 dk = "yenilendi"
                 print(f"✓ {ad}: yeni adres bulundu → {yeni}", flush=True)
-            else:
+            elif dk == "kapali":
                 kapali_kanallar.append(dict(ad=ad, neden=", ".join(sorted({turkce(k['neden']) for k in ks}))))
         ozet.append(dict(ad=ad, durum=dk, adres=[dict(url=k["url"], durum=k["durum"], neden=k["neden"],
                                                      kapali_sayi=ST["url"].get(k["url"], 0)) for k in ks],
