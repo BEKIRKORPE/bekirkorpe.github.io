@@ -564,7 +564,7 @@ def main():
     json.dump(index, open(os.path.join(OUT, "index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     yazilan.add("index.json")
     for f in os.listdir(OUT):   # artık kullanılmayan sezon dosyaları
-        if f not in yazilan:
+        if f not in yazilan and not f.startswith("SON_") and f != "filmler.json":   # spor/sinema dosyaları başka betiklerin
             os.remove(os.path.join(OUT, f))
     print(f"Bitti: {len(yazilan) - 1} sezon dosyası, YouTube kotası ~{units} birim", flush=True)
 
