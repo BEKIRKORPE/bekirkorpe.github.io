@@ -27,9 +27,9 @@ API = "https://www.googleapis.com/youtube/v3/"
 cfg = json.load(open(os.path.join(ROOT, "canlitv", "diziler.json"), encoding="utf-8"))
 KEY = os.environ.get("YT_KEY") or cfg.get("apiKey", "")
 I = re.IGNORECASE | re.UNICODE
-SPOR_EVET = re.compile(r"(özet|ozet|goller|\bgol\b|geniş özet|maçın tamamı|highlights|goals|\d+\s*[-–]\s*\d+)", I)
+SPOR_EVET = re.compile(r"(özet|ozet|goller|geniş özet|maçın tamamı|full maç|highlights|goals)", I)   # sadece gerçek özet/maç videoları
 SPOR_HAYIR = re.compile(r"(#shorts|\bshorts\b|kısa|önemli an|röportaj|basın toplantısı|transfer|tanıyalım|teknik direktör açıkla|"
-                        r"antrenman|canlı yayın|\blive\b|podcast|tahmin|yorumladı|değerlendir|stüdyo|program)", I)
+                        r"antrenman|canlı yayın|\blive\b|podcast|tahmin|yorumladı|değerlendir|stüdyo|program|orta nokta|sevinc|açıkladı|\?)", I)
 SON_AD = "🔥 Son Maç Özetleri"
 units = 0
 
