@@ -1,0 +1,40 @@
+name: Son mac ozetleri (Canli TV)
+
+# Bugün oynanan maçların özetleri de hemen gelsin: 2 saatte bir sadece son özetler (kanal başına ~6 kota birimi).
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: diziler
+  cancel-in-progress: false
+
+jobs:
+  spor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: En son mac ozetleri
+        run: python3 scripts/spor_hazirla.py
+      - name: Degisiklik varsa kaydet
+        if: always()
+        run: |
+          git config user.name "diziler-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A canlitv/hazir
+          [ -f scripts/spor_onbellek.json ] && git add scripts/spor_onbellek.json; true
+          if git diff --cached --quiet; then echo "Degisiklik yok"; exit 0; fi
+          git commit -m "Canli TV: son mac ozetleri guncellendi"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null; sleep $((i*5))
+          done
+          exit 1
