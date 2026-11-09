@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-08T23:20:48Z",
+ "guncelleme": "2026-11-08T23:42:58Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -2798,12 +2798,12 @@
     {
      "ad": "Portekiz Ligi Maç Özetleri | 2026/27",
      "aciklama": "Portekiz Ligi'nde 2026/2027 Sezonunda Oynanan Maçların Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
-     "afis": "https://i.ytimg.com/vi/d16LUvV1lBE/maxresdefault.jpg",
+     "afis": "https://i.ytimg.com/vi/uFhcGmp9YuQ/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Videolar",
        "id": "PLB2Buib-imU0",
-       "adet": 73
+       "adet": 74
       }
      ],
      "spor": true
@@ -2817,6 +2817,175 @@
        "ad": "Videolar",
        "id": "PLfhMYO3Oj2JM",
        "adet": 139
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Midas | 2026 Formula 1 Geniş Özetler",
+     "aciklama": "2026 Yılındaki Formula 1 Geniş Özetleri Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/eOlFAa2dJpA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaQLN8950dvY-JwRG37xUL5T",
+       "adet": 20
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Premier League Haftanın Golleri",
+     "aciklama": "Premier League'de 2025-2026 Sezonunda Atılan Tüm Goller Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/rmfGHdglf10/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaTdde9scR4FY6-zSSxiAmg_",
+       "adet": 3
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig Haftanın Golleri",
+     "aciklama": "Trendyol Süper Lig'de 2025-2026 Sezonunda Atılan Goller Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/erbVR3yBHl0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaQ0L_m3iahSaGe6NAVBcynd",
+       "adet": 12
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Premier League Geniş Özetler | 2025-2026 Sezonu",
+     "aciklama": "YouTube İçin Özel Hazırlanan Premier League Geniş Özetleri Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/H07Sh4rqwEk/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaSquwlYKq52LnKWpGQ-BwSG",
+       "adet": 30
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Midas | Serhan Acar'ın Anlatımıyla F1 Özetleri",
+     "aciklama": "Formula 1 yarışlarının özetleri Serhan Acar’ın anlatımıyla bu oynatma listesinde. Sezon boyunca tüm F1 yarış özetlerini izlemek için videolara göz atabilirsiniz.",
+     "afis": "https://i.ytimg.com/vi/eOlFAa2dJpA/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaQCt-6DxVwGl3Jq7tBUHqUu",
+       "adet": 24
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Fransa Kupası Maç Özetleri | 2025/26",
+     "aciklama": "2025 - 2026 Sezonundaki Fransa Kupası Maç Özetleri İzlerle!",
+     "afis": "https://i.ytimg.com/vi/ajdkTuabYys/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaTdRZqIlu_686PDcN5fVEvJ",
+       "adet": 34
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "90 Dakika Full Maç (Derbiler)",
+     "aciklama": "Trendyol Süper Lig tarihinde oynanan derbilerin 90 dakikası sizlerle!",
+     "afis": "https://i.ytimg.com/vi/PiVzSaJR50k/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaTRv6sBk4Enjl8kQbD8DV4V",
+       "adet": 16
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Basketbol Özetleri - 2025/26",
+     "aciklama": "Türkiye Sigorta Basketbol Süper Ligi'nde 2025-2026 Sezonunda Oynanan Maçların Özetleri Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/yqIYWm4P0Sc/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaTzAwICnh-kUzo5SawwKP_V",
+       "adet": 262
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ligue 1 McDonald's Maç Özetleri | 2025/26",
+     "aciklama": "Ligue 1 McDonald's 2025/26 Sezonu Maç Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/vUCKzaJC2y0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaQrkV-NuoXoanaX_-tAAdZC",
+       "adet": 307
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Premier League Özetleri | 2025-26 Sezonu",
+     "aciklama": "Premier League Özetleri | 2025-26 Sezonu Özetlerini Tek Tuşla İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/xSdr4cMzvuQ/sddefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaSnbvvu8Zaew1ZfsQmS6eF9",
+       "adet": 388
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Geçmişten Günümüze Goller",
+     "aciklama": "Trendyol Süper Lig'de oynanan maçların 'Geçmişten Günümüze Goller' konseptiyle sizlerle!",
+     "afis": "https://i.ytimg.com/vi/Jtd6wKlYE28/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaSCeWVX_uwf48Oar9gNXAIV",
+       "adet": 140
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig Maç Özetleri | 2025/26",
+     "aciklama": "Trendyol Süper Lig 2025-26 Sezonu Maç Özetlerini Tek Tuşta İzlemek İçin Tıklayın!",
+     "afis": "https://i.ytimg.com/vi/2T50J8fw05Q/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaTtnCo4qFEH8BgF7-EgpyAs",
+       "adet": 306
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Trendyol Süper Lig Özetleri - 2025 / 2026 Sezonu",
+     "aciklama": "Trendyol Süper Lig'de 2025-2026 Sezonundaki Özetler Sizlerle!",
+     "afis": "https://i.ytimg.com/vi/ZK4pXBLvy_s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLREq_OnJpFaRT2WY8UTDz-Bbty-BQIMmj",
+       "adet": 306
       }
      ],
      "spor": true
@@ -2953,7 +3122,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsQ3W0FjwZJqPt-Ez5u1Asd4",
-       "adet": 150
+       "adet": 203
       }
      ],
      "spor": true
@@ -3018,7 +3187,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsQPo1yttLisODa0-12bCO9z",
-       "adet": 149
+       "adet": 150
       }
      ],
      "spor": true
@@ -3044,7 +3213,7 @@
       {
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsRBRghldoTFSiTn-zbjiuc3",
-       "adet": 149
+       "adet": 193
       }
      ],
      "spor": true
@@ -3084,6 +3253,58 @@
        "ad": "Videolar",
        "id": "PLA_JQAuwYFsSen1wJIYccXQ08TEojkFEM",
        "adet": 101
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Tokyo 2020 | Futbol Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/cCpciw3e4tk/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsS3fv7FF81McoE-92w4TZnM",
+       "adet": 25
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/CF3P8WYxyxI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSjtcljVdsV5gvdSWorwHfZ",
+       "adet": 386
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "EURO 2020 Maç Özetleri",
+     "aciklama": "EURO 2020 Özetleri TRT SPOR'da",
+     "afis": "https://i.ytimg.com/vi/G8g7dDQayCg/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsTZh83VwU6mPKoa-mThlW3L",
+       "adet": 53
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "2. Lig Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/lIxW1QgR3HU/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLA_JQAuwYFsSRzZ3oMz1Ta3drvtQAZbe0",
+       "adet": 10
       }
      ],
      "spor": true
@@ -3143,6 +3364,19 @@
        "ad": "Videolar",
        "id": "PLwsfJxbw91OJN9J334BfcVjt4YRdmHJIa",
        "adet": 1
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Ziraat Türkiye Kupası Golleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/3Ik7tmVysxI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLwsfJxbw91OLClnt3I6dl5xof9iudcI4Z",
+       "adet": 263
       }
      ],
      "spor": true
@@ -3429,7 +3663,7 @@
       {
        "ad": "Videolar",
        "id": "PLfTeIW4UCX2ybckxmtB2-PUJ8eVW7xa9D",
-       "adet": 150
+       "adet": 277
       }
      ],
      "spor": true
@@ -3442,7 +3676,7 @@
       {
        "ad": "Videolar",
        "id": "PLfTeIW4UCX2yPv4kyzqAW-GGHsft6_N2f",
-       "adet": 150
+       "adet": 195
       }
      ],
      "spor": true
@@ -3469,6 +3703,143 @@
        "ad": "Videolar",
        "id": "PLfTeIW4UCX2yOmDF7M_dYxLBIo4GHykb_",
        "adet": 57
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Kral Kupası 2024-25 Maç Özeti",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/Uz7-GTxVwYM/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yNm0Gzn8p7vGh_2p2SGDxc",
+       "adet": 32
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga Top 5 Gol | 2024-25",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/zSKbNF8Y-18/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2zV3r7Fkcimg6HV4Yb0Z6Ax",
+       "adet": 1
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "FIBA Europe Cup Maç Özeti 2024-25",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/ZHf3xpcMKfI/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2xfAeUiJdaO_A4fVmZhMGyd",
+       "adet": 3
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Basketbol Şampiyonlar Ligi 2024-25 Özet",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/qphwsuQIza0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2wVh_r70Fj6Qzn3NlcXpAa6",
+       "adet": 56
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2024-25 Goller",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/4Vl1_IE-V9s/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2zD5pq_-2PgR57_PNUy8aQd",
+       "adet": 3
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2024-25 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/timSnIyxJTY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yd2qruKeCjJkuRJb8fIIaA",
+       "adet": 263
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2023-24 Maç Özetleri",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/nlMWRiWp3Ug/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2yIBzBvVVkmobn9ldvD_5cN",
+       "adet": 3
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Bundesliga 2023-24 Goller",
+     "aciklama": "",
+     "afis": "https://i.ytimg.com/vi/0ag7VA8pWB8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLfTeIW4UCX2xUitGo7kjKJdw9P8TCXTJg",
+       "adet": 19
+      }
+     ],
+     "spor": true
+    }
+   ]
+  },
+  {
+   "ad": "HT Spor",
+   "logo": "",
+   "spor": true,
+   "diziler": [
+    {
+     "ad": "Nesine 2. Lig Maç Özetleri - HT Spor",
+     "aciklama": "Nesine 2. Lig Maç Özetleri - HT Spor HT Spor, yeni spor kanalı olarak 10 Eylül 2024’te yayın hayatına başladı.",
+     "afis": "https://i.ytimg.com/vi/RjX0WC21pYo/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLC0kqAOj8L1IRyqC62hYe5_lMaiFFTnSD",
+       "adet": 38
+      }
+     ],
+     "spor": true
+    },
+    {
+     "ad": "Nesine 3. Lig Maç Özetleri - HT Spor",
+     "aciklama": "Nesine 3. Lig Maç Özetleri - HT Spor HT Spor, yeni spor kanalı olarak 10 Eylül 2024’te yayın hayatına başladı.",
+     "afis": "https://i.ytimg.com/vi/8liF3zAjTP0/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Videolar",
+       "id": "PLC0kqAOj8L1IuYROeZArxfKVsRhcoT0XQ",
+       "adet": 67
       }
      ],
      "spor": true
