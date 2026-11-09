@@ -38,8 +38,39 @@ RESMI = re.compile(r"(\.trt\.com\.tr|daioncdn\.net|ercdn\.net|mncdn\.com|turknet
                    r"tv100\.com|artidijitalmedya\.com|duhnet\.tv|socialsmart\.tv|yayin\.com\.tr|ensonhaber\.com)", re.I)
 
 
+TR_CDN = re.compile(r"(daioncdn\.net|ercdn\.net|mncdn\.com|turknet\.|medya\.trt\.com\.tr)", re.I)
+
+
 def ac(url, timeout=15):
     """→ ('ok'|'belirsiz'|'kapali', açıklama, gövde)"""
+    d, n, b = _ac(url, timeout)
+    # Türkiye'deki yayın sunucuları yurt dışını bazen 404 ya da cevapsız bırakarak engelliyor: kesin kapalı sayılmaz
+    if d == "kapali" and TR_CDN.search(urllib.parse.urlsplit(url).netloc) and ("404" in n or "zaman aşımı" in n or "closed connection" in n):
+        return "belirsiz", n + " (yurt dışından denendi, Türkiye'de açık olabilir)", b
+    return d, n, b
+
+
+def turkce(n):
+    """Teknik hata → Bekir'in anlayacağı kısa açıklama"""
+    t = n.lower()
+    if "name or service not known" in t or "nodename" in t:
+        return "sunucusu artık yok (kanal adresini değiştirmiş ya da kapanmış)"
+    if "certificate" in t:
+        return "yayın sunucusunun güvenlik sertifikası hatalı"
+    if "refused" in t:
+        return "sunucu bağlantıyı reddediyor"
+    if "zaman aşımı" in t:
+        return "sunucu cevap vermiyor"
+    if t.startswith("404") or "alt liste: 404" in t:
+        return "yayın adresi artık yok"
+    if "closed connection" in t:
+        return "sunucu bağlantıyı kesiyor"
+    if "yayın listesi değil" in t:
+        return "adres yayın yerine başka bir sayfa gösteriyor"
+    return n
+
+
+def _ac(url, timeout=15):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
         with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as r:
@@ -88,6 +119,44 @@ def oku_m3u():
             kayit.append(dict(ad=son[0], id=son[1], extinf=son[2], satir=i, url=l.strip()))
             son = None
     return satirlar, kayit
+
+
+# Kanalın kendi resmî canlı yayın sayfası: kapanınca sayfadaki yayın adresi (m3u8) okunur
+SITE = {
+    "TV100": ["https://www.tv100.com/canli-yayin"],
+    "Akit TV": ["https://www.akittv.com.tr/canli-yayin"],
+    "TGRT Avrupa": ["https://www.tgrteu.com/canli-yayin", "https://www.tgrteu.com/"],
+    "TGRT Haber": ["https://www.tgrthaber.com/canli-yayin"],
+    "Tele1": ["https://www.tele1.com.tr/canli-yayin"],
+    "NOW": ["https://www.nowtv.com.tr/canli-yayin"],
+    "Show TV": ["https://www.showtv.com.tr/canli-yayin"],
+    "Habertürk TV": ["https://www.haberturk.com/canliyayin"],
+    "Kral TV": ["https://www.kralmuzik.com.tr/tv/kral-tv"],
+    "Kral Pop TV": ["https://www.kralmuzik.com.tr/tv/kral-pop-tv"],
+    "TVNET": ["https://www.tvnet.com.tr/canli-yayin"],
+    "GZT": ["https://www.gzt.com/canli-yayin"],
+    "Beyaz TV": ["https://beyaztv.com.tr/canli-yayin"],
+    "İBB TV": ["https://tv.ibb.istanbul/canli-yayin", "https://tv.ibb.istanbul/"],
+    "Bursa TV": ["https://www.bursatv.com.tr/canli-yayin"],
+    "Kardelen TV": ["https://www.kardelentv.com.tr/canli-yayin"],
+    "Gonca TV": ["https://www.goncatv.com.tr/canli-yayin"],
+}
+M3U8_RX = re.compile(r"""(https?:)?(//|\\/\\/)[^\s"'<>()]+?\.m3u8[^\s"'<>()]*""", re.I)
+
+
+def siteden(ad):
+    out = []
+    for sayfa in SITE.get(ad, []):
+        try:
+            body = urllib.request.urlopen(urllib.request.Request(sayfa, headers={"User-Agent": UA}), timeout=20).read(3000000).decode("utf-8", "ignore")
+        except Exception:
+            continue
+        for m in M3U8_RX.finditer(body):
+            u = m.group(0).replace("\\/", "/").replace("&amp;", "&")
+            if u.startswith("//"):
+                u = "https:" + u
+            out.append(u)
+    return list(dict.fromkeys(out))
 
 
 def tahminler(url):
@@ -203,8 +272,9 @@ def main():
             tid = (ks[0]["id"] or "").split("@")[0].lower()
             adaylar += [u for u in iorg.get(tid, []) if RESMI.search(urllib.parse.urlsplit(u).netloc)]
             mevcut = {k["url"] for k in kayit}
-            for u in dict.fromkeys(adaylar):
-                if u in mevcut or not RESMI.search(urllib.parse.urlsplit(u).netloc):
+            site = siteden(ad)                       # kanalın kendi sitesinde yazan adres resmîdir
+            for u in dict.fromkeys(site + adaylar):
+                if u in mevcut or (u not in site and not RESMI.search(urllib.parse.urlsplit(u).netloc)):
                     continue
                 if dene(u)[0] == "ok":
                     yeni = u
@@ -222,7 +292,7 @@ def main():
                 dk = "yenilendi"
                 print(f"✓ {ad}: yeni adres bulundu → {yeni}", flush=True)
             else:
-                kapali_kanallar.append(dict(ad=ad, neden=", ".join(sorted({k['neden'] for k in ks}))))
+                kapali_kanallar.append(dict(ad=ad, neden=", ".join(sorted({turkce(k['neden']) for k in ks}))))
         ozet.append(dict(ad=ad, durum=dk, adres=[dict(url=k["url"], durum=k["durum"], neden=k["neden"],
                                                      kapali_sayi=ST["url"].get(k["url"], 0)) for k in ks],
                          yeni=yeni))
