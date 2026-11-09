@@ -73,7 +73,7 @@ except Exception:
 ST.setdefault("kanallar", {})
 ST.setdefault("filmler", {})      # id → film kaydı (havuz). 'e' alanı varsa yayında (eklendiği gün)
 ST.setdefault("red", [])          # film olmadığı anlaşılan video kimlikleri (bir daha sorulmaz)
-KURAL = "v2"   # ayıklama/tür kuralları değişince artır: filmler yeniden incelenir, yayına giriş tarihleri korunur
+KURAL = "v3"   # ayıklama/tür kuralları değişince artır: filmler yeniden incelenir, yayına giriş tarihleri korunur
 if ST.get("kural") != KURAL:
     ST["eski_e"] = {v: f["e"] for v, f in ST["filmler"].items() if f.get("e")}
     ST["filmler"] = {}
@@ -120,16 +120,29 @@ def saniye(iso):
     return d * 86400 + h * 3600 + mi * 60 + s
 
 
+def buyuk_harf_duzelt(s):
+    """'BİRİCİK SEVGİLİM' → 'Biricik Sevgilim' (Türkçe I/İ doğru). Küçük harf içeren adlara dokunmaz."""
+    if re.search(r"[a-zçğıöşü]", s):
+        return s
+    kucuk = s.replace("I", "ı").replace("İ", "i").lower()
+    return " ".join((w[:1].replace("i", "İ").replace("ı", "I").upper() + w[1:]) if w else w for w in kucuk.split(" "))
+
+
 def film_adi(t):
     """'Kibar Feyzo | Kemal Sunal Türk Komedi Filmi (1978)' → 'Kibar Feyzo'"""
     t = re.sub(r"\s+", " ", (t or "").replace("｜", "|")).strip()
-    parcalar = re.split(r"\s+[|\-–—]\s+|\s*\|\s*", t)
+    parcalar = re.split(r"\s+[|\-–—I]\s+|\s*\|\s*", t)     # " I " de ayıraç: "PELESENK AİLESİ 2024 I Türk Komedi Filmi"
+    ad = ""
     for p in parcalar:
         p2 = re.sub(r"[\(\[][^\)\]]*[\)\]]", "", p).strip(" -–—|:")
-        p2 = re.sub(r"\b(4k|full ?hd|hd|1080p|720p|tek parça|restorasyonlu)\b", "", p2, flags=I).strip(" -–—|:")
+        p2 = re.sub(r"\b(4k|full ?hd|hd|1080p|720p|tek parça|restorasyonlu|izle)\b", "", p2, flags=I)
+        p2 = re.sub(r"\s+(19[3-9]\d|20[0-3]\d)$", "", p2.strip(" -–—|:")).strip(" -–—|:")
         if re.search(r"[A-Za-zÇĞİÖŞÜçğıöşü]{2}", GENEL.sub(" ", p2)):
-            return p2[:80]
-    return re.sub(r"[\(\[][^\)\]]*[\)\]]", "", parcalar[0]).strip()[:80] or t[:80]
+            ad = p2
+            break
+    if not ad:
+        ad = re.sub(r"[\(\[][^\)\]]*[\)\]]", "", parcalar[0]).strip() or t
+    return buyuk_harf_duzelt(re.sub(r"\s+", " ", ad).strip())[:80]
 
 
 def kisalt(d):
@@ -362,6 +375,7 @@ def main():
     liste = tek
     # Bekir: en yeni film en üstte, eskiye doğru alta (yapım yılı). Yılı bilinmeyenler en sonda, son eklenen önce.
     for v, f in liste:
+        f["t"] = buyuk_harf_duzelt(f["t"])
         if not f.get("y"):
             f["y"] = yil_bul(f["t"], f.get("a", ""))
     # yılı bilinmeyen film, kanalın dönemine göre sıralanır (filmler.json → "donem"); ekranda yıl yazılmaz
