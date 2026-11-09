@@ -107,18 +107,32 @@ def dene(url):
     return durum, neden
 
 
+GIZLI = "#KAPALI|"   # uygulama "#" ile başlayan satırı okumaz → kanal kullanıcıdan gizlenir, kontrol denemeye devam eder
+
+
 def oku_m3u():
     satirlar = open(M3U, encoding="utf-8").read().splitlines()
     kayit, son = [], None
     for i, l in enumerate(satirlar):
+        gizli = l.startswith(GIZLI)
+        l = l[len(GIZLI):] if gizli else l
         if l.startswith("#EXTINF"):
             ad = l.rsplit(",", 1)[-1].strip()
             tid = (re.search(r'tvg-id="([^"]*)"', l) or [None, ""])[1]
             son = (ad, tid, i)
         elif l.strip() and not l.startswith("#") and son:
-            kayit.append(dict(ad=son[0], id=son[1], extinf=son[2], satir=i, url=l.strip()))
+            kayit.append(dict(ad=son[0], id=son[1], extinf=son[2], satir=i, url=l.strip(), gizli=gizli))
             son = None
     return satirlar, kayit
+
+
+def gizle(satirlar, k, on):
+    for i in (k["extinf"], k["satir"]):
+        l = satirlar[i]
+        if on and not l.startswith(GIZLI):
+            satirlar[i] = GIZLI + l
+        elif not on and l.startswith(GIZLI):
+            satirlar[i] = l[len(GIZLI):]
 
 
 # Kanalın kendi resmî canlı yayın sayfası: kapanınca sayfadaki yayın adresi (m3u8) okunur
@@ -337,7 +351,20 @@ def main():
                 dk = "yenilendi"
                 print(f"✓ {ad}: yeni adres bulundu → {yeni}", flush=True)
             elif dk == "kapali":
-                kapali_kanallar.append(dict(ad=ad, neden=", ".join(sorted({turkce(k['neden']) for k in ks}))))
+                neden = ", ".join(sorted({turkce(k['neden']) for k in ks}))
+                if uzun:   # 24 saattir kapalı + yeni adres yok → kullanıcıdan gizlenir (açılınca kendiliğinden geri gelir)
+                    for k in ks:
+                        if not k["gizli"]:
+                            gizle(satirlar, k, True)
+                            degisti = True
+                    neden += " → uygulamada gizlendi, açılınca kendiliğinden geri gelir"
+                kapali_kanallar.append(dict(ad=ad, neden=neden))
+        if dk == "acik" and any(k["gizli"] for k in ks):   # gizlenen kanal yeniden açıldı → geri getir
+            for k in ks:
+                gizle(satirlar, k, False)
+            degisti = True
+            dk = "geri_geldi"
+            print(f"↩ {ad}: yeniden açıldı, uygulamaya geri getirildi", flush=True)
         ozet.append(dict(ad=ad, durum=dk, adres=[dict(url=k["url"], durum=k["durum"], neden=k["neden"],
                                                      kapali_sayi=ST["url"].get(k["url"], 0)) for k in ks],
                          yeni=yeni))
@@ -352,7 +379,7 @@ def main():
     canli = {k["url"] for k in kayit}
     ST["url"] = {u: n for u, n in ST["url"].items() if u in canli}
     json.dump(ST, open(STATE_F, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    say = {d: sum(1 for o in ozet if o["durum"] == d) for d in ("acik", "belirsiz", "kapali", "yenilendi")}
+    say = {d: sum(1 for o in ozet if o["durum"] == d) for d in ("acik", "belirsiz", "kapali", "yenilendi", "geri_geldi")}
     json.dump(dict(kontrol=BUGUN + " UTC", sayi=say, kapali_24saat=[k["ad"] for k in kapali_kanallar], kanallar=ozet),
               open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"\nAçık {say['acik']}, belirsiz (yurt dışına kapalı olabilir) {say['belirsiz']}, kapalı {say['kapali']}, "
