@@ -9,7 +9,7 @@ Canlı TV — 8 saatte bir BÜTÜN kanalları dener (Bekir: "hangisi çalışmı
   1) Kendi yeni adresini arar — sadece kanalın kendi resmî sunucu ailesinde: aynı CDN'in -live / canlı olmayan
      adı, ?app=web eki ve herkese açık iptv-org listesindeki aynı kanalın resmî sunucudaki adresleri.
      Çalışan bulursa kanallar.m3u'ya kendisi yazar, kapalı adresi "# kapalı" diye işaretler.
-  2) Bulamazsa GitHub'da "Kapalı kanallar" başlıklı bir konu açar/günceller → Bekir'e e-posta gider.
+  2) Bulamazsa her kontrolde (8 saatte bir) "Kapalı kanallar" konusuna yazar → Bekir'e e-posta gider.
 - Sonuç herkese açık: canlitv/kanal_durum.json
 """
 import datetime
@@ -143,16 +143,17 @@ def github_bildir(kapali):
                 istek(i["url"], {"state": "closed"}, "PATCH")
                 istek(i["url"] + "/comments", {"body": "✅ Bütün kanallar yeniden açıldı."}, "POST")
             return
-        govde = ("Canlı TV kanal kontrolü (8 saatte bir) bu kanalların **bütün adreslerini 24 saattir kapalı** buldu "
+        govde = ("Canlı TV kanal kontrolü (8 saatte bir) bu kanalların **bütün adreslerini kapalı** buldu "
                  "ve resmî sunucularında yeni adres bulamadı:\n\n" +
                  "\n".join(f"- **{k['ad']}** — {k['neden']}" for k in kapali) +
                  "\n\nUygulamada bu kanallar açılmayınca \"biraz bekleyin\" yazar. Claude'a bu listeyi gönder, yeni resmî adresi bulsun."
                  f"\n\n_Son kontrol: {BUGUN} UTC_")
         if acik:
             onceki = acik[0].get("body") or ""
-            if sorted(re.findall(r"\*\*(.+?)\*\*", onceki)) != sorted(k["ad"] for k in kapali):
-                istek(acik[0]["url"], {"body": govde}, "PATCH")
-                istek(acik[0]["url"] + "/comments", {"body": "Liste değişti:\n\n" + "\n".join(f"- {k['ad']}" for k in kapali)}, "POST")
+            istek(acik[0]["url"], {"body": govde}, "PATCH")
+            # Bekir: 8 saatte bir e-posta → her kontrolde yorum (GitHub her yorumu e-postayla gönderir)
+            istek(acik[0]["url"] + "/comments", {"body": f"📺 Kontrol {BUGUN} UTC — açılmayan ve yeni adresi bulunamayan {len(kapali)} kanal:\n\n"
+                                                       + "\n".join(f"- **{k['ad']}** — {k['neden']}" for k in kapali)}, "POST")
         else:
             istek(api, {"title": "Kapalı kanallar", "body": govde})
     except Exception as e:
@@ -190,7 +191,7 @@ def main():
             dk = "kapali"
         uzun = dk == "kapali" and all(ST["url"].get(k["url"], 0) >= KAPALI_SAYI for k in ks)
         yeni = None
-        if uzun:
+        if dk == "kapali":   # Bekir: kapanan kanala hemen yeni adres aransın, bulunamazsa her 8 saatte haber verilsin
             # 1) kendi yeni adresini ara (resmî sunucu ailesi)
             adaylar = []
             for k in ks:
@@ -208,10 +209,13 @@ def main():
                     break
             if yeni:
                 ilk = ks[0]
-                satirlar[ilk["satir"]] = yeni + "\n# kapalı " + BUGUN[:10] + " (eski adres): " + ilk["url"]
-                for k in ks[1:]:
-                    satirlar[k["extinf"]] = "# " + satirlar[k["extinf"]]
-                    satirlar[k["satir"]] = "# kapalı " + BUGUN[:10] + ": " + k["url"]
+                if uzun:   # 24 saattir kapalı eski adresler işaretlenir
+                    satirlar[ilk["satir"]] = yeni + "\n# kapalı " + BUGUN[:10] + " (eski adres): " + ilk["url"]
+                    for k in ks[1:]:
+                        satirlar[k["extinf"]] = "# " + satirlar[k["extinf"]]
+                        satirlar[k["satir"]] = "# kapalı " + BUGUN[:10] + ": " + k["url"]
+                else:      # geçici kesinti olabilir: eski adres kalır, yeni adres önce denensin diye üstüne eklenir
+                    satirlar[ilk["extinf"]] = satirlar[ilk["extinf"]] + "\n" + yeni + "\n" + satirlar[ilk["extinf"]]
                 degisti = True
                 dk = "yenilendi"
                 print(f"✓ {ad}: yeni adres bulundu → {yeni}", flush=True)
