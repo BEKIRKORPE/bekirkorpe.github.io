@@ -145,7 +145,7 @@ def github_bildir(kapali):
                 istek(i["url"], {"state": "closed"}, "PATCH")
                 istek(i["url"] + "/comments", {"body": "✅ Bütün kanallar yeniden açıldı."}, "POST")
             return
-        govde = ("Canlı TV kanal kontrolü (8 saatte bir) bu kanalların **bütün adreslerini kapalı** buldu "
+        govde = ("@BEKIRKORPE Canlı TV kanal kontrolü (8 saatte bir) bu kanalların **bütün adreslerini kapalı** buldu "
                  "ve resmî sunucularında yeni adres bulamadı:\n\n" +
                  "\n".join(f"- **{k['ad']}** — {k['neden']}" for k in kapali) +
                  "\n\nUygulamada bu kanallar açılmayınca \"biraz bekleyin\" yazar. Claude'a bu listeyi gönder, yeni resmî adresi bulsun."
@@ -154,7 +154,7 @@ def github_bildir(kapali):
             onceki = acik[0].get("body") or ""
             istek(acik[0]["url"], {"body": govde}, "PATCH")
             # Bekir: 8 saatte bir e-posta → her kontrolde yorum (GitHub her yorumu e-postayla gönderir)
-            istek(acik[0]["url"] + "/comments", {"body": f"📺 Kontrol {BUGUN} UTC — açılmayan ve yeni adresi bulunamayan {len(kapali)} kanal:\n\n"
+            istek(acik[0]["url"] + "/comments", {"body": f"@BEKIRKORPE 📺 Kontrol {BUGUN} UTC — açılmayan ve yeni adresi bulunamayan {len(kapali)} kanal:\n\n"
                                                        + "\n".join(f"- **{k['ad']}** — {k['neden']}" for k in kapali)}, "POST")
         else:
             istek(api, {"title": "Kapalı kanallar", "body": govde})
