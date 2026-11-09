@@ -327,11 +327,13 @@ def main():
         havuz.pop(v, None)
     yayinda = [v for v, f in havuz.items() if f.get("e")]
     bekleyen = [v for v, f in havuz.items() if not f.get("e")]
-    hafta_once = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
-    # kanallara son bir haftada yüklenen gerçekten yeni filmler hemen
+    ay_once = (datetime.date.today() - datetime.timedelta(days=30)).isoformat()
+    yeni_yil = datetime.date.today().year - 6
+    # Bekir: yeni filmler beklemeden hemen girsin — kanala son 30 günde yüklenen ve yeni yapım (son ~6 yıl, 2026 dahil) filmler
     for v in bekleyen:
-        if havuz[v].get("p", "") >= hafta_once:
-            havuz[v]["e"] = BUGUN
+        f = havuz[v]
+        if f.get("p", "") >= ay_once or (f.get("y") or yil_bul(f["t"], f.get("a", ""))) >= yeni_yil:
+            f["e"] = BUGUN
     bekleyen = [v for v in bekleyen if not havuz[v].get("e")]
     if ST.get("son_gun") != BUGUN:
         hak = ILK if not yayinda else GUNLUK

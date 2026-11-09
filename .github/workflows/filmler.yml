@@ -1,0 +1,40 @@
+name: Sinema yeni filmler (Canli TV)
+
+# Kanallara yüklenen yeni filmler gün içinde de hemen gelsin: 6 saatte bir sadece film taraması (birkaç kota birimi).
+on:
+  schedule:
+    - cron: "7 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: diziler
+  cancel-in-progress: false
+
+jobs:
+  filmler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Yeni filmleri tara
+        run: python3 scripts/film_hazirla.py
+      - name: Degisiklik varsa kaydet
+        if: always()
+        run: |
+          git config user.name "diziler-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A canlitv/hazir
+          [ -f scripts/film_onbellek.json ] && git add scripts/film_onbellek.json; true
+          if git diff --cached --quiet; then echo "Degisiklik yok"; exit 0; fi
+          git commit -m "Canli TV: yeni filmler eklendi"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null; sleep $((i*5))
+          done
+          exit 1
