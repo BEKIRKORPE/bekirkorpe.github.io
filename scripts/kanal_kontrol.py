@@ -132,8 +132,10 @@ def github_bildir(kapali):
     api = f"https://api.github.com/repos/{repo}/issues"
     hdr = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json", "User-Agent": "kanal-kontrol"}
 
-    def istek(url, veri=None, yontem="GET"):
-        req = urllib.request.Request(url, data=json.dumps(veri).encode() if veri is not None else None, headers=hdr, method=yontem)
+    def istek(url, veri=None, yontem=None):
+        yontem = yontem or ("POST" if veri is not None else "GET")
+        req = urllib.request.Request(url, data=json.dumps(veri).encode() if veri is not None else None,
+                                     headers=dict(hdr, **({"Content-Type": "application/json"} if veri is not None else {})), method=yontem)
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.load(r)
     try:
