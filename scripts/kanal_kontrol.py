@@ -120,6 +120,8 @@ def oku_m3u():
             ad = l.rsplit(",", 1)[-1].strip()
             tid = (re.search(r'tvg-id="([^"]*)"', l) or [None, ""])[1]
             son = (ad, tid, i)
+        elif l.strip() and not l.startswith("#") and son and "youtube.com/" in l:
+            son = None   # YouTube canlı yayın yedeği: sunucudan denenmez (uygulama YouTube oynatıcısıyla açar)
         elif l.strip() and not l.startswith("#") and son:
             kayit.append(dict(ad=son[0], id=son[1], extinf=son[2], satir=i, url=l.strip(), gizli=gizli))
             son = None

@@ -239,3 +239,12 @@ https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 #EXTINF:-1 tvg-id="TLC.tr" group-title="Belgesel",TLC
 #EXTVLCOPT:http-referrer=https://www.tlctv.com.tr/
 https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
+# --- Resmî YouTube canlı yayınları: yayın adresi açılmazsa uygulama (V5.8+) kanalı buradan açar ---
+#EXTINF:-1 tvg-id="AkitTV.tr" tvg-logo="https://i.imgur.com/oGto929.png" group-title="Haber",Akit TV
+https://www.youtube.com/embed/live_stream?channel=UCbaLyHJp6S9Lsj6oT9aJsQw
+#EXTINF:-1 tvg-id="TV100.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/thumb/0/0f/TV100_logo.png/960px-TV100_logo.png" group-title="Haber",TV100
+https://www.youtube.com/embed/live_stream?channel=UCndsdUW_oPLqpQJY9J8oIRg
+#EXTINF:-1 tvg-id="TGRTEurope.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/TGRT_EU.png/960px-TGRT_EU.png" group-title="Ulusal",TGRT Avrupa
+https://www.youtube.com/embed/live_stream?channel=UCnwi4koEwXv4A5xTvkiWzWw
+#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-logo="https://i.imgur.com/PrxwKDw.png" group-title="Haber",TGRT Haber
+https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
