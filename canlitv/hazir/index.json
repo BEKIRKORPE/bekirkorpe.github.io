@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-11-09T00:02:57Z",
+ "guncelleme": "2026-11-09T08:35:58Z",
  "kanallar": [
   {
    "ad": "TRT 1",
@@ -508,7 +508,7 @@
      ]
     },
     {
-     "ad": "Es Es",
+     "ad": "Es",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/6TOUrq7IQ1M/maxresdefault.jpg",
      "sezonlar": [
@@ -828,28 +828,6 @@
        "ad": "Bölümler",
        "id": "PL6nM1RK5nFKcj74mrH_Uuc42TGfX2HEp2",
        "adet": 30
-      }
-     ]
-    },
-    {
-     "ad": "Kısmetse Olur",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/-YwbhKZeAz0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "1. Sezon",
-       "id": "PL6ygdk6cWbjuBG9STh9zCl6ScQPwcSwCd",
-       "adet": 235
-      },
-      {
-       "ad": "2. Sezon",
-       "id": "PL6nM1RK5nFKchOaKJ5hB8IydAr51iSW-J",
-       "adet": 123
-      },
-      {
-       "ad": "2. Sezon",
-       "id": "PL6ygdk6cWbjuEvMomyN-HYjRsxxfN8vAQ",
-       "adet": 240
       }
      ]
     },
@@ -1219,7 +1197,7 @@
      ]
     },
     {
-     "ad": "Aşkım Aşkım",
+     "ad": "Aşkım",
      "aciklama": "",
      "afis": "https://i.ytimg.com/vi/lROSnlw_qOM/maxresdefault.jpg",
      "sezonlar": [
@@ -1726,9 +1704,9 @@
      "afis": "https://i.ytimg.com/vi/-JCivtH6pEE/sddefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PLmGuGIh15su3BDSyksJm5rn2H5BVkjCAW",
-       "adet": 48
+       "ad": "Tüm Bölümler",
+       "id": "PLmGuGIh15su015aKtJ4HGw682dmW9SV3N",
+       "adet": 87
       }
      ]
     },
@@ -2084,18 +2062,6 @@
      ]
     },
     {
-     "ad": "Eyvah Düşüyorum",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/S9vcKv7a_QU/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PLf1nK8EMP195SgbF4D8mUnOuGNJ2-6Mcg",
-       "adet": 4
-      }
-     ]
-    },
-    {
      "ad": "Urfalıyam Ezelden",
      "aciklama": "Urfalıyam Ezelden - Tüm Bölümler Mehmet Bozoğlu nam-ı diğer ‘Yanık Memed’; beş oğlu ile beraber Urfa sıra gecelerinin önde gelenlerindendir.",
      "afis": "https://i.ytimg.com/vi/JIE4xIT-_Yw/maxresdefault.jpg",
@@ -2204,6 +2170,30 @@
      ]
     },
     {
+     "ad": "Küçük Sırlar",
+     "aciklama": "Küçük Sırlar Tüm Bölümler Sahip oldukları paranın, dolayısıyla sahip oldukları gücün sınırı yok.",
+     "afis": "https://i.ytimg.com/vi/tZi0UWIkN4I/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWpX_Fdx6oldQUmB0vDEVajK",
+       "adet": 38
+      }
+     ]
+    },
+    {
+     "ad": "Nefes Nefese",
+     "aciklama": "Berlin'de, babası Ayaz Kıran'la (Uğur Yücel) sakin bir hayat süren Rüya'nın (Melisa Şenolsun) bir gün hiç görmediği annesinin Suriye'de olduğunu öğrenmesiyle başlıyor.",
+     "afis": "https://i.ytimg.com/vi/W7fN1wV5bu8/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWofKD0MU7tCxteISAiD7wFY",
+       "adet": 10
+      }
+     ]
+    },
+    {
      "ad": "Dürüye'nin Güğümleri",
      "aciklama": "Hayata karşı dimdik ayakta kalmayı başarmış, hala güzel, hala çekici bir köylü kadını olan Dürüye ve dört kızının, yani güğümlerinin başından geçen olayların anlatıldığı sıcak bir köy hikayesidir.",
      "afis": "https://i.ytimg.com/vi/mCkrKJoybVU/maxresdefault.jpg",
@@ -2252,98 +2242,14 @@
      ]
     },
     {
-     "ad": "YENİDEN Yıldızlar Şahidim",
-     "aciklama": "İstanbul’un kenar mahallelerinden birinde yaşarken şarkıcı olma hayalleri kuran Haziran, pop yıldızı Aras’ın en büyük hayranıdır. İkilinin yollarının kesişmesi çok zordur; ama bir mucize gerçekleşir.",
-     "afis": "https://i.ytimg.com/vi/d7Rj151JtVA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpwm4P5_7yp7ogc0Mz9QOjR",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "YENİDEN İhanet",
-     "aciklama": "Türkiye'nin büyük holdinglerinden birinde bir suikast yaşanır. Bu suikast sonucu ablası öldürülen genç bir polis, ablasının intikamını almak için büyük bir mücadeleye girer, bu mücadelenin bir boyutu da holding ve ulu…",
-     "afis": "https://i.ytimg.com/vi/n0VaVOuO6fQ/maxresdefault.jpg",
+     "ad": "İhanet",
+     "aciklama": "İhanet Dizisi Tüm Bölümler Türkiye'nin büyük holdinglerinden birinde bir suikast yaşanır.",
+     "afis": "https://i.ytimg.com/vi/gPzxj3a6rJA/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
        "id": "PL_zRZfKAtvWrrei4TgZr3iTLvYAqTnnaQ",
        "adet": 7
-      }
-     ]
-    },
-    {
-     "ad": "YENİDEN Şahane Damat",
-     "aciklama": "Melike, gurbetçi ailesini İstanbul'da bir başına namusuyla yaşayabileceğine ikna etmek için, bazı küçük(!) yalanlar söyleyen bir kızdır.",
-     "afis": "https://i.ytimg.com/vi/GpBDjW_A1Ps/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpD-9zu7DVL-6p23wNGTwGG",
-       "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "YENİDEN Yalancı Bahar",
-     "aciklama": "Geçmişte sevgilisiyle beraber dolandırıcılık yapan ancak daha sonra başka bir hayatı seçen çok güzel bir kadın (Fahriye Evcen).",
-     "afis": "https://i.ytimg.com/vi/Qai_BVVOmtg/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpoAdy46Epe4YhVhKCOml49",
-       "adet": 9
-      }
-     ]
-    },
-    {
-     "ad": "YENİDEN Göç Zamanı Tam",
-     "aciklama": "Göç Zamanı, bir annenin, zulümden kaçırdığı çocuklarını bilmeden bir cehenneme sokuşunun; gözlerinin önünde her birinin dağılıp gidişinin; onlara sahip çıkmak için çırpınışının öyküsünü anlatıyor.",
-     "afis": "https://i.ytimg.com/vi/uSUs0gibnhU/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWrD_aJR_L6rM8TuteDaED3w",
-       "adet": 15
-      }
-     ]
-    },
-    {
-     "ad": "YENİDEN Babalar ve ve Evlatlar Tam",
-     "aciklama": "Babalar ve Evlatlar dizisinin tüm bölümlerini sizler için bir araya getirdik! İyi seyirler...",
-     "afis": "https://i.ytimg.com/vi/ZB7PCxgBiK0/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWqS6GyvsdIafqWRs-gtrrdU",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "Babalar ve Evlatlar Yeniden",
-     "aciklama": "Babalar ve Evlatlar dizisinin tüm bölümlerini sizler için bir araya getirdik! İyi seyirler...",
-     "afis": "https://i.ytimg.com/vi/QD0L48M7QXs/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpgwDZpjXtfkp9lwaT0gjK0",
-       "adet": 4
-      }
-     ]
-    },
-    {
-     "ad": "Küçük Sırlar",
-     "aciklama": "Küçük Sırlar Tüm Bölümler Sahip oldukları paranın, dolayısıyla sahip oldukları gücün sınırı yok.",
-     "afis": "https://i.ytimg.com/vi/tZi0UWIkN4I/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWpX_Fdx6oldQUmB0vDEVajK",
-       "adet": 38
       }
      ]
     },
@@ -2354,8 +2260,44 @@
      "sezonlar": [
       {
        "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWqJh98UQSiK70g6vb3vNg4t",
+       "id": "PL_zRZfKAtvWpD-9zu7DVL-6p23wNGTwGG",
        "adet": 8
+      }
+     ]
+    },
+    {
+     "ad": "Yalancı Bahar",
+     "aciklama": "Geçmişte sevgilisiyle beraber dolandırıcılık yapan ancak daha sonra başka bir hayatı seçen çok güzel bir kadın (Fahriye Evcen).",
+     "afis": "https://i.ytimg.com/vi/FMfJ7zTYz10/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL3eN-lISBeeie3gz00irHMjFAMwsDFh08",
+       "adet": 23
+      }
+     ]
+    },
+    {
+     "ad": "Göç Zamanı",
+     "aciklama": "Göç Zamanı Tüm Bölümler Göç Zamanı, bir annenin, zulümden kaçırdığı çocuklarını bilmeden bir cehenneme sokuşunun; gözlerinin önünde her birinin dağılıp gidişinin; onlara sahip çıkmak için çırpınışının öyküsünü anlatıy…",
+     "afis": "https://i.ytimg.com/vi/5BFRmcryXng/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWrD_aJR_L6rM8TuteDaED3w",
+       "adet": 15
+      }
+     ]
+    },
+    {
+     "ad": "Babalar ve Evlatlar",
+     "aciklama": "Babalar ve Evlatlar Tüm Bölümler İki düşman aile ve birbirini ölesiye seven çocukları… Eski kabadayılardan Aslan’ın oğlu Burhan, yine eski kabadayılardan Tahsin’in oğlu Eyyo’yu öldürmekten 12 yıl cezaevinde yatmıştır.",
+     "afis": "https://i.ytimg.com/vi/1UDs7oNjSdY/maxresdefault.jpg",
+     "sezonlar": [
+      {
+       "ad": "Bölümler",
+       "id": "PL_zRZfKAtvWoiIAfj-r_oBXGfVD0PwIYy",
+       "adet": 5
       }
      ]
     },
@@ -2368,18 +2310,6 @@
        "ad": "Bölümler",
        "id": "PL_zRZfKAtvWrJ3nKicoEsxF9reDx8-CVd",
        "adet": 8
-      }
-     ]
-    },
-    {
-     "ad": "Nefes Nefese",
-     "aciklama": "Berlin'de, babası Ayaz Kıran'la (Uğur Yücel) sakin bir hayat süren Rüya'nın (Melisa Şenolsun) bir gün hiç görmediği annesinin Suriye'de olduğunu öğrenmesiyle başlıyor.",
-     "afis": "https://i.ytimg.com/vi/W7fN1wV5bu8/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWofKD0MU7tCxteISAiD7wFY",
-       "adet": 10
       }
      ]
     },
@@ -2408,18 +2338,6 @@
      ]
     },
     {
-     "ad": "Yalancı Bahar",
-     "aciklama": "Geçmişte sevgilisiyle beraber dolandırıcılık yapan ancak daha sonra başka bir hayatı seçen çok güzel bir kadın (Fahriye Evcen).",
-     "afis": "https://i.ytimg.com/vi/FMfJ7zTYz10/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL3eN-lISBeeie3gz00irHMjFAMwsDFh08",
-       "adet": 23
-      }
-     ]
-    },
-    {
      "ad": "Kader",
      "aciklama": "Halabiler Suriye'nin köklü ailelerinden biri olup aynı zamanda Arap şeyhlerinden Şeyh Ömer ile ortak iş yapmaktadırlar.",
      "afis": "https://i.ytimg.com/vi/4vztoWcwUSc/maxresdefault.jpg",
@@ -2428,42 +2346,6 @@
        "ad": "Bölümler",
        "id": "PL_zRZfKAtvWpsZYA2jwxdrAoy1e_OpPI7",
        "adet": 13
-      }
-     ]
-    },
-    {
-     "ad": "Göç Zamanı",
-     "aciklama": "Göç Zamanı Tüm Bölümler Göç Zamanı, bir annenin, zulümden kaçırdığı çocuklarını bilmeden bir cehenneme sokuşunun; gözlerinin önünde her birinin dağılıp gidişinin; onlara sahip çıkmak için çırpınışının öyküsünü anlatıy…",
-     "afis": "https://i.ytimg.com/vi/5BFRmcryXng/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWrxgpo5rtUdh4SIxOAXdDE6",
-       "adet": 15
-      }
-     ]
-    },
-    {
-     "ad": "Babalar ve Evlatlar",
-     "aciklama": "Babalar ve Evlatlar Tüm Bölümler İki düşman aile ve birbirini ölesiye seven çocukları… Eski kabadayılardan Aslan’ın oğlu Burhan, yine eski kabadayılardan Tahsin’in oğlu Eyyo’yu öldürmekten 12 yıl cezaevinde yatmıştır.",
-     "afis": "https://i.ytimg.com/vi/1UDs7oNjSdY/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWoiIAfj-r_oBXGfVD0PwIYy",
-       "adet": 5
-      }
-     ]
-    },
-    {
-     "ad": "İhanet Dizisi",
-     "aciklama": "İhanet Dizisi Tüm Bölümler Türkiye'nin büyük holdinglerinden birinde bir suikast yaşanır.",
-     "afis": "https://i.ytimg.com/vi/gPzxj3a6rJA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL_zRZfKAtvWrGjlTmzB7xryu95yE0WW4d",
-       "adet": 7
       }
      ]
     }
@@ -2488,8 +2370,8 @@
     },
     {
      "ad": "İnadına Aşk",
-     "aciklama": "Erkekler inatçı, kadınlar inatçı, aşk hepsinden inatçı. İnadına Aşk; aşk, sevgi, nefret ve oyunlarla dolu bir romantik komedi dizisi.",
-     "afis": "https://i.ytimg.com/vi/WI5r5mvaJU0/maxresdefault.jpg",
+     "aciklama": "Erkekler inatçı, kadınlar inatçı,aşk hepsinden inatçı. İnadına Aşk; içinde aşk, sevgi, nefret ve oyun dolu bir romantik komedi dizisi.",
+     "afis": "https://i.ytimg.com/vi/kK7jeajllXk/maxresdefault.jpg",
      "sezonlar": [
       {
        "ad": "Bölümler",
@@ -2535,42 +2417,6 @@
      ]
     },
     {
-     "ad": "Kapımdaki Dedektif",
-     "aciklama": "İbrahim Selim'in sunumu ve Eda Ece'nin dedektiflik yetenekleriyle her hafta başka bir ünlümüzün evindeyiz! Dedektif Eda Ece, bu evin kime ait olduğunu ipuçlarını takip ederek bulmaya çalışacak.",
-     "afis": "https://i.ytimg.com/vi/59A-aImT3uA/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5efThWo5Pl3CrbZlWzSnU9",
-       "adet": 16
-      }
-     ]
-    },
-    {
-     "ad": "Kadının Eseri",
-     "aciklama": "Kadının Eseri Yapımını Provizyon Medya, sunuculuğunu ise Elçin Ateş Ersoy’un üstlendiği program izleyicisiyle buluşmaya hazırlanıyor.",
-     "afis": "https://i.ytimg.com/vi/iF77JnvAckQ/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI7mZ2mkexZpeIk8Wr0sMjK-",
-       "adet": 21
-      }
-     ]
-    },
-    {
-     "ad": "Hepsi Benim",
-     "aciklama": "",
-     "afis": "https://i.ytimg.com/vi/KTAYuy46FLo/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5Bti8O1i02lhznyZj68ffP",
-       "adet": 10
-      }
-     ]
-    },
-    {
      "ad": "Kaybolan Çiçekler",
      "aciklama": "İnci Ertuğrul, Kaybolan Çiçekler ile aileleri çocukları ile kavuşturmak için kolları sıvıyor ve herkes FOX'ta bu duygusal mücadeleye tanıklık ediyor.",
      "afis": "https://i.ytimg.com/vi/2aqmNFmu29Q/maxresdefault.jpg",
@@ -2607,50 +2453,36 @@
      ]
     },
     {
-     "ad": "Benden Söylemesi",
-     "aciklama": "Haftanızı renklendirecek, hayatınızı kolaylaştıracak ne varsa bu programda.",
-     "afis": "https://i.ytimg.com/vi/vEJ2_piyaac/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI6ZV6HgH872qbcpZuV3gWMx",
-       "adet": 65
-      }
-     ]
-    },
-    {
-     "ad": "Aşk Yeniden Tam",
+     "ad": "Aşk Yeniden",
      "aciklama": "Sevdiklerini, tüm ailesini, hayatını geride bırakarak, aşık olduğu Ertan’ın peşinden Amerika’ya kaçan Zeynep, elinde hayal kırıklıkları ve bebeğiyle Türkiye’ye geri döner.",
      "afis": "https://i.ytimg.com/vi/BEHPAiN03Bw/maxresdefault.jpg",
      "sezonlar": [
       {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI5DDF2PlE1Z699VtFw6Bid3",
-       "adet": 59
+       "ad": "Tüm Bölümler",
+       "id": "PLH2Sy7Dn7UJuZ4Dxn_MbCNDAde6N9YUKu",
+       "adet": 150
       }
      ]
     },
     {
-     "ad": "İnadına Aşk Tam",
-     "aciklama": "Erkekler inatçı, kadınlar inatçı,aşk hepsinden inatçı. İnadına Aşk; içinde aşk, sevgi, nefret ve oyun dolu bir romantik komedi dizisi.",
-     "afis": "https://i.ytimg.com/vi/kK7jeajllXk/maxresdefault.jpg",
-     "sezonlar": [
-      {
-       "ad": "Bölümler",
-       "id": "PL-2mShPfUwI4vkf8aM51yXbZNTSoZ2-un",
-       "adet": 32
-      }
-     ]
-    },
-    {
-     "ad": "Kiraz Mevsimi Tam",
+     "ad": "Kiraz Mevsimi",
      "aciklama": "Öykü, tekstil ve moda tasarımı bölümü öğrencisi, akıllı ve güzel bir kızdır. En büyük hayali başarılı bir moda tasarımcısı olmaktır.",
      "afis": "https://i.ytimg.com/vi/Ttl5omjchPQ/maxresdefault.jpg",
      "sezonlar": [
       {
+       "ad": "1. Sezon",
+       "id": "PLvKsFXJb05nuvJ47KZ7AOl1uIeBCKHfEl",
+       "adet": 51
+      },
+      {
+       "ad": "2. Sezon",
+       "id": "PLvKsFXJb05nscqeCUIYy88sVWXH4i_5JR",
+       "adet": 8
+      },
+      {
        "ad": "Bölümler",
-       "id": "PL-2mShPfUwI43KOZEuC2qD3LnbkaUd3TG",
-       "adet": 59
+       "id": "PLvKsFXJb05nsVo89AuCRQL4xIxbesHr0z",
+       "adet": 177
       }
      ]
     },
