@@ -152,8 +152,16 @@ def yil_bul(baslik, aciklama):
     m = YIL_RX.search(baslik or "")
     if m:
         return int(m.group(1))
-    m = re.search(r"(yapım yılı|yapim yili|vizyon(?: tarihi)?|yıl)\s*[:\-]?\s*(19[3-9]\d|20[0-3]\d)", aciklama or "", I)
-    return int(m.group(2)) if m else 0
+    a = aciklama or ""
+    m = re.search(r"(yapım yılı|yapim yili|vizyon(?: tarihi)?|yıl)\s*[:\-]?\s*(19[3-9]\d|20[0-3]\d)", a, I)
+    if m:
+        return int(m.group(2))
+    # "1978 yapımı", "1978 Türkiye yapımı", "1980 yılında", "1 Ocak 1975 tarihinde vizyona"
+    m = re.search(r"\b(19[3-9]\d|20[0-3]\d)\s*(türkiye\s+|türk\s+)?(yapımı|yapım|yılında|tarihinde|senesinde)", a, I)
+    if m:
+        return int(m.group(1))
+    m = re.search(r"\((19[3-9]\d|20[0-3]\d)\)", a)
+    return int(m.group(1)) if m else 0
 
 
 def turler(metin_guclu, aciklama, liste_turleri):
@@ -350,7 +358,13 @@ def main():
         gorulen.add(anahtar)
         tek.append((v, f))
     liste = tek
-    liste.sort(key=lambda x: (x[1]["e"], x[1].get("p", "")), reverse=True)
+    # Bekir: en yeni film en üstte, eskiye doğru alta (yapım yılı). Yılı bilinmeyenler en sonda, son eklenen önce.
+    for v, f in liste:
+        if not f.get("y"):
+            f["y"] = yil_bul(f["t"], f.get("a", ""))
+    # yılı bilinmeyen film, kanalın dönemine göre sıralanır (filmler.json → "donem"); ekranda yıl yazılmaz
+    donem = {i: int(k.get("donem", 1975)) for i, k in enumerate(cfg["kanallar"])}
+    liste.sort(key=lambda x: (x[1].get("y") or donem.get(x[1]["c"], 1975), x[1]["e"], x[1].get("p", "")), reverse=True)
     ki = {k: i for i, k in enumerate(KATEGORILER)}
     out = dict(
         guncelleme=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),
