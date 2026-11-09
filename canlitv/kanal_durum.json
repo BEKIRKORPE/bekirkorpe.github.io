@@ -1,10 +1,10 @@
 {
- "kontrol": "2026-11-09 10:03 UTC",
+ "kontrol": "2026-11-09 10:09 UTC",
  "sayi": {
-  "acik": 46,
-  "belirsiz": 7,
+  "acik": 48,
+  "belirsiz": 10,
   "kapali": 9,
-  "yenilendi": 6
+  "yenilendi": 1
  },
  "kapali_24saat": [
   "TV100",
@@ -61,8 +61,8 @@
     },
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
-     "durum": "belirsiz",
-     "neden": "zaman aşımı (yurt dışından denendi, Türkiye'de açık olabilir)",
+     "durum": "ok",
+     "neden": "200",
      "kapali_sayi": 0
     }
    ],
@@ -123,7 +123,7 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1"
+   "yeni": "https://ciner-live.ercdn.net/showtv/showtv.m3u8"
   },
   {
    "ad": "NOW",
@@ -197,8 +197,14 @@
   },
   {
    "ad": "Beyaz TV",
-   "durum": "yenilendi",
+   "durum": "acik",
    "adres": [
+    {
+     "url": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3",
      "durum": "belirsiz",
@@ -206,7 +212,7 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3"
+   "yeni": null
   },
   {
    "ad": "Teve2",
@@ -267,12 +273,12 @@
   },
   {
    "ad": "TV4",
-   "durum": "acik",
+   "durum": "belirsiz",
    "adres": [
     {
      "url": "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "404 (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     }
    ],
@@ -338,8 +344,14 @@
   },
   {
    "ad": "Habertürk TV",
-   "durum": "yenilendi",
+   "durum": "acik",
    "adres": [
+    {
+     "url": "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://ciner-live.daioncdn.net/haberturktv/haberturktv.m3u8",
      "durum": "belirsiz",
@@ -347,7 +359,7 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3"
+   "yeni": null
   },
   {
    "ad": "Halk TV",
@@ -370,25 +382,25 @@
      "url": "https://tv100-live.daioncdn.net/tv100/tv100.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     },
     {
      "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
   },
   {
    "ad": "24 TV",
-   "durum": "acik",
+   "durum": "belirsiz",
    "adres": [
     {
      "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "404 (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     },
     {
@@ -415,8 +427,14 @@
   },
   {
    "ad": "TVNET",
-   "durum": "yenilendi",
+   "durum": "acik",
    "adres": [
+    {
+     "url": "https://tvnet-live.lg.mncdn.com/tvnet-live/tvnet/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8",
      "durum": "belirsiz",
@@ -430,12 +448,18 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://tvnet-live.lg.mncdn.com/tvnet-live/tvnet/playlist.m3u8"
+   "yeni": null
   },
   {
    "ad": "Tele1",
-   "durum": "yenilendi",
+   "durum": "belirsiz",
    "adres": [
+    {
+     "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8?app=web",
+     "durum": "belirsiz",
+     "neden": "404 (yurt dışından denendi, Türkiye'de açık olabilir)",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
      "durum": "belirsiz",
@@ -443,7 +467,7 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://tele1-live.ercdn.net/tele1/tele1.m3u8?app=web"
+   "yeni": null
   },
   {
    "ad": "Akit TV",
@@ -453,7 +477,7 @@
      "url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -524,8 +548,14 @@
   },
   {
    "ad": "GZT",
-   "durum": "yenilendi",
+   "durum": "acik",
    "adres": [
+    {
+     "url": "https://gzttv-live.lg.mncdn.com/gzttv-live/gzttv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8",
      "durum": "belirsiz",
@@ -539,7 +569,7 @@
      "kapali_sayi": 0
     }
    ],
-   "yeni": "https://gzttv-live.lg.mncdn.com/gzttv-live/gzttv/playlist.m3u8"
+   "yeni": null
   },
   {
    "ad": "TBMM TV",
@@ -841,7 +871,7 @@
      "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -945,7 +975,7 @@
      "url": "https://canli.tgrteu.com/tgrteu.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -971,13 +1001,13 @@
      "url": "https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     },
     {
      "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "[Errno 111] Connection refused",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -1042,7 +1072,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_dehatv/dehatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -1055,7 +1085,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_noratv/noratv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -1081,7 +1111,7 @@
      "url": "https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -1094,7 +1124,7 @@
      "url": "https://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
@@ -1113,7 +1143,7 @@
      "url": "https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 6
+     "kapali_sayi": 7
     }
    ],
    "yeni": null
