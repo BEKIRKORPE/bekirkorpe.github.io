@@ -73,6 +73,13 @@ except Exception:
 ST.setdefault("kanallar", {})
 ST.setdefault("filmler", {})      # id → film kaydı (havuz). 'e' alanı varsa yayında (eklendiği gün)
 ST.setdefault("red", [])          # film olmadığı anlaşılan video kimlikleri (bir daha sorulmaz)
+KURAL = "v2"   # ayıklama/tür kuralları değişince artır: filmler yeniden incelenir, yayına giriş tarihleri korunur
+if ST.get("kural") != KURAL:
+    ST["eski_e"] = {v: f["e"] for v, f in ST["filmler"].items() if f.get("e")}
+    ST["filmler"] = {}
+    for kb in ST["kanallar"].values():
+        kb.pop("tarandi", None)
+    ST["kural"] = KURAL
 RED = set(ST["red"])
 
 
@@ -86,7 +93,7 @@ I = re.IGNORECASE | re.UNICODE
 FILM_DEGIL = re.compile(
     r"(\bb[oö]l[uü]m\b|\d+\s*\.?\s*b[oö]l[uü]m|\bsezon\b|episode|canlı yayın|\blive\b|derleme|en komik sahne|sahneleri|kolaj|"
     r"\bklip\b|fragman|trailer|teaser|kamera arkası|röportaj|konser|şarkı|müzik|\bmix\b|belgesel|#shorts|\bdizi\b|"
-    r"tiyatro|stand ?up|skeç|sesli kitap|masal)", I)
+    r"tiyatro|stand ?up|skeç|sesli kitap|masal|anları|\banlar\b|en güzel|en iyi sahne|best of|compilation|derlemesi|özel bölüm)", I)
 GENEL = re.compile(
     r"(türk(?:çe)?|yerli|yabancı|film(?:i|leri|ler)?|sinema(?:sı)?|full|hd|4k|1080p|720p|tek parça|izle|restore(?:li)?|"
     r"restorasyonlu|sansürsüz|yeni|en iyi|komedi|dram|aksiyon|gerilim|polisiye|romantik|korku|aile|yeşilçam|"
@@ -260,14 +267,21 @@ def incele(ids, kanal_no, klasik, tur_eslem):
             acik = sn.get("description", "")
             etiket = " ".join(sn.get("tags") or [])
             yil = yil_bul(bas, acik)
-            k = turler(bas + " " + etiket, acik, tur_eslem.get(v, []))
+            # bazı kanallar her filme bütün türleri etiket olarak yazıyor: 3+ tür tutan etiketler yok sayılır
+            et_tur = [t for t, rx in TURLER if rx.search(etiket)]
+            k = turler(bas + (" " + etiket if len(et_tur) <= 2 else ""), acik, tur_eslem.get(v, []))
             if klasik or (0 < yil < 1990) or re.search(r"yeşilçam|yesilcam", bas + " " + etiket, I):
                 k.add("Yeşilçam")
             ST["filmler"][v] = dict(t=film_adi(bas), y=yil, s=round(sure / 60), c=kanal_no, a=kisalt(acik),
                                     k=sorted(k), p=sn.get("publishedAt", "")[:10])
+            if v in ST.get("eski_e", {}):          # kurallar değişse de yayına giriş günü aynı kalır
+                ST["filmler"][v]["e"] = ST["eski_e"][v]
         for v in chunk:          # silinmiş / gizli
             if v not in bulunan:
                 RED.add(v)
+
+
+kota = [False]
 
 
 def main():
@@ -296,6 +310,7 @@ def main():
             print(f"  {len(ids)} yeni video incelendi, {len(ST['filmler']) - once} film", flush=True)
             kaydet()
     except KotaDoldu:
+        kota[0] = True
         print("Kota doldu — kalan kanallar yarın", flush=True)
 
     # ---- yayına alma (zamana yayma) ----
@@ -325,6 +340,16 @@ def main():
     kaydet()
 
     liste = [(v, f) for v, f in havuz.items() if f.get("e")]
+    # aynı film iki kez (iki kanalda ya da yeniden yüklenmiş): en yeni yükleme kalır
+    liste.sort(key=lambda x: x[1].get("p", ""), reverse=True)
+    gorulen, tek = set(), []
+    for v, f in liste:
+        anahtar = re.sub(r"[^a-z0-9çğıöşü]", "", f["t"].lower().replace("I", "ı"))
+        if anahtar in gorulen:
+            continue
+        gorulen.add(anahtar)
+        tek.append((v, f))
+    liste = tek
     liste.sort(key=lambda x: (x[1]["e"], x[1].get("p", "")), reverse=True)
     ki = {k: i for i, k in enumerate(KATEGORILER)}
     out = dict(
@@ -337,6 +362,13 @@ def main():
     )
     if not out["filmler"]:
         print("Hiç film yok — dosya yazılmadı", flush=True)
+        return
+    try:
+        onceki = len(json.load(open(OUT, encoding="utf-8")).get("filmler", []))
+    except Exception:
+        onceki = 0
+    if kota[0] and len(out["filmler"]) < onceki:
+        print(f"Kota yarıda kaldı ({len(out['filmler'])} < {onceki}) — eski liste korunuyor", flush=True)
         return
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
