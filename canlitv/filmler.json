@@ -9,7 +9,10 @@
     {"ad": "Fanatik Film Yerli", "src": "UCAJcU9SesgVqsJ8M0l7zYrA"},
     {"ad": "Fanatik Film Klasik", "src": "UCfIf5PT-O5D6OjWMxGhF0kQ", "klasik": true},
     {"ad": "25 Film", "src": "@25film", "donem": 2005},
-    {"ad": "Boyut Film", "src": "UCYaAScGUBCzuiVeroAK6gSA", "donem": 2005}
+    {"ad": "Boyut Film", "src": "UCYaAScGUBCzuiVeroAK6gSA", "donem": 2005},
+    {"ad": "Fanatik Film Din ve İnanç", "src": "UCUpc6hSJWBJZ8wn5wP5qJng", "donem": 2000},
+    {"ad": "Özen Film", "src": "UCN2-7MQHxM-l0mgi00xsr1Q", "klasik": true},
+    {"ad": "Murat Film", "src": "UChpw5ERAQlYT7-BV2F9iqTQ", "klasik": true}
   ],
   "gizle": []
 }
