@@ -352,12 +352,7 @@ def main():
                 print(f"✓ {ad}: yeni adres bulundu → {yeni}", flush=True)
             elif dk == "kapali":
                 neden = ", ".join(sorted({turkce(k['neden']) for k in ks}))
-                if uzun:   # 24 saattir kapalı + yeni adres yok → kullanıcıdan gizlenir (açılınca kendiliğinden geri gelir)
-                    for k in ks:
-                        if not k["gizli"]:
-                            gizle(satirlar, k, True)
-                            degisti = True
-                    neden += " → uygulamada gizlendi, açılınca kendiliğinden geri gelir"
+                # Bekir: kanal asla gizlenmez (izleyen olabilir); sadece yeni adres aranır ve haber verilir
                 kapali_kanallar.append(dict(ad=ad, neden=neden))
         if dk == "acik" and any(k["gizli"] for k in ks):   # gizlenen kanal yeniden açıldı → geri getir
             for k in ks:
