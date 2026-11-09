@@ -305,6 +305,13 @@ def incele(ids, kanal_no, klasik, tur_eslem):
 kota = [False]
 
 
+def gercek_yeni(f):
+    """Bekir: "YENİ" sadece gerçekten yeni filmde — son 3 yılın yapımı (2024, 2025, 2026) ya da kanala bugün/dün yüklenmiş."""
+    yil = f.get("y") or 0
+    dun = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+    return yil >= datetime.date.today().year - 2 or f.get("p", "") >= dun
+
+
 def main():
     kanallar = []
     try:
@@ -387,7 +394,7 @@ def main():
         kategoriler=KATEGORILER,
         kanallar=[k["ad"] for k in cfg["kanallar"]],
         bekleyen=len([1 for f in havuz.values() if not f.get("e")]),
-        filmler=[dict(i=v, t=f["t"], y=f["y"], s=f["s"], c=f["c"], a=f["a"], e=f["e"],
+        filmler=[dict(i=v, t=f["t"], y=f["y"], s=f["s"], c=f["c"], a=f["a"], e=f["e"], n=1 if gercek_yeni(f) else 0,
                       k=[ki[x] for x in f["k"] if x in ki]) for v, f in liste],
     )
     if not out["filmler"]:
