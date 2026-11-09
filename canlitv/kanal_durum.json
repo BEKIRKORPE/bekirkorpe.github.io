@@ -1,10 +1,10 @@
 {
- "kontrol": "2026-11-09 09:51 UTC",
+ "kontrol": "2026-11-09 09:54 UTC",
  "sayi": {
-  "acik": 46,
+  "acik": 47,
   "belirsiz": 8,
   "kapali": 13,
-  "yenilendi": 1
+  "yenilendi": 0
  },
  "kapali_24saat": [
   "TV100",
@@ -53,9 +53,9 @@
    "adres": [
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8",
-     "durum": "kapali",
-     "neden": "alt liste: zaman aşımı",
-     "kapali_sayi": 2
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
     },
     {
      "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8",
@@ -67,7 +67,7 @@
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -135,15 +135,15 @@
    "adres": [
     {
      "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
-     "durum": "kapali",
-     "neden": "alt liste: zaman aşımı",
-     "kapali_sayi": 2
-    },
-    {
-     "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
      "durum": "ok",
      "neden": "200",
      "kapali_sayi": 0
+    },
+    {
+     "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
+     "durum": "kapali",
+     "neden": "zaman aşımı",
+     "kapali_sayi": 1
     }
    ],
    "yeni": null
@@ -258,7 +258,7 @@
      "url": "https://trkvz-live.daioncdn.net/a2tv/a2tv.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
@@ -374,13 +374,13 @@
      "url": "https://tv100-live.daioncdn.net/tv100/tv100.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -399,7 +399,7 @@
      "url": "https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/playlist.m3u8",
      "durum": "kapali",
      "neden": "Remote end closed connection without response",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -425,13 +425,13 @@
      "url": "https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8",
      "durum": "kapali",
      "neden": "Remote end closed connection without response",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -444,7 +444,7 @@
      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -457,7 +457,7 @@
      "url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -534,13 +534,13 @@
      "url": "https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8",
      "durum": "kapali",
      "neden": "Remote end closed connection without response",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -598,7 +598,7 @@
      "url": "https://trkvz-live.daioncdn.net/aspor/aspor.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
@@ -649,7 +649,7 @@
      "url": "https://trkvz-live.daioncdn.net/minikago_cocuk/minikago_cocuk.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8",
@@ -674,7 +674,7 @@
      "url": "https://trkvz-live.daioncdn.net/minikago/minikago.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8",
@@ -819,7 +819,7 @@
      "url": "https://dogus-live.daioncdn.net/kraltv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -845,7 +845,7 @@
      "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -949,7 +949,7 @@
      "url": "https://canli.tgrteu.com/tgrteu.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -975,13 +975,13 @@
      "url": "https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     },
     {
      "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "[Errno 111] Connection refused",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1046,7 +1046,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_dehatv/dehatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1059,7 +1059,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_noratv/noratv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1085,7 +1085,7 @@
      "url": "https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1098,23 +1098,29 @@
      "url": "https://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
   },
   {
    "ad": "Sun RTV",
-   "durum": "yenilendi",
+   "durum": "acik",
    "adres": [
+    {
+     "url": "https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/playlist.m3u8",
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
+    },
     {
      "url": "https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
-   "yeni": "https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/playlist.m3u8"
+   "yeni": null
   }
  ]
 }
