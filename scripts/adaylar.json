@@ -1,7 +1,0 @@
-{
-  "TV100": ["https://ensonhaber-live.ercdn.net/tv100/tv100.m3u8", "https://tv.ensonhaber.com/tv100/tv100.m3u8", "https://tv100.daioncdn.net/tv100/tv100.m3u8", "https://tv100-live.ercdn.net/tv100/tv100.m3u8", "https://ensonhaber.daioncdn.net/tv100/tv100.m3u8"],
-  "Akit TV": ["https://akittv.ercdn.net/akittv/akittv.m3u8", "https://akittv-live.daioncdn.net/akittv/akittv.m3u8", "https://akittv.daioncdn.net/akittv/akittv.m3u8", "https://yeniakit-live.ercdn.net/akittv/akittv.m3u8", "https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8"],
-  "TGRT Avrupa": ["https://canli.tgrthaber.com/tgrteu.m3u8", "https://canli.tgrthaber.com/tgrt_eu.m3u8", "https://canli.tgrthaber.com/tgrtavrupa.m3u8", "https://tgrteu.daioncdn.net/tgrteu/tgrteu.m3u8", "https://tgrteu-live.ercdn.net/tgrteu/tgrteu.m3u8"],
-  "İBB TV": ["https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8", "https://npserver2.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8", "https://npserver.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8", "https://webtv.ibb.istanbul/live/playlist.m3u8"],
-  "Bursa TV": ["https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8", "https://win2.yayin.com.tr/bursatv/bursatv/playlist.m3u8", "https://win3.yayin.com.tr/bursatv/bursatv/playlist.m3u8", "https://win4.yayin.com.tr/bursatv/bursatv/playlist.m3u8", "https://cdn.yayin.com.tr/bursatv/bursatv/playlist.m3u8"]
-}
