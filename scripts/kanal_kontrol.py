@@ -315,6 +315,10 @@ def main():
             for u in dict.fromkeys(site + adaylar):
                 if u in mevcut or (u not in site and not RESMI.search(urllib.parse.urlsplit(u).netloc)):
                     continue
+                # süresi dolan imzalı adresler (e=zaman damgası, st=imza) kalıcı değildir: eklenmez
+                q = urllib.parse.parse_qs(urllib.parse.urlsplit(u).query)
+                if "st" in q or "token" in q or "e" in q or "expires" in q:
+                    continue
                 d = dene(u)[0]
                 # sitesinden gelen adres yurt dışına kapalı olsa da (belirsiz) kabul: Türkiye'de açılır
                 if d == "ok" or (u in site and d == "belirsiz"):
