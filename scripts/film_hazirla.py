@@ -93,11 +93,13 @@ I = re.IGNORECASE | re.UNICODE
 FILM_DEGIL = re.compile(
     r"(\bb[oö]l[uü]m\b|\d+\s*\.?\s*b[oö]l[uü]m|\bsezon\b|episode|canlı yayın|\blive\b|derleme|en komik sahne|sahneleri|kolaj|"
     r"\bklip\b|fragman|trailer|teaser|kamera arkası|röportaj|konser|şarkı|müzik|\bmix\b|belgesel|#shorts|\bdizi\b|"
-    r"tiyatro|stand ?up|skeç|sesli kitap|masal|anları|\banlar\b|en güzel|en iyi sahne|best of|compilation|derlemesi|özel bölüm)", I)
+    r"tiyatro|stand ?up|skeç|sesli kitap|masal|anları|\banlar\b|en güzel|en iyi sahne|best of|compilation|derlemesi|özel bölüm|"
+    r"\bseason\b|\bscene\b|clip\b|behind the scenes|featurette|interview|documentary|podcast|full series|marathon)", I)
 GENEL = re.compile(
     r"(türk(?:çe)?|yerli|yabancı|film(?:i|leri|ler)?|sinema(?:sı)?|full|hd|4k|1080p|720p|tek parça|izle|restore(?:li)?|"
     r"restorasyonlu|sansürsüz|yeni|en iyi|komedi|dram|aksiyon|gerilim|polisiye|romantik|korku|aile|yeşilçam|"
-    r"eski|klasik|nostalji|altyazılı|dublaj|seyret|\d{4}|[\(\)\[\]\-–—|:!.,★☆•])", I)
+    r"eski|klasik|nostalji|altyazılı|dublaj|seyret|full movie|movie|movies|free|watch|english|subtitles?|hd|"
+    r"exclusive|official|starring|\d{4}|[\(\)\[\]\-–—|:!.,★☆•])", I)
 YIL_RX = re.compile(r"\b(19[3-9]\d|20[0-3]\d)\b")
 TURLER = [
     ("Komedi", re.compile(r"(komedi|comedy|güldür|kahkaha)", I)),
@@ -107,7 +109,8 @@ TURLER = [
     ("Romantik", re.compile(r"(romantik|romance|aşk filmi|aşk hikaye|love story)", I)),
     ("Korku", re.compile(r"(korku|horror|dehşet|cin(ler)? filmi)", I)),
     ("Aile & Çocuk", re.compile(r"(aile filmi|çocuk filmi|family|animasyon|çizgi film)", I)),
-    ("Tarih & Savaş", re.compile(r"(tarihi film|tarih filmi|savaş filmi|biyografi|kurtuluş savaşı|çanakkale|osmanlı)", I)),
+    ("Tarih & Savaş", re.compile(r"(tarihi film|tarih filmi|savaş filmi|biyografi|kurtuluş savaşı|çanakkale|osmanlı|\bwar\b|biopic|western)", I)),
+    ("Bilim Kurgu & Fantastik", re.compile(r"(bilim kurgu|fantastik|sci-?fi|science fiction|fantasy|\bspace\b|alien)", I)),
 ]
 KATEGORILER = [t for t, _ in TURLER] + ["Yeşilçam"]
 
@@ -267,7 +270,7 @@ def yeni_videolar(uploads, ilk_tarama):
     return out
 
 
-def incele(ids, kanal_no, klasik, tur_eslem):
+def incele(ids, kanal_no, klasik, tur_eslem, yabanci=False, min_yil=0):
     for i in range(0, len(ids), 50):
         chunk = ids[i:i + 50]
         r = get("videos", part="snippet,contentDetails,status", id=",".join(chunk), maxResults=50)
@@ -288,13 +291,16 @@ def incele(ids, kanal_no, klasik, tur_eslem):
             acik = sn.get("description", "")
             etiket = " ".join(sn.get("tags") or [])
             yil = yil_bul(bas, acik)
+            if min_yil and 0 < yil < min_yil:     # Bekir: yabancı filmler çok eski olmasın
+                RED.add(v)
+                continue
             # bazı kanallar her filme bütün türleri etiket olarak yazıyor: 3+ tür tutan etiketler yok sayılır
             et_tur = [t for t, rx in TURLER if rx.search(etiket)]
             k = turler(bas + (" " + etiket if len(et_tur) <= 2 else ""), acik, tur_eslem.get(v, []))
-            if klasik or (0 < yil < 1990) or re.search(r"yeşilçam|yesilcam", bas + " " + etiket, I):
+            if not yabanci and (klasik or (0 < yil < 1990) or re.search(r"yeşilçam|yesilcam", bas + " " + etiket, I)):
                 k.add("Yeşilçam")
             ST["filmler"][v] = dict(t=film_adi(bas), y=yil, s=round(sure / 60), c=kanal_no, a=kisalt(acik),
-                                    k=sorted(k), p=sn.get("publishedAt", "")[:10])
+                                    k=sorted(k), p=sn.get("publishedAt", "")[:10], l=1 if yabanci else 0)
             if v in ST.get("eski_e", {}):          # kurallar değişse de yayına giriş günü aynı kalır
                 ST["filmler"][v]["e"] = ST["eski_e"][v]
         for v in chunk:          # silinmiş / gizli
@@ -333,7 +339,7 @@ def main():
             tur_eslem = liste_turleri(cid, kb)
             ids = yeni_videolar(uploads, ilk)
             once = len(ST["filmler"])
-            incele(ids, n, k.get("klasik", False), tur_eslem)
+            incele(ids, n, k.get("klasik", False), tur_eslem, k.get("yabanci", False), int(k.get("min_yil", 0)))
             kb["tarandi"] = True
             print(f"  {len(ids)} yeni video incelendi, {len(ST['filmler']) - once} film", flush=True)
             kaydet()
@@ -354,6 +360,13 @@ def main():
         f = havuz[v]
         if f.get("p", "") >= ay_once or (f.get("y") or yil_bul(f["t"], f.get("a", ""))) >= yeni_yil:
             f["e"] = BUGUN
+    bekleyen = [v for v in bekleyen if not havuz[v].get("e")]
+    # yeni eklenen kanal (hiç filmi yayında değil): en yeni 200 filmi hemen girer, kalanı günlük sıraya
+    yayinda_kanal = {havuz[v]["c"] for v in havuz if havuz[v].get("e")}
+    for c in {havuz[v]["c"] for v in bekleyen} - yayinda_kanal:
+        ilk200 = sorted([v for v in bekleyen if havuz[v]["c"] == c], key=lambda v: (havuz[v].get("y") or 0, havuz[v].get("p", "")), reverse=True)[:200]
+        for v in ilk200:
+            havuz[v]["e"] = BUGUN
     bekleyen = [v for v in bekleyen if not havuz[v].get("e")]
     if ST.get("son_gun") != BUGUN:
         hak = ILK if not yayinda else GUNLUK
@@ -394,7 +407,7 @@ def main():
         kategoriler=KATEGORILER,
         kanallar=[k["ad"] for k in cfg["kanallar"]],
         bekleyen=len([1 for f in havuz.values() if not f.get("e")]),
-        filmler=[dict(i=v, t=f["t"], y=f["y"], s=f["s"], c=f["c"], a=f["a"], e=f["e"], n=1 if gercek_yeni(f) else 0,
+        filmler=[dict(i=v, t=f["t"], y=f["y"], s=f["s"], c=f["c"], a=f["a"], e=f["e"], n=1 if gercek_yeni(f) else 0, l=f.get("l", 0),
                       k=[ki[x] for x in f["k"] if x in ki]) for v, f in liste],
     )
     if not out["filmler"]:
