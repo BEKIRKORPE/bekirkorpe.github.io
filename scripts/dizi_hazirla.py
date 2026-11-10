@@ -90,6 +90,8 @@ VIDEO_ATLA = re.compile(r"(fragman|ön ?izleme|onizleme|tanıtım|teaser|trailer
 TEMIZLE = [r"\b4k\b", r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*b[oö]l[uü]mleri?", r"b[oö]l[uü]mleri?",
            r"full\s*b[oö]l[uü]m(ler)?", r"\bfull\b", r"\bhd\b", r"\(.*?\)", r"\[.*?\]"]
 MIN_SURE, MIN_KISIM, MIN_SPOR = 20 * 60, 8 * 60, 61
+MIN_CIZGI = 3 * 60          # çizgi film bölümü 5-12 dk olabilir; 3 dk altı (şarkı/kısa) girmez
+CIZGI_ATLA = re.compile(r"(#shorts|\bshorts\b|kısa|fragman|trailer|tanıtım|reklam|canlı yayın|\blive\b|oyuncak|unboxing)", re.I)
 
 # --- SADECE DİZİ: yarışma, yemek, sohbet, gezi, haber, derleme listeleri atlanır ---
 DIZI_DEGIL = re.compile(
@@ -376,7 +378,7 @@ def listeler(cid, max_pages):
 
 
 def bolumler(liste_id, spor, max_pages, adet=-1):
-    ck = ("s2:" if spor else "d:") + liste_id   # s2: spor listeleri artık 400 videoya kadar
+    ck = ("c:" if spor == "cizgi" else "s2:" if spor else "d:") + liste_id   # s2: spor listeleri artık 400 videoya kadar
     c = CACHE.get(ck)
     if adet >= 0 and c and c.get("adet") == adet:
         return c["eps"]
@@ -422,11 +424,11 @@ def _bolumler(liste_id, spor, max_pages):
         d = sure.get(v["i"])
         if d is None:
             continue
-        mn = MIN_SPOR if spor else (MIN_KISIM if v["k"] > 0 else MIN_SURE)
+        mn = MIN_CIZGI if spor == "cizgi" else MIN_SPOR if spor else (MIN_KISIM if v["k"] > 0 else MIN_SURE)
         if d >= mn:
             seen.add(v["i"])
             keep.append(v)
-    if spor:
+    if spor is True:
         keep.sort(key=lambda v: v["d"], reverse=True)
         keep = keep[:400]
     else:
@@ -453,6 +455,7 @@ def main():
 
     for k in cfg.get("kanallar", []):
         spor = (k.get("tur") or "").lower() == "spor"
+        cizgi = (k.get("tur") or "").lower() == "cizgi"
         print(f"== {k.get('ad')} ({'spor' if spor else 'dizi'})", flush=True)
         diziler, var = [], set()
 
@@ -480,7 +483,21 @@ def main():
                 continue
             lists += listeler(cid, 6 if spor else 8)
 
-        if spor:
+        if cizgi:
+            # resmî çizgi film hesaplarının oynatma listeleri: her liste bir "dizi" (bölümler sırayla)
+            for l in lists[:200]:
+                kk = key(dizi_adi(l["baslik"]) or l["baslik"])
+                if l["adet"] < 3 or kk in var or kk in gizle or CIZGI_ATLA.search(l["baslik"]):
+                    continue
+                eps = bolumler(l["id"], "cizgi", 6, l["adet"])
+                if len(eps) < 3:
+                    continue
+                var.add(kk)
+                sezon_yaz(l["id"], eps)
+                diziler.append(dict(ad=(dizi_adi(l["baslik"]) or l["baslik"]).strip(), aciklama=kisalt(l["aciklama"]),
+                                    afis=l["resim"] or eps[0]["r"].replace("mqdefault", "hqdefault"),
+                                    sezonlar=[dict(ad="Bölümler", id=l["id"], adet=len(eps))]))
+        elif spor:
             for l in lists[:120]:
                 if l["adet"] < 3 or key(l["baslik"]) in gizle or key(l["baslik"]) in var:
                     continue
@@ -530,7 +547,7 @@ def main():
                 afis = son["resim"] or dolu[-1][1][0]["r"].replace("mqdefault", "hqdefault")
                 diziler.append(dict(ad=adlar[kk], aciklama=kisalt(son["aciklama"]), afis=afis, sezonlar=ss))
 
-        if not spor:
+        if not spor and not cizgi:
             for d in diziler:
                 try:
                     diziyi_tamamla(d, k.get("youtube", []), gizle, sezon_yaz)
