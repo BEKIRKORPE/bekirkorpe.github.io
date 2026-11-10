@@ -362,11 +362,16 @@ def main():
             f["e"] = BUGUN
     bekleyen = [v for v in bekleyen if not havuz[v].get("e")]
     # yeni eklenen kanal (hiç filmi yayında değil): en yeni 200 filmi hemen girer, kalanı günlük sıraya
-    yayinda_kanal = {havuz[v]["c"] for v in havuz if havuz[v].get("e")}
-    for c in {havuz[v]["c"] for v in bekleyen} - yayinda_kanal:
+    for c in {havuz[v]["c"] for v in bekleyen}:
+        if c >= len(cfg["kanallar"]):
+            continue
+        kb = ST["kanallar"].setdefault(cfg["kanallar"][c]["ad"], {})
+        if kb.get("ilk200"):
+            continue
         ilk200 = sorted([v for v in bekleyen if havuz[v]["c"] == c], key=lambda v: (havuz[v].get("y") or 0, havuz[v].get("p", "")), reverse=True)[:200]
         for v in ilk200:
             havuz[v]["e"] = BUGUN
+        kb["ilk200"] = True
     bekleyen = [v for v in bekleyen if not havuz[v].get("e")]
     if ST.get("son_gun") != BUGUN:
         hak = ILK if not yayinda else GUNLUK
