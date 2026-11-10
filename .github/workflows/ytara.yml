@@ -1,0 +1,12 @@
+name: YouTube kanal ara (tek sefer)
+on:
+  push:
+    paths: ["scripts/yt_kanal_ara.py"]
+permissions:
+  contents: read
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/yt_kanal_ara.py
