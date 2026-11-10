@@ -1,5 +1,5 @@
 {
-  "_not": "Sinema bölümü: SADECE filmlerin hak sahibi olan resmî YouTube kanalları. Korsan derleme kanalı eklenmez. 'klasik': true → filmleri Yeşilçam kategorisine de girer. 'donem': yılı bulunamayan filmlerin sıralamada sayılacağı yıl (yoksa 1975). 'yabanci': true → Yabancı sekmesi (resmî dağıtıcı kanalları; Türkçe dublaj yok, YouTube Türkçe altyazı denenir). 'min_yil': daha eski film alınmaz.",
+  "_not": "Sinema bölümü: SADECE filmlerin hak sahibi olan resmî YouTube kanalları. Korsan derleme kanalı eklenmez. 'klasik': true → filmleri Yeşilçam kategorisine de girer. 'donem': yılı bulunamayan filmlerin sıralamada sayılacağı yıl (yoksa 1975). 'yabanci': true → Yabancı sekmesi (resmî dağıtıcı kanalları; Türkçe dublaj yok, YouTube Türkçe altyazı denenir). 'min_yil': daha eski film alınmaz. 'serbest': belgesel/çocuk kanalı (bölüm/belgesel kelimesi engel değil). 'min_dk': en kısa süre. 'film_sart': sadece başlığında film geçenler. 'tur': kanalın bütün videoları bu kategoriye.",
   "ilk": 600,
   "gunluk": 60,
   "kanallar": [
@@ -71,6 +71,52 @@
       "src": "@ParamountVault",
       "yabanci": true,
       "min_yil": 2000,
+      "donem": 2005
+    },
+    {
+      "ad": "TRT Belgesel",
+      "src": "@trtbelgesel",
+      "serbest": true,
+      "min_dk": 40,
+      "tur": "Belgesel",
+      "donem": 2015
+    },
+    {
+      "ad": "TRT Çocuk",
+      "src": "@trtcocuk",
+      "serbest": true,
+      "min_dk": 20,
+      "tur": "Aile & Çocuk",
+      "donem": 2018
+    },
+    {
+      "ad": "TRT Arşiv",
+      "src": "@trtarsiv",
+      "film_sart": true,
+      "klasik": true
+    },
+    {
+      "ad": "Kanal D",
+      "src": "user:KanalD",
+      "film_sart": true,
+      "donem": 2005
+    },
+    {
+      "ad": "Show TV",
+      "src": "@showtv",
+      "film_sart": true,
+      "donem": 2005
+    },
+    {
+      "ad": "ATV",
+      "src": "UCUVZ7T_kwkxDOGFcDlFI-hg",
+      "film_sart": true,
+      "donem": 2005
+    },
+    {
+      "ad": "Star TV",
+      "src": "user:STARTVSTAR",
+      "film_sart": true,
       "donem": 2005
     }
   ],

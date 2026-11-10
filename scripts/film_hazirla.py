@@ -111,6 +111,7 @@ TURLER = [
     ("Aile & Çocuk", re.compile(r"(aile filmi|çocuk filmi|family|animasyon|çizgi film)", I)),
     ("Tarih & Savaş", re.compile(r"(tarihi film|tarih filmi|savaş filmi|biyografi|kurtuluş savaşı|çanakkale|osmanlı|\bwar\b|biopic|western)", I)),
     ("Bilim Kurgu & Fantastik", re.compile(r"(bilim kurgu|fantastik|sci-?fi|science fiction|fantasy|\bspace\b|alien)", I)),
+    ("Belgesel", re.compile(r"(belgesel|documentary)", I)),
 ]
 KATEGORILER = [t for t, _ in TURLER] + ["Yeşilçam"]
 
@@ -201,7 +202,7 @@ def kanal_bilgi(src):
         p = {"id": m.group(1)}
     else:
         h = re.search(r"@([A-Za-z0-9._-]+)", src)
-        p = {"forHandle": "@" + h.group(1)} if h else {"forUsername": src}
+        p = {"forHandle": "@" + h.group(1)} if h else {"forUsername": src.replace("user:", "")}
     r = get("channels", part="snippet,statistics,contentDetails", **p)
     items = (r or {}).get("items") or []
     return items[0] if items else None
@@ -270,7 +271,12 @@ def yeni_videolar(uploads, ilk_tarama):
     return out
 
 
-def incele(ids, kanal_no, klasik, tur_eslem, yabanci=False, min_yil=0):
+def incele(ids, kanal_no, klasik, tur_eslem, yabanci=False, min_yil=0, kk=None):
+    kk = kk or {}
+    serbest = kk.get("serbest", False)          # belgesel / çocuk kanalı: "belgesel", "bölüm" gibi kelimeler engel değil
+    min_dk = int(kk.get("min_dk", 55))
+    film_sart = kk.get("film_sart", False)      # TV kanalı: sadece başlığında "film" geçenler (programlar girmesin)
+    zorla = kk.get("tur")                       # kanalın bütün videoları bu kategoriye
     for i in range(0, len(ids), 50):
         chunk = ids[i:i + 50]
         r = get("videos", part="snippet,contentDetails,status", id=",".join(chunk), maxResults=50)
@@ -282,8 +288,13 @@ def incele(ids, kanal_no, klasik, tur_eslem, yabanci=False, min_yil=0):
             bas = sn.get("title", "")
             sure = saniye(cd.get("duration"))
             rr = cd.get("regionRestriction") or {}
-            uygun = (55 * 60 <= sure <= 4 * 3600 and st.get("privacyStatus") == "public" and st.get("embeddable", True)
-                     and sn.get("liveBroadcastContent", "none") == "none" and not FILM_DEGIL.search(bas)
+            engel = FILM_DEGIL.search(bas)
+            if serbest and engel and re.fullmatch(r"(belgesel|documentary|b[oö]l[uü]m|\d+\s*\.?\s*b[oö]l[uü]m|derleme|derlemesi|masal)", engel.group(0), I):
+                engel = None
+            if film_sart and not re.search(r"(\bfilm|sinema|tv filmi)", bas, I):
+                engel = True
+            uygun = (min_dk * 60 <= sure <= 4 * 3600 and st.get("privacyStatus") == "public" and st.get("embeddable", True)
+                     and sn.get("liveBroadcastContent", "none") == "none" and not engel
                      and "TR" not in (rr.get("blocked") or []) and ("allowed" not in rr or "TR" in rr["allowed"]))
             if not uygun:
                 RED.add(v)
@@ -297,7 +308,9 @@ def incele(ids, kanal_no, klasik, tur_eslem, yabanci=False, min_yil=0):
             # bazı kanallar her filme bütün türleri etiket olarak yazıyor: 3+ tür tutan etiketler yok sayılır
             et_tur = [t for t, rx in TURLER if rx.search(etiket)]
             k = turler(bas + (" " + etiket if len(et_tur) <= 2 else ""), acik, tur_eslem.get(v, []))
-            if not yabanci and (klasik or (0 < yil < 1990) or re.search(r"yeşilçam|yesilcam", bas + " " + etiket, I)):
+            if zorla:
+                k.add(zorla)
+            if not yabanci and not zorla and (klasik or (0 < yil < 1990) or re.search(r"yeşilçam|yesilcam", bas + " " + etiket, I)):
                 k.add("Yeşilçam")
             ST["filmler"][v] = dict(t=film_adi(bas), y=yil, s=round(sure / 60), c=kanal_no, a=kisalt(acik),
                                     k=sorted(k), p=sn.get("publishedAt", "")[:10], l=1 if yabanci else 0)
@@ -339,7 +352,7 @@ def main():
             tur_eslem = liste_turleri(cid, kb)
             ids = yeni_videolar(uploads, ilk)
             once = len(ST["filmler"])
-            incele(ids, n, k.get("klasik", False), tur_eslem, k.get("yabanci", False), int(k.get("min_yil", 0)))
+            incele(ids, n, k.get("klasik", False), tur_eslem, k.get("yabanci", False), int(k.get("min_yil", 0)), k)
             kb["tarandi"] = True
             print(f"  {len(ids)} yeni video incelendi, {len(ST['filmler']) - once} film", flush=True)
             kaydet()
@@ -427,6 +440,12 @@ def main():
         return
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    # uygulamanın "yeni film eklendi" bildirimi için küçük özet (bütün listeyi indirmesin)
+    son_gun = max((f["e"] for f in out["filmler"]), default="")
+    son = [f for f in out["filmler"] if f["e"] == son_gun]
+    json.dump(dict(guncelleme=out["guncelleme"], toplam=len(out["filmler"]), son_gun=son_gun, son_sayi=len(son),
+                   ornek=[f["t"] for f in sorted(son, key=lambda f: (f.get("n", 0), f.get("y") or 0), reverse=True)[:3]]),
+              open(os.path.join(os.path.dirname(OUT), "ozet.json"), "w", encoding="utf-8"), ensure_ascii=False)
     say = {k: 0 for k in KATEGORILER}
     for _, f in liste:
         for x in f["k"]:
