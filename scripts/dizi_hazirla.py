@@ -91,7 +91,15 @@ TEMIZLE = [r"\b4k\b", r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*
            r"full\s*b[oö]l[uü]m(ler)?", r"\bfull\b", r"\bhd\b", r"\(.*?\)", r"\[.*?\]"]
 MIN_SURE, MIN_KISIM, MIN_SPOR = 20 * 60, 8 * 60, 61
 MIN_CIZGI = 3 * 60          # çizgi film bölümü 5-12 dk olabilir; 3 dk altı (şarkı/kısa) girmez
-CIZGI_ATLA = re.compile(r"(#shorts|\bshorts\b|kısa|fragman|trailer|tanıtım|reklam|canlı yayın|\blive\b|oyuncak|unboxing)", re.I)
+CIZGI_ATLA = re.compile(r"(#shorts|\bshorts\b|kısa|fragman|trailer|tanıtım|reklam|canlı yayın|\blive\b|oyuncak|unboxing|ebeveyn|söyleşi|kamera arkası|röportaj)", re.I)
+
+
+def cizgi_adi(t):
+    """'Pırıl Tüm Videolar' → 'Pırıl'; 'Ebeveyn Akademisi TRT Çocuk' → 'Ebeveyn Akademisi'"""
+    t = re.sub(r"\s*[|\-–]\s*.*$", "", t or "")
+    t = re.sub(r"\s*(tüm videolar|tüm bölümler|bütün bölümler|tüm bölüm|full bölümler|trt çocuk|resmi|official)\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*(tüm videolar|tüm bölümler|trt çocuk)\s*$", "", t, flags=re.I)
+    return t.strip()
 
 # --- SADECE DİZİ: yarışma, yemek, sohbet, gezi, haber, derleme listeleri atlanır ---
 DIZI_DEGIL = re.compile(
@@ -486,7 +494,7 @@ def main():
         if cizgi:
             # resmî çizgi film hesaplarının oynatma listeleri: her liste bir "dizi" (bölümler sırayla)
             for l in lists[:200]:
-                kk = key(dizi_adi(l["baslik"]) or l["baslik"])
+                kk = key(cizgi_adi(l["baslik"]) or l["baslik"])
                 if l["adet"] < 3 or kk in var or kk in gizle or CIZGI_ATLA.search(l["baslik"]):
                     continue
                 eps = bolumler(l["id"], "cizgi", 6, l["adet"])
@@ -494,7 +502,7 @@ def main():
                     continue
                 var.add(kk)
                 sezon_yaz(l["id"], eps)
-                diziler.append(dict(ad=(dizi_adi(l["baslik"]) or l["baslik"]).strip(), aciklama=kisalt(l["aciklama"]),
+                diziler.append(dict(ad=(cizgi_adi(l["baslik"]) or l["baslik"]).strip(), aciklama=kisalt(l["aciklama"]),
                                     afis=l["resim"] or eps[0]["r"].replace("mqdefault", "hqdefault"),
                                     sezonlar=[dict(ad="Bölümler", id=l["id"], adet=len(eps))]))
         elif spor:
