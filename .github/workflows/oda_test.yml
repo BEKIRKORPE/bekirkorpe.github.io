@@ -1,0 +1,17 @@
+name: Oda veritabani testi
+on:
+  push:
+    paths: [".github/workflows/oda_test.yml"]
+permissions:
+  contents: read
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          U=https://canli-tv-a3cb4-default-rtdb.europe-west1.firebasedatabase.app
+          echo "KOK:"; curl -s "$U/.json"; echo
+          echo "ODA OKU:"; curl -s "$U/odalar/123456.json"; echo
+          echo "ODA YAZ:"; curl -s -X PUT -d '{"test":1}' "$U/odalar/123456/deneme.json"; echo
+          echo "ODA SIL:"; curl -s -X DELETE "$U/odalar/123456.json"; echo
+          echo "YANLIS KOD:"; curl -s "$U/odalar/abc.json"; echo
