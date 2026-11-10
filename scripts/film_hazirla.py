@@ -325,10 +325,10 @@ kota = [False]
 
 
 def gercek_yeni(f):
-    """Bekir: "YENİ" sadece gerçekten yeni filmde — son 3 yılın yapımı (2024, 2025, 2026) ya da kanala bugün/dün yüklenmiş."""
+    """Bekir: "Yeni Eklenenler"e SADECE yapım yılı son 3 yıl (2024, 2025, 2026) olan filmler girer.
+    Kanala yeni yüklenmiş ama eski film olanlar (yılı bilinmeyenler dahil) normal listeye girer, YENİ sayılmaz."""
     yil = f.get("y") or 0
-    dun = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
-    return yil >= datetime.date.today().year - 2 or f.get("p", "") >= dun
+    return yil >= datetime.date.today().year - 2
 
 
 def main():
