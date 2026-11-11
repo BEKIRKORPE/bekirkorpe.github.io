@@ -114,6 +114,8 @@ def oku_m3u():
     satirlar = open(M3U, encoding="utf-8").read().splitlines()
     kayit, son = [], None
     for i, l in enumerate(satirlar):
+        if l.startswith("# --- Dünya: kapalı"):   # yabancı kanal bölümü dunya_kontrol.py'nin; burada denenmez
+            break
         gizli = l.startswith(GIZLI)
         l = l[len(GIZLI):] if gizli else l
         if l.startswith("#EXTINF"):
