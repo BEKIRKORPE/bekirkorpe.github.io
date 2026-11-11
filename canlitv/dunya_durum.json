@@ -1,0 +1,445 @@
+{
+ "kontrol": "2026-11-11 11:56 UTC",
+ "ulkeler": {
+  "Azerbaycan": {
+   "acik": 10,
+   "belirsiz": 6,
+   "kapali": 3
+  },
+  "Özbekistan": {
+   "acik": 25,
+   "belirsiz": 2,
+   "kapali": 7
+  },
+  "Rusya": {
+   "acik": 282,
+   "belirsiz": 85,
+   "kapali": 83
+  },
+  "Kazakistan": {
+   "acik": 11,
+   "belirsiz": 29,
+   "kapali": 5
+  },
+  "Türkmenistan": {
+   "acik": 8,
+   "belirsiz": 0,
+   "kapali": 0
+  },
+  "Kırgızistan": {
+   "acik": 3,
+   "belirsiz": 1,
+   "kapali": 4
+  }
+ },
+ "kapali": [
+  {
+   "ulke": "Azerbaycan",
+   "ad": "Alvin Channel TV (360p) [Not 24/7]"
+  },
+  {
+   "ulke": "Azerbaycan",
+   "ad": "AnewZ TV"
+  },
+  {
+   "ulke": "Azerbaycan",
+   "ad": "Xezer TV (720p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "BIZ Cinema (1080p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "BIZ Music (1080p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "BIZ TV (1080p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "Cheksiz TV"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "MiMi TV (720p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "Sport (Uzbekistan)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "Zo'r TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "15+ Music (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "365 days TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "555 (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": ".black (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": ".sci-fi (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Afontovo"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "alpha Cinema (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Animal Planet (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Arktika 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Avto24 (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Bashkortostan 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Blokbaster HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "BRIDGE Classic (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "BRIDGE Hits (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Cartoon Classics (Russia)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Dikaya rybalka HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Discovery Channel (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "DocuBox Russia"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "First Music Channel (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "First Music Channel Russia (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "FON Music (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Food Network (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Fox (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Friday! (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Hit HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kavkaz 24 (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kino 24 (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "KinoHit (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinokomedija (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinopokaz (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinosemja (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinosvidanie (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Komediynoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Legendarnyy 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "LenTV24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Match! Boets (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Match! Ultra (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Millet (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Mosfilm Gold Collection (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Mult i muzyka (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Muzhskoe kino (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Muzyka Live (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nashe HD (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nashe muzhskoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "National Geographic (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nevskiy (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nickelodeon (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Law (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Series (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Style (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Vitrina (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Okhota i rybalka (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Patriot (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Perviy Krymskiy (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Perviy otdel (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Premialnoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Radio Shanson (720p) [Not 24/7]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Russkiy Detektiv (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Samara 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shef (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shokiruyushchee HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Sibir 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Simferopol 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Skoraya pomoshch (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Solovyov Live (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Spas (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "TNT4 (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Travel Channel (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "TV Centr (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "TVK (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Ural 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Usadba (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "V mire zhivotnykh (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Vera 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Vital Drive"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "VIVA Russia"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Volgograd 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Volleyball (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Vostok 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Zapad 24 (1080p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "31 Kanal (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Astana TV (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "MTRK (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "NTK (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "RTG int."
+  },
+  {
+   "ulke": "Kırgızistan",
+   "ad": "Next TV (1080p) [Not 24/7]"
+  },
+  {
+   "ulke": "Kırgızistan",
+   "ad": "Osh Pirim (1080p) [Not 24/7]"
+  },
+  {
+   "ulke": "Kırgızistan",
+   "ad": "RTG int."
+  },
+  {
+   "ulke": "Kırgızistan",
+   "ad": "TV15 (1080p) [Not 24/7]"
+  }
+ ]
+}
