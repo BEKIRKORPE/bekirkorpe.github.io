@@ -358,7 +358,9 @@ def main():
                 neden = ", ".join(sorted({turkce(k['neden']) for k in ks}))
                 # Bekir: kanal asla gizlenmez (izleyen olabilir); sadece yeni adres aranır ve haber verilir
                 kapali_kanallar.append(dict(ad=ad, neden=neden))
-        if dk == "acik" and any(k["gizli"] for k in ks):   # gizlenen kanal yeniden açıldı → geri getir
+        # Bekir (11 Kas 2026): gizlenen kanal sunucusu cevap vermeye başlayınca hemen geri gelsin;
+        # yurt dışına kapalı (belirsiz) da sayılır, çünkü Türkiye'de açık olabilir
+        if dk in ("acik", "belirsiz") and any(k["gizli"] for k in ks):   # gizlenen kanal yeniden açıldı → geri getir
             for k in ks:
                 gizle(satirlar, k, False)
             degisti = True
