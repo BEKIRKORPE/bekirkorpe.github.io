@@ -1,25 +1,25 @@
 {
- "kontrol": "2026-11-11 11:56 UTC",
+ "kontrol": "2026-11-11 16:46 UTC",
  "ulkeler": {
   "Azerbaycan": {
-   "acik": 10,
-   "belirsiz": 6,
+   "acik": 9,
+   "belirsiz": 7,
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 25,
-   "belirsiz": 2,
+   "acik": 24,
+   "belirsiz": 3,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 282,
+   "acik": 272,
    "belirsiz": 85,
-   "kapali": 83
+   "kapali": 93
   },
   "Kazakistan": {
-   "acik": 11,
+   "acik": 9,
    "belirsiz": 29,
-   "kapali": 5
+   "kapali": 7
   },
   "Türkmenistan": {
    "acik": 8,
@@ -79,10 +79,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "15+ Music (1080p)"
   },
   {
@@ -119,7 +115,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Avto24 (576p)"
+   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -143,6 +139,18 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Classic Music (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Crimea 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Da Vinci (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Dikaya rybalka HD (1080p)"
   },
   {
@@ -152,6 +160,14 @@
   {
    "ulke": "Rusya",
    "ad": "DocuBox Russia"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Dushevnoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Fashion&LifeStyle (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -175,11 +191,19 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Friday! (576p)"
+   "ad": "Fox Life (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Gagsnetwork (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Hit HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Investigation Discovery (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -195,15 +219,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinokomedija (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Kinopokaz (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kinosemja (576p)"
   },
   {
    "ulke": "Rusya",
@@ -211,7 +227,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Kinouzhas (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Komediynoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Krik-TV (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kuhnya (576p)"
   },
   {
    "ulke": "Rusya",
@@ -227,15 +255,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Match! Ultra (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Millet (720p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Mosfilm Gold Collection (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Moya stikhiya HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -247,7 +275,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzyka Live (576p)"
+   "ad": "Muzhskoy HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -264,10 +292,6 @@
   {
    "ulke": "Rusya",
    "ad": "Nevskiy (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nickelodeon (Russia) (576p)"
   },
   {
    "ulke": "Rusya",
@@ -291,7 +315,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Okhota i rybalka (576p)"
+   "ad": "Ostrosyuzhetnoye HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -307,6 +331,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Pes (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Premialnoe HD (1080p)"
   },
   {
@@ -315,7 +343,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Rodnoe Kino (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Russian MusicBox (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Russkiy Bestseller (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Russkiy Detektiv (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Rybolov (576p)"
   },
   {
    "ulke": "Rusya",
@@ -347,19 +391,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Spas (576p)"
+   "ad": "TLC (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "TNT4 (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Travel Channel (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "TV Centr (576p)"
   },
   {
    "ulke": "Rusya",
@@ -371,15 +407,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Usadba (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "V mire zhivotnykh (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Vera 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Planet HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -406,12 +442,24 @@
    "ad": "Zapad 24 (1080p)"
   },
   {
+   "ulke": "Rusya",
+   "ad": "Zhivaya priroda (1080p)"
+  },
+  {
    "ulke": "Kazakistan",
    "ad": "31 Kanal (576p)"
   },
   {
    "ulke": "Kazakistan",
+   "ad": "Abai TV (720p)"
+  },
+  {
+   "ulke": "Kazakistan",
    "ad": "Astana TV (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Channel 7 (Kazakhstan) (576p)"
   },
   {
    "ulke": "Kazakistan",
