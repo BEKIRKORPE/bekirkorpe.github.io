@@ -206,7 +206,7 @@ def main():
         tum["diziler"].append(dict(ad=SON_AD, aciklama="Bütün spor kanallarının en son maç özetleri. En yeni en üstte.",
                                    afis=tek[0]["r"].replace("mqdefault", "hqdefault"),
                                    sezonlar=[dict(ad="Videolar", id="SON_TUM", adet=len(tek))], spor=True))
-        ilk_spor = next((i for i, k in enumerate(idx["kanallar"]) if k.get("spor")), len(idx["kanallar"]))
+        ilk_spor = next((i for i, k in enumerate(idx["kanallar"]) if k.get("spor") and k["ad"] in spor_cfg), len(idx["kanallar"]))   # Programlar da "spor" modunda; ona göre yer alınmaz
         idx["kanallar"].insert(ilk_spor, tum)
         print(f"Tüm: {len(tek)} özet, son 24 saat {len(son24)} (bugün {bugun})", flush=True)
 

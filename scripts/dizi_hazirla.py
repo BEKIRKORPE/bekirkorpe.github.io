@@ -712,7 +712,7 @@ def main():
             print(f"  ! program hatası: {e}", flush=True)
             pr = []
         if pr:   # spor=True: uygulamada başlık + tarih görünür, en yeni üstte
-            index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=True, diziler=pr))
+            index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=True, program=True, diziler=pr))
 
     # Bir kanal bu sefer hiç dizi vermediyse (YouTube geçici hata vb.) önceki hazır listedeki hâli korunur
     try:
