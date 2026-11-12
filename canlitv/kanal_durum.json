@@ -1,8 +1,8 @@
 {
- "kontrol": "2026-11-12 07:42 UTC",
+ "kontrol": "2026-11-12 17:04 UTC",
  "sayi": {
-  "acik": 54,
-  "belirsiz": 7,
+  "acik": 52,
+  "belirsiz": 9,
   "kapali": 8,
   "yenilendi": 0,
   "geri_geldi": 0
@@ -24,8 +24,8 @@
    "adres": [
     {
      "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
      "kapali_sayi": 0
     },
     {
@@ -37,7 +37,7 @@
     {
      "url": "https://tv-trt1-dai.medya.trt.com.tr/master.m3u8",
      "durum": "belirsiz",
-     "neden": "503 (sunucu yoğun)",
+     "neden": "403 (yurt dışına kapalı olabilir)",
      "kapali_sayi": 0
     }
    ],
@@ -45,12 +45,12 @@
   },
   {
    "ad": "ATV",
-   "durum": "acik",
+   "durum": "belirsiz",
    "adres": [
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "zaman aşımı (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     },
     {
@@ -61,8 +61,8 @@
     },
     {
      "url": "http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "zaman aşımı (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     }
    ],
@@ -173,8 +173,8 @@
     },
     {
      "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
-     "durum": "belirsiz",
-     "neden": "zaman aşımı (yurt dışından denendi, Türkiye'de açık olabilir)",
+     "durum": "ok",
+     "neden": "200",
      "kapali_sayi": 0
     },
     {
@@ -455,13 +455,13 @@
      "url": "https://tv100-live.daioncdn.net/tv100/tv100.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     },
     {
      "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -525,18 +525,18 @@
   },
   {
    "ad": "Tele1",
-   "durum": "acik",
+   "durum": "belirsiz",
    "adres": [
     {
      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8?app=web",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "404 (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     },
     {
      "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "404 (yurt dışından denendi, Türkiye'de açık olabilir)",
      "kapali_sayi": 0
     }
    ],
@@ -550,7 +550,7 @@
      "url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -962,7 +962,7 @@
      "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -1047,12 +1047,12 @@
   },
   {
    "ad": "TRT 2",
-   "durum": "belirsiz",
+   "durum": "acik",
    "adres": [
     {
      "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
-     "durum": "belirsiz",
-     "neden": "403 (yurt dışına kapalı olabilir)",
+     "durum": "ok",
+     "neden": "200",
      "kapali_sayi": 0
     }
    ],
@@ -1066,7 +1066,7 @@
      "url": "https://canli.tgrteu.com/tgrteu.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -1092,13 +1092,13 @@
      "url": "https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     },
     {
      "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "[Errno 111] Connection refused",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -1131,12 +1131,12 @@
   },
   {
    "ad": "ATV Alanya",
-   "durum": "acik",
+   "durum": "belirsiz",
    "adres": [
     {
      "url": "https://cdn-alanyatv.yayin.com.tr/alanyatv/alanyatv/playlist.m3u8",
-     "durum": "ok",
-     "neden": "200",
+     "durum": "belirsiz",
+     "neden": "403 (yurt dışına kapalı olabilir)",
      "kapali_sayi": 0
     }
    ],
@@ -1163,7 +1163,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_dehatv/dehatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -1176,7 +1176,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_noratv/noratv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
@@ -1202,13 +1202,13 @@
      "url": "https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     },
     {
      "url": "http://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "alt liste: [Errno 104] Connection reset by peer",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1221,13 +1221,13 @@
      "url": "https://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     },
     {
      "url": "http://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "alt liste: [Errno 104] Connection reset by peer",
-     "kapali_sayi": 2
+     "kapali_sayi": 3
     }
    ],
    "yeni": null
@@ -1246,7 +1246,7 @@
      "url": "https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 16
+     "kapali_sayi": 17
     }
    ],
    "yeni": null
