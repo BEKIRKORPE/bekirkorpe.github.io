@@ -114,9 +114,9 @@ https://tvnet-live.lg.mncdn.com/tvnet-live/tvnet/playlist.m3u8
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-logo="https://i.imgur.com/mQo8yWQ.png" group-title="Haber",TVNET
 https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-not="Tele1'e Ekim 2025'te kayyum atandı. Kanalın internet yayını şu an kapalı. Tele1'i uydu ve kablo platformlarından izleyebilirsiniz." tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png" group-title="Haber",Tele1
+#EXTINF:-1 tvg-id="Tele1.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png" group-title="Haber",Tele1
 https://tele1-live.ercdn.net/tele1/tele1.m3u8?app=web
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-not="Tele1'e Ekim 2025'te kayyum atandı. Kanalın internet yayını şu an kapalı. Tele1'i uydu ve kablo platformlarından izleyebilirsiniz." tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png" group-title="Haber",Tele1
+#EXTINF:-1 tvg-id="Tele1.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/43/Tele1_logosu.png" group-title="Haber",Tele1
 https://tele1-live.ercdn.net/tele1/tele1.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="AkitTV.tr" tvg-logo="https://i.imgur.com/oGto929.png" group-title="Haber",Akit TV
 #KAPALI|https://akittv-live.ercdn.net/akittv/akittv.m3u8
