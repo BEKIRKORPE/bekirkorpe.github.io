@@ -1,0 +1,61 @@
+name: Gecici kanal arama
+on:
+  push:
+    paths: [".github/workflows/gecici-kanal-arama.yml"]
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ara
+        run: |
+          cat > /tmp/ara.py <<'PY'
+          import json, urllib.request, urllib.parse
+          d = json.load(open('canlitv/diziler.json')); K = d['apiKey']
+          f = json.load(open('canlitv/filmler.json'))
+          def get(ep, **p):
+              p['key'] = K
+              u = 'https://www.googleapis.com/youtube/v3/' + ep + '?' + urllib.parse.urlencode(p)
+              try: return json.load(urllib.request.urlopen(u, timeout=20))
+              except Exception as e: print('HATA', ep, e); return {}
+          def info(ids):
+              out = []
+              for i in range(0, len(ids), 50):
+                  r = get('channels', part='snippet,statistics', id=','.join(ids[i:i+50]))
+                  out += r.get('items', [])
+              return out
+          mevcut = []
+          for k in d['kanallar']:
+              for y in k['youtube']:
+                  if y.startswith('UC'): mevcut.append(y)
+          for k in f['kanallar']:
+              if k['src'].startswith('UC'): mevcut.append(k['src'])
+          print('=== MEVCUT')
+          for c in info(mevcut):
+              s = c['snippet']; print('M', c['id'], s.get('customUrl'), '|', s['title'], '|', c['statistics'].get('subscriberCount'))
+          Q = [
+           ('cizgi','Pırıl çizgi film resmi'), ('cizgi','Kukuli resmi'), ('cizgi','Leliko'), ('cizgi','Akıllı Tavşan Momo'),
+           ('cizgi','Caillou Türkçe'), ('cizgi','Robocar Poli Türkçe'), ('cizgi','Pocoyo Türkçe'), ('cizgi','Oggy Türkçe'),
+           ('cizgi','Mr Bean Türkçe'), ('cizgi','Bing Türkçe'), ('cizgi','Cocomelon Türkçe'), ('cizgi','Pinkfong Türkçe'),
+           ('cizgi','Tayo Türkçe'), ('cizgi','Super Wings Türkçe'), ('cizgi','Miraculous Türkçe'), ('cizgi','LEGO Türkiye'),
+           ('cizgi','Shaun the Sheep Türkçe'), ('cizgi','Larva Türkçe'), ('cizgi','Elif ve Arkadaşları'), ('cizgi','Smurfs Türkçe Şirinler'),
+           ('film','yerli film full izle resmi kanal'), ('film','BKM'), ('film','Ay Yapım film'), ('film','türk filmi tek parça resmi'),
+           ('spor','Trendyol Süper Lig resmi'), ('spor','Exxen Spor'), ('spor','Bundesliga Türkçe'), ('spor','LaLiga Türkçe'),
+           ('spor','Basketbol Süper Ligi resmi'),
+          ]
+          aday = {}
+          for tur, q in Q:
+              r = get('search', part='snippet', type='channel', q=q, maxResults=6, regionCode='TR', relevanceLanguage='tr')
+              for it in r.get('items', []):
+                  aday.setdefault(it['snippet']['channelId'], []).append(tur + ':' + q)
+          ids = [i for i in aday if i not in mevcut]
+          print('=== ADAY')
+          for c in sorted(info(ids), key=lambda c: -int(c['statistics'].get('subscriberCount') or 0)):
+              s = c['snippet']; st = c['statistics']
+              print('A', c['id'], s.get('customUrl'), '|', s['title'], '|', st.get('subscriberCount'), '| vid', st.get('videoCount'), '|', s.get('country'), '|', aday[c['id']][0], '|', s.get('description','')[:120].replace('\n',' '))
+          PY
+          python3 /tmp/ara.py
