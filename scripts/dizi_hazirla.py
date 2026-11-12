@@ -92,6 +92,7 @@ TEMIZLE = [r"\b4k\b", r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*
 MIN_SURE, MIN_KISIM, MIN_SPOR = 20 * 60, 8 * 60, 61
 MIN_CIZGI = 3 * 60          # çizgi film bölümü 5-12 dk olabilir; 3 dk altı (şarkı/kısa) girmez
 MIN_PROGRAM = 45 * 60       # program (Müge Anlı vb.): sadece tam yayınlar; kısa kesitler girmez
+PRG_SEZON = re.compile(r"(\d+)\s*\.\s*sezon", re.I)
 PROGRAM_SAYFA = 120         # program arşivi her gün en fazla bu kadar sayfa (50'şer video) taranır; kalan ertesi gün
 CIZGI_ATLA = re.compile(r"(#shorts|\bshorts\b|kısa|fragman|trailer|tanıtım|reklam|canlı yayın|\blive\b|oyuncak|unboxing|ebeveyn|söyleşi|kamera arkası|röportaj)", re.I)
 
@@ -549,15 +550,34 @@ def program_kanali(k, sezon_yaz):
         eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60)
         if not eps:
             continue
+        atla = p.get("atla", "")
+        if atla:   # derleme / kolaj gibi uzun ama tam yayın olmayan videolar
+            eps = [e for e in eps if not re.search(atla, e["t"], re.I)]
+        if not eps:
+            continue
         cid = kanal_id(p.get("youtube", "")) or "x"
-        yillar = {}
+        # başlıkta "19. Sezon" varsa sezon sezon; sezonsuz eski yayınlar "Arşiv 2011", tarihsizler "Özel Bölümler".
+        # Başlıkta sezon yoksa (başka programlar) yıl yıl.
+        sezonlu = sum(1 for e in eps if num(PRG_SEZON, e["t"]) > 0) * 2 > len(eps)
+        gruplar = {}
         for e in eps:
-            yillar.setdefault(e["d"][:4] or "Diğer", []).append(e)
+            n = num(PRG_SEZON, e["t"])
+            yil = re.search(r"\b(19|20)\d\d\b", e["t"])
+            if not sezonlu:
+                g = (0, int(e["d"][:4] or 0), e["d"][:4] or "Diğer")
+            elif n > 0:
+                g = (0, n, f"{n}. Sezon")
+            elif yil:
+                g = (2, int(yil.group(0)), f"Arşiv {yil.group(0)}")
+            else:
+                g = (1, 0, "Özel Bölümler")
+            gruplar.setdefault(g, []).append(e)
         ss = []
-        for y in sorted(yillar, reverse=True):
-            sid = f"PRG_{cid}_{y}"
-            sezon_yaz(sid, yillar[y])
-            ss.append(dict(ad=y, id=sid, adet=len(yillar[y])))
+        for g in sorted(gruplar, key=lambda g: (g[0], -g[1])):
+            liste = sorted(gruplar[g], key=lambda e: e["d"], reverse=True)
+            sid = f"PRG_{cid}_" + re.sub(r"[^A-Za-z0-9]", "", fold(g[2]).upper())
+            sezon_yaz(sid, liste)
+            ss.append(dict(ad=g[2], id=sid, adet=len(liste)))
         out.append(dict(ad=p["ad"], aciklama=p.get("aciklama", ""), afis=p.get("afis") or eps[0]["r"].replace("mqdefault", "hqdefault"), sezonlar=ss))
     return out
 
