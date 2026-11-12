@@ -91,6 +91,8 @@ TEMIZLE = [r"\b4k\b", r"\d{1,2}\s*\.?\s*sezon", r"sezon\s*\d{1,2}", r"t[uü]m\s*
            r"full\s*b[oö]l[uü]m(ler)?", r"\bfull\b", r"\bhd\b", r"\(.*?\)", r"\[.*?\]"]
 MIN_SURE, MIN_KISIM, MIN_SPOR = 20 * 60, 8 * 60, 61
 MIN_CIZGI = 3 * 60          # çizgi film bölümü 5-12 dk olabilir; 3 dk altı (şarkı/kısa) girmez
+MIN_PROGRAM = 45 * 60       # program (Müge Anlı vb.): sadece tam yayınlar; kısa kesitler girmez
+PROGRAM_SAYFA = 120         # program arşivi her gün en fazla bu kadar sayfa (50'şer video) taranır; kalan ertesi gün
 CIZGI_ATLA = re.compile(r"(#shorts|\bshorts\b|kısa|fragman|trailer|tanıtım|reklam|canlı yayın|\blive\b|oyuncak|unboxing|ebeveyn|söyleşi|kamera arkası|röportaj)", re.I)
 
 
@@ -450,6 +452,116 @@ def _bolumler(liste_id, spor, max_pages):
     return keep
 
 
+# ---------- PROGRAMLAR (Müge Anlı vb.: bütün yayınlar, en yenisi üstte, yıl yıl) ----------
+def _yuklemeler_sayfa(up, token):
+    p = dict(part="snippet", playlistId=up, maxResults=50)
+    if token:
+        p["pageToken"] = token
+    r = get("playlistItems", **p)
+    if not r:
+        return None, None
+    out = []
+    for it in r.get("items", []):
+        sn = it.get("snippet", {})
+        vid = (sn.get("resourceId") or {}).get("videoId")
+        t = sn.get("title", "")
+        if not vid or t in ("Private video", "Deleted video"):
+            continue
+        out.append(dict(i=vid, t=t, r=(sn.get("thumbnails") or {}).get("medium", {}).get("url") or f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg",
+                        n=-1, k=-1, d=sn.get("publishedAt", "")))
+    return out, r.get("nextPageToken")
+
+
+def program_bolumleri(src, min_sn):
+    """Resmî hesabın bütün yüklemeleri taranır, sadece tam yayınlar (min_sn ve üstü) kalır.
+    İlk sefer arşiv birkaç güne bölünür (PROGRAM_SAYFA); sonra her gün sadece yeni yayınlar sorulur (kota az harcanır)."""
+    cid = kanal_id(src)
+    if not cid or not cid.startswith("UC"):
+        print(f"  ! program hesabı bulunamadı: {src}", flush=True)
+        return None
+    up = "UU" + cid[2:]
+    ck = f"p:{cid}:{min_sn}"
+    c = CACHE.get(ck) or {"eps": [], "ust": [], "devam": "", "bitti": False}
+    bilinen = set(c["ust"]) | {e["i"] for e in c["eps"]}
+    aday, ust = [], []
+    eski_devam, eski_bitti = c["devam"], c["bitti"]
+    try:
+        # 1) yeni yayınlar: en üstten, daha önce görülen videoya gelene kadar
+        if c["ust"]:
+            token = None
+            for _ in range(40):
+                items, token = _yuklemeler_sayfa(up, token)
+                if items is None:
+                    break
+                if not ust:
+                    ust = [v["i"] for v in items]
+                yeni = [v for v in items if v["i"] not in bilinen]
+                aday += yeni
+                if len(yeni) < len(items) or not token:
+                    break
+        # 2) arşiv: kaldığı yerden devam (ilk gün en baştan)
+        if not c["bitti"]:
+            token = c["devam"] or None
+            for _ in range(PROGRAM_SAYFA):
+                items, nxt = _yuklemeler_sayfa(up, token)
+                if items is None:
+                    break
+                if not ust and not c["ust"]:
+                    ust = [v["i"] for v in items]
+                aday += [v for v in items if v["i"] not in bilinen]
+                token = nxt
+                if not token:
+                    c["bitti"] = True
+                    break
+            c["devam"] = token or ""
+        # süre: sadece tam yayınlar kalır (kesit / Shorts / fragman girmez; canlı-yaklaşan yayının süresi 0)
+        tam, gorulen = [], set()
+        for i in range(0, len(aday), 50):
+            parca = [v for v in aday[i:i + 50] if v["i"] not in gorulen]
+            if not parca:
+                continue
+            r = get("videos", part="contentDetails", id=",".join(v["i"] for v in parca))
+            sure = {it["id"]: saniye((it.get("contentDetails") or {}).get("duration")) for it in (r or {}).get("items", [])}
+            for v in parca:
+                gorulen.add(v["i"])
+                if sure.get(v["i"], 0) >= min_sn:
+                    tam.append(v)
+    except KotaDoldu:
+        c["devam"], c["bitti"] = eski_devam, eski_bitti   # yarım kalan arşiv sayfaları ertesi gün yeniden taranır
+        print("  ! program: YouTube kotası doldu, eldeki liste kullanılıyor", flush=True)
+        return sorted(c["eps"], key=lambda e: e["d"], reverse=True)
+    hepsi = {e["i"]: e for e in c["eps"]}
+    for v in tam:
+        hepsi[v["i"]] = v
+    eps = sorted(hepsi.values(), key=lambda e: e["d"], reverse=True)
+    c["eps"] = eps
+    if ust:
+        c["ust"] = ust[:100]
+    CACHE[ck] = c
+    print(f"  program {src}: {len(eps)} tam yayın (+{len(tam)} yeni){'' if c['bitti'] else ', arşiv taraması sürüyor'}", flush=True)
+    return eps
+
+
+def program_kanali(k, sezon_yaz):
+    """"tur": "program" → her program bir başlık; sezonlar yıl yıl (en yeni yıl önce), bölümler en yenisi üstte."""
+    out = []
+    for p in k.get("programlar", []):
+        eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60)
+        if not eps:
+            continue
+        cid = kanal_id(p.get("youtube", "")) or "x"
+        yillar = {}
+        for e in eps:
+            yillar.setdefault(e["d"][:4] or "Diğer", []).append(e)
+        ss = []
+        for y in sorted(yillar, reverse=True):
+            sid = f"PRG_{cid}_{y}"
+            sezon_yaz(sid, yillar[y])
+            ss.append(dict(ad=y, id=sid, adet=len(yillar[y])))
+        out.append(dict(ad=p["ad"], aciklama=p.get("aciklama", ""), afis=p.get("afis") or eps[0]["r"].replace("mqdefault", "hqdefault"), sezonlar=ss))
+    return out
+
+
 # ---------- hazırla ----------
 def main():
     os.makedirs(OUT, exist_ok=True)
@@ -462,6 +574,8 @@ def main():
         yazilan.add(liste_id + ".json")
 
     for k in cfg.get("kanallar", []):
+        if (k.get("tur") or "").lower() == "program":
+            continue   # programlar en sonda (büyük arşiv; kota biterse diziler etkilenmesin)
         spor = (k.get("tur") or "").lower() == "spor"
         cizgi = (k.get("tur") or "").lower() == "cizgi"
         print(f"== {k.get('ad')} ({'spor' if spor else 'dizi'})", flush=True)
@@ -567,6 +681,18 @@ def main():
         print(f"  {len(diziler)} dizi", flush=True)
         if diziler:
             index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=spor, diziler=diziler))
+
+    for k in cfg.get("kanallar", []):
+        if (k.get("tur") or "").lower() != "program":
+            continue
+        print(f"== {k.get('ad')} (program)", flush=True)
+        try:
+            pr = program_kanali(k, sezon_yaz)
+        except Exception as e:
+            print(f"  ! program hatası: {e}", flush=True)
+            pr = []
+        if pr:   # spor=True: uygulamada başlık + tarih görünür, en yeni üstte
+            index["kanallar"].append(dict(ad=k["ad"], logo=k.get("logo", ""), spor=True, diziler=pr))
 
     # Bir kanal bu sefer hiç dizi vermediyse (YouTube geçici hata vb.) önceki hazır listedeki hâli korunur
     try:
