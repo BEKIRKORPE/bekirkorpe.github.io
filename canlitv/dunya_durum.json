@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-13 07:20 UTC",
+ "kontrol": "2026-11-13 16:51 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 10,
@@ -12,13 +12,13 @@
    "kapali": 7
   },
   "Rusya": {
-   "acik": 280,
-   "belirsiz": 83,
-   "kapali": 87
+   "acik": 269,
+   "belirsiz": 86,
+   "kapali": 95
   },
   "Kazakistan": {
-   "acik": 12,
-   "belirsiz": 27,
+   "acik": 11,
+   "belirsiz": 28,
    "kapali": 6
   },
   "Türkmenistan": {
@@ -75,6 +75,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
   },
   {
@@ -91,7 +95,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": ".sci-fi (576p)"
+   "ad": ".black (576p)"
   },
   {
    "ulke": "Rusya",
@@ -115,6 +119,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Bashkortostan 24 (1080p)"
   },
   {
@@ -135,11 +143,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Crimea 24"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Dikaya okhota HD (1080p)"
+   "ad": "Classic Music (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -155,6 +159,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Dushevnoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "First Music Channel (1080p)"
   },
   {
@@ -167,6 +175,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Food Network (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Fox (Russia) (576p)"
   },
   {
@@ -176,6 +188,10 @@
   {
    "ulke": "Rusya",
    "ad": "Gagsnetwork (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Hit HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -200,10 +216,6 @@
   {
    "ulke": "Rusya",
    "ad": "Kinopokaz (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kinosemja (576p)"
   },
   {
    "ulke": "Rusya",
@@ -235,7 +247,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Mezzo Live (1080p)"
+   "ad": "Match! Ultra (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -259,15 +271,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Muzyka Live (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nasha Tema (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -287,11 +291,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nizhniy Novgorod 24 (1080p)"
+   "ad": "Nickelodeon (Russia) (576p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
+   "ad": "Nizhniy Novgorod 24 (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -312,6 +316,10 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Vitrina (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Okhota i rybalka (576p)"
   },
   {
    "ulke": "Rusya",
@@ -343,11 +351,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Rodnoe Kino (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Russkiy Bestseller (576p)"
+   "ad": "Russian MusicBox (576p)"
   },
   {
    "ulke": "Rusya",
@@ -355,11 +359,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Rybolov (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Samara 24 (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Shokiruyushchee HD (1080p)"
+   "ad": "Sarafan (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shef (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -383,7 +395,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "TLC (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "TNT4 (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "TNT (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Travel Channel (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -392,6 +416,10 @@
   {
    "ulke": "Rusya",
    "ad": "Ural 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Usadba (576p)"
   },
   {
    "ulke": "Rusya",
@@ -415,6 +443,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Volleyball (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Vostok 24 (1080p)"
   },
   {
@@ -423,7 +455,11 @@
   },
   {
    "ulke": "Kazakistan",
-   "ad": "Channel 7 (Kazakhstan) (576p)"
+   "ad": "31 Kanal (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Astana TV (576p)"
   },
   {
    "ulke": "Kazakistan",
@@ -436,10 +472,6 @@
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kazakistan",
