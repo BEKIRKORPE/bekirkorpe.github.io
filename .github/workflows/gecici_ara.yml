@@ -1,0 +1,51 @@
+name: Gecici kanal arama (silinecek)
+on:
+  push:
+    paths: [".github/workflows/gecici_ara.yml"]
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ara
+        shell: python
+        run: |
+          import json, urllib.request, urllib.parse
+          cfg = json.load(open("canlitv/diziler.json", encoding="utf-8"))
+          fl = json.load(open("canlitv/filmler.json", encoding="utf-8"))
+          KEY = cfg["apiKey"]
+          def get(p, **q):
+              q["key"] = KEY
+              try:
+                  return json.load(urllib.request.urlopen("https://www.googleapis.com/youtube/v3/" + p + "?" + urllib.parse.urlencode(q), timeout=30))
+              except Exception as e:
+                  print("ERR", p, q.get("q") or q.get("forHandle") or "", getattr(e, "read", lambda: b"")()[:200]); return {}
+          def show(items, tag):
+              for c in items or []:
+                  s = c.get("statistics", {}); sn = c.get("snippet", {})
+                  print(f"{tag}\t{c['id']}\t{sn.get('customUrl','')}\t{sn.get('title','')}\tsubs={s.get('subscriberCount','?')}\tvid={s.get('videoCount','?')}\t{sn.get('country','')}")
+          def by_ids(ids, tag):
+              for i in range(0, len(ids), 50):
+                  show(get("channels", part="snippet,statistics", id=",".join(ids[i:i+50])).get("items"), tag)
+          # mevcutlar
+          mev = []
+          for k in cfg["kanallar"]:
+              if k.get("tur") in ("cizgi", "spor"):
+                  for y in k.get("youtube", []):
+                      if y.startswith("UC"): mev.append(y)
+                      elif y.startswith("@"): show(get("channels", part="snippet,statistics", forHandle=y).get("items"), "MEVCUT")
+          by_ids(mev, "MEVCUT")
+          for k in fl["kanallar"]:
+              if k["src"].startswith("UC"): by_ids([k["src"]], "MEVCUT-FILM")
+          # tahmini adresler (1 birim)
+          for h in ["@CoComelonTurkce","@cocomelonturkce","@PinkfongTurkce","@BabyBusTurkce","@BabyBusTürkçe","@PocoyoTurkce","@PocoyoTurkish","@TayoTurkce","@RobocarPOLITurkce","@SuperWingsTurkce","@LarvaTurkce","@HeyDuggeeTurkce","@MiraculousTurkce","@MiraculousTR","@CaillouTurkce","@KukuliTV","@kukuli","@Leliko","@LelikoTR","@kardesimozi","@AkilliTavsanMomo","@Kostebekgiller","@elifinduslerii","@PirilTV","@Grafi2000","@BKMFilm","@bkmonline","@BoyutFilm","@PinemaFilm","@SinemaTV","@TMCFilm","@MarsMedia","@superlig","@TFF","@exxenspor","@trabzonspor","@Galatasaray","@Fenerbahce","@Besiktas","@TRTSporYildiz"]:
+              show(get("channels", part="snippet,statistics", forHandle=h).get("items"), "HANDLE " + h)
+          # aramalar (100 birim)
+          for q in ["çizgi film türkçe","Pocoyo Türkçe","CoComelon Türkçe","BabyBus Türkçe","Robocar Poli Türkçe","Miraculous Türkçe","yerli film resmi kanal","Türk filmi full HD resmi","maç özetleri resmi","Trendyol Süper Lig özet"]:
+              r = get("search", part="snippet", type="channel", q=q, maxResults=10, regionCode="TR", relevanceLanguage="tr")
+              ids = [x["id"]["channelId"] for x in r.get("items", [])]
+              if ids: by_ids(ids, "ARA " + q)
