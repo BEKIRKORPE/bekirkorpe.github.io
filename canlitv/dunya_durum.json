@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-13 16:51 UTC",
+ "kontrol": "2026-11-14 07:03 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 10,
@@ -7,19 +7,19 @@
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 27,
-   "belirsiz": 0,
+   "acik": 24,
+   "belirsiz": 3,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 269,
-   "belirsiz": 86,
-   "kapali": 95
+   "acik": 272,
+   "belirsiz": 85,
+   "kapali": 93
   },
   "Kazakistan": {
-   "acik": 11,
+   "acik": 14,
    "belirsiz": 28,
-   "kapali": 6
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -27,9 +27,9 @@
    "kapali": 0
   },
   "Kırgızistan": {
-   "acik": 3,
+   "acik": 2,
    "belirsiz": 1,
-   "kapali": 4
+   "kapali": 5
   }
  },
  "kapali": [
@@ -95,7 +95,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": ".black (576p)"
+   "ad": ".sci-fi (576p)"
   },
   {
    "ulke": "Rusya",
@@ -116,6 +116,10 @@
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Avto24 (576p)"
   },
   {
    "ulke": "Rusya",
@@ -147,11 +151,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Dikaya rybalka HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Discovery Channel (Russia) (1080p)"
+   "ad": "Crimea 24"
   },
   {
    "ulke": "Rusya",
@@ -159,7 +159,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Dushevnoe HD (1080p)"
+   "ad": "Fashion&LifeStyle (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -171,7 +171,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "FON Music (576p)"
+   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -180,14 +180,6 @@
   {
    "ulke": "Rusya",
    "ad": "Fox (Russia) (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Fox Life (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Gagsnetwork (576p)"
   },
   {
    "ulke": "Rusya",
@@ -211,11 +203,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinokomedija (576p)"
+   "ad": "Kinopokaz (576p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinopokaz (576p)"
+   "ad": "Kinosemja (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinoseriya (576p)"
   },
   {
    "ulke": "Rusya",
@@ -243,11 +239,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Match! Boets (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Match! Ultra (1080p)"
+   "ad": "Mezzo Live (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -271,7 +263,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzyka Live (576p)"
+   "ad": "Muzhskoy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nasha Tema (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -287,15 +283,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nevskiy (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Nickelodeon (Russia) (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -307,7 +303,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "NTV Series (576p)"
+   "ad": "NTV Sledstviye veli (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -316,10 +312,6 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Vitrina (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Okhota i rybalka (576p)"
   },
   {
    "ulke": "Rusya",
@@ -351,7 +343,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Rodnoe Kino (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Russian MusicBox (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Russkiy Bestseller (576p)"
   },
   {
    "ulke": "Rusya",
@@ -367,11 +367,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Sarafan (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Shef (1080p)"
+   "ad": "Shokiruyushchee HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -400,10 +396,6 @@
   {
    "ulke": "Rusya",
    "ad": "TNT4 (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "TNT (Russia) (576p)"
   },
   {
    "ulke": "Rusya",
@@ -455,19 +447,7 @@
   },
   {
    "ulke": "Kazakistan",
-   "ad": "31 Kanal (576p)"
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Astana TV (576p)"
-  },
-  {
-   "ulke": "Kazakistan",
    "ad": "MTRK (576p)"
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "NTK (576p)"
   },
   {
    "ulke": "Kazakistan",
@@ -488,6 +468,10 @@
   {
    "ulke": "Kırgızistan",
    "ad": "RTG int."
+  },
+  {
+   "ulke": "Kırgızistan",
+   "ad": "TV1.KG (1080p)"
   },
   {
    "ulke": "Kırgızistan",
