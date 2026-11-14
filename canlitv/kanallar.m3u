@@ -309,10 +309,14 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://53be5ef2d13aa.streamlock.net/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="XezerTV.az@SD" tvg-logo="" group-title="General",Xezer TV (720p)
 #KAPALI|https://www.xezerxeber.az/stream/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="31Kanal.kz@SD" tvg-logo="https://31.kz/noimage.png" group-title="General",31 Kanal (576p)
+#KAPALI|http://stream.mcquack.net/388/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="MTRK.kz@SD" tvg-logo="https://i.imgur.com/XMyRwDk.png" group-title="General",MTRK (576p)
 #KAPALI|https://tvcdn01.esilnet.kz/tv/mtrk/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Travel",RTG int.
 #KAPALI|http://213.91.179.28:8000/play/a0bw
+#KAPALI|#EXTINF:-1 tvg-id="SilkWayCinema.kz@SD" tvg-logo="https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png" group-title="Movies",Silk Way Cinema (1080p) [Geo-blocked]
+#KAPALI|https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Ulytau.kz@SD" tvg-logo="https://i.imgur.com/jTL6TvC.png" group-title="General",Ulytau
 #KAPALI|https://ulytau.tv/hls/master.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NextTV.kg@SD" tvg-logo="https://i.imgur.com/9MiwdgD.png" group-title="Undefined",Next TV (1080p) [Not 24/7]
@@ -325,6 +329,8 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://212.2.225.30:1935/live/site.stream/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="TV15.kg@SD" tvg-logo="https://i.ibb.co/1byxRtp/tv15.png" group-title="General",TV15 (1080p) [Not 24/7]
 #KAPALI|http://gohoski.fvds.ru:3000/mediabay/655/playlist.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="black.ru@SD" tvg-logo="https://i.imgur.com/Q4A6ci4.png" group-title="Entertainment",.black (576p)
+#KAPALI|http://stream.mcquack.net/263/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="scifi.ru@SD" tvg-logo="https://i.imgur.com/nSSUHcg.png" group-title="Science",.sci-fi (576p)
 #KAPALI|http://stream.mcquack.net/180/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="15PlusMusic.ru@HD" tvg-logo="https://i.imgur.com/kj21hwd.png" group-title="Music",15+ Music (1080p)
@@ -335,8 +341,6 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="555.ru@SD" tvg-logo="https://i.imgur.com/JQZkxeA.png" group-title="General",555 (720p)
 #KAPALI|http://trk555.tv:8888/live
-#KAPALI|#EXTINF:-1 tvg-id="6TVGorlovka.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/61/TV_6_HD_%E2%80%93_logo.png" group-title="General",6 TV Gorlovka (720p) [Geo-blocked]
-#KAPALI|http://91.214.48.158:4022/udp/224.2.2.4:10000
 #KAPALI|#EXTINF:-1 tvg-id="Afontovo.ru@SD" tvg-logo="https://i.imgur.com/StFfPaI.png" group-title="General",Afontovo
 #KAPALI|https://stream.afontovo.ru/hd.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="AmediaHit.ru@SD" tvg-logo="https://i.imgur.com/a8ZBGBw.png" group-title="Movies;Series",Amedia Hit (1080p)
@@ -349,8 +353,6 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://stream.mcquack.net/78/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="BRIDGEClassic.ru@SD" tvg-logo="https://i.imgur.com/JJTQq81.png" group-title="Classic;Music",BRIDGE Classic (576p)
 #KAPALI|http://5.188.159.128:8070/Bridge_TV_Classic/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="BRIDGEHits.ru@SD" tvg-logo="https://i.imgur.com/sIW9oR4.png" group-title="Music",BRIDGE Hits (576p)
-#KAPALI|http://5.188.159.128:8070/Bridge_TV_Hits/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Balabol.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/balabol_vse.jpg" group-title="Series",Balabol (1080p)
 #KAPALI|https://cdn-dvr.ntv.ru/Balabol/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Bashkortostan24.ru@SD" tvg-logo="https://i.imgur.com/s34Wtz6.png" group-title="General",Bashkortostan 24 (1080p)
@@ -359,16 +361,22 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://stream.mcquack.net/364/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="CartoonClassics.ru@SD" tvg-logo="https://sales.planbkino.tv//b/c/471.png" group-title="Kids",Cartoon Classics (Russia)
 #KAPALI|http://88.218.242.237:8001/Cartoon_Classics
-#KAPALI|#EXTINF:-1 tvg-id="ClassicMusic.ru@SD" tvg-logo="https://i.imgur.com/TpXs1qA.png" group-title="Music",Classic Music (1080p)
-#KAPALI|http://stream.mcquack.net/312/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Crimea24.ru@SD" tvg-logo="https://i.imgur.com/k4C0uvp.png" group-title="News",Crimea 24
-#KAPALI|https://cdn.1tvcrimea.ru/24tvcrimea.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="DaVinci.ru@SD" tvg-logo="https://i.imgur.com/V8AUJP6.png" group-title="Education",Da Vinci (576p)
+#KAPALI|http://stream.mcquack.net/238/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Dikayaokhota.ru@HD" tvg-logo="https://i.imgur.com/EOue13e.png" group-title="Outdoor",Dikaya okhota HD (1080p)
+#KAPALI|http://stream.mcquack.net/274/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Dikayarybalka.ru@HD" tvg-logo="https://i.imgur.com/e3BFVgt.png" group-title="Outdoor",Dikaya rybalka HD (1080p)
+#KAPALI|http://stream.mcquack.net/275/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="DiscoveryChannel.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png" group-title="Entertainment",Discovery Channel (Russia) (1080p)
+#KAPALI|http://stream.mcquack.net/177/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="DocuBox.nl@Russia" tvg-logo="https://i.imgur.com/pX4U9OG.png" group-title="Documentary",DocuBox Russia
 #KAPALI|http://dtv.vol.net.ua/DOCUBOX-HD/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Dushevnoe.ru@HD" tvg-logo="https://i.imgur.com/vTRHAvD.png" group-title="Undefined",Dushevnoe HD (1080p)
+#KAPALI|http://stream.mcquack.net/213/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="FONMusic.ru@SD" tvg-logo="https://i.imgur.com/tXABQDE.png" group-title="Music",FON Music (576p)
+#KAPALI|https://stream8.cinerama.uz/1272/tracks-v1a1/mono.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="FONTV.ru@HD" tvg-logo="https://play-lh.googleusercontent.com/J0YeRB884koVfecR2mp43Y2mbNtRVTSSOiq2U1gkITJ9IxzIM4VA71Rqbh3UlREI4mCnlxGHm4wxoujt5ZH1AQ" group-title="Sports",FON TV (1080p)
 #KAPALI|https://fontvlive.mediacdn.ru/stream/fontv/playlist.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="FashionLifeStyle.ru@SD" tvg-logo="https://i.imgur.com/ETmpllL.png" group-title="Lifestyle",Fashion&LifeStyle (1080p)
-#KAPALI|http://stream.mcquack.net/119/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="FirstMusicChannel.by@SD" tvg-logo="https://i.imgur.com/YdyFJrl.png" group-title="Music",First Music Channel (1080p)
 #KAPALI|http://rtmp.one.by:1300
 #KAPALI|#EXTINF:-1 tvg-id="FirstMusicChannelRussia.by@SD" tvg-logo="https://i.imgur.com/rEo7nR1.png" group-title="Music",First Music Channel Russia (1080p)
@@ -377,66 +385,64 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://stream.mcquack.net/298/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Fox.ru@SD" tvg-logo="https://i.imgur.com/nr1Y67Z.png" group-title="Entertainment",Fox (Russia) (576p)
 #KAPALI|http://stream.mcquack.net/182/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="FoxLife.ru@SD" tvg-logo="https://i.imgur.com/O2miSLA.png" group-title="Series",Fox Life (576p)
+#KAPALI|http://stream.mcquack.net/129/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Gagsnetwork.us@SD" tvg-logo="https://i.imgur.com/ENj5GIp.png" group-title="Comedy",Gagsnetwork (576p)
+#KAPALI|http://stream.mcquack.net/458/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Hit.ru@HD" tvg-logo="https://i.imgur.com/jl3MNPe.png" group-title="Movies",Hit HD (1080p)
 #KAPALI|http://stream.mcquack.net/363/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="InvestigationDiscovery.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png" group-title="Documentary",Investigation Discovery (Russia) (1080p)
 #KAPALI|http://stream.mcquack.net/205/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="KapitanFantastika.ru@SD" tvg-logo="https://i.imgur.com/K3PSHiT.png" group-title="Kids",Kapitan Fantastika (1080p)
+#KAPALI|http://stream.mcquack.net/144/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Kavkaz24.ru@SD" tvg-logo="https://i.imgur.com/DyJw1Pi.png" group-title="General",Kavkaz 24 (576p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/stavropol/kavkaz24-hd/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Kino24.ru@SD" tvg-logo="https://i.imgur.com/QAdDARF.png" group-title="Movies",Kino 24 (720p)
 #KAPALI|http://sirius.greenhosting.ru/Kino24Ru/video.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="KinoHit.ru@SD" tvg-logo="https://i.imgur.com/Ge8vkQM.png" group-title="Movies",KinoHit (576p)
 #KAPALI|http://stream.mcquack.net/126/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Kinokomedija.ru@SD" tvg-logo="https://i.imgur.com/dVjtth0.png" group-title="Comedy",Kinokomedija (576p)
+#KAPALI|http://stream.mcquack.net/265/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Kinopokaz.ru@SD" tvg-logo="https://i.imgur.com/nNjMyAq.png" group-title="Movies",Kinopokaz (576p)
 #KAPALI|http://stream.mcquack.net/64/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Kinosemja.ru@SD" tvg-logo="https://i.imgur.com/4BF5VeK.png" group-title="Movies",Kinosemja (576p)
 #KAPALI|http://stream.mcquack.net/170/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Kinoseriya.ru@SD" tvg-logo="https://i.imgur.com/iao7zLZ.png" group-title="Movies",Kinoseriya (576p)
-#KAPALI|https://fs.uplink.kz/kinoseria/mono.m3u8?token=onlinetv
 #KAPALI|#EXTINF:-1 tvg-id="Kinosvidanie.ru@SD" tvg-logo="https://i.imgur.com/ZRaWqxj.png" group-title="Movies",Kinosvidanie (576p)
 #KAPALI|http://5.188.159.128:8070/kinosvidanie/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Kinouzhas.ru@SD" tvg-logo="https://i.imgur.com/mAcAAQF.png" group-title="Movies",Kinouzhas (1080p)
 #KAPALI|http://s1.merlive.am/Kinoujas/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Komediynoe.ru@HD" tvg-logo="https://i.imgur.com/cEKe8XC.png" group-title="Comedy",Komediynoe HD (1080p)
-#KAPALI|http://stream.mcquack.net/74/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Kuhnya.ru@SD" tvg-logo="https://i.imgur.com/7jxZnuS.png" group-title="Cooking",Kuhnya (576p)
-#KAPALI|http://stream.mcquack.net/179/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Legendarnyy24.ru@SD" tvg-logo="https://i.imgur.com/z9t6x8B.png" group-title="News",Legendarnyy 24
 #KAPALI|https://sevas.1tvcrimea.ru/legendarniy24.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="LenTV24.ru@SD" tvg-logo="https://i.imgur.com/d02uxkB.png" group-title="General",LenTV24
 #KAPALI|https://player.smotrim.ru/iframe/stream/live_id/3e95d201-f87d-4ac1-8897-db2c66bb9657
-#KAPALI|#EXTINF:-1 tvg-id="MezzoLive.fr@SD" tvg-logo="https://i.imgur.com/H9ytKPN.png" group-title="Music",Mezzo Live (1080p)
-#KAPALI|http://stream.mcquack.net/276/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="MatchBoets.ru@SD" tvg-logo="https://i.imgur.com/DogOkA4.png" group-title="Sports",Match! Boets (576p)
+#KAPALI|http://stream.mcquack.net/112/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Millet.ru@SD" tvg-logo="https://i.imgur.com/hUjLRLy.png" group-title="News",Millet (720p)
 #KAPALI|https://live1.1tvcrimea.ru/milletlive.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD" tvg-logo="https://i.imgur.com/95Y8jb6.png" group-title="Movies",Mosfilm Gold Collection (576p)
 #KAPALI|http://31.222.235.15/mosfilm/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Moyastikhiya.ru@HD" tvg-logo="https://i.imgur.com/Sl8c9eB.png" group-title="Travel",Moya stikhiya HD (1080p)
-#KAPALI|http://stream.mcquack.net/141/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Multimuzyka.ru@SD" tvg-logo="https://i.imgur.com/SYt6BZP.png" group-title="Kids",Mult i muzyka (576p)
 #KAPALI|http://stream.mcquack.net/82/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Muzhskoekino.ru@SD" tvg-logo="https://i.imgur.com/8RN3tQC.png" group-title="Movies",Muzhskoe kino (576p)
-#KAPALI|http://stream.mcquack.net/107/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Muzhskoy.ru@HD" tvg-logo="https://i.imgur.com/xyztpBf.png" group-title="Movies",Muzhskoy HD (1080p)
 #KAPALI|https://fonbet.mediacdn.ru/live/muzhskoi/playlist.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="MuzykaLive.ru@SD" tvg-logo="https://i.imgur.com/RH6hTWG.png" group-title="Music",Muzyka Live (576p)
+#KAPALI|http://stream.mcquack.net/303/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NST.ru@SD" tvg-logo="https://i.imgur.com/uv2yxa5.png" group-title="Undefined",NST (576p)
 #KAPALI|http://stream.mcquack.net/207/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NTVLaw.ru@SD" tvg-logo="https://i.imgur.com/3ChnWGg.png" group-title="Undefined",NTV Law (576p)
 #KAPALI|https://cdn.ntv.ru/th_pravo/playlist.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="NTVSledstviyeveli.ru@SD" tvg-logo="https://image.tmdb.org/t/p/original/qGCnptpQ9slUAoZ7e5y1Dk4TtjJ.png" group-title="Undefined",NTV Sledstviye veli (1080p) [Geo-blocked]
-#KAPALI|https://mhd116.iptv2022.com/x/t4hRFz1R89Q6kjp3CL3WVQ,1792610109/streaming/sledstvie_veli_hd/324/1/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NTVStyle.ru@SD" tvg-logo="https://i.imgur.com/rX6K6qT.png" group-title="Lifestyle",NTV Style (576p)
 #KAPALI|https://cdn.ntv.ru/th_style/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NTVVitrina.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NTV_logo_2003.svg/1280px-NTV_logo_2003.svg.png" group-title="General",NTV Vitrina (720p)
 #KAPALI|https://cdn.ntv.ru/vitrina/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="NashaTema.ru@SD" tvg-logo="https://i.imgur.com/67ZVDKW.png" group-title="Outdoor;Travel",Nasha Tema (1080p)
-#KAPALI|https://fonbet.mediacdn.ru/live/nashatema/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Nashe.ru@HD" tvg-logo="https://i.imgur.com/KO8dhi9.png" group-title="Movies;Series",Nashe HD (576p)
 #KAPALI|http://stream.mcquack.net/217/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Nashemuzhskoe.ru@HD" tvg-logo="https://i.imgur.com/QRWKpmb.png" group-title="Movies",Nashe muzhskoe HD (1080p)
 #KAPALI|http://stream.mcquack.net/362/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NationalGeographic.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" group-title="Documentary",National Geographic (Russia) (1080p)
 #KAPALI|http://dtv.vol.net.ua/National_Geographic-HD/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Nevskiy.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/nevski_llive.jpg" group-title="Series",Nevskiy (1080p)
+#KAPALI|https://cdn-dvr.ntv.ru/Nevskiy/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Nickelodeon.ru@SD" tvg-logo="https://i.imgur.com/w8iE8dV.png" group-title="Kids",Nickelodeon (Russia) (576p)
 #KAPALI|http://stream.mcquack.net/443/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NizhniyNovgorod24.ru@SD" tvg-logo="https://i.imgur.com/ZWgPVIC.png" group-title="General",Nizhniy Novgorod 24 (1080p)
@@ -469,20 +475,20 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://stream.mcquack.net/264/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Samara24.ru@SD" tvg-logo="https://i.imgur.com/YUe3Dwd.png" group-title="General",Samara 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/samara/samara24-hd/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Shokiruyushchee.ru@HD" tvg-logo="https://i.imgur.com/UG63hZ0.png" group-title="Movies",Shokiruyushchee HD (1080p)
-#KAPALI|http://stream.mcquack.net/75/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="SamaraGIS.ru@SD" tvg-logo="https://samaragis.ru/wp-includes/images/logo.png" group-title="Undefined",Samara-GIS (1080p) [Not 24/7]
+#KAPALI|https://tv.samaragis.ru/new/new/tracks-v1a1/mono.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Sarafan.ru@SD" tvg-logo="https://i.imgur.com/u4q1rMT.png" group-title="Undefined",Sarafan (576p)
+#KAPALI|http://stream.mcquack.net/81/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Shef.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/shef_llive.jpg" group-title="Series",Shef (1080p)
+#KAPALI|https://cdn-dvr.ntv.ru/Shef/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Sibir24.ru@NVS" tvg-logo="https://i.imgur.com/jgwQPl0.png" group-title="General",Sibir 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Simferopol24.ru@SD" tvg-logo="https://i.imgur.com/S2QJ3bc.png" group-title="General",Simferopol 24
 #KAPALI|https://simf.1tvcrimea.ru/simferopol24.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Skorayapomoshch.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/skoraya_pom_llive.jpg" group-title="Series",Skoraya pomoshch (1080p)
-#KAPALI|https://cdn-dvr.ntv.ru/Skoraja_pomosh/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="SolovyovLive.ru@SD" tvg-logo="https://images.iptv.rt.ru/images/d7efm08mifeaf9jacb30.png" group-title="Undefined",Solovyov Live (1080p)
 #KAPALI|https://stream.smotrim.ru/hls2/solovievlive/playlist_6.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="TERRA.ru@SD" tvg-logo="https://i.imgur.com/ZxUjCpF.png" group-title="Documentary",TERRA (1080p)
 #KAPALI|http://s1.merlive.am/TerraHD/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="TLC.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png" group-title="Lifestyle",TLC (Russia) (1080p)
-#KAPALI|http://stream.mcquack.net/168/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="TNT4.ru@SD" tvg-logo="https://i.imgur.com/gBokU5i.png" group-title="Entertainment",TNT4 (576p)
 #KAPALI|http://176.118.197.101/TNT4/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="TVK.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D1%8F%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%A2%D0%92%D0%9A_%282015%29.png" group-title="Undefined",TVK (Russia) (576p)
@@ -491,8 +497,6 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://stream.mcquack.net/231/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Ural24.ru@SD" tvg-logo="https://i.imgur.com/eoI4KuB.png" group-title="General",Ural 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/chelyabinsk/ural24-hd/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Usadba.ru@SD" tvg-logo="https://i.imgur.com/mf13haG.png" group-title="Undefined",Usadba (576p)
-#KAPALI|http://stream.mcquack.net/211/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Vmirezhivotnykh.ru@SD" tvg-logo="https://i.imgur.com/6uotdVQ.png" group-title="Undefined",V mire zhivotnykh (1080p)
 #KAPALI|http://stream.mcquack.net/241/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="VIVARussia.ru@SD" tvg-logo="https://i.imgur.com/OFhQQCD.png" group-title="Music",VIVA Russia
@@ -511,6 +515,8 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/kaliningrad/zapad24-hd/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="alphaCinema.ru@HD" tvg-logo="https://i.imgur.com/146OgfU.png" group-title="Comedy;Family;Movies",alpha Cinema (1080p)
 #KAPALI|https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="vijuPlusPlanet.ru@HD" tvg-logo="https://i.imgur.com/9Weqdsk.png" group-title="Documentary",viju+ Planet HD (1080p)
+#KAPALI|http://stream.mcquack.net/240/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="BIZCinema.uz@SD" tvg-logo="https://biztv.uz/static/media/biz-cinema.286b83dc.png" group-title="Movies",BIZ Cinema (1080p)
 #KAPALI|https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="BIZMusic.uz@SD" tvg-logo="https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg" group-title="Music",BIZ Music (1080p)

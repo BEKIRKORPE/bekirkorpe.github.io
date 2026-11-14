@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-14 07:03 UTC",
+ "kontrol": "2026-11-14 15:24 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 10,
@@ -7,19 +7,19 @@
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 24,
-   "belirsiz": 3,
+   "acik": 27,
+   "belirsiz": 0,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 272,
+   "acik": 271,
    "belirsiz": 85,
-   "kapali": 93
+   "kapali": 94
   },
   "Kazakistan": {
-   "acik": 14,
-   "belirsiz": 28,
-   "kapali": 3
+   "acik": 11,
+   "belirsiz": 29,
+   "kapali": 5
   },
   "Türkmenistan": {
    "acik": 8,
@@ -79,10 +79,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "15+ Music (1080p)"
   },
   {
@@ -92,6 +88,10 @@
   {
    "ulke": "Rusya",
    "ad": "555 (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": ".black (576p)"
   },
   {
    "ulke": "Rusya",
@@ -139,19 +139,23 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "BRIDGE Hits (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Classic Music (1080p)"
+   "ad": "Da Vinci (576p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Crimea 24"
+   "ad": "Dikaya okhota HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Dikaya rybalka HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Discovery Channel (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -159,7 +163,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Fashion&LifeStyle (1080p)"
+   "ad": "Dushevnoe HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -168,6 +172,10 @@
   {
    "ulke": "Rusya",
    "ad": "First Music Channel Russia (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "FON Music (576p)"
   },
   {
    "ulke": "Rusya",
@@ -183,11 +191,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Fox Life (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Gagsnetwork (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Hit HD (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Investigation Discovery (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kapitan Fantastika (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -203,15 +223,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Kinokomedija (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Kinopokaz (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Kinosemja (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kinoseriya (576p)"
   },
   {
    "ulke": "Rusya",
@@ -223,14 +243,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Komediynoe HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kuhnya (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Legendarnyy 24"
   },
   {
@@ -239,7 +251,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Mezzo Live (1080p)"
+   "ad": "Match! Boets (576p)"
   },
   {
    "ulke": "Rusya",
@@ -251,15 +263,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Moya stikhiya HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Mult i muzyka (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Muzhskoe kino (576p)"
   },
   {
    "ulke": "Rusya",
@@ -267,7 +271,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nasha Tema (1080p)"
+   "ad": "Muzyka Live (576p)"
   },
   {
    "ulke": "Rusya",
@@ -280,6 +284,10 @@
   {
    "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nevskiy (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -300,10 +308,6 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Law (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Sledstviye veli (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -367,7 +371,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Shokiruyushchee HD (1080p)"
+   "ad": "Samara-GIS (1080p) [Not 24/7]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Sarafan (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shef (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -379,19 +391,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "TERRA (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "TLC (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -411,15 +415,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Usadba (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "V mire zhivotnykh (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Vera 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Planet HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -447,11 +451,19 @@
   },
   {
    "ulke": "Kazakistan",
+   "ad": "31 Kanal (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
    "ad": "MTRK (576p)"
   },
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kazakistan",
