@@ -31,21 +31,10 @@ jobs:
           def by_ids(ids, tag):
               for i in range(0, len(ids), 50):
                   show(get("channels", part="snippet,statistics", id=",".join(ids[i:i+50])).get("items"), tag)
-          # mevcutlar
-          mev = []
-          for k in cfg["kanallar"]:
-              if k.get("tur") in ("cizgi", "spor"):
-                  for y in k.get("youtube", []):
-                      if y.startswith("UC"): mev.append(y)
-                      elif y.startswith("@"): show(get("channels", part="snippet,statistics", forHandle=y).get("items"), "MEVCUT")
-          by_ids(mev, "MEVCUT")
-          for k in fl["kanallar"]:
-              if k["src"].startswith("UC"): by_ids([k["src"]], "MEVCUT-FILM")
-          # tahmini adresler (1 birim)
-          for h in ["@CoComelonTurkce","@cocomelonturkce","@PinkfongTurkce","@BabyBusTurkce","@BabyBusTürkçe","@PocoyoTurkce","@PocoyoTurkish","@TayoTurkce","@RobocarPOLITurkce","@SuperWingsTurkce","@LarvaTurkce","@HeyDuggeeTurkce","@MiraculousTurkce","@MiraculousTR","@CaillouTurkce","@KukuliTV","@kukuli","@Leliko","@LelikoTR","@kardesimozi","@AkilliTavsanMomo","@Kostebekgiller","@elifinduslerii","@PirilTV","@Grafi2000","@BKMFilm","@bkmonline","@BoyutFilm","@PinemaFilm","@SinemaTV","@TMCFilm","@MarsMedia","@superlig","@TFF","@exxenspor","@trabzonspor","@Galatasaray","@Fenerbahce","@Besiktas","@TRTSporYildiz"]:
-              show(get("channels", part="snippet,statistics", forHandle=h).get("items"), "HANDLE " + h)
-          # aramalar (100 birim)
-          for q in ["çizgi film türkçe","Pocoyo Türkçe","CoComelon Türkçe","BabyBus Türkçe","Robocar Poli Türkçe","Miraculous Türkçe","yerli film resmi kanal","Türk filmi full HD resmi","maç özetleri resmi","Trendyol Süper Lig özet"]:
-              r = get("search", part="snippet", type="channel", q=q, maxResults=10, regionCode="TR", relevanceLanguage="tr")
-              ids = [x["id"]["channelId"] for x in r.get("items", [])]
-              if ids: by_ids(ids, "ARA " + q)
+          ids=["UC9wOm30AfLHPq_Bdq65BPSg","UCb2hduhWqkr4781Z7yx1ZZA","UClzojNX_9GuNDjf_8qZ9y0w","UCCm7h1oHcifE3QZNjLp_hxA","UCQ-aQK4lA3N1qQrwDWRC9qw","UCBaxgHbxxRGhvVxx3bniTqw","UCn8o5QsbffDMPYx1SMTDi-A","UCrNcqd48r31nZWmh4f27L5Q","UCoe0QD045tgbTE6bsbRGU5w"]
+          r=get("channels", part="snippet,statistics,contentDetails", id=",".join(ids))
+          for c in r.get("items",[]):
+              sn=c["snippet"]; print("KANAL",c["id"],sn.get("customUrl"),sn["title"],c["statistics"].get("subscriberCount"),"| ACIKLAMA:",sn.get("description","").replace("\n"," ")[:400])
+              up=c["contentDetails"]["relatedPlaylists"]["uploads"]
+              v=get("playlistItems", part="snippet", playlistId=up, maxResults=6)
+              for x in v.get("items",[]): print("  VID",x["snippet"]["publishedAt"][:10],x["snippet"]["title"][:90])
