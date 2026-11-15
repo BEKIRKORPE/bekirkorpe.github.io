@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-14 20:58 UTC",
+ "kontrol": "2026-11-15 07:13 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 10,
@@ -7,13 +7,13 @@
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 26,
+   "acik": 27,
    "belirsiz": 1,
-   "kapali": 7
+   "kapali": 6
   },
   "Rusya": {
-   "acik": 276,
-   "belirsiz": 85,
+   "acik": 274,
+   "belirsiz": 86,
    "kapali": 89
   },
   "Kazakistan": {
@@ -27,9 +27,9 @@
    "kapali": 0
   },
   "Kırgızistan": {
-   "acik": 2,
+   "acik": 1,
    "belirsiz": 1,
-   "kapali": 5
+   "kapali": 6
   }
  },
  "kapali": [
@@ -67,10 +67,6 @@
   },
   {
    "ulke": "Özbekistan",
-   "ad": "Sport (Uzbekistan)"
-  },
-  {
-   "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
   },
   {
@@ -80,6 +76,10 @@
   {
    "ulke": "Rusya",
    "ad": "15+ Music (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "365 days TV (576p)"
   },
   {
    "ulke": "Rusya",
@@ -100,6 +100,10 @@
   {
    "ulke": "Rusya",
    "ad": "alpha Cinema (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Amedia Hit (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -143,11 +147,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Dikaya rybalka HD (1080p)"
+   "ad": "Dikaya okhota HD (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Discovery Channel (Russia) (1080p)"
+   "ad": "Dikaya rybalka HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -171,15 +175,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Food Network (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Fox (Russia) (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Fox Life (576p)"
   },
   {
    "ulke": "Rusya",
@@ -187,7 +183,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Hit HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Investigation Discovery (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kapitan Fantastika (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -199,11 +203,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinopokaz (576p)"
+   "ad": "KinoHit (576p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinosemja (576p)"
+   "ad": "Kinokomedija (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinopokaz (576p)"
   },
   {
    "ulke": "Rusya",
@@ -215,7 +223,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Komediynoe HD (1080p)"
+   "ad": "Kuhnya (576p)"
   },
   {
    "ulke": "Rusya",
@@ -247,15 +255,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Mult i muzyka (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Muzhskoe kino (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Muzyka Live (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nashe HD (576p)"
   },
   {
    "ulke": "Rusya",
@@ -287,15 +295,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "NTV Series (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "NTV Style (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Vitrina (720p)"
   },
   {
    "ulke": "Rusya",
@@ -308,14 +308,6 @@
   {
    "ulke": "Rusya",
    "ad": "Perviy Krymskiy (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Perviy otdel (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Pes (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -336,10 +328,6 @@
   {
    "ulke": "Rusya",
    "ad": "Russkiy Detektiv (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Rybolov (576p)"
   },
   {
    "ulke": "Rusya",
@@ -367,10 +355,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
@@ -387,6 +371,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Travel Channel (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "TVK (Russia) (576p)"
   },
   {
@@ -395,15 +383,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Usadba (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "V mire zhivotnykh (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Vera 24"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "viju+ Planet HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -427,11 +415,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "YaPervyy (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
   },
   {
+   "ulke": "Rusya",
+   "ad": "Zhivaya priroda (1080p)"
+  },
+  {
    "ulke": "Kazakistan",
-   "ad": "Channel 7 (Kazakhstan) (576p)"
+   "ad": "31 Kanal (576p)"
   },
   {
    "ulke": "Kazakistan",
@@ -439,15 +435,19 @@
   },
   {
    "ulke": "Kazakistan",
+   "ad": "NTK (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
    "ad": "RTG int."
   },
   {
    "ulke": "Kazakistan",
-   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
+   "ad": "Ulytau"
   },
   {
-   "ulke": "Kazakistan",
-   "ad": "Ulytau"
+   "ulke": "Kırgızistan",
+   "ad": "312 TV (406p)"
   },
   {
    "ulke": "Kırgızistan",
