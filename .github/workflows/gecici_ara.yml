@@ -31,15 +31,11 @@ jobs:
           def by_ids(ids, tag):
               for i in range(0, len(ids), 50):
                   show(get("channels", part="snippet,statistics", id=",".join(ids[i:i+50])).get("items"), tag)
-          mev = []
-          for k in cfg["kanallar"]:
-              if k.get("tur") in ("cizgi", "spor"):
-                  for y in k.get("youtube", []):
-                      if y.startswith("UC"): mev.append(y)
-          by_ids(mev, "MEVCUT")
-          for h in ["@MashaandtheBearTR","@MashaTurkce","@PeppaPigTurkce","@PeppaPigTürkçe","@PAWPatrolTurkce","@PawPatrolTurkiye","@BlueyTurkce","@SirinlerTurkce","@TheSmurfsTurkce","@KralSakir","@cartoonnetworktr","@RafadanTayfa","@Niloya","@niloyatv","@Pepee","@pepeetv","@SupaStrikasTurkce","@ZigandSharkoTR","@GrizzyandtheLemmingsTR","@LegoTurkiye","@BarbieTurkce","@ThomasandFriendsTurkce","@DisneyJuniorTurkiye","@BenTenTurkce","@MolangTurkce","@Kukuli","@KukuliCizgiFilm","@TRTCocukArsiv","@AkilliTavsanMomoTR","@UgurFilm","@SanerFilm","@KeremFilm","@DuyguFilm","@ErmanFilm","@SuperLig","@trendyolsuperlig","@TFFTV","@ZiraatTurkiyeKupasi","@exxensporofficial","@TBF","@EuroLeague","@UEFA","@bein_sports_turkiye"]:
-              show(get("channels", part="snippet,statistics", forHandle=h).get("items"), "HANDLE " + h)
-          for q in ["Maşa ile Koca Ayı Türkçe","Peppa Pig Türkçe resmi","Paw Patrol Türkçe","Şirinler Türkçe","Kral Şakir resmi","Niloya resmi","Pepee resmi","Kukuli resmi","Yeşilçam film resmi kanal","Türk filmi tek parça yapım şirketi","Süper Lig maç özetleri","basketbol süper ligi özet"]:
-              r = get("search", part="snippet", type="channel", q=q, maxResults=8, regionCode="TR", relevanceLanguage="tr")
-              ids = [x["id"]["channelId"] for x in r.get("items", [])]
-              if ids: by_ids(ids, "ARA " + q)
+          ids=["UCZw5SIJn-Vqw2-6vCjmSX7Q","UCgcwys292hCdcN6uyH-UkoA","UCDyWNegD3AM0dZKN8rFmK-w","UC0BH4JA92bO7AOtqOWBNqdg","UCNopxUNUMinlK3ybMGlpbGQ","UCpdSUUHlxMjO0c5824FGcsA","UCMSwYsZcJvVMzn-6fDtZN3Q","UC6OGLjC6j7iVV1d7VtusXxQ"]
+          show(get("channels", part="snippet,statistics", forUsername="SSport").get("items"), "USER SSport")
+          r=get("channels", part="snippet,statistics,contentDetails", id=",".join(ids))
+          for c in r.get("items",[]):
+              sn=c["snippet"]; print("KANAL",c["id"],sn.get("customUrl"),sn["title"],c["statistics"].get("subscriberCount"),"| ACIKLAMA:",sn.get("description","").replace("\n"," ")[:400])
+              up=c["contentDetails"]["relatedPlaylists"]["uploads"]
+              v=get("playlistItems", part="snippet", playlistId=up, maxResults=6)
+              for x in v.get("items",[]): print("  VID",x["snippet"]["publishedAt"][:10],x["snippet"]["title"][:90])
