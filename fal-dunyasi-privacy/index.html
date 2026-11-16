@@ -45,7 +45,7 @@
 <body>
 
 <h1>🔮 Fal Dünyası – Gizlilik Politikası</h1>
-<p class="updated">Son güncelleme: 9 Kasım 2026</p>
+<p class="updated">Son güncelleme: 16 Kasım 2026</p>
 
 <p>Bu gizlilik politikası, KorpeSoft Teknoloji tarafından geliştirilen <strong>Fal Dünyası</strong> ("Uygulama") mobil uygulamasının hangi verileri topladığını, nasıl kullandığını ve nasıl koruduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
 
@@ -63,11 +63,13 @@
   <li>Fal geçmişi, Fal Günlüğü işaretleri ve notları, kaydedilen fallar ve dilek defteri girdileri</li>
   <li>Favori burç ve fal türü tercihleri, günlük kullanım hakları, giriş serisi</li>
   <li>Premium satın alma durumu, tema, ses ve bildirim tercihleri</li>
+  <li>Falcına Danış bölümündeki sohbet geçmişi, önceki fallarınızın kısa özetleri ve kredi bakiyeniz</li>
 </ul>
 <p>Bu veriler, uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde cihazınızdan silinir.</p>
 
 <h2>4. Fotoğraflar</h2>
-<p>Kahve falı ve el falı için fotoğraf çekebilir veya galeriden seçebilirsiniz. Fotoğraflar <strong>yalnızca cihazınızda kullanılır</strong>; herhangi bir sunucuya yüklenmez, KorpeSoft veya üçüncü taraflarca görüntülenmez ya da saklanmaz.</p>
+<p>Uygulamanın ücretsiz kahve falı ve el falı bölümlerinde çektiğiniz veya seçtiğiniz fotoğraflar <strong>yalnızca cihazınızda kullanılır</strong>; herhangi bir sunucuya yüklenmez.</p>
+<p><strong>Falcına Danış</strong> (kredili) bölümünde ise falcıya gönderdiğiniz fincan veya avuç fotoğrafları, size özel yorum hazırlanabilmesi için aşağıda 5.6 maddesinde anlatıldığı şekilde yapay zekâ hizmetine iletilir.</p>
 
 <h2>5. Sunucuya Gönderilen Veriler</h2>
 
@@ -89,7 +91,20 @@
 <p>Uygulama, Google AdMob aracılığıyla reklam gösterir. Bu kapsamda cihazınızın reklam kimliği (Advertising ID) Google ile paylaşılır. Avrupa Ekonomik Alanı ve Birleşik Krallık'taki kullanıcılardan kişiselleştirilmiş reklamlar için Google'ın onay ekranı aracılığıyla izin istenir. Reklam kimliğinizi cihazınızın ayarlarından sıfırlayabilir veya kişiselleştirilmiş reklamları kapatabilirsiniz.</p>
 
 <h3>5.5 Satın Alma Bilgileri (Google Play Faturalandırma)</h3>
-<p>Premium satın alma işlemleri tamamen <strong>Google Play üzerinden</strong> gerçekleştirilir. Ödeme bilgileriniz (kart numarası vb.) KorpeSoft tarafından hiçbir şekilde görülmez veya saklanmaz.</p>
+<p>Premium ve kredi satın alma işlemleri tamamen <strong>Google Play üzerinden</strong> gerçekleştirilir. Ödeme bilgileriniz (kart numarası vb.) KorpeSoft tarafından hiçbir şekilde görülmez veya saklanmaz.</p>
+
+<h3>5.6 Falcına Danış (Yapay Zekâ Destekli Yorum)</h3>
+<p>Falcına Danış bölümündeki falcılar (Madam Zara, Kart Ustası Nadira, Astrolog Soraya, Samira Nine) uygulamanın yorum karakterleridir; yorumlar <strong>dijital asistan (yapay zekâ) desteğiyle</strong> hazırlanır ve eğlence amaçlıdır. Bu bölümü kullandığınızda, yalnızca o fal için gereken bilgiler gönderilir:</p>
+<ul>
+  <li>Gönderdiğiniz fincan veya avuç fotoğrafları (cihazda küçültülerek)</li>
+  <li>Yazdığınız soru, niyet ve sohbet mesajları</li>
+  <li>Seçtiğiniz tarot kartları; astroloji için doğum tarihi, saati ve ili ile uygulamanın hesapladığı harita özeti; yıldızname için girdiğiniz ad ve anne adı</li>
+  <li>"Beni Tanı" bölümüne girdiyseniz adınız, burcunuz ve benzeri tercihleriniz; önceki fallarınızın tek cümlelik özetleri (yorumların tekrar etmemesi için)</li>
+</ul>
+<p>Bu bilgiler şifreli bağlantıyla KorpeSoft'a ait bir aracı sunucuya (Cloudflare Workers) iletilir ve oradan yorumun hazırlanması için <strong>Google Gemini API</strong>'ye gönderilir. Aracı sunucu bu içerikleri <strong>kaydetmez</strong>; KorpeSoft fotoğraflarınızı ve mesajlarınızı görmez veya saklamaz. Google'ın bu verileri işlemesi <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Gemini API Ek Hizmet Şartları</a> ve Google Gizlilik Politikası'na tabidir. Sohbet geçmişiniz yalnızca cihazınızda tutulur. Bu bölümü kullanmak isteğe bağlıdır; kişisel veya hassas bilgi paylaşmamanızı öneririz.</p>
+
+<h3>5.7 Uygulama Kullanım Sayaçları (KorpeSoft İstatistik)</h3>
+<p>Uygulamanın kaç kişi tarafından kullanıldığını ve silinip silinmediğini anlamak için; cihaz kimliğinden türetilen geri çevrilemez bir özet, ilk açılış zamanı, günlük açılış sayısı ve uygulamada geçirilen toplam süre ile bildirim anahtarı (Firebase Cloud Messaging) KorpeSoft'un istatistik veritabanına (Supabase) gönderilir. Bu veriler adınız veya iletişim bilgilerinizle ilişkilendirilmez.</p>
 
 <h2>6. Bildirimler</h2>
 <p>Günlük fal ve burç bildirimleri cihazınızda planlanır ve gösterilir; bunun için sunucuya kişisel bilgi gönderilmez. Bildirimleri telefonunuzun ayarlarından kapatabilirsiniz.</p>
@@ -100,6 +115,9 @@
   <li><strong>Google Firebase Analytics</strong> – anonim kullanım istatistikleri</li>
   <li><strong>Google Cloud Firestore</strong> – davet sistemi kayıtları</li>
   <li><strong>Google Play Faturalandırma ve Install Referrer</strong> – satın alma ve davet linki</li>
+  <li><strong>Google Gemini API</strong> – Falcına Danış yorumlarının hazırlanması</li>
+  <li><strong>Cloudflare Workers</strong> – Falcına Danış için kayıt tutmayan aracı sunucu</li>
+  <li><strong>Supabase</strong> – anonim kullanım sayaçları</li>
 </ul>
 <p>Bu hizmetlerin veri işleme koşulları için: <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>.</p>
 
