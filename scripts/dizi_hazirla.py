@@ -482,7 +482,11 @@ def program_hesabi(adaylar, anahtar, min_abone=100000):
     if CACHE.get(ck):
         return CACHE[ck]
     for a in adaylar:
-        cid = kanal_id(a)
+        if a.startswith("v:"):   # hesabın adı bilinmiyorsa resmî bir bölüm videosundan bulunur
+            r = get("videos", part="snippet", id=a[2:]) or {}
+            cid = ((r.get("items") or [{}])[0].get("snippet") or {}).get("channelId")
+        else:
+            cid = kanal_id(a)
         if not cid:
             continue
         if not anahtar:
