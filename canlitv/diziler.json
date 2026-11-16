@@ -157,7 +157,7 @@
             "v:LwRa8j27O-s"
           ],
           "hesap_adi": "Güldür",
-          "min_dk": 60,
+          "min_dk": 30,
           "sadece": "^Güldür Güldür Show\\s*-?\\s*\\d+\\.\\s*Bölüm",
           "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
           "aciklama": "Show TV'nin sevilen komedi şovu. Bütün sezonlar, bütün bölümler; en yenisi en üstte."
