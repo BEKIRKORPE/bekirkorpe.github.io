@@ -18,14 +18,22 @@ concurrency:
 jobs:
   guncelle:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Otoparkları indir
-        run: node scripts/otopark-veri.mjs
+      - name: osmium kur
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+      - name: OpenStreetMap Türkiye kopyasını indir (Geofabrik)
+        run: curl -fsSL --retry 3 -o turkey.osm.pbf https://download.geofabrik.de/europe/turkey-latest.osm.pbf && ls -lh turkey.osm.pbf
+      - name: Otoparkları ayıkla
+        run: |
+          osmium tags-filter turkey.osm.pbf nwr/amenity=parking -o otopark.osm.pbf --overwrite
+          osmium export otopark.osm.pbf -f geojsonseq -o otoparklar.geojsonseq --overwrite
+          node scripts/otopark-veri.mjs otoparklar.geojsonseq
+          rm -f turkey.osm.pbf otopark.osm.pbf otoparklar.geojsonseq
       - name: Degisiklik varsa kaydet
         run: |
           git config user.name "otopark-veri-bot"

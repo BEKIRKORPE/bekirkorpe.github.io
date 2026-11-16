@@ -1,82 +1,57 @@
 // Rangeo Plus — Türkiye otopark verisi (haftalık, GitHub Actions'ta çalışır)
-// OpenStreetMap (Overpass) -> sarjharitasi/otoparklar.json
+// OpenStreetMap Türkiye kopyası (Geofabrik) -> osmium ile otoparklar ayıklanır -> sarjharitasi/otoparklar.json
+// (Genel Overpass sunucuları tüm Türkiye sorgusunda zaman aşımına düşüyor; Geofabrik dosyası güvenilir ve sunuculara yük bindirmez.)
 // Uygulama bu dosyayı boşta iken arka planda bir kez indirir; otopark modu açılınca beklemeden gösterir.
+//
+// Kullanım: node scripts/otopark-veri.mjs otoparklar.geojsonseq
 //
 // Dosya biçimi (küçük olsun diye sıkıştırılmış):
 //   { v: 1, t: <oluşturma zamanı ms>, d: [[enlem*1e5, boylam*1e5, kapalı(0/1), "ad", {ek bilgi}], ...] }
 //   ek bilgi anahtarları: p=parking türü, f=fee, c=capacity, cc=capacity:charging, h=maxheight,
 //   oh=opening_hours, ac=access, s=supervised, op=operator  (boş olanlar yazılmaz)
-import { writeFileSync, existsSync } from "node:fs";
+import { writeFileSync, existsSync, createReadStream } from "node:fs";
+import { createInterface } from "node:readline";
 
-const SUNUCU = [
-  "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
-  "https://overpass-api.de/api/interpreter",
-  "https://overpass.kumi.systems/api/interpreter",
-];
-const UA = "RangeoPlus-otopark-veri/1.0 (github.com/bekirkorpe)";
+const GIRDI = process.argv[2] || "otoparklar.geojsonseq";
 const CIKTI = "sarjharitasi/otoparklar.json";
 const EN_AZ = 10000; // bundan azı bozuk çekim sayılır, eski dosya korunur
-// Türkiye'yi 2°x2° parçalara böl (tek sorgu sunucuda zaman aşımına düşmesin)
-const GUNEY = 35.8, KUZEY = 42.2, BATI = 25.6, DOGU = 44.9, ADIM = 2;
 const KISA = { parking: "p", fee: "f", capacity: "c", "capacity:charging": "cc", maxheight: "h", opening_hours: "oh", access: "ac", supervised: "s", operator: "op" };
+const ATLA_ERISIM = /^(private|no)$/, ATLA_TUR = /^(street_side|lane|on_kerb|half_on_kerb|layby)$/;
 
 function kapaliMi(t) {
   return t.parking === "multi-storey" || t.parking === "underground" || t.parking === "rooftop" || t.parking === "carports" ||
     t.building === "parking" || t.covered === "yes" || t.indoor === "yes";
 }
-const bekle = ms => new Promise(r => setTimeout(r, ms));
-
-async function sorgula(b) {
-  const q = `[out:json][timeout:180];area["ISO3166-1"="TR"][admin_level=2]->.a;` +
-    `nwr["amenity"="parking"]["access"!~"^(private|no)$"]["parking"!~"^(street_side|lane|on_kerb|half_on_kerb|layby)$"](area.a)(${b.join(",")});out center qt;`;
-  for (let tur = 0; tur < 2; tur++) {
-    for (const url of SUNUCU) {
-      try {
-        const ctl = new AbortController(), zt = setTimeout(() => ctl.abort(), 240000);
-        const r = await fetch(url, { method: "POST", body: "data=" + encodeURIComponent(q), signal: ctl.signal,
-          headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": UA, Accept: "application/json" } });
-        clearTimeout(zt);
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        const j = await r.json();
-        if (!j || !Array.isArray(j.elements)) throw new Error("bozuk cevap");
-        if (j.remark && /error|timed out|runtime/i.test(j.remark)) throw new Error("sunucu: " + j.remark);
-        return j.elements;
-      } catch (e) {
-        console.log(`  ${url.split("/")[2]}: ${e.message}`);
-        await bekle(5000);
-      }
-    }
-    await bekle(30000);
-  }
-  throw new Error("parça indirilemedi: " + b.join(","));
+// Geometrinin orta noktası (alanlarda dış halkanın köşe ortalaması: otopark için yeterince doğru)
+function merkez(g) {
+  if (!g) return null;
+  if (g.type === "Point") return g.coordinates;
+  const pts = g.type === "LineString" ? g.coordinates : g.type === "Polygon" ? g.coordinates[0] : g.type === "MultiPolygon" ? g.coordinates[0][0] : null;
+  if (!pts || !pts.length) return null;
+  let x = 0, y = 0; for (const p of pts) { x += p[0]; y += p[1]; }
+  return [x / pts.length, y / pts.length];
 }
 
-const satirlar = [], gorulen = new Set();
-let parca = 0;
-for (let la = GUNEY; la < KUZEY; la += ADIM) {
-  for (let lo = BATI; lo < DOGU; lo += ADIM) {
-    const b = [la, lo, Math.min(la + ADIM, KUZEY), Math.min(lo + ADIM, DOGU)].map(v => +v.toFixed(2));
-    parca++;
-    const el = await sorgula(b);
-    let n = 0;
-    for (const e of el) {
-      const id = e.type[0] + e.id; if (gorulen.has(id)) continue;
-      const a = e.lat ?? e.center?.lat, o = e.lon ?? e.center?.lon, t = e.tags || {};
-      if (!Number.isFinite(a) || !Number.isFinite(o)) continue;
-      gorulen.add(id); n++;
-      const ek = {};
-      for (const [uzun, kisa] of Object.entries(KISA)) if (t[uzun]) ek[kisa] = String(t[uzun]).slice(0, 80);
-      const s = [Math.round(a * 1e5), Math.round(o * 1e5), kapaliMi(t) ? 1 : 0, (t.name || "").slice(0, 60)];
-      if (Object.keys(ek).length) s.push(ek);
-      satirlar.push(s);
-    }
-    console.log(`parça ${parca} [${b}] -> ${n} otopark (toplam ${satirlar.length})`);
-    await bekle(2000); // sunucuya nazik ol
-  }
+const satirlar = [];
+let okunan = 0;
+const rl = createInterface({ input: createReadStream(GIRDI), crlfDelay: Infinity });
+for await (let satir of rl) {
+  satir = satir.replace(/^\x1e/, "").trim(); if (!satir) continue;
+  okunan++;
+  let f; try { f = JSON.parse(satir); } catch { continue; }
+  const t = f.properties || {};
+  if (t.amenity !== "parking" || ATLA_ERISIM.test(t.access || "") || ATLA_TUR.test(t.parking || "")) continue;
+  const c = merkez(f.geometry); if (!c || !Number.isFinite(c[0]) || !Number.isFinite(c[1])) continue;
+  const ek = {};
+  for (const [uzun, kisa] of Object.entries(KISA)) if (t[uzun]) ek[kisa] = String(t[uzun]).slice(0, 80);
+  const s = [Math.round(c[1] * 1e5), Math.round(c[0] * 1e5), kapaliMi(t) ? 1 : 0, String(t.name || "").slice(0, 60)];
+  if (Object.keys(ek).length) s.push(ek);
+  satirlar.push(s);
 }
+console.log(`Okunan kayıt: ${okunan}, otopark: ${satirlar.length}`);
 
 if (satirlar.length < EN_AZ) {
-  console.log(`Sadece ${satirlar.length} otopark geldi (en az ${EN_AZ} bekleniyordu): eski dosya korunuyor.`);
+  console.log(`Sadece ${satirlar.length} otopark (en az ${EN_AZ} bekleniyordu): eski dosya korunuyor.`);
   process.exit(existsSync(CIKTI) ? 0 : 1);
 }
 satirlar.sort((x, y) => x[0] - y[0] || x[1] - y[1]);
