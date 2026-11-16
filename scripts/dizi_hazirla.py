@@ -558,7 +558,7 @@ def program_kanali(k, sezon_yaz):
         cid = kanal_id(p.get("youtube", "")) or "x"
         # başlıkta "19. Sezon" varsa sezon sezon; sezonsuz eski yayınlar "Arşiv 2011", tarihsizler "Özel Bölümler".
         # Başlıkta sezon yoksa (başka programlar) yıl yıl.
-        sezonlu = sum(1 for e in eps if num(PRG_SEZON, e["t"]) > 0) * 2 > len(eps)
+        sezonlu = sum(1 for e in eps if num(PRG_SEZON, e["t"]) > 0) * 5 > len(eps)   # eski arşiv büyüdükçe sezonlar kaybolmasın
         gruplar = {}
         for e in eps:
             n = num(PRG_SEZON, e["t"])

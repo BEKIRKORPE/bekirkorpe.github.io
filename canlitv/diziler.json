@@ -117,6 +117,34 @@
           "min_dk": 45,
           "aciklama": "atv'nin hafta içi her gün yayınlanan programı. Kayıp yakınlarını arayanlar ve çözülmemiş olaylar Müge Anlı ile ekrana geliyor. Bütün yayınlar, en yenisi en üstte.",
           "atla": "Kolaj|Derleme"
+        },
+        {
+          "ad": "MasterChef Türkiye",
+          "youtube": "@masterchefturkiye",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
+          "aciklama": "TV8'in yemek yarışması. Amatör aşçılar şeflerin karşısında yarışıyor. Bütün bölümler, en yenisi en üstte."
+        },
+        {
+          "ad": "Zuhal Topal'la Yemekteyiz",
+          "youtube": "@Yemekteyiz",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
+          "aciklama": "TV8'de hafta içi her gün. Yarışmacılar sırayla birbirini evinde ağırlıyor, hafta sonunda en iyi ev sahibi kazanıyor."
+        },
+        {
+          "ad": "Gelinim Mutfakta",
+          "youtube": "@GelinimMutfaktaKanalDOFFICIAL",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
+          "aciklama": "Kanal D'de hafta içi her gün. Gelinler ve kayınvalideler mutfakta yarışıyor."
+        },
+        {
+          "ad": "Arda'nın Mutfağı",
+          "youtube": "@ArdaninMutfagi",
+          "min_dk": 25,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
+          "aciklama": "TRT 1'de Arda Türkmen'in yemek programı. Türk mutfağından ve dünyadan tarifler."
         }
       ],
       "youtube": [],
@@ -158,7 +186,8 @@
         "UCyqeF-0XyfeEHmz6QO2PUUA",
         "UC9wOm30AfLHPq_Bdq65BPSg",
         "UCb2hduhWqkr4781Z7yx1ZZA",
-        "UClzojNX_9GuNDjf_8qZ9y0w", "UCZw5SIJn-Vqw2-6vCjmSX7Q",
+        "UClzojNX_9GuNDjf_8qZ9y0w",
+        "UCZw5SIJn-Vqw2-6vCjmSX7Q",
         "UCi6Ixa2yl1YBzTrjG1SKFBQ",
         "UC_HzofEL7aSKvspJKHgUchQ",
         "UC3ly5ABqAfilKmzj8Fc8t8w",
@@ -197,7 +226,8 @@
       "tur": "spor",
       "youtube": [
         "user:SSport",
-        "UCCUP-lWggERaEFd0qFPI7JA", "UCpdSUUHlxMjO0c5824FGcsA"
+        "UCCUP-lWggERaEFd0qFPI7JA",
+        "UCpdSUUHlxMjO0c5824FGcsA"
       ],
       "diziler": []
     },
