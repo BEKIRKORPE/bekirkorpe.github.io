@@ -1,0 +1,36 @@
+name: Otopark verisi guncelle (Rangeo Plus)
+
+on:
+  schedule:
+    - cron: "17 1 * * 0"   # her pazar 04:17 (Türkiye saati)
+  workflow_dispatch: {}    # Actions sekmesinden elle çalıştırma
+  push:
+    branches: [main]
+    paths: ['scripts/otopark-veri.mjs', '.github/workflows/otopark-veri.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: otopark-veri
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Otoparkları indir
+        run: node scripts/otopark-veri.mjs
+      - name: Degisiklik varsa kaydet
+        run: |
+          git config user.name "otopark-veri-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add sarjharitasi/otoparklar.json
+          if git diff --cached --quiet; then echo "Degisiklik yok"; exit 0; fi
+          git commit -m "Otopark verisi guncellendi"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 10; done
