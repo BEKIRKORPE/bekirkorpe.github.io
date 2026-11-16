@@ -473,7 +473,7 @@ def _yuklemeler_sayfa(up, token):
     return out, r.get("nextPageToken")
 
 
-def program_bolumleri(src, min_sn):
+def program_bolumleri(src, min_sn, sadece=""):
     """Resmî hesabın bütün yüklemeleri taranır, sadece tam yayınlar (min_sn ve üstü) kalır.
     İlk sefer arşiv birkaç güne bölünür (PROGRAM_SAYFA); sonra her gün sadece yeni yayınlar sorulur (kota az harcanır)."""
     cid = kanal_id(src)
@@ -481,7 +481,7 @@ def program_bolumleri(src, min_sn):
         print(f"  ! program hesabı bulunamadı: {src}", flush=True)
         return None
     up = "UU" + cid[2:]
-    ck = f"p:{cid}:{min_sn}"
+    ck = f"p:{cid}:{min_sn}" + (f":{sadece}" if sadece else "")
     c = CACHE.get(ck) or {"eps": [], "ust": [], "devam": "", "bitti": False}
     bilinen = set(c["ust"]) | {e["i"] for e in c["eps"]}
     aday, ust = [], []
@@ -515,6 +515,9 @@ def program_bolumleri(src, min_sn):
                     c["bitti"] = True
                     break
             c["devam"] = token or ""
+        # kanalın ana hesabıysa (ör. TRT Türk) sadece bu programın videoları kalır
+        if sadece:
+            aday = [v for v in aday if re.search(sadece, v["t"], re.I)]
         # süre: sadece tam yayınlar kalır (kesit / Shorts / fragman girmez; canlı-yaklaşan yayının süresi 0)
         tam, gorulen = [], set()
         for i in range(0, len(aday), 50):
@@ -547,7 +550,7 @@ def program_kanali(k, sezon_yaz):
     """"tur": "program" → her program bir başlık; sezonlar yıl yıl (en yeni yıl önce), bölümler en yenisi üstte."""
     out = []
     for p in k.get("programlar", []):
-        eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60)
+        eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60, p.get("sadece", ""))
         if not eps:
             continue
         atla = p.get("atla", "")

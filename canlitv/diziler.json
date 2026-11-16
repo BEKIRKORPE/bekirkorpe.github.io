@@ -145,6 +145,14 @@
           "min_dk": 25,
           "atla": "Kolaj|Derleme|Tanıtım|Fragman",
           "aciklama": "TRT 1'de Arda Türkmen'in yemek programı. Türk mutfağından ve dünyadan tarifler."
+        },
+        {
+          "ad": "Sağlık Olsun",
+          "youtube": "https://www.youtube.com/user/trtturktv",
+          "sadece": "Sağlık Olsun",
+          "min_dk": 20,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
+          "aciklama": "TRT Türk'ün sağlık programı. Uzman doktorlar hastalıklar, beslenme ve sağlıklı yaşam üzerine konuşuyor."
         }
       ],
       "youtube": [],
