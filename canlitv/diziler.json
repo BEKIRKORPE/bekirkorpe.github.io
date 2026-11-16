@@ -149,6 +149,110 @@
           "min_dk": 20,
           "atla": "Kolaj|Derleme|Tanıtım|Fragman",
           "aciklama": "TRT Türk'ün sağlık programı. Uzman doktorlar hastalıklar, beslenme ve sağlıklı yaşam üzerine konuşuyor."
+        },
+        {
+          "ad": "Güldür Güldür Show",
+          "youtube": [
+            "@GuldurGuldurShow",
+            "@guldurguldur",
+            "@GuldurGuldurShowTV",
+            "@guldurguldurshowtv"
+          ],
+          "hesap_adi": "Güldür",
+          "min_dk": 60,
+          "sadece": "\\d+\\.\\s*Bölüm",
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "Show TV'nin sevilen komedi şovu. Bütün sezonlar, bütün bölümler; en yenisi en üstte."
+        },
+        {
+          "ad": "Çok Güzel Hareketler 2",
+          "youtube": [
+            "@CokGuzelHareketler2",
+            "@cokguzelhareketler2",
+            "@CGH2"
+          ],
+          "hesap_adi": "Hareketler",
+          "min_dk": 60,
+          "sadece": "\\d+\\.\\s*Bölüm",
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "BKM oyuncularının komedi şovu. Bütün bölümler."
+        },
+        {
+          "ad": "Esra Erol'da",
+          "youtube": [
+            "@EsraErolatv",
+            "@esraerolda",
+            "@EsraErolda",
+            "@EsraErol",
+            "UCEZ0DvPX7JE5cglk_V104Bw"
+          ],
+          "hesap_adi": "Esra Erol",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "ATV'de hafta içi her gün. Esra Erol yardım bekleyenlerin ve kayıp yakınlarını arayanların hikâyelerini ekrana taşıyor."
+        },
+        {
+          "ad": "Didem Arslan Yılmaz'la Vazgeçme",
+          "youtube": [
+            "@DidemArslanYilmazlaVazgecme",
+            "@Vazgecme",
+            "@vazgecme",
+            "@VazgecmeStar",
+            "@vazgecmeshowtv"
+          ],
+          "hesap_adi": "Vazgeçme",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "Didem Arslan Yılmaz'ın gündüz kuşağı programı. Kayıp yakınlarını arayanlar ve yardım bekleyenler."
+        },
+        {
+          "ad": "Survivor",
+          "youtube": [
+            "@SurvivorTurkiye",
+            "@survivorturkiye",
+            "@Survivor",
+            "UCwh_v8K5LHzsJU8PfsXINJQ"
+          ],
+          "hesap_adi": "Survivor",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "TV8'in ünlüler ve gönüllüler yarışması. Bütün bölümler, en yenisi en üstte."
+        },
+        {
+          "ad": "Kim Milyoner Olmak İster?",
+          "youtube": [
+            "@KimMilyonerOlmakIster",
+            "@kimmilyonerolmakister",
+            "@KimMilyonerOlmakIsteratv",
+            "@kimmilyonerolmakisteratv"
+          ],
+          "hesap_adi": "Milyoner",
+          "min_dk": 40,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "ATV'nin bilgi yarışması. Bütün bölümler."
+        },
+        {
+          "ad": "O Ses Türkiye",
+          "youtube": [
+            "@OSesTurkiye",
+            "@osesturkiye",
+            "@OSesTurkiyeTV8"
+          ],
+          "hesap_adi": "O Ses",
+          "min_dk": 60,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts",
+          "aciklama": "Ses yarışması. Bütün bölümler, en yenisi en üstte."
+        },
+        {
+          "ad": "TRT Belgesel",
+          "youtube": [
+            "@trtbelgesel",
+            "@TRTBelgesel"
+          ],
+          "hesap_adi": "Belgesel",
+          "min_dk": 30,
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar|Shorts|Fragman|Canlı",
+          "aciklama": "TRT Belgesel'in resmî hesabından tam belgeseller: doğa, tarih, gezi ve kültür."
         }
       ],
       "youtube": [],

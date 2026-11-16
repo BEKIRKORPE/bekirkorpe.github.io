@@ -473,10 +473,37 @@ def _yuklemeler_sayfa(up, token):
     return out, r.get("nextPageToken")
 
 
+def program_hesabi(adaylar, anahtar, min_abone=100000):
+    """Aday hesaplardan (handle / kanal ID) ilk doğrulananı seçer: kanal adında anahtar kelime geçmeli ve
+    abone sayısı min_abone üstünde olmalı (yanlış / taklit hesaba düşmemek için). Sonuç önbellekte tutulur."""
+    if isinstance(adaylar, str):
+        adaylar = [adaylar]
+    ck = "ph:" + "|".join(adaylar)
+    if CACHE.get(ck):
+        return CACHE[ck]
+    for a in adaylar:
+        cid = kanal_id(a)
+        if not cid:
+            continue
+        if not anahtar:
+            CACHE[ck] = cid
+            return cid
+        r = get("channels", part="snippet,statistics", id=cid) or {}
+        it = (r.get("items") or [{}])[0]
+        ad = (it.get("snippet") or {}).get("title", "")
+        abone = int((it.get("statistics") or {}).get("subscriberCount") or 0)
+        uygun = fold(anahtar) in fold(ad) and abone >= min_abone
+        print(f"  hesap {a}: '{ad}' {abone} abone -> {'SEÇİLDİ' if uygun else 'uygun değil'}", flush=True)
+        if uygun:
+            CACHE[ck] = cid
+            return cid
+    return None
+
+
 def program_bolumleri(src, min_sn, sadece=""):
     """Resmî hesabın bütün yüklemeleri taranır, sadece tam yayınlar (min_sn ve üstü) kalır.
     İlk sefer arşiv birkaç güne bölünür (PROGRAM_SAYFA); sonra her gün sadece yeni yayınlar sorulur (kota az harcanır)."""
-    cid = kanal_id(src)
+    cid = src if re.fullmatch(r"UC[A-Za-z0-9_-]{22}", src or "") else kanal_id(src)
     if not cid or not cid.startswith("UC"):
         print(f"  ! program hesabı bulunamadı: {src}", flush=True)
         return None
@@ -550,7 +577,11 @@ def program_kanali(k, sezon_yaz):
     """"tur": "program" → her program bir başlık; sezonlar yıl yıl (en yeni yıl önce), bölümler en yenisi üstte."""
     out = []
     for p in k.get("programlar", []):
-        eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60, p.get("sadece", ""))
+        hesap = program_hesabi(p.get("youtube", ""), p.get("hesap_adi", ""), int(p.get("min_abone", 100000)))
+        if not hesap:
+            print(f"  ! {p['ad']}: doğrulanmış resmî hesap bulunamadı, eklenmedi", flush=True)
+            continue
+        eps = program_bolumleri(hesap, int(p.get("min_dk", MIN_PROGRAM // 60)) * 60, p.get("sadece", ""))
         if not eps:
             continue
         sadece = p.get("sadece", "")
@@ -561,7 +592,7 @@ def program_kanali(k, sezon_yaz):
             eps = [e for e in eps if not re.search(atla, e["t"], re.I)]
         if not eps:
             continue
-        cid = kanal_id(p.get("youtube", "")) or "x"
+        cid = hesap
         # başlıkta "19. Sezon" varsa sezon sezon; sezonsuz eski yayınlar "Arşiv 2011", tarihsizler "Özel Bölümler".
         # Başlıkta sezon yoksa (başka programlar) yıl yıl.
         sezonlu = sum(1 for e in eps if num(PRG_SEZON, e["t"]) > 0) * 5 > len(eps)   # eski arşiv büyüdükçe sezonlar kaybolmasın
