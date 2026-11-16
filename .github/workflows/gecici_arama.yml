@@ -1,0 +1,51 @@
+name: Gecici kanal aramasi
+on:
+  push:
+    paths: [".github/workflows/gecici_arama.yml"]
+  workflow_dispatch: {}
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ara
+        run: |
+          cat > /tmp/ara.py <<'PY'
+          import json, urllib.request, urllib.parse
+          d=json.load(open('canlitv/diziler.json')); K=d['apiKey']
+          f=json.load(open('canlitv/filmler.json'))
+          def api(p, **q):
+              q['key']=K
+              u='https://www.googleapis.com/youtube/v3/'+p+'?'+urllib.parse.urlencode(q)
+              try: return json.load(urllib.request.urlopen(u, timeout=30))
+              except Exception as e: print('HATA', p, e); return {}
+          def bilgi(ids):
+              out=[]
+              for i in range(0,len(ids),50):
+                  r=api('channels', part='snippet,statistics', id=','.join(ids[i:i+50]))
+                  out+=r.get('items',[])
+              return out
+          def goster(it, pre=''):
+              s=it.get('statistics',{}); sn=it['snippet']
+              print(pre, it['id'], '|', sn['title'], '|', sn.get('customUrl',''), '|', s.get('subscriberCount','?'), 'abone |', s.get('videoCount','?'), 'video |', sn.get('country',''))
+          var=[]
+          for k in d['kanallar']:
+              for y in k.get('youtube',[]):
+                  if y.startswith('UC'): var.append(y)
+          for k in f['kanallar']:
+              if k['src'].startswith('UC'): var.append(k['src'])
+          print('=== MEVCUT ===')
+          for it in bilgi(var): goster(it,'VAR')
+          gruplar={
+           'CIZGI':["Caillou Türkçe resmi","Maşa ile Koca Ayı","Kukuli","Elif'in Düşleri","Dört Kardeş TRT","Robocar Poli Türkçe","Küçük Otobüs Tayo Türkçe","Pororo Türkçe","Leo ve Tig","Shaun the Sheep official","Mr Bean Cartoon official","Looney Tunes official","Pink Panther official","Larva official","Pinkfong Türkçe","Cocomelon Türkçe","Ben ve Holly","Thomas ve Arkadaşları Türkçe","Miraculous Türkçe","Mia and Me official","Kuzucuk çizgi film","Keloğlan çizgi film resmi"],
+           'FILM':["yerli film resmi kanal","Türk filmi full izle resmi kanal","Kalpakçıoğlu film","Saner Film","Uğur Film resmi"],
+           'SPOR':["maç özetleri resmi","Basketbol Süper Ligi resmi","TVF Voleybol","Trendyol 1. Lig resmi","Exxen Spor"],
+          }
+          for g,qs in gruplar.items():
+              for q in qs:
+                  r=api('search', part='snippet', type='channel', q=q, maxResults=6, regionCode='TR')
+                  ids=[x['snippet']['channelId'] for x in r.get('items',[])]
+                  print('===',g,'|',q)
+                  for it in bilgi(ids): goster(it,'  ' + ('(VAR)' if it['id'] in var else ''))
+          PY
+          python3 /tmp/ara.py
