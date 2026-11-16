@@ -122,29 +122,25 @@
           "ad": "MasterChef Türkiye",
           "youtube": "@masterchefturkiye",
           "min_dk": 60,
-          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
-          "aciklama": "TV8'in yemek yarışması. Amatör aşçılar şeflerin karşısında yarışıyor. Bütün bölümler, en yenisi en üstte."
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar",
+          "aciklama": "TV8'in yemek yarışması. Amatör aşçılar şeflerin karşısında yarışıyor. Bütün bölümler, en yenisi en üstte.",
+          "sadece": "\\|\\s*\\d{1,2}\\.\\d{1,2}\\.\\d{4}|\\d+\\.\\s*Bölüm"
         },
         {
           "ad": "Zuhal Topal'la Yemekteyiz",
           "youtube": "@Yemekteyiz",
           "min_dk": 60,
-          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
-          "aciklama": "TV8'de hafta içi her gün. Yarışmacılar sırayla birbirini evinde ağırlıyor, hafta sonunda en iyi ev sahibi kazanıyor."
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar",
+          "aciklama": "TV8'de hafta içi her gün. Yarışmacılar sırayla birbirini evinde ağırlıyor, hafta sonunda en iyi ev sahibi kazanıyor.",
+          "sadece": "\\d+\\.\\s*Bölüm"
         },
         {
           "ad": "Gelinim Mutfakta",
           "youtube": "@GelinimMutfaktaKanalDOFFICIAL",
           "min_dk": 60,
-          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
-          "aciklama": "Kanal D'de hafta içi her gün. Gelinler ve kayınvalideler mutfakta yarışıyor."
-        },
-        {
-          "ad": "Arda'nın Mutfağı",
-          "youtube": "@ArdaninMutfagi",
-          "min_dk": 25,
-          "atla": "Kolaj|Derleme|Tanıtım|Fragman",
-          "aciklama": "TRT 1'de Arda Türkmen'in yemek programı. Türk mutfağından ve dünyadan tarifler."
+          "atla": "Kolaj|Derleme|Tanıtım|Fragman|Özet|Nasıl Geçti|En İyi|Anlar",
+          "aciklama": "Kanal D'de hafta içi her gün. Gelinler ve kayınvalideler mutfakta yarışıyor.",
+          "sadece": "\\d+\\.\\s*Bölüm"
         },
         {
           "ad": "Sağlık Olsun",

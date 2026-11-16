@@ -481,7 +481,7 @@ def program_bolumleri(src, min_sn, sadece=""):
         print(f"  ! program hesabı bulunamadı: {src}", flush=True)
         return None
     up = "UU" + cid[2:]
-    ck = f"p:{cid}:{min_sn}" + (f":{sadece}" if sadece else "")
+    ck = f"p:{cid}:{min_sn}"   # "sadece" anahtarda yok: filtre değişince arşiv baştan taranmaz
     c = CACHE.get(ck) or {"eps": [], "ust": [], "devam": "", "bitti": False}
     bilinen = set(c["ust"]) | {e["i"] for e in c["eps"]}
     aday, ust = [], []
@@ -553,6 +553,9 @@ def program_kanali(k, sezon_yaz):
         eps = program_bolumleri(p.get("youtube", ""), int(p.get("min_dk", MIN_PROGRAM // 60)) * 60, p.get("sadece", ""))
         if not eps:
             continue
+        sadece = p.get("sadece", "")
+        if sadece:   # sadece gerçek bölümler (ör. "1131. Bölüm" ya da yayın tarihi); haftalık özet / en iyi anlar girmez
+            eps = [e for e in eps if re.search(sadece, e["t"], re.I)]
         atla = p.get("atla", "")
         if atla:   # derleme / kolaj gibi uzun ama tam yayın olmayan videolar
             eps = [e for e in eps if not re.search(atla, e["t"], re.I)]
