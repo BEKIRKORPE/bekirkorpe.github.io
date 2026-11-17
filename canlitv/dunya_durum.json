@@ -1,24 +1,24 @@
 {
- "kontrol": "2026-11-16 18:58 UTC",
+ "kontrol": "2026-11-17 08:32 UTC",
  "ulkeler": {
   "Azerbaycan": {
-   "acik": 9,
-   "belirsiz": 7,
+   "acik": 10,
+   "belirsiz": 6,
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 26,
-   "belirsiz": 1,
+   "acik": 27,
+   "belirsiz": 0,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 292,
-   "belirsiz": 71,
-   "kapali": 86
+   "acik": 290,
+   "belirsiz": 80,
+   "kapali": 79
   },
   "Kazakistan": {
-   "acik": 21,
-   "belirsiz": 18,
+   "acik": 22,
+   "belirsiz": 17,
    "kapali": 6
   },
   "Türkmenistan": {
@@ -75,7 +75,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
+   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -84,10 +84,6 @@
   {
    "ulke": "Rusya",
    "ad": "365 days TV (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "555 (720p)"
   },
   {
    "ulke": "Rusya",
@@ -111,6 +107,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Amedia Hit (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Animal Planet (Russia) (1080p)"
   },
   {
@@ -119,11 +119,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Avto24 (576p)"
+   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Bashkortostan 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Blokbaster HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -135,11 +139,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Classic Music (1080p)"
+   "ad": "Dikaya rybalka HD (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Dikaya rybalka HD (1080p)"
+   "ad": "Discovery Channel (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -147,7 +151,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Dushevnoe HD (1080p)"
+   "ad": "Enisey (576p)"
   },
   {
    "ulke": "Rusya",
@@ -163,19 +167,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "FON TV (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Food Network (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Fox (Russia) (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Fox Life (576p)"
   },
   {
    "ulke": "Rusya",
@@ -184,10 +176,6 @@
   {
    "ulke": "Rusya",
    "ad": "Hit HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Investigation Discovery (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -200,10 +188,6 @@
   {
    "ulke": "Rusya",
    "ad": "Kino 24 (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "KinoHit (576p)"
   },
   {
    "ulke": "Rusya",
@@ -227,19 +211,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Legendarnyy 24"
+   "ad": "Kuhnya (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "LenTV24"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Match! Boets (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Mezzo Live (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -251,7 +227,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Moya stikhiya HD (1080p)"
+   "ad": "Mult i muzyka (576p)"
   },
   {
    "ulke": "Rusya",
@@ -263,18 +239,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzyka Live (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nashe HD (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nashe muzhskoe HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
   },
   {
@@ -283,7 +247,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Nickelodeon (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NST (576p)"
   },
   {
    "ulke": "Rusya",
@@ -292,6 +268,10 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Series (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Style (576p)"
   },
   {
    "ulke": "Rusya",
@@ -319,11 +299,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Premialnoe HD (1080p)"
+   "ad": "Radio Shanson (720p) [Not 24/7]"
   },
   {
    "ulke": "Rusya",
-   "ad": "Radio Shanson (720p) [Not 24/7]"
+   "ad": "Rodnoe Kino (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Russian MusicBox (576p)"
   },
   {
    "ulke": "Rusya",
@@ -335,23 +319,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Rybolov (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Samara 24 (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Shef (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Shokiruyushchee HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Simferopol 24"
   },
   {
    "ulke": "Rusya",
@@ -367,15 +343,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "TLC (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "TNT4 (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Travel Channel (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "TVK (Russia) (576p)"
   },
   {
    "ulke": "Rusya",
@@ -411,10 +387,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Yalta TV (480p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
   },
   {
@@ -423,7 +395,7 @@
   },
   {
    "ulke": "Kazakistan",
-   "ad": "Abai TV (720p)"
+   "ad": "Astana TV (576p)"
   },
   {
    "ulke": "Kazakistan",
