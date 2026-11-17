@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-17 08:32 UTC",
+ "kontrol": "2026-11-17 17:57 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 10,
@@ -7,19 +7,19 @@
    "kapali": 3
   },
   "Özbekistan": {
-   "acik": 27,
-   "belirsiz": 0,
-   "kapali": 7
+   "acik": 26,
+   "belirsiz": 2,
+   "kapali": 6
   },
   "Rusya": {
-   "acik": 290,
-   "belirsiz": 80,
-   "kapali": 79
+   "acik": 283,
+   "belirsiz": 71,
+   "kapali": 95
   },
   "Kazakistan": {
-   "acik": 22,
+   "acik": 23,
    "belirsiz": 17,
-   "kapali": 6
+   "kapali": 5
   },
   "Türkmenistan": {
    "acik": 8,
@@ -67,15 +67,7 @@
   },
   {
    "ulke": "Özbekistan",
-   "ad": "Sport (Uzbekistan)"
-  },
-  {
-   "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -84,6 +76,10 @@
   {
    "ulke": "Rusya",
    "ad": "365 days TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "555 (720p)"
   },
   {
    "ulke": "Rusya",
@@ -119,6 +115,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Avto24 (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Balabol (1080p)"
   },
   {
@@ -135,7 +135,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "BRIDGE Hits (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Classic Music (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -151,7 +159,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Enisey (576p)"
+   "ad": "Fashion&LifeStyle (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -167,7 +175,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Food Network (Russia) (1080p)"
+   "ad": "FON TV (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Fox Life (576p)"
   },
   {
    "ulke": "Rusya",
@@ -176,6 +188,10 @@
   {
    "ulke": "Rusya",
    "ad": "Hit HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Investigation Discovery (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -188,6 +204,14 @@
   {
    "ulke": "Rusya",
    "ad": "Kino 24 (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "KinoHit (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Kinokomedija (576p)"
   },
   {
    "ulke": "Rusya",
@@ -215,7 +239,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Legendarnyy 24"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "LenTV24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Mezzo Live (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -227,6 +259,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Moya stikhiya HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Mult i muzyka (576p)"
   },
   {
@@ -235,7 +271,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
+   "ad": "Muzyka Live (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nashe HD (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nashe muzhskoe HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -255,19 +299,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "NST (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "NTV Law (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Series (576p)"
   },
   {
    "ulke": "Rusya",
@@ -299,15 +335,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Premialnoe HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Radio Shanson (720p) [Not 24/7]"
   },
   {
    "ulke": "Rusya",
    "ad": "Rodnoe Kino (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Russian MusicBox (576p)"
   },
   {
    "ulke": "Rusya",
@@ -327,7 +363,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Sarafan (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shef (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shokiruyushchee HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Simferopol 24"
   },
   {
    "ulke": "Rusya",
@@ -355,15 +407,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "TVK (Russia) (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Ural 24 (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Usadba (576p)"
+   "ad": "V mire zhivotnykh (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Vera 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Planet HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -396,10 +456,6 @@
   {
    "ulke": "Kazakistan",
    "ad": "Astana TV (576p)"
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Channel 7 (Kazakhstan) (576p)"
   },
   {
    "ulke": "Kazakistan",
