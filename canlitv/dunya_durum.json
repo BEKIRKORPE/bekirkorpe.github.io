@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-20 07:46 UTC",
+ "kontrol": "2026-11-20 17:18 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 11,
@@ -12,14 +12,14 @@
    "kapali": 7
   },
   "Rusya": {
-   "acik": 275,
-   "belirsiz": 121,
-   "kapali": 56
+   "acik": 273,
+   "belirsiz": 126,
+   "kapali": 53
   },
   "Kazakistan": {
    "acik": 20,
-   "belirsiz": 22,
-   "kapali": 3
+   "belirsiz": 23,
+   "kapali": 2
   },
   "Türkmenistan": {
    "acik": 8,
@@ -64,10 +64,6 @@
   {
    "ulke": "Rusya",
    "ad": "5 minut tishiny (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -131,10 +127,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "FON TV (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Kavkaz 24 (576p)"
   },
   {
@@ -175,7 +167,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nasha Tema (1080p)"
+   "ad": "Muzhskoy HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -183,15 +175,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nevskiy (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -200,6 +184,10 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Style (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Vitrina (720p)"
   },
   {
    "ulke": "Rusya",
@@ -231,6 +219,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Shef (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
   },
   {
@@ -239,7 +231,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Sochi24 (720p)"
+   "ad": "Skoraya pomoshch (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -275,10 +267,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Volleyball (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Vostok 24 (1080p)"
   },
   {
@@ -292,10 +280,6 @@
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kırgızistan",
