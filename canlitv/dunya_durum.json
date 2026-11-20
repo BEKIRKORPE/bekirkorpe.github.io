@@ -1,20 +1,20 @@
 {
- "kontrol": "2026-11-19 17:46 UTC",
+ "kontrol": "2026-11-20 07:46 UTC",
  "ulkeler": {
   "Azerbaycan": {
-   "acik": 12,
+   "acik": 11,
    "belirsiz": 2,
    "kapali": 0
   },
   "Özbekistan": {
    "acik": 26,
-   "belirsiz": 2,
-   "kapali": 6
+   "belirsiz": 1,
+   "kapali": 7
   },
   "Rusya": {
-   "acik": 250,
-   "belirsiz": 125,
-   "kapali": 74
+   "acik": 275,
+   "belirsiz": 121,
+   "kapali": 56
   },
   "Kazakistan": {
    "acik": 20,
@@ -55,6 +55,10 @@
   },
   {
    "ulke": "Özbekistan",
+   "ad": "Sport (Uzbekistan)"
+  },
+  {
+   "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
   },
   {
@@ -91,6 +95,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Bashkortostan 24 (1080p)"
   },
   {
@@ -104,82 +112,6 @@
   {
    "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden AutoGid [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden Birma Play [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden Classic Music [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoAction [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoArt [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoAsia [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoDetektiv [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoDok [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoDrama [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoFantastika [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoKlassika [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoKomediya [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden KinoMistika [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden MedZdrav [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden Play [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden Recepty Gurmana [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden Sirtaki TV [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden TeleNovella [Not 24/7]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "City Eden TV [Not 24/7]"
   },
   {
    "ulke": "Rusya",
@@ -243,10 +175,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Nasha Tema (1080p)"
   },
   {
@@ -260,6 +188,10 @@
   {
    "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -283,6 +215,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Perviy otdel (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Pes (1080p)"
   },
   {
@@ -295,10 +231,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Shef (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
   },
   {
@@ -307,7 +239,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
+   "ad": "Sochi24 (720p)"
   },
   {
    "ulke": "Rusya",
@@ -343,11 +275,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Vostok 24 (1080p)"
+   "ad": "Volleyball (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Yalta TV (480p) [Geo-blocked]"
+   "ad": "Vostok 24 (1080p)"
   },
   {
    "ulke": "Rusya",
