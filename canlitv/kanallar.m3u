@@ -319,6 +319,8 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|http://gohoski.fvds.ru:3000/mediabay/655/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="15PlusMusic.ru@HD" tvg-logo="https://i.imgur.com/kj21hwd.png" group-title="Music",15+ Music (1080p)
 #KAPALI|https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="5minuttishiny.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/5minut_live.jpg" group-title="Series",5 minut tishiny (1080p)
+#KAPALI|https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="555.ru@SD" tvg-logo="https://i.imgur.com/JQZkxeA.png" group-title="General",555 (720p)
 #KAPALI|http://trk555.tv:8888/live
 #KAPALI|#EXTINF:-1 tvg-id="Afontovo.ru@SD" tvg-logo="https://i.imgur.com/StFfPaI.png" group-title="General",Afontovo
@@ -363,8 +365,6 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://live1.1tvcrimea.ru/milletlive.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="MosfilmGoldCollection.ru@SD" tvg-logo="https://i.imgur.com/95Y8jb6.png" group-title="Movies",Mosfilm Gold Collection (576p)
 #KAPALI|http://31.222.235.15/mosfilm/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="Muzhskoy.ru@HD" tvg-logo="https://i.imgur.com/xyztpBf.png" group-title="Movies",Muzhskoy HD (1080p)
-#KAPALI|https://fonbet.mediacdn.ru/live/muzhskoi/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NTVLaw.ru@SD" tvg-logo="https://i.imgur.com/3ChnWGg.png" group-title="Undefined",NTV Law (576p)
 #KAPALI|https://cdn.ntv.ru/th_pravo/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NTVStyle.ru@SD" tvg-logo="https://i.imgur.com/rX6K6qT.png" group-title="Lifestyle",NTV Style (576p)
@@ -379,8 +379,6 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://cdn-dvr.ntv.ru/Nevskiy/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="NizhniyNovgorod24.ru@SD" tvg-logo="https://i.imgur.com/ZWgPVIC.png" group-title="General",Nizhniy Novgorod 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/nigniynovgorod/nigniynovgorod24-hd/index.m3u8
-#KAPALI|#EXTINF:-1 tvg-id="NovorossiyaTV.ru@SD" tvg-logo="https://i.imgur.com/ijmf0bV.png" group-title="News",Novorossiya TV (1080p) [Geo-blocked]
-#KAPALI|http://31.131.139.253:9002/novoros/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="OkkoFutbol.ru@SD" tvg-logo="https://xml-epgservice.cdnvideo.ru/EPGService/hs/xmldata/852f4b92-cae5-463e-aad6-cd8844c5a49/logo/8986.png" group-title="Sports",Okko Futbol (576p)
 #KAPALI|http://178.124.179.122:8080/Setanta1/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Patriot.ru@SD" tvg-logo="https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png" group-title="Movies",Patriot (720p)
@@ -401,6 +399,8 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/novosibirsk/sibir24-hd/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Simferopol24.ru@SD" tvg-logo="https://i.imgur.com/S2QJ3bc.png" group-title="General",Simferopol 24
 #KAPALI|https://simf.1tvcrimea.ru/simferopol24.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Skorayapomoshch.ru@SD" tvg-logo="https://cdn2-static.ntv.ru/home/promo/24740/skoraya_pom_llive.jpg" group-title="Series",Skoraya pomoshch (1080p)
+#KAPALI|https://cdn-dvr.ntv.ru/Skoraja_pomosh/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="SolovyovLive.ru@SD" tvg-logo="https://images.iptv.rt.ru/images/d7efm08mifeaf9jacb30.png" group-title="Undefined",Solovyov Live (1080p)
 #KAPALI|https://stream.smotrim.ru/hls2/solovievlive/playlist_6.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="TERRA.ru@SD" tvg-logo="https://i.imgur.com/ZxUjCpF.png" group-title="Documentary",TERRA (1080p)
@@ -417,6 +417,8 @@ https://www.youtube.com/embed/live_stream?channel=UCzgrZ-CndOoylh2_e72nSBQ
 #KAPALI|https://autopilot.catcast.tv/content/37909/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Volgograd24.ru@SD" tvg-logo="https://i.imgur.com/gFMnaU5.png" group-title="Undefined",Volgograd 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/volgograd/russia1-hd/index.m3u8
+#KAPALI|#EXTINF:-1 tvg-id="Volleyball.ru@SD" tvg-logo="https://smotreshka.server-img.lfstrm.tv/images/media/59/20/592021ab74bddb93907e2b18997215a9.png" group-title="Sports",Volleyball (1080p)
+#KAPALI|https://fonbet.mediacdn.ru/live/volleyball/playlist.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Vostok24.ru@SD" tvg-logo="https://i.imgur.com/YEXDsMn.png" group-title="General",Vostok 24 (1080p)
 #KAPALI|https://vgtrkregion-reg.cdnvideo.ru/vgtrk/vladivostok/vostok24-hd/index.m3u8
 #KAPALI|#EXTINF:-1 tvg-id="Zapad24.ru@SD" tvg-logo="https://i.imgur.com/HerCP0u.png" group-title="General",Zapad 24 (1080p)

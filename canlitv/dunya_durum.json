@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-21 07:44 UTC",
+ "kontrol": "2026-11-21 16:27 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 11,
@@ -7,14 +7,14 @@
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 27,
-   "belirsiz": 0,
+   "acik": 24,
+   "belirsiz": 3,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 273,
+   "acik": 272,
    "belirsiz": 126,
-   "kapali": 53
+   "kapali": 54
   },
   "Kazakistan": {
    "acik": 19,
@@ -27,8 +27,8 @@
    "kapali": 0
   },
   "Kırgızistan": {
-   "acik": 3,
-   "belirsiz": 1,
+   "acik": 2,
+   "belirsiz": 2,
    "kapali": 4
   }
  },
@@ -60,6 +60,10 @@
   {
    "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -159,10 +163,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Nasha Tema (1080p)"
   },
   {
@@ -176,10 +176,6 @@
   {
    "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -235,6 +231,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Skoraya pomoshch (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
@@ -264,6 +264,10 @@
   {
    "ulke": "Rusya",
    "ad": "Volgograd 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Volleyball (1080p)"
   },
   {
    "ulke": "Rusya",
