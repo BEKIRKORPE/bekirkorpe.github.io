@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-20 17:18 UTC",
+ "kontrol": "2026-11-21 07:44 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 11,
@@ -7,8 +7,8 @@
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 26,
-   "belirsiz": 1,
+   "acik": 27,
+   "belirsiz": 0,
    "kapali": 7
   },
   "Rusya": {
@@ -17,9 +17,9 @@
    "kapali": 53
   },
   "Kazakistan": {
-   "acik": 20,
+   "acik": 19,
    "belirsiz": 23,
-   "kapali": 2
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -63,19 +63,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "15+ Music (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "555 (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": ".red (576p)"
   },
   {
    "ulke": "Rusya",
@@ -103,10 +95,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "BRIDGE Hits (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
   },
   {
@@ -124,6 +112,10 @@
   {
    "ulke": "Rusya",
    "ad": "FON Music (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -171,11 +163,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Nasha Tema (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
+   "ad": "Nevskiy (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Novorossiya TV (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -231,10 +235,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
@@ -272,6 +272,10 @@
   {
    "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Abai TV (720p)"
   },
   {
    "ulke": "Kazakistan",
