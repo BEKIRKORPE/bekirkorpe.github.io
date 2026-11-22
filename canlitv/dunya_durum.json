@@ -1,25 +1,25 @@
 {
- "kontrol": "2026-11-21 21:57 UTC",
+ "kontrol": "2026-11-22 07:30 UTC",
  "ulkeler": {
   "Azerbaycan": {
-   "acik": 11,
-   "belirsiz": 2,
+   "acik": 3,
+   "belirsiz": 1,
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 27,
-   "belirsiz": 1,
-   "kapali": 6
+   "acik": 24,
+   "belirsiz": 3,
+   "kapali": 7
   },
   "Rusya": {
-   "acik": 257,
-   "belirsiz": 139,
-   "kapali": 56
+   "acik": 272,
+   "belirsiz": 124,
+   "kapali": 55
   },
   "Kazakistan": {
-   "acik": 21,
-   "belirsiz": 22,
-   "kapali": 2
+   "acik": 20,
+   "belirsiz": 21,
+   "kapali": 4
   },
   "Türkmenistan": {
    "acik": 8,
@@ -55,6 +55,10 @@
   },
   {
    "ulke": "Özbekistan",
+   "ad": "Sport (Uzbekistan)"
+  },
+  {
+   "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
   },
   {
@@ -84,6 +88,10 @@
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -119,15 +127,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "FON TV (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Kavkaz 24 (576p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Kino 24 (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kinomix (576p)"
   },
   {
    "ulke": "Rusya",
@@ -163,7 +171,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
+   "ad": "Nasha Tema (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -231,10 +239,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
@@ -275,11 +279,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Yalta TV (480p) [Geo-blocked]"
+   "ad": "Zapad 24 (1080p)"
   },
   {
-   "ulke": "Rusya",
-   "ad": "Zapad 24 (1080p)"
+   "ulke": "Kazakistan",
+   "ad": "Abai TV (720p)"
   },
   {
    "ulke": "Kazakistan",
@@ -288,6 +292,10 @@
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kırgızistan",
