@@ -1,0 +1,56 @@
+name: Gecici kanal aramasi
+on:
+  push:
+    paths: [".github/workflows/gecici_arama.yml"]
+  workflow_dispatch: {}
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ara
+        run: |
+          cat > /tmp/ara.py <<'PY'
+          import json, urllib.request, urllib.parse
+          d=json.load(open('canlitv/diziler.json')); K=d['apiKey']
+          f=json.load(open('canlitv/filmler.json'))
+          def api(p, **q):
+              q['key']=K
+              u='https://www.googleapis.com/youtube/v3/'+p+'?'+urllib.parse.urlencode(q)
+              try: return json.load(urllib.request.urlopen(u, timeout=30))
+              except Exception as e: print('HATA', p, e); return {}
+          def bilgi(ids):
+              out=[]
+              for i in range(0,len(ids),50):
+                  r=api('channels', part='snippet,statistics', id=','.join(ids[i:i+50]))
+                  out+=r.get('items',[])
+              return out
+          def goster(it, pre=''):
+              s=it.get('statistics',{}); sn=it['snippet']
+              print(pre, it['id'], '|', sn['title'], '|', sn.get('customUrl',''), '|', s.get('subscriberCount','?'), 'abone |', s.get('videoCount','?'), 'video |', sn.get('country',''), '|', sn.get('description','')[:90].replace(chr(10),' '))
+          var=[]
+          srcs=[]
+          for k in d['kanallar']:
+              for y in k.get('youtube',[]) if isinstance(k.get('youtube'),list) else []: srcs.append(y)
+          for k in f['kanallar']: srcs.append(k['src'])
+          for y in srcs:
+              if not isinstance(y,str): continue
+              if y.startswith('UC'): var.append(y)
+              elif y.startswith('@'):
+                  r=api('channels', part='id', forHandle=y)
+                  var+= [x['id'] for x in r.get('items',[])]
+          print('=== MEVCUT ===')
+          for it in bilgi(var): goster(it,'VAR')
+          gruplar={
+           'CIZGI':["Kukuli resmi","Rafadan Tayfa resmi","Niloya resmi","Pepee resmi","Maşa ile Koca Ayı Türkçe resmi","Peppa Pig Türkçe resmi","Paw Patrol Türkçe resmi","Şirinler Türkçe resmi","Robocar Poli Türkçe","Oddbods Türkçe","Larva Türkçe resmi","Bebiboo","Leliko resmi","Supa Strikas Türkçe","Mucize Uğur Böceği ile Kara Kedi Türkçe","Grizzy ve Lemmingler Türkçe","Om Nom Türkçe","Cocomelon Türkçe","Bing Türkçe resmi","Tayo Türkçe"],
+           'FILM':["Yeşilçam filmleri resmi kanal","Saray Film resmi","Uğur Film resmi","Akün Film","Mine Film resmi","Plato Film resmi","Er Film resmi","Acar Film"],
+           'SPOR':["Trendyol 1. Lig resmi","Sultanlar Ligi resmi","Türkiye Hentbol Federasyonu","Basketball Champions League","FIBA Basketball","Türkiye Kadın Basketbol Süper Ligi"],
+          }
+          for g,qs in gruplar.items():
+              for q in qs:
+                  r=api('search', part='snippet', type='channel', q=q, maxResults=6, regionCode='TR')
+                  ids=[x['snippet']['channelId'] for x in r.get('items',[])]
+                  print('===',g,'|',q)
+                  for it in bilgi(ids): goster(it,'  ' + ('(VAR)' if it['id'] in var else ''))
+          PY
+          python3 /tmp/ara.py
