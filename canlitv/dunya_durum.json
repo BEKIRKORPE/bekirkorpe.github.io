@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-22 07:30 UTC",
+ "kontrol": "2026-11-22 16:43 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 3,
@@ -7,19 +7,19 @@
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 24,
-   "belirsiz": 3,
+   "acik": 27,
+   "belirsiz": 0,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 272,
-   "belirsiz": 124,
-   "kapali": 55
+   "acik": 269,
+   "belirsiz": 131,
+   "kapali": 51
   },
   "Kazakistan": {
-   "acik": 20,
-   "belirsiz": 21,
-   "kapali": 4
+   "acik": 19,
+   "belirsiz": 23,
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -67,10 +67,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "15+ Music (1080p)"
   },
   {
@@ -79,19 +75,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Afontovo"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "alpha Cinema (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -124,10 +112,6 @@
   {
    "ulke": "Rusya",
    "ad": "FON Music (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -171,6 +155,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Muzhskoy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Nasha Tema (1080p)"
   },
   {
@@ -192,10 +180,6 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Style (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Vitrina (720p)"
   },
   {
    "ulke": "Rusya",
@@ -280,10 +264,6 @@
   {
    "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Abai TV (720p)"
   },
   {
    "ulke": "Kazakistan",
