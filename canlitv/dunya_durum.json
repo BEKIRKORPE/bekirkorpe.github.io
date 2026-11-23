@@ -1,25 +1,25 @@
 {
- "kontrol": "2026-11-22 22:05 UTC",
+ "kontrol": "2026-11-23 08:15 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 3,
-   "belirsiz": 1,
+   "belirsiz": 2,
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 24,
-   "belirsiz": 3,
+   "acik": 26,
+   "belirsiz": 1,
    "kapali": 7
   },
   "Rusya": {
-   "acik": 276,
-   "belirsiz": 126,
-   "kapali": 49
+   "acik": 268,
+   "belirsiz": 130,
+   "kapali": 54
   },
   "Kazakistan": {
-   "acik": 20,
-   "belirsiz": 23,
-   "kapali": 2
+   "acik": 12,
+   "belirsiz": 30,
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -55,7 +55,7 @@
   },
   {
    "ulke": "Özbekistan",
-   "ad": "Sport (Uzbekistan)"
+   "ad": "Sport (Uzbekistan) (1080p)"
   },
   {
    "ulke": "Özbekistan",
@@ -87,6 +87,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Bashkortostan 24 (1080p)"
   },
   {
@@ -100,6 +104,10 @@
   {
    "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Channel 4 (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -124,10 +132,6 @@
   {
    "ulke": "Rusya",
    "ad": "Kino 24 (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Kinosvidanie (576p)"
   },
   {
    "ulke": "Rusya",
@@ -159,11 +163,27 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Nasha Tema (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
+   "ad": "Nevskiy (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Law (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "NTV Style (576p)"
   },
   {
    "ulke": "Rusya",
@@ -264,6 +284,10 @@
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kırgızistan",
