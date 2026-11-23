@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-23 08:15 UTC",
+ "kontrol": "2026-11-23 20:36 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 3,
@@ -8,17 +8,17 @@
   },
   "Özbekistan": {
    "acik": 26,
-   "belirsiz": 1,
-   "kapali": 7
+   "belirsiz": 6,
+   "kapali": 2
   },
   "Rusya": {
-   "acik": 268,
-   "belirsiz": 130,
-   "kapali": 54
+   "acik": 273,
+   "belirsiz": 127,
+   "kapali": 52
   },
   "Kazakistan": {
-   "acik": 12,
-   "belirsiz": 30,
+   "acik": 11,
+   "belirsiz": 31,
    "kapali": 3
   },
   "Türkmenistan": {
@@ -35,31 +35,15 @@
  "kapali": [
   {
    "ulke": "Özbekistan",
-   "ad": "BIZ Cinema (1080p)"
-  },
-  {
-   "ulke": "Özbekistan",
-   "ad": "BIZ Music (1080p)"
-  },
-  {
-   "ulke": "Özbekistan",
-   "ad": "BIZ TV (1080p)"
-  },
-  {
-   "ulke": "Özbekistan",
-   "ad": "Cheksiz TV"
-  },
-  {
-   "ulke": "Özbekistan",
-   "ad": "MiMi TV (720p)"
-  },
-  {
-   "ulke": "Özbekistan",
    "ad": "Sport (Uzbekistan) (1080p)"
   },
   {
    "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -75,6 +59,14 @@
   },
   {
    "ulke": "Rusya",
+   "ad": ".black (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": ".sci-fi (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Afontovo"
   },
   {
@@ -84,10 +76,6 @@
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -163,10 +151,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nasha Tema (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
   },
   {
@@ -180,10 +164,6 @@
   {
    "ulke": "Rusya",
    "ad": "NTV Law (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Style (576p)"
   },
   {
    "ulke": "Rusya",
@@ -216,10 +196,6 @@
   {
    "ulke": "Rusya",
    "ad": "Samara 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Shef (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -264,10 +240,6 @@
   {
    "ulke": "Rusya",
    "ad": "Volgograd 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Volleyball (1080p)"
   },
   {
    "ulke": "Rusya",
