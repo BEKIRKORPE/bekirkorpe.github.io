@@ -1,0 +1,10 @@
+name: Gecici kanal arama
+on:
+  push:
+    paths: ['.github/workflows/tmp-kanal-ara.yml','.github/tmp_ara/**']
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/tmp_ara/ara.py
