@@ -1,9 +1,9 @@
 {
- "kontrol": "2026-11-23 20:36 UTC",
+ "kontrol": "2026-11-24 10:28 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 3,
-   "belirsiz": 2,
+   "belirsiz": 3,
    "kapali": 0
   },
   "Özbekistan": {
@@ -12,13 +12,13 @@
    "kapali": 2
   },
   "Rusya": {
-   "acik": 273,
-   "belirsiz": 127,
-   "kapali": 52
+   "acik": 276,
+   "belirsiz": 131,
+   "kapali": 55
   },
   "Kazakistan": {
-   "acik": 11,
-   "belirsiz": 31,
+   "acik": 12,
+   "belirsiz": 30,
    "kapali": 3
   },
   "Türkmenistan": {
@@ -27,8 +27,8 @@
    "kapali": 0
   },
   "Kırgızistan": {
-   "acik": 3,
-   "belirsiz": 1,
+   "acik": 1,
+   "belirsiz": 3,
    "kapali": 4
   }
  },
@@ -59,14 +59,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": ".black (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": ".sci-fi (576p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Afontovo"
   },
   {
@@ -76,6 +68,10 @@
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -95,10 +91,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Channel 4 (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "DocuBox Russia"
   },
   {
@@ -112,6 +104,10 @@
   {
    "ulke": "Rusya",
    "ad": "FON Music (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -148,6 +144,10 @@
   {
    "ulke": "Rusya",
    "ad": "Mosfilm Gold Collection (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Muzhskoy HD (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -199,6 +199,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Shef (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
   },
   {
@@ -208,6 +212,10 @@
   {
    "ulke": "Rusya",
    "ad": "Skoraya pomoshch (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Smotrim 100% Talk-show (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -240,6 +248,10 @@
   {
    "ulke": "Rusya",
    "ad": "Volgograd 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Volleyball (1080p)"
   },
   {
    "ulke": "Rusya",
