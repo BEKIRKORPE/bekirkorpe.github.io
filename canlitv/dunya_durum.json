@@ -1,8 +1,8 @@
 {
- "kontrol": "2026-11-24 10:28 UTC",
+ "kontrol": "2026-11-25 01:07 UTC",
  "ulkeler": {
   "Azerbaycan": {
-   "acik": 3,
+   "acik": 4,
    "belirsiz": 3,
    "kapali": 0
   },
@@ -12,14 +12,14 @@
    "kapali": 2
   },
   "Rusya": {
-   "acik": 276,
-   "belirsiz": 131,
-   "kapali": 55
+   "acik": 264,
+   "belirsiz": 146,
+   "kapali": 52
   },
   "Kazakistan": {
    "acik": 12,
-   "belirsiz": 30,
-   "kapali": 3
+   "belirsiz": 31,
+   "kapali": 2
   },
   "Türkmenistan": {
    "acik": 8,
@@ -40,10 +40,6 @@
   {
    "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -71,10 +67,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Balabol (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Bashkortostan 24 (1080p)"
   },
   {
@@ -87,7 +79,23 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "BRIDGE Rap (720p) [Geo-blocked]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "BRIDGE RNB (720p) [Geo-blocked]"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "BRIDGE Soul (720p) [Geo-blocked]"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Channel 4 (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -147,15 +155,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nevskiy (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -167,7 +167,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "NTV Vitrina (720p)"
+   "ad": "NTV Style (576p)"
   },
   {
    "ulke": "Rusya",
@@ -211,14 +211,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Smotrim 100% Talk-show (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
   },
   {
@@ -251,10 +243,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Volleyball (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Vostok 24 (1080p)"
   },
   {
@@ -268,10 +256,6 @@
   {
    "ulke": "Kazakistan",
    "ad": "RTG int."
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Silk Way Cinema (1080p) [Geo-blocked]"
   },
   {
    "ulke": "Kırgızistan",

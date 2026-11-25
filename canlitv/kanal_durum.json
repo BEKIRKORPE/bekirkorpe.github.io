@@ -1,9 +1,9 @@
 {
- "kontrol": "2026-11-24 10:25 UTC",
+ "kontrol": "2026-11-25 01:04 UTC",
  "sayi": {
-  "acik": 54,
-  "belirsiz": 6,
-  "kapali": 9,
+  "acik": 56,
+  "belirsiz": 5,
+  "kapali": 8,
   "yenilendi": 0,
   "geri_geldi": 0
  },
@@ -12,7 +12,6 @@
   "İBB TV",
   "TGRT Avrupa",
   "Bursa TV",
-  "ATV Alanya",
   "Deha TV",
   "Nora TV",
   "Kardelen TV",
@@ -56,8 +55,8 @@
     },
     {
      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
-     "durum": "belirsiz",
-     "neden": "zaman aşımı (yurt dışından denendi, Türkiye'de açık olabilir)",
+     "durum": "ok",
+     "neden": "200",
      "kapali_sayi": 0
     },
     {
@@ -456,13 +455,13 @@
      "url": "https://tv100-live.daioncdn.net/tv100/tv100.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     },
     {
      "url": "https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -551,7 +550,7 @@
      "url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -963,7 +962,7 @@
      "url": "https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -1035,12 +1034,12 @@
   },
   {
    "ad": "TRT Genç",
-   "durum": "belirsiz",
+   "durum": "acik",
    "adres": [
     {
      "url": "https://tv-trtgenc.medya.trt.com.tr/master.m3u8",
-     "durum": "belirsiz",
-     "neden": "403 (yurt dışına kapalı olabilir)",
+     "durum": "ok",
+     "neden": "200",
      "kapali_sayi": 0
     }
    ],
@@ -1067,7 +1066,7 @@
      "url": "https://canli.tgrteu.com/tgrteu.m3u8",
      "durum": "kapali",
      "neden": "[Errno -2] Name or service not known",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -1093,13 +1092,13 @@
      "url": "https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     },
     {
      "url": "https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "[Errno 111] Connection refused",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -1132,13 +1131,13 @@
   },
   {
    "ad": "ATV Alanya",
-   "durum": "kapali",
+   "durum": "acik",
    "adres": [
     {
      "url": "https://cdn-alanyatv.yayin.com.tr/alanyatv/alanyatv/playlist.m3u8",
-     "durum": "kapali",
-     "neden": "404",
-     "kapali_sayi": 12
+     "durum": "ok",
+     "neden": "200",
+     "kapali_sayi": 0
     }
    ],
    "yeni": null
@@ -1164,7 +1163,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_dehatv/dehatv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -1177,7 +1176,7 @@
      "url": "https://live.artidijitalmedya.com/artidijital_noratv/noratv/playlist.m3u8",
      "durum": "kapali",
      "neden": "404",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
@@ -1203,13 +1202,13 @@
      "url": "https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     },
     {
      "url": "http://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "alt liste: [Errno 104] Connection reset by peer",
-     "kapali_sayi": 30
+     "kapali_sayi": 31
     }
    ],
    "yeni": null
@@ -1222,13 +1221,13 @@
      "url": "https://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, c",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     },
     {
      "url": "http://edge1.socialsmart.tv/goncatv/bant1/playlist.m3u8",
      "durum": "kapali",
      "neden": "alt liste: [Errno 104] Connection reset by peer",
-     "kapali_sayi": 30
+     "kapali_sayi": 31
     }
    ],
    "yeni": null
@@ -1247,7 +1246,7 @@
      "url": "https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8",
      "durum": "kapali",
      "neden": "zaman aşımı",
-     "kapali_sayi": 44
+     "kapali_sayi": 45
     }
    ],
    "yeni": null
