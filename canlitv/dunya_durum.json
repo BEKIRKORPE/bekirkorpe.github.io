@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-25 01:07 UTC",
+ "kontrol": "2026-11-25 18:55 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 4,
@@ -12,13 +12,13 @@
    "kapali": 2
   },
   "Rusya": {
-   "acik": 264,
-   "belirsiz": 146,
-   "kapali": 52
+   "acik": 274,
+   "belirsiz": 134,
+   "kapali": 54
   },
   "Kazakistan": {
-   "acik": 12,
-   "belirsiz": 31,
+   "acik": 9,
+   "belirsiz": 34,
    "kapali": 2
   },
   "Türkmenistan": {
@@ -43,7 +43,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
+   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -64,6 +64,10 @@
   {
    "ulke": "Rusya",
    "ad": "Arktika 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Balabol (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -92,10 +96,6 @@
   {
    "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Channel 4 (Russia) (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -155,7 +155,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Muzhskoy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "National Geographic (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nevskiy (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -199,15 +207,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Shef (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Sibir 24 (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Simferopol 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Skoraya pomoshch (1080p)"
   },
   {
    "ulke": "Rusya",
