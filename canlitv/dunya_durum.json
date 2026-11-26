@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-25 18:55 UTC",
+ "kontrol": "2026-11-26 08:55 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 4,
@@ -7,18 +7,18 @@
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 26,
-   "belirsiz": 6,
-   "kapali": 2
+   "acik": 25,
+   "belirsiz": 9,
+   "kapali": 0
   },
   "Rusya": {
-   "acik": 274,
-   "belirsiz": 134,
-   "kapali": 54
+   "acik": 259,
+   "belirsiz": 133,
+   "kapali": 70
   },
   "Kazakistan": {
-   "acik": 9,
-   "belirsiz": 34,
+   "acik": 11,
+   "belirsiz": 32,
    "kapali": 2
   },
   "Türkmenistan": {
@@ -34,16 +34,12 @@
  },
  "kapali": [
   {
-   "ulke": "Özbekistan",
-   "ad": "Sport (Uzbekistan) (1080p)"
-  },
-  {
-   "ulke": "Özbekistan",
-   "ad": "Zo'r TV (576p)"
+   "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
+   "ad": "6 TV Gorlovka (720p) [Geo-blocked]"
   },
   {
    "ulke": "Rusya",
@@ -99,6 +95,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Channel 4 (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "DocuBox Russia"
   },
   {
@@ -112,10 +112,6 @@
   {
    "ulke": "Rusya",
    "ad": "FON Music (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -143,6 +139,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Live Music Channel HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Match! Planeta (576p)"
   },
   {
@@ -156,6 +156,10 @@
   {
    "ulke": "Rusya",
    "ad": "Muzhskoy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Nash Kinopokaz HD (576p)"
   },
   {
    "ulke": "Rusya",
@@ -203,7 +207,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Russian Extreme Ultra (1440p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Samara 24 (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Saphire (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shanson TV SD (576p)"
   },
   {
    "ulke": "Rusya",
@@ -231,6 +247,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "TV 21 International (576p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "TVK (Russia) (576p)"
   },
   {
@@ -240,6 +260,42 @@
   {
    "ulke": "Rusya",
    "ad": "Vera 24"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju Explore (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju History (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju TV1000 (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju TV1000 novella HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju TV1000 romantica HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Comedy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Megahit HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Premiere HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "viju+ Serial HD (1080p)"
   },
   {
    "ulke": "Rusya",
