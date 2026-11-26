@@ -1,7 +1,36 @@
 <!DOCTYPE html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KorpeSoft Canlı TV - İndir</title>
-<style>body{font-family:sans-serif;background:#0b0d12;color:#fff;text-align:center;padding:40px 16px}a.b{display:inline-block;margin-top:24px;padding:16px 28px;border-radius:12px;background:#6366f1;color:#fff;font-size:20px;text-decoration:none}p{color:#c7d2fe}</style></head>
-<body><h1>KorpeSoft Canlı TV</h1><p>Sürüm 27.11.26</p>
+<style>
+body{font-family:sans-serif;background:#0b0d12;color:#fff;text-align:center;padding:32px 16px;max-width:560px;margin:0 auto}
+h1{margin-bottom:4px}p{color:#c7d2fe;line-height:1.5}
+a.b{display:inline-block;margin:20px 0 8px;padding:16px 28px;border-radius:12px;background:#6366f1;color:#fff;font-size:20px;text-decoration:none}
+.box{margin:18px 0;text-align:left}.box label{display:block;color:#a5b4fc;font-size:14px;margin-bottom:6px}
+.row{display:flex;gap:8px}
+input{flex:1;min-width:0;padding:12px;border-radius:10px;border:1px solid #4338ca;background:#161a24;color:#fff;font-size:15px}
+button{padding:12px 16px;border-radius:10px;border:0;background:#4f46e5;color:#fff;font-size:15px;cursor:pointer}
+button.ok{background:#16a34a}
+</style></head>
+<body>
+<h1>KorpeSoft Canlı TV</h1><p>Sürüm 27.11.26</p>
 <a class="b" href="canli-tv.apk">APK'yı indir</a>
-<p>TV box / Android TV: Downloader uygulamasına bu sayfanın adresini yazın, APK inince kurun.</p></body></html>
+<p>Android TV / TV box için: Downloader uygulamasını kurun, aşağıdaki adresi yazın, APK inince kurun.</p>
+
+<div class="box"><label for="u1">APK indirme adresi (Downloader'a bunu yazın)</label>
+<div class="row"><input id="u1" readonly value="bekirkorpe.github.io/canlitv/canli-tv.apk"><button data-for="u1">Kopyala</button></div></div>
+
+<div class="box"><label for="u2">Bu sayfanın adresi</label>
+<div class="row"><input id="u2" readonly value="https://bekirkorpe.github.io/canlitv"><button data-for="u2">Kopyala</button></div></div>
+
+<script>
+document.querySelectorAll('button[data-for]').forEach(function(b){
+ b.addEventListener('click',function(){
+  var i=document.getElementById(b.getAttribute('data-for'));
+  i.focus();i.select();i.setSelectionRange(0,i.value.length);
+  var done=function(){var t=b.textContent;b.textContent='Kopyalandı ✓';b.className='ok';setTimeout(function(){b.textContent=t;b.className=''},1800)};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(i.value).then(done,function(){try{document.execCommand('copy');done()}catch(e){}})}
+  else{try{document.execCommand('copy');done()}catch(e){}}
+ });
+});
+</script>
+</body></html>
