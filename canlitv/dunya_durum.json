@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-27 00:52 UTC",
+ "kontrol": "2026-11-27 18:32 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 4,
@@ -7,19 +7,19 @@
    "kapali": 0
   },
   "Özbekistan": {
-   "acik": 25,
-   "belirsiz": 7,
+   "acik": 27,
+   "belirsiz": 5,
    "kapali": 2
   },
   "Rusya": {
-   "acik": 272,
-   "belirsiz": 135,
-   "kapali": 64
+   "acik": 277,
+   "belirsiz": 126,
+   "kapali": 68
   },
   "Kazakistan": {
-   "acik": 9,
-   "belirsiz": 33,
-   "kapali": 3
+   "acik": 10,
+   "belirsiz": 31,
+   "kapali": 4
   },
   "Türkmenistan": {
    "acik": 8,
@@ -40,6 +40,10 @@
   {
    "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -91,15 +95,15 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Channel 4 (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "First Music Channel (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "First Music Channel Russia (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "FON TV (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -143,15 +147,19 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Muzhskoy HD (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Nash Kinopokaz HD (576p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "Nizhniy Novgorod 24 (1080p)"
+   "ad": "Nasha Tema (1080p)"
   },
   {
    "ulke": "Rusya",
-   "ad": "NTV Law (576p)"
+   "ad": "Nizhniy Novgorod 24 (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -175,7 +183,15 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Perviy otdel (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Pes (1080p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Prodvizhenie (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -296,6 +312,10 @@
   {
    "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Abai TV (720p)"
   },
   {
    "ulke": "Kazakistan",
