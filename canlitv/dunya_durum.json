@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-26 08:55 UTC",
+ "kontrol": "2026-11-27 00:52 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 4,
@@ -8,18 +8,18 @@
   },
   "Özbekistan": {
    "acik": 25,
-   "belirsiz": 9,
-   "kapali": 0
+   "belirsiz": 7,
+   "kapali": 2
   },
   "Rusya": {
-   "acik": 259,
-   "belirsiz": 133,
-   "kapali": 70
+   "acik": 272,
+   "belirsiz": 135,
+   "kapali": 64
   },
   "Kazakistan": {
-   "acik": 11,
-   "belirsiz": 32,
-   "kapali": 2
+   "acik": 9,
+   "belirsiz": 33,
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -34,8 +34,12 @@
  },
  "kapali": [
   {
-   "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
+   "ulke": "Özbekistan",
+   "ad": "Sport (Uzbekistan) (1080p)"
+  },
+  {
+   "ulke": "Özbekistan",
+   "ad": "Zo'r TV (576p)"
   },
   {
    "ulke": "Rusya",
@@ -48,6 +52,10 @@
   {
    "ulke": "Rusya",
    "ad": "555 (720p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "A2 (576p)"
   },
   {
    "ulke": "Rusya",
@@ -79,18 +87,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "BRIDGE Rap (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "BRIDGE RNB (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "BRIDGE Soul (720p) [Geo-blocked]"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Cartoon Classics (Russia)"
   },
   {
@@ -99,19 +95,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "DocuBox Russia"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "First Music Channel (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "First Music Channel Russia (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "FON Music (576p)"
   },
   {
    "ulke": "Rusya",
@@ -155,19 +143,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Muzhskoy HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Nash Kinopokaz HD (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "National Geographic (Russia) (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Nevskiy (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -183,6 +159,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "NTV Vitrina (720p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Okko Futbol (576p)"
   },
   {
@@ -192,10 +172,6 @@
   {
    "ulke": "Rusya",
    "ad": "Perviy Krymskiy (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Perviy otdel (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -220,6 +196,10 @@
   {
    "ulke": "Rusya",
    "ad": "Shanson TV SD (576p)"
+  },
+  {
+   "ulke": "Rusya",
+   "ad": "Shef (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -307,6 +287,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Volleyball (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "Vostok 24 (1080p)"
   },
   {
@@ -316,6 +300,10 @@
   {
    "ulke": "Kazakistan",
    "ad": "MTRK (576p)"
+  },
+  {
+   "ulke": "Kazakistan",
+   "ad": "Novoe televidenie (720p)"
   },
   {
    "ulke": "Kazakistan",
