@@ -1,5 +1,5 @@
 {
- "kontrol": "2026-11-27 18:32 UTC",
+ "kontrol": "2026-11-28 08:29 UTC",
  "ulkeler": {
   "Azerbaycan": {
    "acik": 4,
@@ -12,14 +12,14 @@
    "kapali": 2
   },
   "Rusya": {
-   "acik": 277,
-   "belirsiz": 126,
-   "kapali": 68
+   "acik": 269,
+   "belirsiz": 144,
+   "kapali": 58
   },
   "Kazakistan": {
-   "acik": 10,
+   "acik": 11,
    "belirsiz": 31,
-   "kapali": 4
+   "kapali": 3
   },
   "Türkmenistan": {
    "acik": 8,
@@ -40,10 +40,6 @@
   {
    "ulke": "Özbekistan",
    "ad": "Zo'r TV (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "5 minut tishiny (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -95,6 +91,10 @@
   },
   {
    "ulke": "Rusya",
+   "ad": "Channel 4 (Russia) (1080p)"
+  },
+  {
+   "ulke": "Rusya",
    "ad": "First Music Channel (1080p)"
   },
   {
@@ -115,10 +115,6 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Kinouzhas (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "KVN TV (576p)"
   },
   {
@@ -132,10 +128,6 @@
   {
    "ulke": "Rusya",
    "ad": "Live Music Channel HD (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Match! Planeta (576p)"
   },
   {
    "ulke": "Rusya",
@@ -155,19 +147,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Nasha Tema (1080p)"
+   "ad": "Nevskiy (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Nizhniy Novgorod 24 (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Style (576p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "NTV Vitrina (720p)"
   },
   {
    "ulke": "Rusya",
@@ -180,18 +164,6 @@
   {
    "ulke": "Rusya",
    "ad": "Perviy Krymskiy (720p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Perviy otdel (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Pes (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "Prodvizhenie (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -227,15 +199,7 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Skoraya pomoshch (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Solovyov Live (1080p)"
-  },
-  {
-   "ulke": "Rusya",
-   "ad": "TERRA (1080p)"
   },
   {
    "ulke": "Rusya",
@@ -303,19 +267,11 @@
   },
   {
    "ulke": "Rusya",
-   "ad": "Volleyball (1080p)"
-  },
-  {
-   "ulke": "Rusya",
    "ad": "Vostok 24 (1080p)"
   },
   {
    "ulke": "Rusya",
    "ad": "Zapad 24 (1080p)"
-  },
-  {
-   "ulke": "Kazakistan",
-   "ad": "Abai TV (720p)"
   },
   {
    "ulke": "Kazakistan",
