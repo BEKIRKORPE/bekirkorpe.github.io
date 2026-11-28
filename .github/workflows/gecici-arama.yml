@@ -1,0 +1,58 @@
+name: Gecici kanal aramasi
+on:
+  push:
+    paths:
+      - ".github/workflows/gecici-arama.yml"
+  workflow_dispatch: {}
+jobs:
+  ara:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ara
+        run: |
+          cat > /tmp/ara.py <<'PY'
+          import json, urllib.request, urllib.parse
+          d = json.load(open("canlitv/diziler.json")); K = d["apiKey"]
+          f = json.load(open("canlitv/filmler.json"))
+          def api(ep, **p):
+              p["key"] = K
+              u = "https://www.googleapis.com/youtube/v3/" + ep + "?" + urllib.parse.urlencode(p)
+              try: return json.load(urllib.request.urlopen(u, timeout=20))
+              except Exception as e: print("HATA", ep, e); return {}
+          def cid(x):
+              if x.startswith("UC"): return x
+              if x.startswith("@"): r = api("channels", part="id", forHandle=x)
+              elif x.startswith("user:"): r = api("channels", part="id", forUsername=x[5:])
+              else: return None
+              it = r.get("items", []); return it[0]["id"] if it else None
+          var = set()
+          for k in d["kanallar"]:
+              for x in k.get("youtube", []): var.add(cid(x))
+              for p in k.get("programlar", []):
+                  for x in (p.get("youtube") if isinstance(p.get("youtube"), list) else [p.get("youtube", "")]): 
+                      if x: var.add(cid(x))
+          for k in f["kanallar"]: var.add(cid(k["src"]))
+          print("MEVCUT SAYI", len(var))
+          def info(ids):
+              out = []
+              for i in range(0, len(ids), 50):
+                  r = api("channels", part="snippet,statistics", id=",".join(ids[i:i+50]))
+                  for it in r.get("items", []):
+                      s = it["snippet"]; st = it["statistics"]
+                      out.append((int(st.get("subscriberCount", 0)), it["id"], s["title"], s.get("customUrl", ""), s.get("country", ""), st.get("videoCount"), "VAR" if it["id"] in var else "YENI"))
+              return out
+          Q = {"cizgi": ["Robocar Poli Türkçe", "Pororo Türkçe", "Oddbods Türkçe", "Larva official cartoon", "Zig ve Sharko Türkçe", "Grizzy ve Lemmingler", "Supa Strikas Türkçe", "Pinkfong Türkçe", "Akıllı Tavşan Momo", "Kukuli resmi", "Leliko resmi", "Şirinler Türkçe", "Pokemon Türkçe resmi", "Tayo Türkçe", "Gecko'nun Garajı Türkçe", "Ben ve Holly Türkçe"],
+               "film": ["Yeşilçam filmleri resmi", "BKM film", "Kalinos film", "Ay Yapım film", "Türk filmi tek parça resmi", "Most Production film"],
+               "spor": ["Bundesliga official", "Ligue 1 official", "Eredivisie official", "Trendyol Süper Lig özet resmi", "UEFA official", "Türkiye Hentbol Federasyonu"]}
+          seen = set()
+          for tur, qs in Q.items():
+              print("=== ARAMA", tur)
+              for q in qs:
+                  r = api("search", part="snippet", type="channel", q=q, maxResults=6, regionCode="TR")
+                  ids = [it["id"]["channelId"] for it in r.get("items", []) if it["id"]["channelId"] not in seen]
+                  seen.update(ids)
+                  for x in sorted(info(ids), reverse=True): print(tur, "|", q, "|", x)
+          PY
+          python3 /tmp/ara.py
